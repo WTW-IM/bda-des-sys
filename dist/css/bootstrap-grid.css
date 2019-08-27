@@ -55,25 +55,25 @@ html {
 }
 
 @media (min-width: 576px) {
-  .container-sm {
+  .container, .container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container-md {
+  .container, .container-sm, .container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container-lg {
+  .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container-xl {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
 }

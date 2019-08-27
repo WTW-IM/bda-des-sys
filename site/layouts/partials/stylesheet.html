@@ -1,8 +1,10 @@
 {{- "<!-- Bootstrap core CSS -->" | safeHTML }}
 {{ if eq (getenv "HUGO_ENV") "production" -}}
 <link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.min.css" rel="stylesheet" integrity="{{ .Site.Params.cdn.css_hash }}" crossorigin="anonymous">
+<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/custom.css" rel="stylesheet">
 {{- else -}}
 <link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/custom.css" rel="stylesheet">
 {{- end }}
 
 {{ if (or (eq .Page.Layout "docs") (eq .Page.Layout "single")) -}}

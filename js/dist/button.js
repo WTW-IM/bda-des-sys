@@ -35,8 +35,17 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
-  var _window = window,
-      jQuery = _window.jQuery; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+
+  var getjQuery = function getjQuery() {
+    var _window = window,
+        jQuery = _window.jQuery;
+
+    if (jQuery && !document.body.hasAttribute('data-no-jquery')) {
+      return jQuery;
+    }
+
+    return null;
+  };
 
   /**
    * ------------------------------------------------------------------------
@@ -135,7 +144,7 @@
     } // Static
     ;
 
-    Button._jQueryInterface = function _jQueryInterface(config) {
+    Button.jQueryInterface = function jQueryInterface(config) {
       return this.each(function () {
         var data = Data.getData(this, DATA_KEY);
 
@@ -149,7 +158,7 @@
       });
     };
 
-    Button._getInstance = function _getInstance(element) {
+    Button.getInstance = function getInstance(element) {
       return Data.getData(element, DATA_KEY);
     };
 
@@ -199,6 +208,7 @@
       button.classList.remove(ClassName.FOCUS);
     }
   });
+  var $ = getjQuery();
   /**
    * ------------------------------------------------------------------------
    * jQuery
@@ -208,14 +218,14 @@
 
   /* istanbul ignore if */
 
-  if (typeof jQuery !== 'undefined') {
-    var JQUERY_NO_CONFLICT = jQuery.fn[NAME];
-    jQuery.fn[NAME] = Button._jQueryInterface;
-    jQuery.fn[NAME].Constructor = Button;
+  if ($) {
+    var JQUERY_NO_CONFLICT = $.fn[NAME];
+    $.fn[NAME] = Button.jQueryInterface;
+    $.fn[NAME].Constructor = Button;
 
-    jQuery.fn[NAME].noConflict = function () {
-      jQuery.fn[NAME] = JQUERY_NO_CONFLICT;
-      return Button._jQueryInterface;
+    $.fn[NAME].noConflict = function () {
+      $.fn[NAME] = JQUERY_NO_CONFLICT;
+      return Button.jQueryInterface;
     };
   }
 

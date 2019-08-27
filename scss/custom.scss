@@ -1,0 +1,157 @@
+//
+// Custom styles
+//
+
+// Brand colors - primary
+//
+$blue:    #00a0d2;
+$green:   #00c389;
+//$magenta: #c110a0;
+
+// Brand colors - secondary
+//
+//$wtwGray: #63666a;
+//$violet:  #5a0c6f;
+//$gold:    #ffb81c;
+
+// Theme colors
+//
+$primary:   #007fa7;
+$secondary: #d8d8d8;
+$light:     #fff;
+$dark:      #444;
+
+// Semantic colors
+$success:   #006400;
+$info:      #069;
+$warning:   #c25400;
+$danger:    #ee0700;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":   $primary,
+    "secondary": $secondary,
+    "success":   $success,
+    "info":      $info,
+    "warning":   $warning,
+    "danger":    $danger,
+    "light":     $light,
+    "dark":      $dark
+  ),
+  $theme-colors
+);
+
+// Grays
+$white:    #fff;
+$gray-100: #f4f4f4;
+$gray-200: #ececec;
+$gray-300: #e4e4e4;
+$gray-400: #d8d8d8;
+$gray-500: #c5c5c5;
+$gray-600: #979797;
+$gray-700: #707070;
+$gray-800: #585858;
+$gray-900: #444;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+// - Tints & Shades -----------
+
+// Tint/Shade Modifier Values
+// $lightest:   55%;
+// $lighter:    50%;
+// $light:      30%;
+// $dark:       15%;
+// $darker:     25%;
+
+// Tint/Shade Definitions
+// $blue-lightest:    lighten($blue, $lightest);
+// $blue-lighter:     lighten($blue, $lighter);
+// $blue-light:       lighten($blue, $light);
+// $blue-dark:        darken($blue, $dark);
+// $blue-darker:      darken($blue, $darker);
+// $green-lightest:   lighten($green, $lightest);
+// $green-lighter:    lighten($green, $lighter);
+// $green-light:      lighten($green, $light);
+// $green-dark:       darken($green, $dark);
+// $green-darker:     darken($green, $darker);
+// $gold-lightest:    lighten($gold, 35%);
+// $gold-lighter:     lighten($gold, 30%);
+// $gold-light:       lighten($gold, 20%);
+// $gold-dark:        darken($gold, $dark);
+// $gold-darker:      darken($gold, $darker);
+// $magenta-lightest: lighten($magenta, $lightest);
+// $magenta-lighter:  lighten($magenta, $lighter);
+// $magenta-light:    lighten($magenta, $light);
+// $magenta-dark:     darken($magenta, $dark);
+// $magenta-darker:   darken($magenta, $darker);
+// $violet-lightest:  lighten($violet, 60%);
+// $violet-lighter:   lighten($violet, 55%);
+// $violet-light:     lighten($violet, 30%);
+// $violet-dark:      darken($violet, 10%);
+// $violet-darker:    darken($violet, 20%);
+
+// Typography
+//
+
+$font-path: "../fonts/";
+
+@font-face {
+  font-family: "Source Sans Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$font-path}SourceSansPro-Light.eot");
+  src: url("#{$font-path}SourceSansPro-Light.eot") format("embedded-opentype"),
+    url("#{$font-path}SourceSansPro-Light.otf.woff") format("woff"),
+    url("#{$font-path}SourceSansPro-Light.ttf") format("truetype"),
+    url("#{$font-path}SourceSansPro-Light.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$font-path}SourceSansPro-Regular.eot");
+  src: url("#{$font-path}SourceSansPro-Regular.eot") format("embedded-opentype"),
+    url("#{$font-path}SourceSansPro-Regular.otf.woff") format("woff"),
+    url("#{$font-path}SourceSansPro-Regular.ttf") format("truetype"),
+    url("#{$font-path}SourceSansPro-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$font-path}SourceSansPro-Bold.eot");
+  src: url("#{$font-path}SourceSansPro-Bold.eot") format("embedded-opentype"),
+    url("#{$font-path}SourceSansPro-Bold.otf.woff") format("woff"),
+    url("#{$font-path}SourceSansPro-Bold.ttf") format("truetype"),
+    url("#{$font-path}SourceSansPro-Bold.svg") format("svg");
+}
+
+$font-family-sans-serif: "Source Sans Pro Regular", "Segoe UI", "Segoe", "Calibri", "Tahoma", sans-serif;
+
+// Toggle features on
+$enable-shadows: true;
+
+
+$btn-active-box-shadow: inset 0 3px 5px rgba($black, .25);
+
+// Bootstrap and its default variables
+@import "bootstrap";

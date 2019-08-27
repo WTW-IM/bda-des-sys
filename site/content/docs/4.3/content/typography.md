@@ -1,22 +1,18 @@
 ---
 layout: docs
 title: Typography
-description: Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+description: Documentation and examples for typography&mdash;including body copy, headings, lists, and more.
 group: content
 toc: true
 ---
 
-## Global settings
+## Body copy
 
-Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
+The Benefits Delivery & Administration UI Toolkit uses Source Sans Pro which was chosen because of its weights, character sets, legibility, and pleasantness. Our fallback font stack satisfies similar goals as well (Segoe UI, Segoe, Calibri, Tahoma, sans-serif). We use the "Regular" font for body text, the "Bold" font for bolded items (e.g.: `<strong>`), and the "Light" font for headings.
 
-- Use a [native font stack]({{< docsref "/content/reboot#native-font-stack" >}}) that selects the best `font-family` for each OS and device.
-- For a more inclusive and accessible type scale, we assume the browser default root `font-size` (typically 16px) so visitors can customize their browser defaults as needed.
-- Use the `$font-family-base`, `$font-size-base`, and `$line-height-base` attributes as our typographic base applied to the `<body>`.
-- Set the global link color via `$link-color` and apply link underlines only on `:hover`.
-- Use `$body-bg` to set a `background-color` on the `<body>` (`#fff` by default).
+Global default `font-size` is 18px, with a `line-height` of 1.428. This is applied to the `<body>` and all `<p>` tags (paragraphs). In addition, paragraphs receive a bottom margin of half their computed line-height (10px by default).
 
-These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`.
+Make sure to set your base font size in `rem`.
 
 ## Headings
 
@@ -34,64 +30,64 @@ All HTML headings, `<h1>` through `<h6>`, are available.
       <td>
         {{< markdown >}}`<h1></h1>`{{< /markdown >}}
       </td>
-      <td><span class="h1">h1. Bootstrap heading</span></td>
+      <td><span class="h1">h1. Heading text</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h2></h2>`{{< /markdown >}}
       </td>
-      <td><span class="h2">h2. Bootstrap heading</span></td>
+      <td><span class="h2">h2. Heading text</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h3></h3>`{{< /markdown >}}
       </td>
-      <td><span class="h3">h3. Bootstrap heading</span></td>
+      <td><span class="h3">h3. Heading text</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h4></h4>`{{< /markdown >}}
       </td>
-      <td><span class="h4">h4. Bootstrap heading</span></td>
+      <td><span class="h4">h4. Heading text</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h5></h5>`{{< /markdown >}}
       </td>
-      <td><span class="h5">h5. Bootstrap heading</span></td>
+      <td><span class="h5">h5. Heading text</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h6></h6>`{{< /markdown >}}
       </td>
-      <td><span class="h6">h6. Bootstrap heading</span></td>
+      <td><span class="h6">h6. Heading text</span></td>
     </tr>
   </tbody>
 </table>
 
 {{< highlight html >}}
-<h1>h1. Bootstrap heading</h1>
-<h2>h2. Bootstrap heading</h2>
-<h3>h3. Bootstrap heading</h3>
-<h4>h4. Bootstrap heading</h4>
-<h5>h5. Bootstrap heading</h5>
-<h6>h6. Bootstrap heading</h6>
+<h1>h1. Heading text</h1>
+<h2>h2. Heading text</h2>
+<h3>h3. Heading text</h3>
+<h4>h4. Heading text</h4>
+<h5>h5. Heading text</h5>
+<h6>h6. Heading text</h6>
 {{< /highlight >}}
 
 `.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
 {{< example >}}
-<p class="h1">h1. Bootstrap heading</p>
-<p class="h2">h2. Bootstrap heading</p>
-<p class="h3">h3. Bootstrap heading</p>
-<p class="h4">h4. Bootstrap heading</p>
-<p class="h5">h5. Bootstrap heading</p>
-<p class="h6">h6. Bootstrap heading</p>
+<p class="h1">h1. Heading text</p>
+<p class="h2">h2. Heading text</p>
+<p class="h3">h3. Heading text</p>
+<p class="h4">h4. Heading text</p>
+<p class="h5">h5. Heading text</p>
+<p class="h6">h6. Heading text</p>
 {{< /example >}}
 
-### Customizing headings
+### Secondary text within headings
 
-Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.
+Secondary text in any heading should have a lighter and smaller appearance.
 
 {{< example >}}
 <h3>
@@ -99,36 +95,6 @@ Use the included utility classes to recreate the small secondary heading text fr
   <small class="text-muted">With faded secondary text</small>
 </h3>
 {{< /example >}}
-
-## Display headings
-
-Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a **display heading**—a larger, slightly more opinionated heading style. Keep in mind these headings are not responsive by default, but it's possible to enable [responsive font sizes](#responsive-font-sizes).
-
-<div class="bd-example bd-example-type">
-  <table class="table">
-    <tbody>
-      <tr>
-        <td><span class="display-1">Display 1</span></td>
-      </tr>
-      <tr>
-      <td><span class="display-2">Display 2</span></td>
-      </tr>
-      <tr>
-      <td><span class="display-3">Display 3</span></td>
-      </tr>
-      <tr>
-      <td><span class="display-4">Display 4</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-{{< highlight html >}}
-<h1 class="display-1">Display 1</h1>
-<h1 class="display-2">Display 2</h1>
-<h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-{{< /highlight >}}
 
 ## Lead
 
@@ -159,10 +125,6 @@ Styling for common inline HTML5 elements.
 
 While not shown above, feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
 
-## Text utilities
-
-Change text alignment, transform, style, weight, and color with our [text utilities]({{< docsref "/utilities/text" >}}) and [color utilities]({{< docsref "/utilities/colors" >}}).
-
 ## Abbreviations
 
 Stylized implementation of HTML's `<abbr>` element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.
@@ -190,24 +152,6 @@ Add a `<footer class="blockquote-footer">` for identifying the source. Wrap the 
 
 {{< example >}}
 <blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-{{< /example >}}
-
-### Alignment
-
-Use text utilities as needed to change the alignment of your blockquote.
-
-{{< example >}}
-<blockquote class="blockquote text-center">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-{{< /example >}}
-
-{{< example >}}
-<blockquote class="blockquote text-right">
   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
@@ -282,8 +226,8 @@ Align terms and descriptions horizontally by using our grid system's predefined 
 </dl>
 {{< /example >}}
 
-## Responsive font sizes
+<!-- ## Responsive font sizes
 
 Bootstrap v4.3 ships with the option to enable responsive font sizes, allowing text to scale more naturally across device and viewport sizes. <abbr title="Responsive font sizes">RFS</abbr> can be enabled by changing the `$enable-responsive-font-sizes` Sass variable to `true` and recompiling Bootstrap.
 
-To support <abbr title="Responsive font sizes">RFS</abbr>, we use a Sass mixin to replace our normal `font-size` properties. Responsive font sizes will be compiled into `calc()` functions with a mix of `rem` and viewport units to enable the responsive scaling behavior. More about <abbr title="Responsive font sizes">RFS</abbr> and its configuration can be found on its [GitHub repository](https://github.com/twbs/rfs).
+To support <abbr title="Responsive font sizes">RFS</abbr>, we use a Sass mixin to replace our normal `font-size` properties. Responsive font sizes will be compiled into `calc()` functions with a mix of `rem` and viewport units to enable the responsive scaling behavior. More about <abbr title="Responsive font sizes">RFS</abbr> and its configuration can be found on its [GitHub repository](https://github.com/twbs/rfs). -->

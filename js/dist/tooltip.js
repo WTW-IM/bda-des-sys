@@ -88,9 +88,7 @@
    */
   var MAX_UID = 1000000;
   var MILLISECONDS_MULTIPLIER = 1000;
-  var TRANSITION_END = 'transitionend';
-  var _window = window,
-      jQuery = _window.jQuery; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+  var TRANSITION_END = 'transitionend'; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
 
   var toType = function toType(obj) {
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
@@ -208,6 +206,17 @@
 
   var noop = function noop() {
     return function () {};
+  };
+
+  var getjQuery = function getjQuery() {
+    var _window = window,
+        jQuery = _window.jQuery;
+
+    if (jQuery && !document.body.hasAttribute('data-no-jquery')) {
+      return jQuery;
+    }
+
+    return null;
   };
 
   /**
@@ -994,7 +1003,7 @@
     } // Static
     ;
 
-    Tooltip._jQueryInterface = function _jQueryInterface(config) {
+    Tooltip.jQueryInterface = function jQueryInterface(config) {
       return this.each(function () {
         var data = Data.getData(this, DATA_KEY);
 
@@ -1018,7 +1027,7 @@
       });
     };
 
-    Tooltip._getInstance = function _getInstance(element) {
+    Tooltip.getInstance = function getInstance(element) {
       return Data.getData(element, DATA_KEY);
     };
 
@@ -1061,6 +1070,8 @@
 
     return Tooltip;
   }();
+
+  var $ = getjQuery();
   /**
    * ------------------------------------------------------------------------
    * jQuery
@@ -1070,15 +1081,14 @@
 
   /* istanbul ignore if */
 
+  if ($) {
+    var JQUERY_NO_CONFLICT = $.fn[NAME];
+    $.fn[NAME] = Tooltip.jQueryInterface;
+    $.fn[NAME].Constructor = Tooltip;
 
-  if (typeof jQuery !== 'undefined') {
-    var JQUERY_NO_CONFLICT = jQuery.fn[NAME];
-    jQuery.fn[NAME] = Tooltip._jQueryInterface;
-    jQuery.fn[NAME].Constructor = Tooltip;
-
-    jQuery.fn[NAME].noConflict = function () {
-      jQuery.fn[NAME] = JQUERY_NO_CONFLICT;
-      return Tooltip._jQueryInterface;
+    $.fn[NAME].noConflict = function () {
+      $.fn[NAME] = JQUERY_NO_CONFLICT;
+      return Tooltip.jQueryInterface;
     };
   }
 

@@ -10,6 +10,11 @@
       "border-bottom-right-radius",
       "border-bottom-left-radius",
       "transition"
-    ]
+    ],
+    "scss/dollar-variable-default":null,
+    "declaration-colon-newline-after":null,
+    "font-weight-notation":null,
+    "value-list-comma-newline-after":null,
+    "value-list-comma-space-after":null
   }
 }
