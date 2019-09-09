@@ -17,7 +17,7 @@ disableKinds:           ["404", "taxonomy", "taxonomyTerm", "RSS"]
 blackfriday:
   fractions:            false
 
-publishDir:             "_gh_pages"
+publishDir:             "docs"
 archetypeDir:           "site/archetypes"
 assetDir:               "site/assets"
 contentDir:             "site/content"
