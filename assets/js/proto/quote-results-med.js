@@ -101,7 +101,7 @@ $(function(){
       var _el = 
         '<li data-carrier="' + _carrier + '" data-premium="' + _premiumDollars + '.' + _premiumCents + '" data-rating="' + _rating + '" data-doctors="' + (_docsPct / 10) + '" data-annual="' + _annualData + '">' +
         '  <h5><a href="javascript:;" class="trigger" title="' + _name + '">' + _name + '</a></h5>' +
-        '  <a href="javascript:;" class="carrier-logo trigger"><img src="../assets/img/carriers/' + _carrier + '.gif"/></a>' +
+        '  <a href="javascript:;" class="carrier-logo trigger"><img src="./assets/img/carriers/' + _carrier + '.gif"/></a>' +
         '  <span class="premium">' +
         '    <strong class="h1"><sup>$</sup>' + _premiumDollars + '<sup class="cents">.' + _premiumCents + '</sup></strong> <sup>Monthly</sup>' +
         '      <a href="javascript:;" class="plan-details-link trigger">Plan Details</a>' +
@@ -111,7 +111,7 @@ $(function(){
         '      <!-- <span class="label-style">Estimate:</span> --> <button type="button" class="popover-link h4" data-details="annual-estimate" data-trigger="focus" data-placement="right" data-html="true" data-container="body" data-title="Estimated Annual Cost" data-content="<p>Content TBD ...</p>" data-original-title="" title="Estimated Annual Cost"><sup>$</sup>' + _annualEstimate + '</button> estimated yearly cost<!-- <sup>Yearly</sup> -->' +
         '    </span>' +
         '    <span class="detail-row hmc clearfix">' +
-        '      <img src="../assets/img/quote-results/hmc/medicare/cards/hmc-dataViz-' + i +'.png" class="data-viz">' +
+        '      <img src="./assets/img/quote-results/hmc/medicare/cards/hmc-dataViz-' + i +'.png" class="data-viz">' +
         '      <button type="button" class="popover-link medicare-prem-det-' + i + '" data-details="plan-premium" title="Plan Premiums for a Year: $' + (_premium * 12).toFixed(2) + '">Premium over twelve months: $' + (_premium * 12).toFixed(2) + '</button>' +
         '      <button type="button" class="popover-link medicare-rx-det-' + i + '" data-details="drugs-covered" data-container="#plan-tiles" title="Drug Costs for a Year: $XXX.XX" aria-hidden="true">' + _drugsCovered + ' of ' + _totalDrugs + ' drugs</button>' +
         '      <button type="button" class="popover-link medicare-med-det-' + i + '" data-details="health-care-utilization" data-toggle="popover" data-trigger="focus" data-placement="top" data-html="true" data-container="#plan-tiles" data-content="<p>This estimate is based on the health care costs reported by people in your age group who gave the same answers you did regarding their health.</p>" title="Medical Costs for a Year: $XXX.XX">Medical Usage Estimate</button>' +
@@ -177,7 +177,7 @@ $(function(){
         '      <button type="button" class="popover-link medicare-med-det-' + i + '-bar" data-details="health-care-utilization" data-toggle="popover" data-trigger="focus" data-placement="top" data-html="true" data-container="#plan-tiles" data-content="<p>This estimate is based on the health care costs reported by people in your age group who gave the same answers you did regarding their health.</p>" title="Medical Costs for a Year: $XXX.XX"></button>' +
         '      <span class="plan-premium-popover-content"><p>Monthly cost: <span class="pull-right">$' + _premium + '</span></p><p>Over a year: <span class="pull-right">&times; 12</span></p><p style="border-top: 1px solid #aaa; padding-top: 10px;">Total: <span class="pull-right"><strong>$' + (_premium * 12).toFixed(2) + '</strong></span></p></span>' +
         '      <span class="drugs-covered-popover-content"><p>Drug coverage for this plan:</p><ol>' + _drugList.html() + '</ol></span>' +
-        '      <img src="../assets/img/quote-results/hmc/medicare/hmc-dataViz-' + i +'.png" class="data-viz"/>' +
+        '      <img src="./assets/img/quote-results/hmc/medicare/hmc-dataViz-' + i +'.png" class="data-viz"/>' +
         '      <strong>$' + _annualEstimate + '</strong>' +
         '    </span><!-- /help-me-choose -->' +
         '  </span> <!-- /.details-large -->' +
