@@ -80,16 +80,54 @@ $software-gray-9: #444;
 $black:           #000;
 $pink:    #e83e8c !default;
 
+$brand-primary-accent: $blue;
+$brand-primary:        $software-blue;
+$brand-primary-accent: $blue;
+$brand-success:        $software-success;
+$brand-info:           $software-info;
+$brand-warning:        $software-warning;
+$brand-danger:         $software-error;
+$brand-agent:          $software-warning;
+
+//Brand Primary
+$wtwViolet: $brand-primary-accent;
+$wtwBlack:  $black;    
+$wtwWhite:  $white;
+
+//Brand Secondary
+$wtwLightGray:   #d8dbd8;
+$wtwLightViolet: #d8d7df;
+$wtwLightPink:   #ddd0cf;
+$wtwLightBlue:   #c8d7df;
+$wtwLightGreen:  #d9e6dc;
+$wtwSand:        #efeede;
+
+// Brand Tertiary
+$wtwGray:    #63666a;
+$wtwMagenta: $magenta;
+$wtwBlue:    $blue;
+$wtwGreen:   $green;
+$wtwGold:    $gold;
+
+// Brand Tertiary Halftones
+$wtwGrayHalf:    #b1b3b5;
+$wtwVioletHalf:  #b78fc1;
+$wtwMagentaHalf: #d389bb;
+$wtwBlueHalf:    #81cfe8;
+$wtwGreenHalf:   #8cd0bc;
+$wtwGoldHalf:    #f0dc8d;
+
+
 $primary:   #007fa7;
 $secondary: #d8d8d8;
 $light:     #fff;
 $dark:      #444;
 
 // Semantic colors
-$success:   #006400;
-$info:      #069;
-$warning:   #c25400;
-$danger:    #ee0700;
+$success:   $software-success;
+$info:      $software-info;
+$warning:   $software-warning;
+$danger:    $software-error;
 $pink:    #e83e8c !default;
 
 $colors: ();

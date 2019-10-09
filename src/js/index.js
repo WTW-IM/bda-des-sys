@@ -9,22 +9,6 @@ $('#alert').click(() => {
 // Your jQuery code
 
 
-var scrollOffset = 50;
-
-$('body').scrollspy({
-  offset: scrollOffset + 5
-});
-
-$('#es-ui-side-nav a').click(function(event) {
-  event.preventDefault();
-  $($(this).attr('href'))[0].scrollIntoView();
-  window.location.hash = $(this).attr('href');
-  scrollBy(0, -scrollOffset);
-});
-
-
-
-
 $('.multi-tier ul a').click(function(){
   var _this = $(this);
   _this.siblings().removeClass('active');
@@ -41,14 +25,6 @@ $('.multi-tier .folder > a').click(function() {
   return false;
 });
 
-var scrollOffset = 50; $('body').scrollspy({
-  offset: scrollOffset + 5
-}); $('#es-ui-side-nav a').click(function (event) {
-  event.preventDefault();
-  $($(this).attr('href'))[0].scrollIntoView();
-  window.location.hash = $(this).attr('href');
-  scrollBy(0, -scrollOffset);
-});
 
 
 

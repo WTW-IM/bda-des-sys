@@ -15,7 +15,7 @@ const config = {
   devtool: IS_DEV ? 'eval' : 'source-map',
   entry: './src/js/index.js',
   output: {
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -89,9 +89,15 @@ const config = {
       jQuery: 'jquery',
       'windows.jQuery': 'jquery',
     }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets',
+        to: './assets',
+      },
+    ]),
     new MiniCssExtractPlugin({
       filename: IS_DEV ? 'css/[name].css' : 'css/[name].[contenthash].css',
-      chunkFilename: 'css/[id].css',
+      chunkFilename: 'css/main.css',
     }),
     new webpack.HashedModuleIdsPlugin(),
     new PreloadWebpackPlugin({
@@ -130,7 +136,7 @@ if (!IS_DEV) {
   );
 }
 
-const files = glob.sync('./src/*.html');
+const files = glob.sync('./src/**/*.html');
 
 files.forEach(file => {
   config.plugins.push(
