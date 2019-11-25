@@ -316,8 +316,8 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 
 // Grid containers
@@ -331,7 +331,7 @@ $container-max-widths: (
   xl: 1140px
 ) !default;
 
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+// @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
 // Grid columns
@@ -1253,3 +1253,8 @@ $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Customize Bootstrap classes with extands below
+@import './custom';
