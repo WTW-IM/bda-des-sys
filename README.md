@@ -8,12 +8,12 @@ While this documentation suite is meant to convey the patterns and philosophies 
 #### HTML
 - Semantically correct
   - Make sure your markup leverages elements that convey the purpose of their content correctly.
-  - For more information, see [the MDN Guide to Semantics in HTML|https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML]
+  - For more information, see the [MDN Guide to Semantics in HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
 - Minimalistic
   - Almost all HTML elements can be styled&mdash;there's often no need to introduce additional markup to achieve structural/visual ends.
 - Accessible
   - Employing semantic markup will get you a great deal of the way to achieving this goal, but for any elements that provide an extended interaction model of an existing element (a styled analog of a `<select>`, for example), methods like **`aria` roles** and **attributes** can fill in those gaps.
-  - For more information, see the W3C's [ARIA in HTML|https://www.w3.org/TR/html-aria/] documentation.
+  - For more information, see the W3C's [ARIA in HTML](https://www.w3.org/TR/html-aria) documentation.
 - Adaptive / Responsive
   - Structure your markup in a way that can easily be styled as appropriate for a variety of viewports.
 
@@ -29,7 +29,7 @@ While this documentation suite is meant to convey the patterns and philosophies 
 
 
 
-### Development Logistics
+### Running the UI Toolkit Docs Locally
 
 First, clone the repository, locally, and install dependencies:
 
@@ -50,7 +50,7 @@ Changes will automatically refresh in the browser as they are saved.
 
 ## Build for Production
 
-You will need to build for Production before you can deploy (outlined in the next section).
+You will need to build for Production before you can open a pull request (outlined in the next section).
 
 ```
 $ npm run build
@@ -66,9 +66,11 @@ $ rm -rf node_modules/gh-pages/.cache
 
 ## Deployments
 
-When you're satisfied with your changes, `commit` and `push` all changes to your remote branch, and open a **Pull Request (PR)**. Present your changes to {TBD -- UX CoP? DSWG?} and solicit feedback. Get a front-end savvy Architect to review your changes to ensure they are sound and conform to the [Quality Standards|#quality-standards] mentioned above.
+When you're satisfied with your changes, `commit`&mdash;with a message (`-m`)&mdash;and `push` all changes to your remote branch, and open a **Pull Request (PR)**. For in introduction to using Git, see the [Git Handbook](https://guides.github.com/introduction/git-handbook/).
 
-Once your changes have garnered the approval of the {CoP and/or CoI} and an Architect, your PR will be merged to `master`&mdash;and pushed to the branch upon which the [UI Toolkit Documentation|https://wtw-im.github.io/bda-des-sys] runs&mdash;on your behalf.
+Present your changes to {**TBD** -- UX CoP? DSWG?} and solicit feedback. Get a front-end-savvy Architect to review your changes to ensure they are sound and conform to the [Quality Standards](#quality-standards) mentioned above.
+
+Once your changes have garnered the approval of the {CoP and/or CoI} and an Architect, your PR will be merged to `master`&mdash;and pushed to the branch upon which the [UI Toolkit Documentation](https://wtw-im.github.io/bda-des-sys) runs&mdash;on your behalf.
 
 <!-- Deploy to `gh-pages` branch on GitHub.
 You will need to have ssh tokens set up for git terminal commands.
