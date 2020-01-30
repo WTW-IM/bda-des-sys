@@ -12,7 +12,7 @@ const IS_DEV = process.env.NODE_ENV === 'dev';
 
 const config = {
   mode: IS_DEV ? 'development' : 'production',
-  devtool: IS_DEV ? 'eval' : 'source-map',
+  devtool: IS_DEV ? 'eval-source-map' : 'source-map',
   entry: './src/js/index.js',
   output: {
     filename: 'js/[name].js',
@@ -40,11 +40,21 @@ const config = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: IS_DEV,
+              hmr: IS_DEV
             },
           },
-          'css-loader',
-          'sass-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
         ],
       },
       {
@@ -104,6 +114,7 @@ const config = {
       include: 'initial',
     }),
     new CssUrlRelativePlugin(),
+    new webpack.SourceMapDevToolPlugin()
   ],
   devServer: {
     port: 3200,

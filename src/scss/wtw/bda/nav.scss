@@ -1,0 +1,639 @@
+.nav--head {
+  background-color: #fff;
+  border-bottom: 4px solid #00a0d2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1005;
+  
+  .wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    
+    .logo--wrapper {
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 85px;
+      margin-left: 10px;
+      max-width: 210px;
+      
+      @media (min-width: 768px) {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        max-width: initial;
+      }
+      
+      @media (min-width: 1200px) {
+        margin-left: initial;
+        max-width: initial;
+      }
+      
+      .logo--link__home {
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: block;
+        height: inherit;
+        width: 200px;
+        
+        @media(min-width: 900px) {
+          margin-right: 50px;
+        }
+      }
+    }
+    
+    .menu--wrapper {
+      margin: 1.5em 10px 0 0;
+      
+      @media(min-width: 1200px) {
+        margin-right: initial;
+      }
+      
+      .nav--menu__button {
+        
+      }
+    }
+  }
+}
+
+.es-nav {
+  background-color: $wtwWhite;
+  float: right;
+  
+  > li {
+    display: block;
+    position: relative;
+
+    // Actual tabs (as links)
+    > a {
+      border: 0px none transparent;
+      border-radius: 0;
+      color: $es-nav-base-text-color;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      
+      &:hover {
+        background-color: $es-nav-l1-hover-color;
+        color: $es-nav-l1-hover-text-color;
+        
+        > span.accent {
+          background-color: $es-nav-l1-hover-accent;
+        }
+      }
+      
+      > span {
+        &.accent {
+          display: block;
+          position: absolute;
+          height: 5px;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+        }
+        
+        &.icon-lt {
+          display: block;
+          font-size: $font-size-h2;
+          text-align: center;
+        }
+      }
+    }
+    
+    > span.badge {
+      background: $wtwMagenta;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      position: absolute;
+      right: -6px;
+      top: -6px;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    // TODO - Figure out why ScrollSpy is cannibalizing the navigation examples, e.g.: removeClass('active');
+    
+    // `.active-example` not for implementation,
+    // just a patch to fix the above-mentioned
+    // cannibalization in the docs...
+    &.active,
+    &.active-example {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $es-nav-l1-active-text-color;
+          background-color: $es-nav-l1-active-color;
+          cursor: default;
+        }
+        
+        > span.accent {
+          background-color: $es-nav-base-accent-color;
+        }
+      }
+    }
+    
+    // Open state
+    &.open {
+      border-bottom: 1px solid $es-nav-l1-active-color;
+      //z-index: 1001;
+      
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $es-nav-l1-active-text-color;
+          background-color: $es-nav-l1-active-color;
+        }
+        
+        > span.accent{
+          background-color: $es-nav-base-accent-color;
+        }
+      }
+    }
+    
+    // Disabled state
+    &.disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        background: $gray-lightest;
+      }
+    }
+    
+    > ul.dropdown-menu {
+      background-color: $es-nav-l1-active-color;
+      border: 0px transparent;
+      border-bottom: 5px solid $es-nav-base-accent-color;
+      border-radius: 0px;
+      margin: 1px 0 0;
+      min-width: 400%;
+      padding: 10px;
+      left: -300%;
+      
+      > li {
+        padding: 0 0 10px;
+        > a {
+          background-color: $es-nav-l2-color;
+          border: 1px solid $es-nav-l2-border-color;
+          color: $es-nav-l2-text-color;
+          padding: 10px;
+          position: relative;
+          
+          &:hover {
+            background-color: $es-nav-l2-hover-color;
+            color: $es-nav-l2-hover-text-color;
+          }
+          
+          > span.icon {
+            position: absolute;
+            right: 10px;
+            top: 13px;
+          }
+          
+          &.primary {
+            background-color: $software-blue;
+            border: 1px solid $software-blue;
+            color: #fff;
+            
+            &:hover {
+              background-color: #fff;
+              color: $es-nav-l2-hover-color;
+            }
+          }
+          
+          &.secondary {
+            background-color: $gray-darker;
+            border: 1px solid $gray-darker;
+            color: #fff;
+            
+            &:hover {
+              background-color: #fff;
+              border: 1px solid $es-nav-l2-hover-color;
+              color: $es-nav-l2-hover-color;
+            }
+          }
+        }
+        
+        &:last-child {
+          padding: 0;
+        }
+        
+        &.family-member {
+          clear: right;
+          padding: 15px 0 15px 10px;
+          
+          > a {
+            display: inline-block;
+            float: right;
+            margin-top: -8px;
+            padding: 7px 30px 7px 10px;
+            
+            > span.icon {
+              right: 7px;
+              top: 10px;
+            }
+          }
+          
+          &.last {
+            border-bottom: 1px solid $es-nav-l2-border-color;
+            margin-bottom: 15px;
+            padding-bottom: 25px;
+          }
+          
+          > span.shopped {
+            background-color: $software-blue;
+            border-radius: 5px;
+            color: #fff;
+            cursor: default;
+            display: inline-block;
+            float: right;
+            font-weight: normal;
+            line-height: $line-height-base;
+            margin-top: -8px;
+            padding: 7px;
+            white-space: nowrap; // prevent from randomly breaking onto new lines
+          }
+        }
+      }
+    }
+    
+    @media (min-width: $screen-sm-min) {
+      border: 1px solid $es-nav-l1-border-color;
+      border-bottom: 1px solid $software-blue;
+      float: left;
+      margin: 0 0 -1px -1px; // Make the list-items overlay previous sibling, bottom borders
+      min-width: 85px;
+    }
+    
+    @media (max-width: $screen-sm-min) {
+      width: 100%;
+      
+      > a {
+        text-align: left;
+        padding-left: 15px;
+        
+        > span.accent {
+          height: 100%;
+          width: 5px;
+        }
+        
+        > span.icon-lt {
+          display: inline-block;
+          margin-right: 10px;
+          vertical-align: -27%;
+        }
+      }
+      
+      > ul.dropdown-menu {
+        position: static;
+        float: none;
+        min-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        background-color: $es-nav-sub-light-active-color;
+        border: 0;
+        border-left: 5px solid $software-blue;
+        box-shadow: none;
+      }
+      
+      > span.badge {
+        border: none;
+        right: 15px;
+        top: 17px;
+      }
+      
+      + li {
+        border-top: 1px solid $gray-light;
+      }
+    }
+  }
+  
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @include nav-justified();
+    @include nav-tabs-justified();
+  }
+  
+  &.sub-nav {
+    float: none;
+    box-shadow: 2px 2px 5px #999;
+    
+    > li {
+      border: 0px none transparent;
+      margin: 0px;
+      
+      > a {
+        
+        &:hover {
+          background-color: $es-nav-sub-hover-color;
+        }
+      }
+      
+      // `.active-example` not for implementation
+      &.active,
+      &.active-example, {
+        
+        > a {
+          background-color: $es-nav-sub-active-color;
+          color: $white;
+          
+          &:hover > span.icon {
+            color: inherit;
+          }
+        }
+      }
+    }
+    
+    &.vertical {
+      
+      > li {
+        float: none;
+        margin: 0px;
+        
+        > a {
+          color: $software-gray-9;
+          text-align: left;
+          
+          > span[class*="chevron-"] {
+            color: #fff;
+            position: absolute;
+            right: 7px;
+            top: 33%;
+          }
+          
+          &:hover > span[class*="chevron-"] {
+            color: $es-nav-sub-hover-text-color;
+          }
+        }
+        
+        // `.active-example` not for implementation
+        &.active,
+        &.active-example {
+          > a {
+            color: $white;
+          
+            &:hover > span.icon {
+              color: inherit;
+            }
+          }
+        }
+        
+        // Disabled state
+        &.disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            background: $gray-lightest;
+            color: $gray-darker;
+            
+            > span.icon {
+              color: $gray-lightest;
+            }
+          }
+        }
+      }
+      
+      &.light {
+        > li {
+          > a {
+            border-left: 4px solid transparent;
+            color: $software-gray-9;
+            padding-left: 6px;
+            
+            &:hover,
+            &:focus {
+              border-color: $brand-primary;
+              color: $software-blue;
+              
+              > span.icon {
+                color: $software-blue;
+              }
+            }
+          }
+          
+          // `.active-example` not for implementation
+          &.active,
+          &.active-example {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $software-gray-1;
+                border-color: $magenta;
+                color: $black;
+                
+                > span.icon {
+                  color: $magenta;
+                }
+              }
+            }
+          }
+          
+          &.disabled {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-lightest;
+                border-color: transparent;
+                color: $gray-darker;
+                
+                > span.icon {
+                  color: $gray-darker;
+                }
+              }
+            }
+          }
+        }
+        
+        > .panel {
+          
+          > .panel-collapse {
+            > .panel-body {
+              > ul {
+                > li {
+                  > a {
+                    border-left: 4px solid transparent;
+                    padding-left: 32px;
+                    
+                    &.active,
+                    &:hover,
+                    &:focus {
+                      background: $software-gray-1;
+                      border-color: $magenta;
+                      color: $black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    &.horizontal {
+      margin-bottom: 15px;
+      display: flex;
+      
+      > li {
+        flex: 1;
+        
+        > a {
+          color: $software-gray-9;
+            
+          &:hover,
+          &:focus {
+            color: $software-blue;
+          }
+        }
+        
+        // `.active-example` not for implementation
+        &.active,
+        &.active-example {
+          > a {
+            color: $white;
+          }
+        }
+        
+        // Disabled state
+        &.disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            background: $gray-lightest;
+            color: $gray-darker;
+          }
+        }
+      }
+      
+      &.light {
+        > li {
+          border-bottom: 2px solid $gray;
+          
+          > a {
+            border-bottom: inherit;
+            display: block;
+            margin-bottom: -2px;
+            padding: 10px 20px 12px;
+            
+            &:hover,
+            &:focus {
+              border-bottom: 4px solid $software-blue;
+              padding-bottom: 10px;
+              color: $software-blue;
+            }
+          }
+          
+          // `.active-example` not for implementation
+          &.active,
+          &.active-example{
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $software-gray-1;
+                border-bottom: 4px solid $magenta;
+                color: $black;
+                padding-bottom: 10px;
+              }
+            }
+          }
+          
+          &.disabled {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-lightest;
+                border-bottom: 2px solid $gray;
+                color: $gray-darker;
+                padding-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    // Responsive (for mobile) styles
+    @media (max-width: $screen-sm-min) {
+      > li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $gray-light;
+        
+        > a {
+          text-align: left;
+          
+          > .icon {
+            display: none;
+          }
+        }
+        
+        &:last-child {
+          border-bottom: 0px none transparent;
+        }
+      }
+    }
+    
+    &.no-shadow {
+      box-shadow: none;
+    }
+  }
+  
+  @media (max-width: $screen-sm-min) {
+    background-color: #fff;
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  
+  &.navbar-collapse {
+    padding: 0;
+    
+    @media (max-width: $screen-sm-min) {
+      box-shadow: 2px 2px 5px #999;
+    }
+  }
+}
+
+// TODO: Delete the following section prior to public-facing implementation
+// For pocumentation/display pusposes only.
+img.placeholder {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  width: 20%;
+  max-width: 160px;
+}

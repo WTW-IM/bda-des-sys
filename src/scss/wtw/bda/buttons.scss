@@ -1,0 +1,11 @@
+@each $color, $value in $bds-theme-colors-core {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $bds-theme-colors-core {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}

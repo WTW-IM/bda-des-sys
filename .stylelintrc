@@ -1,20 +1,19 @@
 {
   "extends": [
-    "stylelint-config-twbs-bootstrap/scss"
+    "stylelint-config-standard-scss"
   ],
   "rules": {
-    "property-blacklist": [
-      "border-radius",
-      "border-top-left-radius",
-      "border-top-right-radius",
-      "border-bottom-right-radius",
-      "border-bottom-left-radius",
-      "transition"
-    ],
+    "property-blacklist": [],
     "scss/dollar-variable-default":null,
+    "color-hex-length":null,
     "declaration-colon-newline-after":null,
     "font-weight-notation":null,
+    "max-empty-lines":3,
+    "no-descending-specificity":null,
+    "number-leading-zero":null,
+    "selector-list-comma-newline-after":null,
     "value-list-comma-newline-after":null,
-    "value-list-comma-space-after":null
+    "value-list-comma-space-after":null,
+    "value-list-max-empty-lines":1
   }
 }

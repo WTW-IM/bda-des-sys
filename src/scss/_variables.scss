@@ -4,6 +4,7 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 // Brand colors - primary
 
+@import 'colors';
 
 $blue:    #00a0d2;
 $green:   #00c389;
@@ -47,7 +48,7 @@ $violet-light:     lighten($violet, 30%);
 $violet-dark:      darken($violet, 10%);
 $violet-darker:    darken($violet, 20%);
 
-// - Semantic colors ---------- 
+// - Semantic colors ----------
 $software-info:    #069;
 $software-success: #298544;
 $software-error:   #c00;
@@ -91,7 +92,7 @@ $brand-agent:          $software-warning;
 
 //Brand Primary
 $wtwViolet: $brand-primary-accent;
-$wtwBlack:  $black;    
+$wtwBlack:  $black;
 $wtwWhite:  $white;
 
 //Brand Secondary
@@ -408,7 +409,7 @@ $embed-responsive-aspect-ratios: () !default;
     url("/fonts/SourceSansPro-Regular.ttf") format("truetype"),
     url("/fonts/SourceSansPro-Regular.svg") format("svg");
 }
- 
+
 @font-face {
   font-family: "Source Sans Pro Bold";
   font-style: normal;
@@ -1258,3 +1259,5 @@ $pre-color:                         null !default;
 
 // Customize Bootstrap classes with extands below
 @import './custom';
+//@import './wtw/bda/buttons';
+//@import './wtw/bda/binaries';
