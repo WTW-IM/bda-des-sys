@@ -298,28 +298,3 @@ $bds-theme-colors-core: (
   "danger": map-get($bds-theme-colors, "danger-500"),
   "info": map-get($bds-theme-colors, "info-500"),
 );
-
-// $bds-theme-colors-core: (
-//   'states': (
-//     'name': 'default',
-//     'color': map-get($bds-theme-colors, 'gray-300')
-//   ), (
-//     'name': 'default-dark',
-//     'color': map-get($bds-theme-colors, 'gray-600')
-//   ), (
-//     'name': 'primary',
-//     'color': map-get($bds-theme-colors, 'primary-500')
-//   ), (
-//     'name': 'success',
-//     'color': map-get($bds-theme-colors, 'success-500')
-//   ), (
-//     'name': 'warning',
-//     'color': map-get($bds-theme-colors, 'warning-500')
-//   ), (
-//     'name': 'danger',
-//     'color': map-get($bds-theme-colors, 'danger-500')
-//   ), (
-//     'name': 'info',
-//     'color': map-get($bds-theme-colors, 'info-500')
-//   )
-// );
