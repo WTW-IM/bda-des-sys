@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // 50: #dcf7ff;
 // 100: #90e4ff;
 // 200: #58d7ff;
@@ -290,7 +292,7 @@ $bds-theme-colors: (
 $bds-theme-colors-core: (
   "default": map-get($bds-theme-colors, "gray-300"),
   "default-dark": map-get($bds-theme-colors, "gray-600"),
-  "primary": map-get($bds-theme-colors, "primary-500"),
+  "primary": map-get($bds-theme-colors, "blue-900"),
   "success": map-get($bds-theme-colors, "success-500"),
   "warning": map-get($bds-theme-colors, "warning-500"),
   "danger": map-get($bds-theme-colors, "danger-500"),
