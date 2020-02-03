@@ -288,7 +288,7 @@
   &.primary {
     label {
       span {
-        @extend btn-default;
+        @extend .btn-default;
 
         padding: 5px 15px;
       }
@@ -301,24 +301,24 @@
     }
 
     input[type="radio"]:checked ~ span {
-      @extend btn-primary;
+      @extend .btn-primary;
     }
 
     &.dark {
       input[type="radio"]:checked ~ span {
-        @extend btn-default-dark;
+        @extend .btn-default-dark;
       }
     }
 
     &.green {
       input[type="radio"]:checked ~ span {
-        @extend btn-success;
+        @extend .btn-success;
       }
     }
 
     &.red {
       input[type="radio"]:checked ~ span {
-        @extend btn-danger;
+        @extend .btn-danger;
       }
     }
   }
@@ -326,7 +326,7 @@
   &.secondary {
     label {
       span {
-        @extend btn-primary-alt;
+        @extend .btn-outline-primary;
       }
 
       & + label {
@@ -337,8 +337,8 @@
     }
 
     input[type="radio"]:checked ~ span {
-      @extend btn-primary-alt;
-      @extend hover;
+      @extend .btn-outline-primary;
+      //@extend .hover; // <-- todo: solve for this
     }
   }
   // &.disabled {

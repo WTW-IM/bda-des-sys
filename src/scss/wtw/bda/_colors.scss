@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // 50: #dcf7ff;
 // 100: #90e4ff;
 // 200: #58d7ff;
@@ -290,9 +292,34 @@ $bds-theme-colors: (
 $bds-theme-colors-core: (
   "default": map-get($bds-theme-colors, "gray-300"),
   "default-dark": map-get($bds-theme-colors, "gray-600"),
-  "primary": map-get($bds-theme-colors, "primary-500"),
+  "primary": map-get($bds-theme-colors, "blue-900"),
   "success": map-get($bds-theme-colors, "success-500"),
   "warning": map-get($bds-theme-colors, "warning-500"),
   "danger": map-get($bds-theme-colors, "danger-500"),
   "info": map-get($bds-theme-colors, "info-500"),
 );
+
+// $bds-theme-colors-core: (
+//   'states': (
+//     'name': 'default',
+//     'color': map-get($bds-theme-colors, 'gray-300')
+//   ), (
+//     'name': 'default-dark',
+//     'color': map-get($bds-theme-colors, 'gray-600')
+//   ), (
+//     'name': 'primary',
+//     'color': map-get($bds-theme-colors, 'primary-500')
+//   ), (
+//     'name': 'success',
+//     'color': map-get($bds-theme-colors, 'success-500')
+//   ), (
+//     'name': 'warning',
+//     'color': map-get($bds-theme-colors, 'warning-500')
+//   ), (
+//     'name': 'danger',
+//     'color': map-get($bds-theme-colors, 'danger-500')
+//   ), (
+//     'name': 'info',
+//     'color': map-get($bds-theme-colors, 'info-500')
+//   )
+// );
