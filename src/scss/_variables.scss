@@ -359,6 +359,9 @@ $line-height-lg:              2 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
+$modal-border-width:          2px !default;
+$modal-border-color:          $magenta !default;
+
 $border-radius:               .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
@@ -1083,7 +1086,7 @@ $modal-title-line-height:           $line-height-base !default;
 $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
+$modal-content-border-width:        $modal-border-width !default;
 $modal-content-border-radius:       $border-radius-lg !default;
 $modal-content-inner-border-radius: calc(#{$modal-content-border-radius} - #{$modal-content-border-width}) !default;
 $modal-content-box-shadow-xs:       $box-shadow-sm !default;
@@ -1091,7 +1094,7 @@ $modal-content-box-shadow-sm-up:    $box-shadow !default;
 
 $modal-backdrop-bg:                 $black !default;
 $modal-backdrop-opacity:            .5 !default;
-$modal-header-border-color:         $border-color !default;
+$modal-header-border-color:         $modal-border-color !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
@@ -1262,3 +1265,4 @@ $pre-color:                         null !default;
 @import './wtw/bda/colors';
 @import './wtw/bda/buttons';
 @import './wtw/bda/binaries';
+@import './_modal';
