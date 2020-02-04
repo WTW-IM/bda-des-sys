@@ -348,12 +348,13 @@ $embed-responsive-aspect-ratios: () !default;
 $font-family-sans-serif: "Source Sans Pro Regular", "Segoe UI", "Segoe", "Calibri", "Tahoma", sans-serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
+$font-family-bold:            "Source Sans Pro Bold" !default;
 // stylelint-enable value-keyword-case
 
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
-$font-size-root:              null !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-root:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              $font-size-root * 1.15 !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
@@ -497,6 +498,7 @@ $input-btn-border-width:      $border-width !default;
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
 $btn-font-family:             $input-btn-font-family !default;
+$btn-outline-font-family:     $font-family-bold !default;
 $btn-font-size:               $input-btn-font-size !default;
 $btn-line-height:             $input-btn-line-height !default;
 
