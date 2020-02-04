@@ -21,11 +21,11 @@
 // VB Secondary Colors
 // --------------------------------------------------
 .wtwGray {
-  background-color: $wtwGray;
+  background-color: map-get($bds-theme-colors, 'gray-700');
 }
 
 .wtwViolet {
-  background-color: $violet;
+  background-color: map-get($bds-theme-colors, 'violet-700');
 }
 
 
@@ -56,59 +56,34 @@
   background-color: $software-blue;
 }
 
-.bg-white {
-  background-color: $white;
-  border: 1px solid $black;
+.bg-gray-50 {
+  background-color: map-get($grays, '50');
+  border: 1px solid map-get($grays, '900');
 }
 
-.bg-software-gray-1 {
-  background-color: $software-gray-1;
-  border: 1px solid $software-gray-9;
+.bg-gray-100 {
+  background-color: map-get($grays, '100');
+  border: 1px solid map-get($grays, '700');
 }
 
-.bg-software-gray-2 {
-  background-color: $software-gray-2;
-  border: 1px solid $software-gray-8;
+.bg-gray-300 {
+  background-color: map-get($grays, '300');
+  border: 1px solid map-get($grays, '500');
 }
 
-.bg-software-gray-3 {
-  background-color: $software-gray-3;
-  border: 1px solid $software-gray-7;
+.bg-gray-500 {
+  background-color: map-get($grays, '500');
+  border: 1px solid map-get($grays, '300');
 }
 
-.bg-software-gray-4 {
-  background-color: $software-gray-4;
-  border: 1px solid $software-gray-6;
+.bg-gray-700 {
+  background-color: map-get($grays, '700');
+  border: 1px solid map-get($grays, '100');
 }
 
-.bg-software-gray-5 {
-  background-color: $software-gray-5;
-  border: 1px solid $software-gray-5;
-}
-
-.bg-software-gray-6 {
-  background-color: $software-gray-6;
-  border: 1px solid $software-gray-4;
-}
-
-.bg-software-gray-7 {
-  background-color: $software-gray-7;
-  border: 1px solid $software-gray-3;
-}
-
-.bg-software-gray-8 {
-  background-color: $software-gray-8;
-  border: 1px solid $software-gray-2;
-}
-
-.bg-software-gray-9 {
-  background-color: #444;
-  border: 1px solid $software-gray-1;
-}
-
-.bg-black {
-  background-color: $black;
-  border: 1px solid $white;
+.bg-gray-900 {
+  background-color: map-get($grays, '900');
+  border: 1px solid map-get($grays, '50');
 }
 
 
@@ -153,26 +128,6 @@
 
 .green-darker {
   background: $green-darker;
-}
-
-.gold-lightest {
-  background: $gold-lightest;
-}
-
-.gold-lighter {
-  background: $gold-lighter;
-}
-
-.gold-light {
-  background: $gold-light;
-}
-
-.gold-dark {
-  background: $gold-dark;
-}
-
-.gold-darker {
-  background: $gold-darker;
 }
 
 .magenta-lightest {

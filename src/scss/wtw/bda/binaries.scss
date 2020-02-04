@@ -17,7 +17,7 @@
       height: 25px;
       cursor: pointer;
       position: absolute;
-      border: 3px solid $software-gray-8;
+      border: 3px solid map-get($grays, '700');
       top: 0.55em;
       left: 10px;
       background: #fff;
@@ -41,7 +41,7 @@
     }
 
     &:hover .check::after {
-      border-color: $software-gray-4;
+      border-color: map-get($grays, '500');
     }
 
     input[type="checkbox"] {
@@ -68,7 +68,7 @@
   &.disabled {
     > label {
       > .check {
-        border-color: $software-gray-6;
+        border-color: map-get($grays, '700');
         cursor: not-allowed;
 
         &::after {
@@ -79,8 +79,8 @@
 
     input[type="checkbox"] {
       &:checked ~ .check {
-        background-color: $software-gray-6;
-        border-color: $software-gray-6;
+        background-color: map-get($grays, '700');
+        border-color: map-get($grays, '700');
 
         &::after {
           border-color: #fff;
@@ -104,7 +104,7 @@
 
   > .popover-link {
     border: none;
-    color: $wtwBlack;
+    color: map-get($grays, '900');
 
     &:hover {
       border: none;
@@ -143,7 +143,7 @@
     > .check {
       display: block;
       position: absolute;
-      border: 3px solid $software-gray-8;
+      border: 3px solid map-get($grays, '700');
       border-radius: 100%;
       height: 25px;
       left: 10px;
@@ -167,7 +167,7 @@
     }
 
     &:hover .check::before {
-      background-color: $software-gray-4;
+      background-color: map-get($grays, '500');
     }
 
     input[type="radio"] {
@@ -193,7 +193,7 @@
   &.disabled {
     > label {
       > .check {
-        border-color: $software-gray-6;
+        border-color: map-get($grays, '500');
 
         &::before {
           background-color: #fff;
@@ -201,7 +201,7 @@
       }
 
       input[type="radio"]:checked ~ .check::before {
-        background-color: $software-gray-6;
+        background-color: map-get($grays, '500');
       }
     }
   }
@@ -295,7 +295,7 @@
 
       & + label {
         > span {
-          border-left: 1px solid $software-gray-8;
+          border-left: 1px solid map-get($grays, '700');
         }
       }
     }
@@ -344,13 +344,13 @@
   // &.disabled {
   //   > label {
   //     > .check {
-  //       border-color: $software-gray-6;
+  //       border-color: map-get($grays, '500');
   //       &::before {
   //         background-color: #fff;
   //       }
   //     }
   //     input[type="radio"]:checked ~ .check:before {
-  //       background-color: $software-gray-6;
+  //       background-color: map-get($grays, '500');
   //     }
   //   }
   // }
@@ -380,7 +380,7 @@
     > .check {
       display: block;
       position: absolute;
-      border: 3px solid $software-gray-8;
+      border: 3px solid map-get($grays, '700');
       border-radius: 13px;
       height: 27px;
       left: 0;
@@ -391,7 +391,7 @@
       transition: border 0.25s linear, box-shadow 0.05s linear;
 
       &::before {
-        background: $software-gray-8;
+        background: map-get($grays, '700');
         display: block;
         position: absolute;
         content: '';
@@ -404,7 +404,7 @@
       }
 
       &::after {
-        color: $software-gray-8;
+        color: map-get($grays, '700');
         display: block;
         font-size: $font-size-sm;
         position: absolute;
@@ -453,28 +453,28 @@
       cursor: not-allowed;
 
       > .check {
-        border-color: $software-gray-6;
+        border-color: map-get($grays, '500');
         cursor: not-allowed;
 
         &::before {
-          background-color: $software-gray-6;
+          background-color: map-get($grays, '500');
         }
 
         &::after {
-          color: $software-gray-6;
+          color: map-get($grays, '500');
         }
       }
 
       input[type="checkbox"]:checked ~ .check {
-        border-color: $software-gray-6;
+        border-color: map-get($grays, '500');
         cursor: not-allowed;
 
         &::before {
-          background-color: $software-gray-6;
+          background-color: map-get($grays, '500');
         }
 
         &::after {
-          color: $software-gray-6;
+          color: map-get($grays, '500');
         }
       }
     }
