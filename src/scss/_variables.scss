@@ -282,6 +282,9 @@ $line-height-lg:   2 !default;
 $border-width:     1px !default;
 $border-color:     $gray-300 !default;
 
+$modal-border-width:          2px !default;
+$modal-border-color:          $magenta !default;
+
 $border-radius:    .25rem !default;
 $border-radius-lg: .3rem !default;
 $border-radius-sm: .2rem !default;
@@ -1006,7 +1009,7 @@ $modal-title-line-height:           $line-height-base !default;
 $modal-content-color:               null !default;
 $modal-content-bg:                  map-get($grays, '50') !default;
 $modal-content-border-color:        rgba(map-get($grays, '900'), .2) !default;
-$modal-content-border-width:        $border-width !default;
+$modal-content-border-width:        $modal-border-width !default;
 $modal-content-border-radius:       $border-radius-lg !default;
 $modal-content-inner-border-radius: calc(#{$modal-content-border-radius} - #{$modal-content-border-width}) !default;
 $modal-content-box-shadow-xs:       $box-shadow-sm !default;
