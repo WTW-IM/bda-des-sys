@@ -11,3 +11,9 @@
     font-family: $btn-outline-font-family;
   }
 }
+
+.btn-xs {
+  font-size: $input-btn-font-size-xs;
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+  text-transform: uppercase;
+}

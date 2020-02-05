@@ -136,4 +136,6 @@ $bds-theme-colors-core: (
   'warning': map-get($bds-theme-colors, 'warning-500'),
   'danger': map-get($bds-theme-colors, 'danger-500'),
   'info': map-get($bds-theme-colors, 'info-500'),
+  'magenta': map-get($bds-theme-colors, 'magenta-500'),
+  'violet': map-get($bds-theme-colors, 'violet-500'),
 );
