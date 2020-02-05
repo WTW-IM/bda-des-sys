@@ -43,8 +43,10 @@
   // When fading in the modal, animate it to slide down
   .modal.fade & {
     @include transition($modal-transition);
+
     transform: $modal-fade-transform;
   }
+
   .modal.show & {
     transform: $modal-show-transform;
   }
@@ -109,6 +111,7 @@
   background-color: $modal-content-bg;
   background-clip: padding-box;
   border: $modal-content-border-width solid $modal-content-border-color;
+
   @include border-radius($modal-content-border-radius);
   @include box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
@@ -138,6 +141,7 @@
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
+
   @include border-top-radius($modal-content-inner-border-radius);
 
   .close {
@@ -172,6 +176,7 @@
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
   padding: $modal-inner-padding - $modal-footer-margin-between / 2;
   border-top: none;
+
   @include border-bottom-radius($modal-content-inner-border-radius);
 
   // Place margin between footer elements
