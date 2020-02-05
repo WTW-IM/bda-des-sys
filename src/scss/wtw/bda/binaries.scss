@@ -250,6 +250,7 @@
       height: 100%;
       justify-content: center;
       text-align: center;
+      transition: background-color linear 250ms;
       width: 100%;
     }
 
@@ -327,6 +328,10 @@
     label {
       span {
         @extend .btn-outline-primary;
+
+        border: 2px solid;
+        padding-bottom: $input-btn-padding-y;
+        padding-top: $input-btn-padding-y;
       }
 
       & + label {
