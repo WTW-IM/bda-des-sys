@@ -125,6 +125,12 @@ $bds-theme-colors: (
   'info-500': #006699,
   'info-700': #003d5c,
   'info-900': #00141f,
+
+  'agent-50': #fde8de,
+  'agent-100': #fee8c4,
+  'agent-300': #fdcc8a,
+  'agent-500': #fc8d59,
+  'agent-700': #ff6310
   /*#endregion*/
 );
 
@@ -163,5 +169,3 @@ $bds-theme-btns-outline: map-merge(
   ),
   $bds-theme-semantic
 );
-
-@debug $bds-theme-btns;
