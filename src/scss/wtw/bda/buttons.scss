@@ -7,5 +7,32 @@
 @each $state, $color in $bds-theme-btns-outline {
   .btn-outline-#{$state} {
     @include button-outline-variant($color);
+
+    font-family: $btn-outline-font-family;
+  }
+}
+
+.btn-xs {
+  font-size: $input-btn-font-size-xs;
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+  text-transform: uppercase;
+}
+
+.btn-group {
+  > .btn {
+    & + .btn {
+      border-left: 1px solid map-get($grays, '500');
+    }
+
+    &.btn-danger + .btn-danger { border-left-color: map-get($bds-theme-colors, 'danger-900'); }
+    &.btn-info + .btn-info { border-left-color: map-get($bds-theme-colors, 'info-900'); }
+    &.btn-primary + .btn-primary { border-left-color: darken(map-get($bds-theme-colors, 'blue-900'), 20%); }
+    &.btn-success + .btn-success { border-left-color: map-get($bds-theme-colors, 'success-900'); }
+    &.btn-warning + .btn-warning { border-left-color: map-get($bds-theme-colors, 'warning-900'); }
+
+    & + .dropdown-toggle {
+      padding-left: $input-btn-padding-y;
+      padding-right: $input-btn-padding-y * 1.75;
+    }
   }
 }
