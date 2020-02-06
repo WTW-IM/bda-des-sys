@@ -34,13 +34,13 @@ $violet-dark:      map-get($bds-theme-colors, 'violet-700');
 $violet-darker:    map-get($bds-theme-colors, 'violet-900');
 
 // - Semantic colors ----------
-$software-info:    map-get($bds-theme-colors-core, 'info');
-$software-success: map-get($bds-theme-colors-core, 'success');
-$software-error:   map-get($bds-theme-colors-core, 'danger');
-$software-warning: map-get($bds-theme-colors-core, 'warning');
+$software-info:    map-get($bds-theme-semantic, 'info');
+$software-success: map-get($bds-theme-semantic, 'success');
+$software-error:   map-get($bds-theme-semantic, 'danger');
+$software-warning: map-get($bds-theme-semantic, 'warning');
 
 // - Other UI-Related colors --
-$software-blue:    map-get($bds-theme-colors-core, 'primary');
+$software-blue:    map-get($bds-theme-btns, 'primary');
 $software-focus:   #83bffc;
 $light-gray:       #d8dbd8;
 $light-violet:     #d8d7df;
