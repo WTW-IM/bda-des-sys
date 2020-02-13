@@ -138,9 +138,7 @@ $bds-theme-semantic: (
   'success': map-get($bds-theme-colors, 'success-500'),
   'warning': map-get($bds-theme-colors, 'warning-500'),
   'danger': map-get($bds-theme-colors, 'danger-500'),
-  'info': map-get($bds-theme-colors, 'info-500'),
-  'magenta': map-get($bds-theme-colors, 'magenta-500'),
-  'violet': map-get($bds-theme-colors, 'violet-500'),
+  'info': map-get($bds-theme-colors, 'info-500')
 );
 
 $bds-theme-semantic-extended: map-merge(
@@ -167,7 +165,7 @@ $bds-theme-btns-outline: map-merge(
     'default': map-get($bds-theme-colors, 'gray-700'),
     'primary': map-get($bds-theme-colors, 'blue-900'),
     'magenta': map-get($bds-theme-colors, 'magenta-500'),
-    'violet': map-get($bds-theme-colors, 'violet-500'),
+    'violet': map-get($bds-theme-colors, 'violet-500')
   ),
   $bds-theme-semantic
 );

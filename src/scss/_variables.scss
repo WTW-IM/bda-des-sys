@@ -1192,6 +1192,7 @@ $pre-color:                         null !default;
 
 // Customize Bootstrap classes with extands below
 @import './custom';
+@import './wtw/bda/functions';
 @import './wtw/bda/buttons';
 @import './wtw/bda/binaries';
 @import './wtw/bda/modals';
