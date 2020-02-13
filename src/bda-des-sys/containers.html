@@ -126,7 +126,7 @@
 
   <div class="bs-example" data-example-id="full-alerts">
     <p>With only one call-to-action:</p>
-    <div class="alert alert-success alert-cta indented" role="alert">
+    <div class="alert alert-success--cta indented" role="alert">
       <span class="icon ok-circle" aria-hidden="true"></span>
       <strong>Success!</strong>
       <p>Now you need to do something else.</p>
@@ -136,7 +136,7 @@
     </div>
 
     <p>With primary and secondary calls-to-action:</p>
-    <div class="alert alert-warning alert-cta indented" role="alert">
+    <div class="alert alert-warning--cta indented" role="alert">
       <span class="icon exclamation-sign" aria-hidden="true"></span>
       <strong>You have an important decision to make</strong>
       <p>You can do one thing, or the other.</p>
@@ -150,35 +150,35 @@
   <h4 id="alerts-buttons">Alerts with buttons</h4>
   <p>Thanks to a font-based icon set, adding icons is as easy as including them before any text.</p>
   <div class="bs-example" data-example-id="simple-alerts">
-    <div class="alert alert-success alert-cta" role="alert">
+    <div class="alert alert-success--cta" role="alert">
       <p><span class="icon ok-circle" aria-hidden="true"></span> <strong>Well done!</strong> You successfully read this important alert message.</p>
       <span class="btn-row">
         <button type="button" class="btn btn-primary">Hooray!</button>
       </span>
     </div>
     <br clear="both"/>
-    <div class="alert alert-info alert-cta" role="alert">
+    <div class="alert alert-info--cta" role="alert">
       <p><span class="icon info-circle" aria-hidden="true"></span> <strong>Hey there!</strong> This alert needs your attention, but it's not super important.</p>
       <span class="btn-row">
         <button type="button" class="btn btn-primary">Hey, thanks!</button>
       </span>
     </div>
     <br clear="both"/>
-    <div class="alert alert-warning alert-cta" role="alert">
+    <div class="alert alert-warning--cta" role="alert">
       <p><span class="icon exclamation-sign" aria-hidden="true"></span> <strong>Warning!</strong> Better check yourself, you're not looking too good.</p>
       <span class="btn-row">
         <button type="button" class="btn btn-primary">Thanks for the heads-up!</button>
       </span>
     </div>
     <br clear="both"/>
-    <div class="alert alert-danger alert-cta" role="alert">
+    <div class="alert alert-danger--cta" role="alert">
       <p><span class="icon exclamation-circle" aria-hidden="true"></span> <strong>Oh snap!</strong> Change a few things up and try submitting again.</p>
       <span class="btn-row">
         <button type="button" class="btn btn-primary">Oh snap, indeed!</button>
       </span>
     </div>
     <br clear="both"/>
-    <div class="alert alert-agent alert-cta" role="alert">
+    <div class="alert alert-agent--cta" role="alert">
       <p><span class="icon agent" aria-hidden="true"></span> <strong>Message to agent:</strong> Read the following text to the customer before proceeding.</p>
       <span class="btn-row">
         <button type="button" class="btn btn-primary">Sir! Yes, sir!</button>
@@ -251,39 +251,25 @@
   <p>Use Light Alerts when you don't need to be quite so bold with your message.</p>
 
   <div class="bs-example" data-example-id="dismissible-alert-css">
-    <div class="alert alert-success-light indented" role="alert">
+    <div class="alert alert-success--light indented" role="alert">
       <span class="icon ok-circle" aria-hidden="true"></span>
       <strong>Well done!</strong>
       <p>You successfully read this important alert message.</p>
     </div>
-    <div class="alert alert-info-light indented" role="alert">
+    <div class="alert alert-info--light indented" role="alert">
       <span class="icon info-circle" aria-hidden="true"></span>
       <strong>Hey there!</strong>
       <p>This alert needs your attention, but it's not super important.</p>
     </div>
-    <div class="alert alert-warning-light indented" role="alert">
+    <div class="alert alert-warning--light indented" role="alert">
       <span class="icon exclamation-sign" aria-hidden="true"></span>
       <strong>Warning!</strong>
       <p>Better check yourself, you're not looking too good.</p>
     </div>
-    <div class="alert alert-danger-light indented" role="alert">
+    <div class="alert alert-danger--light indented" role="alert">
       <span class="icon exclamation-circle" aria-hidden="true"></span>
       <strong>Oh snap!</strong>
       <p>Change a few things up and try submitting again.</p>
-    </div>
-  </div>
-
-  <h5 id="alerts-light-cta">Light alerts with calls-to-action</h4>
-  <p>Note that the "button row" returns to within the colored background on light alerts.</p>
-
-  <div class="bs-example" data-example-id="dismissible-alert-css">
-    <div class="alert alert-cta alert-success-light indented" role="alert">
-      <span class="icon ok-circle" aria-hidden="true"></span>
-      <strong>Well done!</strong>
-      <p>You successfully read this important alert message.</p>
-      <span class="btn-row">
-        <button type="button" class="btn btn-primary">But you should do this</button> <button type="button" class="btn btn-default-dark">You can do this</button>
-      </span>
     </div>
   </div>
 
@@ -291,19 +277,19 @@
   <p>Use Alert Messages when you need to provide some feedback, and the other variants just seem like too much.</p>
 
   <div class="bs-example" data-example-id="dismissible-alert-css">
-    <div class="alert alert-success-msg" role="alert">
+    <div class="alert alert-success--msg" role="alert">
       <span class="icon ok-circle" aria-hidden="true"></span>
       <strong>You successfully read this important alert message.</strong>
     </div>
-    <div class="alert alert-info-msg" role="alert">
+    <div class="alert alert-info--msg" role="alert">
       <span class="icon info-circle" aria-hidden="true"></span>
       <strong>This alert needs your attention, but it's not super important.</strong>
     </div>
-    <div class="alert alert-warning-msg" role="alert">
+    <div class="alert alert-warning--msg" role="alert">
       <span class="icon exclamation-sign" aria-hidden="true"></span>
       <strong>Better check yourself, you're not looking too good.</strong>
     </div>
-    <div class="alert alert-danger-msg" role="alert">
+    <div class="alert alert-danger--msg" role="alert">
       <span class="icon exclamation-circle" aria-hidden="true"></span>
       <strong>Change a few things up and try submitting again.</strong>
     </div>

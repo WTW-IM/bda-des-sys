@@ -1057,6 +1057,8 @@ $alert-bg-level:                    -10 !default;
 $alert-border-level:                -9 !default;
 $alert-color-level:                 6 !default;
 
+$alert-msg-font-family:             $font-family-bold;
+
 
 // Progress bars
 
@@ -1194,5 +1196,6 @@ $pre-color:                         null !default;
 @import './custom';
 @import './wtw/bda/functions';
 @import './wtw/bda/buttons';
+@import './wtw/bda/alerts';
 @import './wtw/bda/binaries';
 @import './wtw/bda/modals';

@@ -1,0 +1,124 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  @include clearfix;
+
+  border: none;
+  position: relative;
+
+  > p {
+    > a {
+      &,
+      &:hover,
+      &:active,
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  &.indented {
+    padding-left: ($alert-padding * 3.5);
+    padding-top: ($alert-padding * 1.4);
+
+    > span.icon {
+      left: $alert-padding;
+      font-size: 28px;
+      position: absolute;
+      top: ($alert-padding * 1.2);
+    }
+
+    > strong {
+      display: block;
+    }
+
+    // So we can still properly bold text within messages... XD
+    > p {
+      > strong {
+        display: inline;
+      }
+
+      .popover-link {
+        border-color: $white;
+        color: inherit;
+      }
+    }
+  }
+
+  &.alert-cta {
+    margin-bottom: 65px;
+
+    .btn-row {
+      position: absolute;
+      bottom: -50px;
+      right: 0;
+      width: 100%;
+
+      > button.btn {
+        display: block;
+        float: right;
+
+        //&.btn-primary {
+        &:first-of-type {
+          margin-left: $alert-padding;
+        }
+      }
+    }
+
+    &.alert-success-light,
+    &.alert-info-light,
+    &.alert-warning-light,
+    &.alert-danger-light {
+      > p {
+        > a {
+          &,
+          &:hover,
+          &:active,
+          &:visited {
+            color: $software-blue;
+          }
+        }
+      }
+
+      .btn-row {
+        @include clearfix;
+
+        display: block;
+        margin-top: 15px;
+        position: static;
+      }
+    }
+  }
+}
+
+// Dismissible alerts
+//
+// Override to accommodate changes compatible with the "bold" alert style
+
+.alert-dismissible {
+  padding-right: ($alert-padding + 20);
+
+  // Adjust close link position
+  .close {
+    color: $white;
+    opacity: 0.8;
+    text-shadow: none;
+    top: 0;
+
+    &:hover {
+      color: $white;
+      opacity: 0.4;
+    }
+  }
+}
+
+
+// Alternate styles
+//
+// Nothing new here. See "alert.scss" for styles.
