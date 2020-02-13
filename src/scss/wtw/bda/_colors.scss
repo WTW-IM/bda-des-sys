@@ -171,3 +171,26 @@ $bds-theme-btns-outline: map-merge(
   ),
   $bds-theme-semantic
 );
+
+$bds-theme-alerts: (
+  'agent': (
+    'full': map-get($bds-theme-colors, 'agent-700'),
+    'light': map-get($bds-theme-colors, 'agent-500')
+  ),
+  'danger': (
+    'full': map-get($bds-theme-colors, 'danger-500'),
+    'light': map-get($bds-theme-colors, 'danger-100')
+  ),
+  'info': (
+    'full': map-get($bds-theme-colors, 'info-500'),
+    'light': map-get($bds-theme-colors, 'info-100')
+  ),
+  'success': (
+    'full': map-get($bds-theme-colors, 'success-500'),
+    'light': map-get($bds-theme-colors, 'success-100')
+  ),
+  'warning': (
+    'full': map-get($bds-theme-colors, 'warning-500'),
+    'light': map-get($bds-theme-colors, 'warning-100')
+  )
+);
