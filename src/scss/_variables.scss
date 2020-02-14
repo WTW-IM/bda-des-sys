@@ -314,37 +314,39 @@ $embed-responsive-aspect-ratios: () !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
+$type-path: '/assets/fonts/';
+
 @font-face {
   font-family: "Source Sans Pro Light";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Light.eot");
-  src: url("/fonts/SourceSansPro-Light.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Light.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Light.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Light.svg") format("svg");
+  src: url("#{$type-path}SourceSansPro-Light.eot");
+  src: url("#{$type-path}SourceSansPro-Light.eot") format("embedded-opentype"),
+    url("#{$type-path}SourceSansPro-Light.otf.woff") format("woff"),
+    url("#{$type-path}SourceSansPro-Light.ttf") format("truetype"),
+    url("#{$type-path}SourceSansPro-Light.svg") format("svg");
 }
 
 @font-face {
   font-family: "Source Sans Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Regular.eot");
-  src: url("/fonts/SourceSansPro-Regular.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Regular.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Regular.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Regular.svg") format("svg");
+  src: url("#{$type-path}SourceSansPro-Regular.eot");
+  src: url("#{$type-path}SourceSansPro-Regular.eot") format("embedded-opentype"),
+    url("#{$type-path}SourceSansPro-Regular.otf.woff") format("woff"),
+    url("#{$type-path}SourceSansPro-Regular.ttf") format("truetype"),
+    url("#{$type-path}SourceSansPro-Regular.svg") format("svg");
 }
 
 @font-face {
   font-family: "Source Sans Pro Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Bold.eot");
-  src: url("/fonts/SourceSansPro-Bold.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Bold.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Bold.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Bold.svg") format("svg");
+  src: url("#{$type-path}SourceSansPro-Bold.eot");
+  src: url("#{$type-path}SourceSansPro-Bold.eot") format("embedded-opentype"),
+    url("#{$type-path}SourceSansPro-Bold.otf.woff") format("woff"),
+    url("#{$type-path}SourceSansPro-Bold.ttf") format("truetype"),
+    url("#{$type-path}SourceSansPro-Bold.svg") format("svg");
 }
 
 // stylelint-disable value-keyword-case
