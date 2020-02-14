@@ -321,8 +321,7 @@ $embed-responsive-aspect-ratios: () !default;
   src: url("/fonts/SourceSansPro-Light.eot");
   src: url("/fonts/SourceSansPro-Light.eot") format("embedded-opentype"),
     url("/fonts/SourceSansPro-Light.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Light.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Light.svg") format("svg");
+    url("/fonts/SourceSansPro-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -332,8 +331,7 @@ $embed-responsive-aspect-ratios: () !default;
   src: url("/fonts/SourceSansPro-Regular.eot");
   src: url("/fonts/SourceSansPro-Regular.eot") format("embedded-opentype"),
     url("/fonts/SourceSansPro-Regular.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Regular.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Regular.svg") format("svg");
+    url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -343,8 +341,7 @@ $embed-responsive-aspect-ratios: () !default;
   src: url("/fonts/SourceSansPro-Bold.eot");
   src: url("/fonts/SourceSansPro-Bold.eot") format("embedded-opentype"),
     url("/fonts/SourceSansPro-Bold.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Bold.ttf") format("truetype"),
-    url("/fonts/SourceSansPro-Bold.svg") format("svg");
+    url("/fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 // stylelint-disable value-keyword-case
