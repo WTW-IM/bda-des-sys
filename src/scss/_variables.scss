@@ -314,7 +314,7 @@ $embed-responsive-aspect-ratios: () !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$type-path: '/assets/fonts/';
+$type-path: '../assets/fonts/';
 
 @font-face {
   font-family: "Source Sans Pro Light";
@@ -323,8 +323,7 @@ $type-path: '/assets/fonts/';
   src: url("#{$type-path}SourceSansPro-Light.eot");
   src: url("#{$type-path}SourceSansPro-Light.eot") format("embedded-opentype"),
     url("#{$type-path}SourceSansPro-Light.otf.woff") format("woff"),
-    url("#{$type-path}SourceSansPro-Light.ttf") format("truetype"),
-    url("#{$type-path}SourceSansPro-Light.svg") format("svg");
+    url("#{$type-path}SourceSansPro-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -334,8 +333,7 @@ $type-path: '/assets/fonts/';
   src: url("#{$type-path}SourceSansPro-Regular.eot");
   src: url("#{$type-path}SourceSansPro-Regular.eot") format("embedded-opentype"),
     url("#{$type-path}SourceSansPro-Regular.otf.woff") format("woff"),
-    url("#{$type-path}SourceSansPro-Regular.ttf") format("truetype"),
-    url("#{$type-path}SourceSansPro-Regular.svg") format("svg");
+    url("#{$type-path}SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -345,8 +343,7 @@ $type-path: '/assets/fonts/';
   src: url("#{$type-path}SourceSansPro-Bold.eot");
   src: url("#{$type-path}SourceSansPro-Bold.eot") format("embedded-opentype"),
     url("#{$type-path}SourceSansPro-Bold.otf.woff") format("woff"),
-    url("#{$type-path}SourceSansPro-Bold.ttf") format("truetype"),
-    url("#{$type-path}SourceSansPro-Bold.svg") format("svg");
+    url("#{$type-path}SourceSansPro-Bold.ttf") format("truetype");
 }
 
 // stylelint-disable value-keyword-case
