@@ -1,6 +1,6 @@
 //
-// OneExchange Checkboxes and Radios
-// --------------------------------------------------
+// BDS Binary Controls - Checkboxes, Radios, & Switches
+// -----------------------------------------------------
 
 .chckbx {
   margin: 0 auto 10px;
@@ -415,7 +415,7 @@
         position: absolute;
         right: 5px;
         text-transform: uppercase;
-        top: 3px;
+        top: -1.5px;
         content: 'off';
       }
     }
@@ -441,7 +441,7 @@
           position: absolute;
           left: 5px;
           text-transform: uppercase;
-          top: 3px;
+          top: -1.5px;
           content: 'on';
         }
       }
@@ -492,51 +492,84 @@
 
 .has-success {
   .answr-grp,
+  &.answr-grp,
   .chckbx,
+  &.chckbx,
   .rd-o,
-  .swtch {
+  &.rd-o,
+  .swtch,
+  &.swtch {
     .check {
       border-color: $software-success;
     }
   }
 
-  .swtch {
-    .check::before {
-      background: $software-success;
+  .swtch,
+  &.swtch {
+    .check {
+      &::before {
+        background: $software-success;
+      }
+
+      &::after {
+        color: $software-success;
+      }
     }
   }
 }
 
 .has-warning {
   .answr-grp,
+  &.answr-grp,
   .chckbx,
+  &.chckbx,
   .rd-o,
-  .swtch {
+  &.rd-o,
+  .swtch,
+  &.swtch {
     .check {
       border-color: $software-warning;
     }
   }
 
-  .swtch {
-    .check::before {
-      background: $software-warning;
+  .swtch,
+  &.swtch {
+    .check {
+      &::before {
+        background: $software-warning;
+      }
+
+      &::after {
+        color: $software-warning;
+      }
     }
   }
 }
 
 .has-error {
   .answr-grp,
+  &.answr-grp,
   .chckbx,
+  &.chckbx,
   .rd-o,
-  .swtch {
+  &.rd-o,
+  .swtch,
+  &.swtch {
     .check {
       border-color: $software-error;
     }
   }
 
-  .swtch {
-    .check::before {
-      background: $software-error;
+  .swtch,
+  &.swtch {
+    .check {
+      &::before {
+        background: $software-error;
+      }
+
+      &::after {
+        color: $software-error;
+      }
     }
   }
 }
