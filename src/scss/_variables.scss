@@ -74,14 +74,14 @@ $danger:    $software-error;
 $colors: ();
 $colors: map-merge(
   (
-    "primary":   $primary,
-    "secondary": $secondary,
-    "success":   $success,
-    "info":      $info,
-    "warning":   $warning,
-    "danger":    $danger,
-    "light":     $light,
-    "dark":      $dark
+    'primary':   $primary,
+    'secondary': $secondary,
+    'success':   $success,
+    'info':      $info,
+    'warning':   $warning,
+    'danger':    $danger,
+    'light':     $light,
+    'dark':      $dark
   ),
   $colors
 );
@@ -89,14 +89,14 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    'primary':    $primary,
+    'secondary':  $secondary,
+    'success':    $success,
+    'info':       $info,
+    'warning':    $warning,
+    'danger':     $danger,
+    'light':      $light,
+    'dark':       $dark
   ),
   $theme-colors
 );
@@ -131,14 +131,14 @@ $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    'primary':    $primary,
+    'secondary':  $secondary,
+    'success':    $success,
+    'info':       $info,
+    'warning':    $warning,
+    'danger':     $danger,
+    'light':      $light,
+    'dark':       $dark
   ),
   $colors
 );
@@ -152,9 +152,9 @@ $yiq-text-light:            map-get($grays, '50') !default;
 
 // Characters which are escaped by the escape-svg function
 $escaped-characters: (
-  ("<","%3c"),
-  (">","%3e"),
-  ("#","%23"),
+  ('<','%3c'),
+  ('>','%3e'),
+  ('#','%23'),
 ) !default;
 
 // Options
@@ -315,40 +315,43 @@ $embed-responsive-aspect-ratios: () !default;
 // Font, line-height, and color for body text, headings, and more.
 
 @font-face {
-  font-family: "Source Sans Pro Light";
+  font-family: 'Source Sans Pro Light';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Light.eot");
-  src: url("/fonts/SourceSansPro-Light.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Light.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Light.ttf") format("truetype");
+  src: url('/fonts/SourceSansPro-Light.eot');
+  src: url('/fonts/SourceSansPro-Light.eot') format('embedded-opentype'),
+    url('/fonts/SourceSansPro-Light.otf.woff') format('woff'),
+    url('/fonts/SourceSansPro-Light.ttf') format('truetype'),
+    url('/fonts/SourceSansPro-Light.svg') format('svg');
 }
 
 @font-face {
-  font-family: "Source Sans Pro Regular";
+  font-family: 'Source Sans Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Regular.eot");
-  src: url("/fonts/SourceSansPro-Regular.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Regular.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  src: url('/fonts/SourceSansPro-Regular.eot');
+  src: url('/fonts/SourceSansPro-Regular.eot') format('embedded-opentype'),
+    url('/fonts/SourceSansPro-Regular.otf.woff') format('woff'),
+    url('/fonts/SourceSansPro-Regular.ttf') format('truetype'),
+    url('/fonts/SourceSansPro-Regular.svg') format('svg');
 }
 
 @font-face {
-  font-family: "Source Sans Pro Bold";
+  font-family: 'Source Sans Pro Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/SourceSansPro-Bold.eot");
-  src: url("/fonts/SourceSansPro-Bold.eot") format("embedded-opentype"),
-    url("/fonts/SourceSansPro-Bold.otf.woff") format("woff"),
-    url("/fonts/SourceSansPro-Bold.ttf") format("truetype");
+  src: url('/fonts/SourceSansPro-Bold.eot');
+  src: url('/fonts/SourceSansPro-Bold.eot') format('embedded-opentype'),
+    url('/fonts/SourceSansPro-Bold.otf.woff') format('woff'),
+    url('/fonts/SourceSansPro-Bold.ttf') format('truetype'),
+    url('/fonts/SourceSansPro-Bold.svg') format('svg');
 }
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Source Sans Pro Regular", "Segoe UI", "Segoe", "Calibri", "Tahoma", sans-serif;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif: 'Source Sans Pro Regular', 'Segoe UI', 'Segoe', 'Calibri', 'Tahoma', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
-$font-family-bold:            "Source Sans Pro Bold" !default;
+$font-family-bold:            'Source Sans Pro Bold' !default;
 // stylelint-enable value-keyword-case
 
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
@@ -427,6 +430,24 @@ $list-inline-padding:         .5rem !default;
 $mark-bg:                     #fcf8e3 !default;
 
 $hr-margin-y:                 $spacer !default;
+
+
+// Icons
+//
+// BDA Functional Icon Typeface
+
+@font-face {
+  font-family: 'BDS Functional Icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/indv-mkt-icons.eot');
+  src: url('/fonts/indv-mkt-icons.eot') format('embedded-opentype'),
+    url('/fonts/indv-mkt-icons.woff') format('woff'),
+    url('/fonts/indv-mkt-icons.ttf') format('truetype'),
+    url('/fonts/indv-mkt-icons.svg') format('svg');
+}
+
+$icon-font-face: 'BDS Functional Icons';
 
 
 // Tables
@@ -750,13 +771,13 @@ $form-validation-states: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $form-validation-states: map-merge(
   (
-    "valid": (
-      "color": $form-feedback-valid-color,
-      "icon": $form-feedback-icon-valid
+    'valid': (
+      'color': $form-feedback-valid-color,
+      'icon': $form-feedback-icon-valid
     ),
-    "invalid": (
-      "color": $form-feedback-invalid-color,
-      "icon": $form-feedback-icon-invalid
+    'invalid': (
+      'color': $form-feedback-invalid-color,
+      'icon': $form-feedback-icon-invalid
     ),
   ),
   $form-validation-states
@@ -1054,6 +1075,8 @@ $alert-bg-level:                    -10 !default;
 $alert-border-level:                -9 !default;
 $alert-color-level:                 6 !default;
 
+$alert-msg-font-family:             $font-family-bold;
+
 
 // Progress bars
 
@@ -1121,7 +1144,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     map-get($grays, '300') !default;
 $breadcrumb-divider-color:          map-get($grays, '700') !default;
 $breadcrumb-active-color:           map-get($grays, '700') !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote('/') !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
 
@@ -1185,11 +1208,13 @@ $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Customize Bootstrap classes with extands below
 @import './custom';
 @import './wtw/bda/functions';
+@import './wtw/bda/icons';
 @import './wtw/bda/buttons';
+@import './wtw/bda/alerts';
 @import './wtw/bda/binaries';
 @import './wtw/bda/modals';
