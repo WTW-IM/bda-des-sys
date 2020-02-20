@@ -17,3 +17,27 @@
     font-family: $alert-msg-font-family;
   }
 }
+
+.alert {
+  @extend .clearfix;
+
+  strong {
+    font-family: $font-family-bold;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .btn-row > .btn {
+    float: right;
+
+    + .btn {
+      margin-right: .75rem;
+    }
+  }
+
+  &.alert-agent {
+    color: map-get($grays, '900');
+  }
+}
