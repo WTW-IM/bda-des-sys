@@ -5,8 +5,10 @@
   "rules": {
     "property-blacklist": [],
     "scss/dollar-variable-default":null,
+    "at-rule-empty-line-before":null,
     "color-hex-length":null,
     "declaration-colon-newline-after":null,
+    "declaration-empty-line-before":null,
     "font-weight-notation":null,
     "max-empty-lines":3,
     "no-descending-specificity":null,
