@@ -1485,9 +1485,7 @@
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Conveying validation state to assistive technologies and colorblind users</h4>
             <p>Using these validation styles to denote the state of a form control only provides a visual, color-based indication, which will not be conveyed to users of assistive technologies - such as screen readers - or to colorblind users.</p>
-            <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include an
-              <a href="/media/#icons">icon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="/media/#glyphicons-examples">icon use examples</a>), or by providing an additional <a
-                href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
+            <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include an <a href="/media/#icons">icon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="/media/#glyphicons-examples">icon use examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
           </div>
 
           <div class="bs-example" data-example-id="form-validation-states">
@@ -1495,31 +1493,41 @@
               <div class="form-group is-valid">
                 <label class="control-label" for="inputSuccess2">Input with success</label>
                 <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccessStatus">
-                <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                <span id="inputSuccessStatus" class="sr-only">(success)</span>
+                <div class="valid-feedback">
+                  <span class="icon ok" aria-hidden="true"></span>
+                  <span id="inputSuccessStatus">This checks out!</span>
+                </div>
               </div>
               <div class="form-group has-warning">
                 <label class="control-label" for="inputWarning2">Input with warning</label>
                 <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarningStatus">
-                <span class="icon warning-sign form-control-feedback" aria-hidden="true"></span>
-                <span id="inputWarningStatus" class="help-block"><span class="sr-only">(warning)</span> A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <div class="warning-feedback">
+                  <span class="icon warning-sign" aria-hidden="true"></span>
+                  <span id="inputWarningStatus"><span class="sr-only">(warning)</span> A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                </div>
               </div>
               <div class="form-group is-invalid">
                 <label class="control-label" for="inputError2">Input with error</label>
                 <input type="text" class="form-control" id="inputError2" aria-describedby="inputErrorStatus">
-                <span class="icon remove form-control-feedback" aria-hidden="true"></span>
-                <span id="inputErrorStatus" class="help-block"><span class="sr-only">(error)</span> A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <div class="invalid-feedback">
+                  <span class="icon exclamation-sign" aria-hidden="true"></span>
+                  <span id="inputErrorStatus">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                </div>
               </div>
               <div class="form-group is-valid">
                 <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
                 <div class="input-group">
-                  <span class="input-group-addon">@</span>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  </div>
                   <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccessStatus">
                 </div>
-                <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                <div class="valid-feedback">
+                  <span class="icon ok" aria-hidden="true"></span>
+                  <span id="inputGroupSuccess1Status">Username is available!</span>
+                </div>
               </div>
-              <div class="has-success">
+              <div class="is-valid">
                 <div class="checkbox chckbx">
                   <label>
                     <input type="checkbox" id="checkboxSuccess" value="option1">
@@ -1535,7 +1543,9 @@
                     Checkbox with warning
                     <span class="check"></span>
                   </label>
-                  <span id="warningHelp2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                  <div id="warningHelp2" class="warning-feedback">
+                    A block of help text that breaks onto a new line and may extend beyond one line.
+                  </div>
                 </div>
               </div>
               <div class="is-invalid">
@@ -1545,7 +1555,7 @@
                     Checkbox with error
                     <span class="check"></span>
                   </label>
-                  <span id="errorHelp" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                  <div id="errorHelp" class="invalid-feedback">A block of help text that breaks onto a new line and may extend beyond one line.</div>
                 </div>
               </div>
             </form>
@@ -1554,23 +1564,29 @@
           <h5>Optional icons in horizontal and inline forms</h5>
           <div class="bs-example" data-example-id="horizontal-form-validation-state-with-icon">
             <form class="form-horizontal">
-              <div class="form-group is-valid">
+              <div class="form-group row is-valid">
                 <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
                 <div class="col-sm-9">
                   <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-                  <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                  <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                  <div class="valid-feedback">
+                    <span class="icon ok" aria-hidden="true"></span>
+                    <span id="inputSuccess3Status">Input is valid</span>
+                  </div>
                 </div>
               </div>
-              <div class="form-group is-valid">
+              <div class="form-group row is-valid">
                 <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
                 <div class="col-sm-9">
                   <div class="input-group">
-                    <span class="input-group-addon">@</span>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    </div>
                     <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                   </div>
-                  <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                  <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
+                  <div class="valid-feedback">
+                    <span class="icon ok form-control-feedback" aria-hidden="true"></span>
+                    <span id="inputGroupSuccess2Status">Success.</span>
+                  </div>
                 </div>
               </div>
             </form>
@@ -1578,23 +1594,31 @@
 
           <div class="bs-example" data-example-id="inline-form-validation-state-with-icon">
             <form class="form-inline">
-              <div class="form-group is-valid">
-                <label class="control-label" for="inputSuccess4">Input with success</label>
-                <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
-                <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                <span id="inputSuccess4Status" class="sr-only">(success)</span>
+              <div class="form-group row is-valid">
+                <label class="control-label col-md-4" for="inputSuccess4">Input with success</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+                  <div class="valid-feedback">
+                    <span class="icon ok" aria-hidden="true"></span>
+                    <span id="inputSuccess4Status">Yay!</span>
+                  </div>
+                </div>
               </div>
             </form>
             <br>
             <form class="form-inline">
-              <div class="form-group is-valid">
-                <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
-                <div class="input-group">
-                  <span class="input-group-addon">@</span>
+              <div class="form-group row is-valid">
+                <label class="control-label col-md-4" for="inputGroupSuccess3">Input group with success</label>
+                <div class="input-group col-md-8">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  </div>
                   <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+                  <div class="valid-feedback">
+                    <span class="icon ok form-control-feedback" aria-hidden="true"></span>
+                    <span id="inputGroupSuccess3Status">Huzzah!</span>
+                  </div>
                 </div>
-                <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-                <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
               </div>
             </form>
           </div>
@@ -1606,17 +1630,23 @@
             <div class="form-group is-valid">
               <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
               <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
-              <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputSuccess5Status" class="sr-only">(success)</span>
+              <div class="valid-feedback">
+                <span class="icon ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputSuccess5Status">Nice work!</span>
+              </div>
             </div>
             <div class="form-group is-valid">
               <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
               <div class="input-group">
-                <span class="input-group-addon">@</span>
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                </div>
                 <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
               </div>
-              <span class="icon ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+              <div class="valid-feedback">
+                <span class="icon ok" aria-hidden="true"></span>
+                <span id="inputGroupSuccess4Status">Dope.</span>
+              </div>
             </div>
           </div>
 
