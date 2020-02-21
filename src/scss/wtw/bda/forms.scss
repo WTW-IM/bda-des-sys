@@ -49,5 +49,22 @@ label {
   }
 }
 
+.has-warning {
+  label {
+    color: $software-warning;
+  }
+
+  .form-control {
+    border-color: $software-warning;
+  }
+
+  .warning-feedback {
+    @extend .valid-feedback;
+    clear: left;
+    color: $software-warning;
+    display: block;
+  }
+}
+
 // Import additional form components
 @import 'forms/sliders';
