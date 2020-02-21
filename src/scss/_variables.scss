@@ -974,8 +974,8 @@ $popover-border-radius:             $border-radius-lg !default;
 $popover-inner-border-radius:       calc(#{$popover-border-radius} - #{$popover-border-width}) !default;
 $popover-box-shadow:                $box-shadow !default;
 
-$popover-header-bg:                 darken($popover-bg, 3%) !default;
-$popover-header-color:              $headings-color !default;
+$popover-header-bg:                 map-get($bds-theme-colors, 'info-500') !default;
+$popover-header-color:              map-get($grays, '50') !default;
 $popover-header-padding-y:          .5rem !default;
 $popover-header-padding-x:          .75rem !default;
 
@@ -986,8 +986,13 @@ $popover-body-padding-x:            $popover-header-padding-x !default;
 $popover-arrow-width:               1rem !default;
 $popover-arrow-height:              .5rem !default;
 $popover-arrow-color:               $popover-bg !default;
+$popover-bottom-arrow-color:        $popover-header-bg;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
+
+$popover-arrow-coarse-pos:          50% !default;
+$popover-arrow-horiz-fine-pos:      translateX(-.75rem) !default;
+$popover-arrow-vert-fine-pos:       translateY(-.75rem) !default;
 
 
 // Toasts
@@ -1218,3 +1223,4 @@ $pre-color:                         null !default;
 @import './wtw/bda/alerts';
 @import './wtw/bda/binaries';
 @import './wtw/bda/modals';
+@import './wtw/bda/popovers';
