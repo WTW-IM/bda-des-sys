@@ -91,6 +91,7 @@
 
   &.checkbox-inline {
     padding-left: 0;
+    display: inline-block;
 
     > label {
       font-size: 100%;
@@ -208,6 +209,7 @@
 
   &.radio-inline {
     padding-left: 0;
+    display: inline-block;
 
     > label {
       font-size: 100%;
@@ -330,8 +332,7 @@
         @extend .btn-outline-primary;
 
         border: 2px solid;
-        padding-bottom: $input-btn-padding-y;
-        padding-top: $input-btn-padding-y;
+        padding: $input-btn-padding-y $input-btn-padding-x;
       }
 
       & + label {
@@ -342,7 +343,7 @@
     }
 
     input[type="radio"]:checked ~ span {
-      @extend .btn-outline-primary;
+      @extend .btn-outline-primary:active;
       //@extend .hover; // <-- todo: solve for this
     }
   }
@@ -490,7 +491,7 @@
   }
 }
 
-.has-success {
+.is-valid {
   .answr-grp,
   &.answr-grp,
   .chckbx,
@@ -546,7 +547,7 @@
   }
 }
 
-.has-error {
+.is-invalid {
   .answr-grp,
   &.answr-grp,
   .chckbx,
