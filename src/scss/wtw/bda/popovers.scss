@@ -66,4 +66,9 @@
     color: $link-hover-color;
     cursor: url('../assets/img/cursors/pointer-help.png') 10 0, pointer;
   }
+
+  .alert & {
+    border-bottom-color: inherit;
+    color: inherit;
+  }
 }

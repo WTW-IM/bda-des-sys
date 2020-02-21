@@ -19,12 +19,14 @@ $green-500: #00c389;
 $green-700: #00865e;
 $green-900: #004933;
 
-$gray-50: #fff;
-$gray-100: #ecedee;
-$gray-300: #d8d8d8;
-$gray-500: #979797;
-$gray-700: #585858;
-$gray-900: #000;
+$white: #ffffff;
+$gray-50: #eceded;
+$gray-100: #d0d1d2;
+$gray-300: #929497;
+$gray-500: #63666a;
+$gray-700: #515357;
+$gray-900: #35383c;
+$black: #000000;
 
 $violet-50: #de91f3;
 $violet-100: #ca4cec;
@@ -84,12 +86,14 @@ $bds-theme-colors: (
   'green-700': #00865e,
   'green-900': #004933,
 
-  'gray-50': #fff,
-  'gray-100': #ecedee,
-  'gray-300': #d8d8d8,
-  'gray-500': #979797,
-  'gray-700': #585858,
-  'gray-900': #000,
+  'white': #ffffff,
+  'gray-50': #eceded,
+  'gray-100': #d0d1d2,
+  'gray-300': #929497,
+  'gray-500': #63666a,
+  'gray-700': #515357,
+  'gray-900': #35383c,
+  'black': #000000,
 
   'violet-50': #de91f3,
   'violet-100': #ca4cec,
@@ -153,7 +157,7 @@ $bds-theme-semantic-extended: map-merge(
 
 $bds-theme-btns: map-merge(
   (
-    'default': map-get($bds-theme-colors, 'gray-300'),
+    'default': map-get($bds-theme-colors, 'gray-100'),
     'default-dark': map-get($bds-theme-colors, 'gray-700'),
     'primary': map-get($bds-theme-colors, 'blue-900')
   ),
@@ -162,7 +166,7 @@ $bds-theme-btns: map-merge(
 
 $bds-theme-btns-outline: map-merge(
   (
-    'default': map-get($bds-theme-colors, 'gray-700'),
+    'default': map-get($bds-theme-colors, 'gray-500'),
     'primary': map-get($bds-theme-colors, 'blue-900'),
     'magenta': map-get($bds-theme-colors, 'magenta-500'),
     'violet': map-get($bds-theme-colors, 'violet-500')

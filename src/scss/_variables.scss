@@ -108,40 +108,26 @@ $theme-color-interval:      8% !default;
 $grays: ();
 $grays: map-merge(
   (
+    'white': map-get($bds-theme-colors, 'white'),
     '50': map-get($bds-theme-colors, 'gray-50'),
     '100': map-get($bds-theme-colors, 'gray-100'),
     '300': map-get($bds-theme-colors, 'gray-300'),
     '500': map-get($bds-theme-colors, 'gray-500'),
     '700': map-get($bds-theme-colors, 'gray-700'),
     '900': map-get($bds-theme-colors, 'gray-900'),
+    'black': map-get($bds-theme-colors, 'black')
   ),
   $grays
 );
 
 $primary:       $blue !default;
-$secondary:     map-get($grays, '700') !default;
+$secondary:     map-get($grays, '500') !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-50 !default;
 $dark:          $gray-900 !default;
-
-$colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-$colors: map-merge(
-  (
-    'primary':    $primary,
-    'secondary':  $secondary,
-    'success':    $success,
-    'info':       $info,
-    'warning':    $warning,
-    'danger':     $danger,
-    'light':      $light,
-    'dark':       $dark
-  ),
-  $colors
-);
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150 !default;
@@ -201,8 +187,8 @@ $negative-spacers: negativify-map($spacers) !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:         map-get($grays, '50') !default;
-$body-color:      $gray-900 !default;
+$body-bg:         map-get($grays, 'white') !default;
+$body-color:      map-get($grays, 'black') !default;
 $body-text-align: null !default;
 
 
@@ -578,12 +564,12 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              map-get($grays, '50') !default;
-$input-disabled-bg:                     map-get($grays, '300') !default;
+$input-bg:                              map-get($grays, 'white') !default;
+$input-disabled-bg:                     map-get($grays, '100') !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $gray-700 !default;
-$input-border-color:                    map-get($grays, '500') !default;
+$input-border-color:                    map-get($grays, '300') !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
