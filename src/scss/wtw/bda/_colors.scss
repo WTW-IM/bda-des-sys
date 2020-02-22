@@ -19,12 +19,14 @@ $green-500: #00c389;
 $green-700: #00b576;
 $green-900: #00a159;
 
-$gray-50: #eceded;
-$gray-100: #d0d1d2;
-$gray-300: #929497;
-$gray-500: #63666a;
-$gray-700: #515357;
-$gray-900: #35383c;
+$white: #ffffff;
+$gray-50: #f9f9f9;
+$gray-100: #d9d9d9;
+$gray-300: #b9b9b9;
+$gray-500: #989898;
+$gray-700: #787878;
+$gray-900: #585858;
+$black: #000000;
 
 $violet-50: #ebe2ee;
 $violet-100: #ceb6d4;
@@ -90,12 +92,14 @@ $bds-theme-colors: (
   'green-700': #00b576,
   'green-900': #00a159,
 
-  'gray-50': #eceded,
-  'gray-100': #d0d1d2,
-  'gray-300': #929497,
-  'gray-500': #63666a,
-  'gray-700': #515357,
-  'gray-900': #35383c,
+  'white': #ffffff,
+  'gray-50': #f9f9f9,
+  'gray-100': #d9d9d9,
+  'gray-300': #b9b9b9,
+  'gray-500': #989898,
+  'gray-700': #787878,
+  'gray-900': #585858,
+  'black': #000000,
 
   'violet-50': #ebe2ee,
   'violet-100': #ceb6d4,
