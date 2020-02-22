@@ -733,8 +733,8 @@
               <div class="modal-content">
 
                 <div class="modal-header">
+                  <h5 class="modal-title" id="myModalLabel">Modal title</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
                   <h4>Text in a modal</h4>
@@ -775,8 +775,8 @@
               <div class="modal-content">
 
                 <div class="modal-header">
+                  <h5 class="modal-title" id="myLargeModalLabel">Large modal</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
                 </div>
                 <div class="modal-body">
                   ...
@@ -790,8 +790,8 @@
               <div class="modal-content">
 
                 <div class="modal-header">
+                  <h5 class="modal-title" id="mySmallModalLabel">Small modal</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
                 </div>
                 <div class="modal-body">
                   ...
@@ -814,8 +814,8 @@
               <div class="modal-content">
 
                 <div class="modal-header">
+                  <h5 class="modal-title" id="myFastModalLabel">Modal sans animation</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myFastModalLabel">Modal sans animation</h4>
                 </div>
                 <div class="modal-body">
                   <p>Fast, wasn't it?</p>
@@ -832,19 +832,29 @@
 
           <h4 id="modals-varying-content">Varying modal content based on trigger button</h4>
           <p>
-            Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>.</p>
+            Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>.
+          </p>
           <div class="bs-example">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-            ...more buttons...
+            <div class="clearfix"><span class="btn-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+              </span>
+              <span class="btn-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+              </span>
+              <span class="btn-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+              </span>
+              <span class="btn-example">
+                ...more buttons...
+              </span>
+            </div>
 
             <div class="modal es-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
                   </div>
                   <div class="modal-body">
                     <form>
@@ -871,8 +881,8 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="exampleModalLabel">New message</h4>
                 </div>
                 <div class="modal-body">
                   <form>
@@ -980,19 +990,27 @@
 
           <h4 id="popovers-live-directions">Four directions</h4>
           <div class="bs-example popover-demo">
-            <div class="bs-example-popovers">
-              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                Popover on right
-              </button>
-              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                Popover on top
-              </button>
-              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                Popover on bottom
-              </button>
-              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                Popover on left
-              </button>
+            <div class="bs-example-popovers clearfix">
+              <span class="btn-example">
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on right
+                </button>
+              </span>
+              <span class="btn-example">
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on top
+                </button>
+              </span>
+              <span class="btn-example">
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on bottom
+                </button>
+              </span>
+              <span class="btn-example">
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on left
+                </button>
+              </span>
             </div>
           </div><!-- /example -->
 
@@ -1057,8 +1075,9 @@
             </ul>
             <div id="myTabContent" class="tab-content">
               <div role="tabpanel" class="tab-pane in active" id="home" aria-labelledBy="home-tab">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
-                  dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                <p>
+                  Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, william dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+                </p>
               </div>
               <div role="tabpanel" class="tab-pane" id="profile" aria-labelledBy="profile-tab">
                 <p>

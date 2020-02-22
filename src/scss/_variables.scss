@@ -386,11 +386,8 @@ $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             .875em !default;
-
 $sub-sup-font-size:           .75em !default;
-
 $text-muted:                  map-get($grays, '700') !default;
-
 $initialism-font-size:        $small-font-size !default;
 
 $blockquote-small-color:      map-get($grays, '700') !default;
@@ -406,15 +403,10 @@ $legend-font-size:            1.5rem !default;
 $legend-font-weight:          null !default;
 
 $mark-padding:                .2em !default;
-
 $dt-font-weight:              $font-weight-bold !default;
-
 $nested-kbd-font-weight:      $font-weight-bold !default;
-
 $list-inline-padding:         .5rem !default;
-
 $mark-bg:                     #fcf8e3 !default;
-
 $hr-margin-y:                 $spacer !default;
 
 
@@ -952,7 +944,7 @@ $form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
 // Popovers
 
 $popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        map-get($grays, '50') !default;
+$popover-bg:                        map-get($grays, 'white') !default;
 $popover-max-width:                 276px !default;
 $popover-border-width:              $border-width !default;
 $popover-border-color:              rgba(map-get($grays, '900'), .2) !default;
