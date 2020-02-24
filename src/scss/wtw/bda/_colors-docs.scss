@@ -1,32 +1,77 @@
 //
 // Colors
 // --------------------------------------------------
-// Via Benefits Primary Colors
+// Via Benefits Primary Colors - with Tints / Shades
 // --------------------------------------------------
-
-.wtwBlue {
-  background-color: $blue;
-}
-
-.wtwGreen {
-  background-color: $green;
-}
-
-.wtwMagenta {
-  background-color: $magenta;
-}
+.blue-50 { background: map-get($bds-theme-colors, 'blue-50'); }
+.blue-100 { background: map-get($bds-theme-colors, 'blue-100'); }
+.blue-300 { background: map-get($bds-theme-colors, 'blue-300'); }
+.blue-500 { background: map-get($bds-theme-colors, 'blue-500'); }
+.blue-700 { background: map-get($bds-theme-colors, 'blue-700'); }
+.blue-900 { background: map-get($bds-theme-colors, 'blue-900'); }
+.green-50 { background: map-get($bds-theme-colors, 'green-50'); }
+.green-100 { background: map-get($bds-theme-colors, 'green-100'); }
+.green-300 { background: map-get($bds-theme-colors, 'green-300'); }
+.green-500 { background: map-get($bds-theme-colors, 'green-500'); }
+.green-700 { background: map-get($bds-theme-colors, 'green-700'); }
+.green-900 { background: map-get($bds-theme-colors, 'green-900'); }
+.magenta-50 { background: map-get($bds-theme-colors, 'magenta-50'); }
+.magenta-100 { background: map-get($bds-theme-colors, 'magenta-100'); }
+.magenta-300 { background: map-get($bds-theme-colors, 'magenta-300'); }
+.magenta-500 { background: map-get($bds-theme-colors, 'magenta-500'); }
+.magenta-700 { background: map-get($bds-theme-colors, 'magenta-700'); }
+.magenta-900 { background: map-get($bds-theme-colors, 'magenta-900'); }
 
 
 // --------------------------------------------------
 // VB Secondary Colors
 // --------------------------------------------------
-.wtwGray {
-  background-color: map-get($bds-theme-colors, 'gray-700');
+.wht {
+  background-color: map-get($grays, 'white');
+  border: 1px solid map-get($grays, 'black');
 }
 
-.wtwViolet {
-  background-color: map-get($bds-theme-colors, 'violet-500');
+.gray-50 {
+  background-color: map-get($grays, '50');
+  border: 1px solid map-get($grays, '900');
 }
+
+.gray-100 {
+  background-color: map-get($grays, '100');
+  border: 1px solid map-get($grays, '700');
+}
+
+.gray-300 {
+  background-color: map-get($grays, '300');
+  border: 1px solid map-get($grays, '500');
+}
+
+.gray-500 {
+  background-color: map-get($grays, '500');
+  border: 1px solid map-get($grays, '300');
+}
+
+.gray-700 {
+  background-color: map-get($grays, '700');
+  border: 1px solid map-get($grays, '100');
+}
+
+.gray-900 {
+  background-color: map-get($grays, '900');
+  border: 1px solid map-get($grays, '50');
+}
+
+.blck {
+  background-color: map-get($grays, 'black');
+  border: 1px solid map-get($grays, 'white');
+}
+
+.violet-50 { background: map-get($bds-theme-colors, 'violet-50'); }
+.violet-100 { background: map-get($bds-theme-colors, 'violet-100'); }
+.violet-300 { background: map-get($bds-theme-colors, 'violet-300'); }
+.violet-500 { background: map-get($bds-theme-colors, 'violet-500'); }
+.violet-700 { background: map-get($bds-theme-colors, 'violet-700'); }
+.violet-900 { background: map-get($bds-theme-colors, 'violet-900'); }
 
 
 // --------------------------------------------------
@@ -54,118 +99,4 @@
 // --------------------------------------------------
 .bg-software-blue {
   background-color: $software-blue;
-}
-
-.bg-gray-50 {
-  background-color: map-get($grays, '50');
-  border: 1px solid map-get($grays, '900');
-}
-
-.bg-gray-100 {
-  background-color: map-get($grays, '100');
-  border: 1px solid map-get($grays, '700');
-}
-
-.bg-gray-300 {
-  background-color: map-get($grays, '300');
-  border: 1px solid map-get($grays, '500');
-}
-
-.bg-gray-500 {
-  background-color: map-get($grays, '500');
-  border: 1px solid map-get($grays, '300');
-}
-
-.bg-gray-700 {
-  background-color: map-get($grays, '700');
-  border: 1px solid map-get($grays, '100');
-}
-
-.bg-gray-900 {
-  background-color: map-get($grays, '900');
-  border: 1px solid map-get($grays, '50');
-}
-
-
-// --------------------------------------------------
-// Tints / Shades
-// --------------------------------------------------
-.blue-lightest {
-  background: $blue-lightest;
-}
-
-.blue-lighter {
-  background: $blue-lighter;
-}
-
-.blue-light {
-  background: $blue-light;
-}
-
-.blue-dark {
-  background: $blue-dark;
-}
-
-.blue-darker {
-  background: $blue-darker;
-}
-
-.green-lightest {
-  background: $green-lightest;
-}
-
-.green-lighter {
-  background: $green-lighter;
-}
-
-.green-light {
-  background: $green-light;
-}
-
-.green-dark {
-  background: $green-dark;
-}
-
-.green-darker {
-  background: $green-darker;
-}
-
-.magenta-lightest {
-  background: $magenta-lightest;
-}
-
-.magenta-lighter {
-  background: $magenta-lighter;
-}
-
-.magenta-light {
-  background: $magenta-light;
-}
-
-.magenta-dark {
-  background: $magenta-dark;
-}
-
-.magenta-darker {
-  background: $magenta-darker;
-}
-
-.violet-lightest {
-  background: $violet-lightest;
-}
-
-.violet-lighter {
-  background: $violet-lighter;
-}
-
-.violet-light {
-  background: $violet-light;
-}
-
-.violet-dark {
-  background: $violet-dark;
-}
-
-.violet-darker {
-  background: $violet-darker;
 }

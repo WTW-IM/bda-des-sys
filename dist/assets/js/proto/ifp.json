@@ -1,0 +1,796 @@
+{
+  "plans":[
+    {
+      "name": "Anthem Blue Cross And Blue Shield · Anthem Bronze Pathway X Enhanced HMO 6350 40",
+      "carrier": "anthem",
+      "premium": 68.82,
+      "deductible": 6350,
+      "oop": 7150,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 40
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 25
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 35
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 2.5,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": false
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 2826
+    },
+    {
+      "name": "Scott & White HMO Bronze 6300",
+      "carrier": "scott-white",
+      "premium": 220.45,
+      "deductible": 6300,
+      "oop": 6850,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 0
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 30
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 60
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 3,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": false
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 2645
+    },
+    {
+      "name": "Altius Advantra HMO H8649-003",
+      "carrier": "altius",
+      "premium": 227.51,
+      "deductible": 6650,
+      "oop": 7150,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 35
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 33
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 65
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 3,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 2730
+    },
+    {
+      "name": "Aetna · Preference Benchmark Bronze 5700",
+      "carrier": "aetna",
+      "premium": 246.29,
+      "deductible": 5700,
+      "oop": 7150,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 50
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 20
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 25
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 4,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": false
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 2955
+    },
+    {
+      "name": "Scott & White Basic PPO",
+      "carrier": "scott-white",
+      "premium": 273.07,
+      "deductible": 3000,
+      "oop": 7150,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 75
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 75
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 75
+        }
+      },
+      "metal": "Bronze",
+      "network": "PPO",
+      "rating": 4,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 3276
+    },
+    {
+      "name": "Anthem · Anthem Bronze Pathway X Enhanced HMO 6350 40",
+      "carrier": "anthem",
+      "premium": 273.44,
+      "deductible": 6350,
+      "oop": 7150,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 40
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 25
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 35
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 2.5,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": true
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": false
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 3281
+    },
+    {
+      "name": "Aetna Silver PPO Advantage",
+      "carrier": "aetna",
+      "premium": 361.10,
+      "deductible": 700,
+      "oop": 2000,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 10
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 10
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 25
+        }
+      },
+      "metal": "Silver",
+      "network": "PPO",
+      "rating": 4.5,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 4333
+    },
+    {
+      "name": "Altius HMO Gold Access",
+      "carrier": "altius",
+      "premium": 439.12,
+      "deductible": 1000,
+      "oop": 5000,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 30
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 15
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 40
+        }
+      },
+      "metal": "Gold",
+      "network": "HMO",
+      "rating": 3,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": true
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 5269
+    },
+    {
+      "name": "Humana Bronze 6450 HMOx",
+      "carrier": "humana",
+      "premium": 451.53,
+      "deductible": 6450,
+      "oop": 6450,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 0
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 0
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 0
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 3,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": false
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 5418
+    },
+    {
+      "name": "Cigna Network Gold 1000",
+      "carrier": "cigna",
+      "premium": 475.34,
+      "deductible": 1000,
+      "oop": 6850,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 20
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 15
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 45
+        }
+      },
+      "metal": "Gold",
+      "network": "HMO",
+      "rating": 4.5,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": true
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": false
+          }
+        ]
+      },
+      "annual": 5704
+    },
+    {
+      "name": "Humana Silver 4125 HMOx",
+      "carrier": "humana",
+      "premium": 507.59,
+      "deductible": 4125,
+      "oop": 4125,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": true,
+        "copay": 0
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 0
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 0
+        }
+      },
+      "metal": "Silver",
+      "network": "HMO",
+      "rating": 3,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": true
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": true
+          }
+        ]
+      },
+      "annual": 6091
+    },
+    {
+      "name": "Cigna Connect HMO Gold 1000",
+      "carrier": "cigna",
+      "premium": 548.83,
+      "deductible": 1000,
+      "oop": 5000,
+      "doctor": {
+        "deductible": true,
+        "coinsurance": false,
+        "copay": 25
+      },
+      "drugs": {
+        "generic": {
+          "deductible": true,
+          "coinsurance": false,
+          "copay": 15
+        },
+        "brand": {
+          "deductible": true,
+          "coinsurance": true,
+          "copay": 25
+        }
+      },
+      "metal": "Bronze",
+      "network": "HMO",
+      "rating": 4,
+      "hmc": {
+        "drugs": [
+          {
+            "name": "Flonase",
+            "isCovered": true
+          },
+          {
+            "name": "Fluticasone propionate",
+            "isCovered": true
+          },
+          {
+            "name": "Montelukast Sodium",
+            "isCovered": true
+          }
+        ],
+        "doctors": [
+          {
+            "name": "Oliver, Jennifer W., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Upton, Roger M., Od",
+            "isCovered": true
+          },
+          {
+            "name": "Baker, Sarah K., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Hamula, Jason F., MD",
+            "isCovered": true
+          },
+          {
+            "name": "Stoesser, Bernadette, MD",
+            "isCovered": true
+          }
+        ]
+      },
+      "annual": 6585
+    }
+  ]
+}
