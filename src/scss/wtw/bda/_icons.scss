@@ -251,4 +251,5 @@
   &.clinic { &::before { content: "\e6de"; } }
   &.hospital-3 { &::before { content: "\e6df"; } }
   &.trust { &::before { content: "\e6e0"; } }
+  &.clear-filters { &::before { content: "\e6e1"; } }
 }
