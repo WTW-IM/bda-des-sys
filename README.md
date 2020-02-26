@@ -48,22 +48,6 @@ Changes will automatically refresh in the browser as they are saved.
 
 
 
-## Build for Production
-
-You will need to build for Production before you can open a pull request (outlined in the next section).
-
-```
-$ npm run build
-```
-
-If you run into errors, try clearing the `npm` cache:
-
-```
-$ rm -rf node_modules/gh-pages/.cache
-```
-
-
-
 ## Deployments
 
 When you're satisfied with your changes, `commit`&mdash;with a message (`-m`)&mdash;and `push` all changes to your remote branch, and open a **Pull Request (PR)**. For in introduction to using Git, see the [Git Handbook](https://guides.github.com/introduction/git-handbook/).
@@ -72,9 +56,24 @@ Present your changes to {**TBD** -- UX CoP? DSWG?} and solicit feedback. Get a f
 
 Once your changes have garnered the approval of the {CoP and/or CoI} and an Architect, your PR will be merged to `master`&mdash;and pushed to the branch upon which the [UI Toolkit Documentation](https://wtw-im.github.io/bda-des-sys) runs&mdash;on your behalf.
 
-<!-- Deploy to `gh-pages` branch on GitHub.
+<!-- ### Build for Production
+
+You will need to build for Production before you can deploy.
+
+```
+$ npm run build
+```
+
+Deploy to `gh-pages` branch on GitHub.
 You will need to have ssh tokens set up for git terminal commands.
 
 ```
 $ npm run deploy
 ``` -->
+
+
+If you run into errors, try clearing the `npm` cache:
+
+```
+$ rm -rf node_modules/gh-pages/.cache
+```
