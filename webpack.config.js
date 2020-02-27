@@ -15,7 +15,7 @@ const config = {
   devtool: IS_DEV ? 'eval-source-map' : 'source-map',
   entry: './src/js/index.js',
   output: {
-    filename: './assets/js/[name].js',
+    filename: '/assets/js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/bda-des-sys/'
   },
