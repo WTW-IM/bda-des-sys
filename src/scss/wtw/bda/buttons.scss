@@ -5,7 +5,7 @@
 }
 
 @each $state, $color in $bds-theme-btns-outline {
-  .btn-outline-#{$state} {
+  .btn-#{$state}-alt {
     @include button-outline-variant($color);
 
     font-family: $btn-outline-font-family;
