@@ -17,7 +17,7 @@ const config = {
   output: {
     filename: './assets/js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/bda-des-sys/"
+    publicPath: '/bda-des-sys/'
   },
   module: {
     rules: [
