@@ -106,8 +106,8 @@ const config = {
       },
     ]),
     new MiniCssExtractPlugin({
-      filename: IS_DEV ? 'css/[name].css' : 'css/[name].[contenthash].css',
-      chunkFilename: 'css/main.css',
+      filename: IS_DEV ? 'assets/css/[name].css' : 'assets/css/[name].[contenthash].css',
+      chunkFilename: 'assets/css/main.css',
     }),
     new webpack.HashedModuleIdsPlugin(),
     new PreloadWebpackPlugin({
