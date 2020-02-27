@@ -15,8 +15,9 @@ const config = {
   devtool: IS_DEV ? 'eval-source-map' : 'source-map',
   entry: './src/js/index.js',
   output: {
-    filename: 'js/[name].js',
+    filename: './assets/js/[name].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "/assets/"
   },
   module: {
     rules: [
@@ -110,9 +111,9 @@ const config = {
       chunkFilename: 'assets/css/main.css',
     }),
     new webpack.HashedModuleIdsPlugin(),
-    new PreloadWebpackPlugin({
-      include: 'initial',
-    }),
+    //new PreloadWebpackPlugin({
+    //  include: 'initial',
+    //}),
     new CssUrlRelativePlugin(),
     new webpack.SourceMapDevToolPlugin()
   ],
