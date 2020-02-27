@@ -17,7 +17,7 @@ const config = {
   output: {
     filename: './assets/js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/assets/"
+    publicPath: "/bda-des-sys/"
   },
   module: {
     rules: [
@@ -111,9 +111,9 @@ const config = {
       chunkFilename: 'assets/css/main.css',
     }),
     new webpack.HashedModuleIdsPlugin(),
-    //new PreloadWebpackPlugin({
-    //  include: 'initial',
-    //}),
+    new PreloadWebpackPlugin({
+      include: 'initial',
+    }),
     new CssUrlRelativePlugin(),
     new webpack.SourceMapDevToolPlugin()
   ],
