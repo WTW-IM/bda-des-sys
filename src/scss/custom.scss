@@ -855,21 +855,18 @@ table.color-variables {
     border-radius: 0;
   }
 
-  .ex-row {
-    display: flex;
-    margin-bottom: 1rem;
-    max-height: 300px;
+  .ex-column {
+    float: left;
+    min-width: 48.5%;
+    max-width: 48.5%;
 
-    .ex-col {
-      flex: 1;
-      // float: left;
-      // min-width: 48.5%;
-      // max-width: 48.5%;
-
-      + .ex-col {
-        margin-left: 15px;
-      }
+    & + .ex-column {
+      margin-left: 15px;
     }
+  }
+
+  .ex-row {
+    max-height: 300px;
   }
 
   /* Undo width of container */
