@@ -283,38 +283,39 @@ $embed-responsive-aspect-ratios: () !default;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
+$font-path: '/bda-des-sys/assets/fonts/';
 
 @font-face {
   font-family: 'Source Sans Pro Light';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/SourceSansPro-Light.eot');
-  src: url('/fonts/SourceSansPro-Light.eot') format('embedded-opentype'),
-    url('/fonts/SourceSansPro-Light.otf.woff') format('woff'),
-    url('/fonts/SourceSansPro-Light.ttf') format('truetype'),
-    url('/fonts/SourceSansPro-Light.svg') format('svg');
+  src: url('#{$font-path}SourceSansPro-Light.eot');
+  src: url('#{$font-path}SourceSansPro-Light.eot') format('embedded-opentype'),
+    url('#{$font-path}SourceSansPro-Light.otf.woff') format('woff'),
+    url('#{$font-path}SourceSansPro-Light.ttf') format('truetype'),
+    url('#{$font-path}SourceSansPro-Light.svg') format('svg');
 }
 
 @font-face {
   font-family: 'Source Sans Pro Regular';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/SourceSansPro-Regular.eot');
-  src: url('/fonts/SourceSansPro-Regular.eot') format('embedded-opentype'),
-    url('/fonts/SourceSansPro-Regular.otf.woff') format('woff'),
-    url('/fonts/SourceSansPro-Regular.ttf') format('truetype'),
-    url('/fonts/SourceSansPro-Regular.svg') format('svg');
+  src: url('#{$font-path}SourceSansPro-Regular.eot');
+  src: url('#{$font-path}SourceSansPro-Regular.eot') format('embedded-opentype'),
+    url('#{$font-path}SourceSansPro-Regular.otf.woff') format('woff'),
+    url('#{$font-path}SourceSansPro-Regular.ttf') format('truetype'),
+    url('#{$font-path}SourceSansPro-Regular.svg') format('svg');
 }
 
 @font-face {
   font-family: 'Source Sans Pro Bold';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/SourceSansPro-Bold.eot');
-  src: url('/fonts/SourceSansPro-Bold.eot') format('embedded-opentype'),
-    url('/fonts/SourceSansPro-Bold.otf.woff') format('woff'),
-    url('/fonts/SourceSansPro-Bold.ttf') format('truetype'),
-    url('/fonts/SourceSansPro-Bold.svg') format('svg');
+  src: url('#{$font-path}SourceSansPro-Bold.eot');
+  src: url('#{$font-path}SourceSansPro-Bold.eot') format('embedded-opentype'),
+    url('#{$font-path}SourceSansPro-Bold.otf.woff') format('woff'),
+    url('#{$font-path}SourceSansPro-Bold.ttf') format('truetype'),
+    url('#{$font-path}SourceSansPro-Bold.svg') format('svg');
 }
 
 // stylelint-disable value-keyword-case
@@ -402,11 +403,11 @@ $hr-margin-y:                 $spacer !default;
   font-family: 'BDS Functional Icons';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/indv-mkt-icons.eot');
-  src: url('/fonts/indv-mkt-icons.eot') format('embedded-opentype'),
-    url('/fonts/indv-mkt-icons.woff') format('woff'),
-    url('/fonts/indv-mkt-icons.ttf') format('truetype'),
-    url('/fonts/indv-mkt-icons.svg') format('svg');
+  src: url('#{$font-path}indv-mkt-icons.eot');
+  src: url('#{$font-path}indv-mkt-icons.eot') format('embedded-opentype'),
+    url('#{$font-path}indv-mkt-icons.woff') format('woff'),
+    url('#{$font-path}indv-mkt-icons.ttf') format('truetype'),
+    url('#{$font-path}indv-mkt-icons.svg') format('svg');
 }
 
 $icon-font-face: 'BDS Functional Icons';
