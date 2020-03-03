@@ -419,11 +419,11 @@ $hr-margin-y:                 $spacer !default;
   font-family: 'BDS Functional Icons';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/indv-mkt-icons.eot');
-  src: url('/fonts/indv-mkt-icons.eot') format('embedded-opentype'),
-    url('/fonts/indv-mkt-icons.woff') format('woff'),
-    url('/fonts/indv-mkt-icons.ttf') format('truetype'),
-    url('/fonts/indv-mkt-icons.svg') format('svg');
+  src: url('#{$font-path}indv-mkt-icons.eot');
+  src: url('#{$font-path}indv-mkt-icons.eot') format('embedded-opentype'),
+    url('#{$font-path}indv-mkt-icons.woff') format('woff'),
+    url('#{$font-path}indv-mkt-icons.ttf') format('truetype'),
+    url('#{$font-path}indv-mkt-icons.svg') format('svg');
 }
 
 $icon-font-face: 'BDS Functional Icons';
