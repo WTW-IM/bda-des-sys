@@ -24,7 +24,7 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
       {
         test: /\.(eot|otf|woff|woff2|ttf)$/,
@@ -82,10 +82,10 @@ const config = {
                 speed: 4
               },
               gifsicle: {
-                interlaced: false,
+                interlaced: false
               },
               webp: {
-                quality: 75,
+                quality: 75
               },
             },
           },
@@ -119,7 +119,7 @@ const config = {
   ],
   devServer: {
     port: 3200,
-    contentBase: path.join(__dirname, 'src'),
+    contentBase: path.join(__dirname, 'src')
   },
   optimization: {
     runtimeChunk: 'single',
