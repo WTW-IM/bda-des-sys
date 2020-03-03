@@ -21,14 +21,14 @@
 .btn-group {
   > .btn {
     & + .btn {
-      border-left: 1px solid map-get($grays, '500');
+      border-left: 1px solid $gray-500;
     }
 
-    &.btn-danger + .btn-danger { border-left-color: map-get($bds-theme-colors, 'danger-900'); }
-    &.btn-info + .btn-info { border-left-color: map-get($bds-theme-colors, 'info-900'); }
-    &.btn-primary + .btn-primary { border-left-color: darken(map-get($bds-theme-colors, 'blue-900'), 20%); }
-    &.btn-success + .btn-success { border-left-color: map-get($bds-theme-colors, 'success-900'); }
-    &.btn-warning + .btn-warning { border-left-color: map-get($bds-theme-colors, 'warning-900'); }
+    &.btn-danger + .btn-danger { border-left-color: $danger-900; }
+    &.btn-info + .btn-info { border-left-color: $info-900; }
+    &.btn-primary + .btn-primary { border-left-color: darken($blue-900, 20%); }
+    &.btn-success + .btn-success { border-left-color: $success-900; }
+    &.btn-warning + .btn-warning { border-left-color: $warning-900; }
 
     & + .dropdown-toggle {
       padding-left: $input-btn-padding-y;

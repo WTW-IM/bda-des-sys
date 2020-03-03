@@ -17,20 +17,21 @@ const config = {
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: IS_DEV ? '' : '/bda-des-sys/'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
       {
         test: /\.(eot|otf|woff|woff2|ttf)$/,
         use: {
             loader: 'file-loader',
             options: {
-                name: '[name].[hash].[ext]',
+                name: '[name].[hash].[ext]'
             },
         },
       },
@@ -66,7 +67,7 @@ const config = {
               limit: 8192,
               name: '[name].[ext]',
               fallback: 'file-loader',
-              outputPath: 'images',
+              outputPath: 'images'
             },
           },
           {
@@ -74,17 +75,17 @@ const config = {
             options: {
               mozjpeg: {
                 progressive: true,
-                quality: 65,
+                quality: 65
               },
               pngquant: {
                 quality: '65-90',
-                speed: 4,
+                speed: 4
               },
               gifsicle: {
-                interlaced: false,
+                interlaced: false
               },
               webp: {
-                quality: 75,
+                quality: 75
               },
             },
           },
@@ -97,28 +98,28 @@ const config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'windows.jQuery': 'jquery',
+      'windows.jQuery': 'jquery'
     }),
     new CopyWebpackPlugin([
       {
         from: './src/assets',
-        to: './assets',
+        to: './assets'
       },
     ]),
     new MiniCssExtractPlugin({
       filename: IS_DEV ? 'css/[name].css' : 'css/[name].[contenthash].css',
-      chunkFilename: 'css/main.css',
+      chunkFilename: 'css/main.css'
     }),
     new webpack.HashedModuleIdsPlugin(),
     new PreloadWebpackPlugin({
-      include: 'initial',
+      include: 'initial'
     }),
     new CssUrlRelativePlugin(),
     new webpack.SourceMapDevToolPlugin()
   ],
   devServer: {
     port: 3200,
-    contentBase: path.join(__dirname, 'src'),
+    contentBase: path.join(__dirname, 'src')
   },
   optimization: {
     runtimeChunk: 'single',
@@ -129,7 +130,7 @@ const config = {
           chunks: 'initial',
           name: 'vendor',
           priority: 10,
-          enforce: true,
+          enforce: true
         },
       },
     },
@@ -154,7 +155,7 @@ files.forEach(file => {
     new HtmlWebPackPlugin({
       filename: path.basename(file),
       template: file,
-      favicon: path.resolve(__dirname, './src/favicon.ico'),
+      favicon: path.resolve(__dirname, './src/favicon.ico')
     })
   );
 });

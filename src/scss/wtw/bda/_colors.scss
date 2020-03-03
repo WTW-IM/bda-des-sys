@@ -36,11 +36,11 @@ $violet-700: #48085c;
 $violet-900: #2e0340;
 
 $success-50: #e0ece0;
-$success-100: #b3cfb3;
-$success-300: #4d904d;
-$success-500: #006000;
-$success-700: #004e00;
-$success-900: #003300;
+$success-100: #b3d1b3;
+$success-300: #4d934d;
+$success-500: #006400;
+$success-700: #005200;
+$success-900: #003600;
 
 $warning-50: #f8eae0;
 $warning-100: #edccb3;
@@ -49,12 +49,12 @@ $warning-500: #c25400;
 $warning-700: #b44300;
 $warning-900: #9f2900;
 
-$danger-50: #fce1e0;
-$danger-100: #f8b5b3;
-$danger-300: #ee514d;
-$danger-500: #e60700;
-$danger-700: #df0500;
-$danger-900: #d50200;
+$danger-50: #fde1e0;
+$danger-100: #fab5b3;
+$danger-300: #f3514d;
+$danger-500: #ee0700;
+$danger-700: #e90500;
+$danger-900: #e20200;
 
 $info-50: #e0edf3;
 $info-100: #b3d1e0;
@@ -69,136 +69,62 @@ $agent-300: #fdcc8a;
 $agent-500: #fc8d59;
 $agent-700: #ff6310;
 
-$bds-theme-colors: (
-  /*#region*/
-  'blue-50': #e0f4fa,
-  'blue-100': #b3e3f2,
-  'blue-300': #4dbde0,
-  'blue-500': #00a0d2,
-  'blue-700': #008ec7,
-  'blue-900': #0073b6,
-
-  'magenta-50': #f8e2f4,
-  'magenta-100': #ecb7e3,
-  'magenta-300': #d458bd,
-  'magenta-500': #c110a0,
-  'magenta-700': #b30c8e,
-  'magenta-900': #9e0573,
-
-  'green-50': #e0f8f1,
-  'green-100': #b3eddc,
-  'green-300': #4dd5ac,
-  'green-500': #00c389,
-  'green-700': #00b576,
-  'green-900': #00a159,
-
-  'white': #ffffff,
-  'gray-50': #f9f9f9,
-  'gray-100': #cccccc,
-  'gray-300': #9f9f9f,
-  'gray-500': #717171,
-  'gray-700': #444444,
-  'gray-900': #171717,
-  'black': #000000,
-
-  'violet-50': #ebe2ee,
-  'violet-100': #ceb6d4,
-  'violet-300': #8c559a,
-  'violet-500': #5a0c6f,
-  'violet-700': #48085c,
-  'violet-900': #2e0340,
-
-  'success-50': #e0ece0,
-  'success-100': #b3cfb3,
-  'success-300': #4d904d,
-  'success-500': #006000,
-  'success-700': #004e00,
-  'success-900': #003300,
-
-  'warning-50': #f8eae0,
-  'warning-100': #edccb3,
-  'warning-300': #edccb3,
-  'warning-500': #c25400,
-  'warning-700': #b44300,
-  'warning-900': #9f2900,
-
-  'danger-50': #fce1e0,
-  'danger-100': #f8b5b3,
-  'danger-300': #ee514d,
-  'danger-500': #e60700,
-  'danger-700': #df0500,
-  'danger-900': #d50200,
-
-  'info-50': #e0edf3,
-  'info-100': #b3d1e0,
-  'info-300': #4d94b8,
-  'info-500': #006699,
-  'info-700': #005386,
-  'info-900': #00386b,
-
-  'agent-50': #fde8de,
-  'agent-100': #fee8c4,
-  'agent-300': #fdcc8a,
-  'agent-500': #fc8d59,
-  'agent-700': #ff6310
-  /*#endregion*/
-);
 
 $bds-theme-semantic: (
-  'success': map-get($bds-theme-colors, 'success-500'),
-  'warning': map-get($bds-theme-colors, 'warning-500'),
-  'danger': map-get($bds-theme-colors, 'danger-500'),
-  'info': map-get($bds-theme-colors, 'info-500')
+  'success': $success-500,
+  'warning': $warning-500,
+  'danger': $danger-500,
+  'info': $info-500
 );
 
 $bds-theme-semantic-extended: map-merge(
   (
-    'success-light': map-get($bds-theme-colors, 'success-100'),
-    'warning-light': map-get($bds-theme-colors, 'warning-100'),
-    'danger-light': map-get($bds-theme-colors, 'danger-100'),
-    'info-light': map-get($bds-theme-colors, 'info-100')
+    'success-light': $success-100,
+    'warning-light': $warning-100,
+    'danger-light': $danger-100,
+    'info-light': $info-100
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-btns: map-merge(
   (
-    'default': map-get($bds-theme-colors, 'gray-100'),
-    'default-dark': map-get($bds-theme-colors, 'gray-700'),
-    'primary': map-get($bds-theme-colors, 'blue-900')
+    'default': $gray-100,
+    'default-dark': $gray-700,
+    'primary': $blue-900
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-btns-outline: map-merge(
   (
-    'default': map-get($bds-theme-colors, 'gray-500'),
-    'primary': map-get($bds-theme-colors, 'blue-900'),
-    'magenta': map-get($bds-theme-colors, 'magenta-500'),
-    'violet': map-get($bds-theme-colors, 'violet-500')
+    'default': $gray-500,
+    'primary': $blue-900,
+    'magenta': $magenta-500,
+    'violet': $violet-500
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-alerts: (
   'agent': (
-    'opaque': map-get($bds-theme-colors, 'agent-700'),
-    'light': map-get($bds-theme-colors, 'agent-500')
+    'opaque': $agent-700,
+    'light': $agent-500
   ),
   'danger': (
-    'opaque': map-get($bds-theme-colors, 'danger-500'),
-    'light': map-get($bds-theme-colors, 'danger-50')
+    'opaque': $danger-500,
+    'light': $danger-50
   ),
   'info': (
-    'opaque': map-get($bds-theme-colors, 'info-500'),
-    'light': map-get($bds-theme-colors, 'info-50')
+    'opaque': $info-500,
+    'light': $info-50
   ),
   'success': (
-    'opaque': map-get($bds-theme-colors, 'success-500'),
-    'light': map-get($bds-theme-colors, 'success-50')
+    'opaque': $success-500,
+    'light': $success-50
   ),
   'warning': (
-    'opaque': map-get($bds-theme-colors, 'warning-500'),
-    'light': map-get($bds-theme-colors, 'warning-50')
+    'opaque': $warning-500,
+    'light': $warning-50
   )
 );
