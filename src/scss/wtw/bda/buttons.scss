@@ -1,6 +1,8 @@
 @each $state, $color in $bds-theme-btns {
   .btn-#{$state} {
     @include button-variant($color, $color);
+
+    box-shadow: none;
   }
 }
 
