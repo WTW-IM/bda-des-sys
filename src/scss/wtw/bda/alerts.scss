@@ -4,12 +4,12 @@
 
 @each $state, $key in $bds-theme-alerts {
   .alert-#{$state} {
-    @include alert-variant(deep-map-get($key, 'opaque'), transparent, map-get($grays, '50'));
+    @include alert-variant(deep-map-get($key, 'opaque'), transparent, $gray-50);
   }
 
   .alert-#{$state}--light,
   .alert-#{$state}--cta {
-    @include alert-variant(deep-map-get($key, 'light'), transparent, map-get($grays, '900'));
+    @include alert-variant(deep-map-get($key, 'light'), transparent, $gray-900);
   }
 
   .alert-#{$state}--msg {
@@ -38,6 +38,6 @@
   }
 
   &.alert-agent {
-    color: map-get($grays, '900');
+    color: $gray-900;
   }
 }
