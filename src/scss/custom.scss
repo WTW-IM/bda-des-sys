@@ -70,7 +70,6 @@ h2, h3, h4, h5, h6 {
 }
 
 
-
 /* Inverted outline button (white on dark) */
 .btn-outline-inverse {
   color: #fff;
@@ -86,7 +85,6 @@ h2, h3, h4, h5, h6 {
     border-color: #fff;
   }
 }
-
 
 
 /* "ES" icon */
@@ -855,18 +853,18 @@ table.color-variables {
     border-radius: 0;
   }
 
-  .ex-column {
-    float: left;
-    min-width: 48.5%;
-    max-width: 48.5%;
-
-    & + .ex-column {
-      margin-left: 15px;
-    }
-  }
-
   .ex-row {
+    display: flex;
+    justify-content: space-between;
     max-height: 300px;
+
+    &-tall {
+      max-height: 450px;
+    }
+
+    .ex-col {
+      width: 48%;
+    }
   }
 
   /* Undo width of container */
