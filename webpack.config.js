@@ -101,8 +101,8 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {
-        from: "./src/assets",
-        to: "./assets"
+        from: "./src/bda-des-sys/assets",
+        to: "./bda-des-sys/assets"
       }
     ]),
     new MiniCssExtractPlugin({
