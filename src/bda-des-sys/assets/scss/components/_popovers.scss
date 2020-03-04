@@ -1,0 +1,76 @@
+//
+// Popovers
+// --------------------------------------------------
+
+.popover {
+  .popover-header {
+    background-color: $popover-header-bg;
+    color: $popover-header-color;
+  }
+
+  &.bs-popover-bottom,
+  &.bs-popover-top {
+    > .arrow {
+      left: $popover-arrow-coarse-pos;
+      transform: $popover-arrow-horiz-fine-pos;
+    }
+  }
+
+  &.bs-popover-left,
+  &.bs-popover-right {
+    > .arrow {
+      top: $popover-arrow-coarse-pos;
+      transform: $popover-arrow-vert-fine-pos;
+    }
+  }
+
+  &.bs-popover-bottom:not(.no-title) > .arrow {
+    &::after {
+      border-bottom-color: $popover-bottom-arrow-color;
+    }
+  }
+}
+
+.popover-link {
+  background: transparent;
+  border: 0 none transparent;
+  border-bottom: 1px dashed $link-color;
+  box-shadow: none;
+  color: $link-color;
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &-icon {
+    border: none;
+    color: $link-color;
+    font-size: 125%;
+    line-height: 1;
+    margin-left: 5px;
+    padding: 0;
+    text-decoration: none;
+    transition: color 250ms linear;
+    vertical-align: middle;
+
+    &:hover {
+      color: $link-hover-color;
+      cursor: url("/bda-des-sys/assets/img/cursors/pointer-help.png") 10 0,
+        pointer;
+    }
+  }
+
+  &:hover {
+    border-bottom: 1px solid $link-hover-color;
+    color: $link-hover-color;
+    cursor: url("/bda-des-sys/assets/img/cursors/pointer-help.png") 10 0,
+      pointer;
+  }
+
+  .alert & {
+    border-bottom-color: inherit;
+    color: inherit;
+  }
+}

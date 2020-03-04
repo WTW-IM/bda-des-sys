@@ -1,0 +1,640 @@
+// TODO: Replace these! - Brian Kerr
+$es-nav-l2-border-color: $blue-900;
+$es-nav-l2-color: $black;
+$es-nav-l2-hover-color: $gray-50;
+$es-nav-l2-text-color: $black;
+$es-nav-l2-hover-text-color: $blue-900;
+
+.nav--head {
+  background-color: #fff;
+  border-bottom: 4px solid #00a0d2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1005;
+
+  .wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .logo--wrapper {
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 85px;
+      margin-left: 10px;
+      max-width: 210px;
+
+      @media (min-width: 768px) {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        max-width: initial;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: initial;
+        max-width: initial;
+      }
+
+      .logo--link__home {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: block;
+        height: inherit;
+        width: 200px;
+
+        @media (min-width: 900px) {
+          margin-right: 50px;
+        }
+      }
+    }
+
+    .menu--wrapper {
+      margin: 1.5em 10px 0 0;
+
+      @media (min-width: 1200px) {
+        margin-right: initial;
+      }
+
+      .nav--menu__button {
+      }
+    }
+  }
+}
+
+.es-nav {
+  background-color: $white;
+  float: right;
+
+  > li {
+    display: block;
+    position: relative;
+
+    // Actual tabs (as links)
+    > a {
+      border: 0px none transparent;
+      border-radius: 0;
+      color: $blue-900;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+
+      &:hover {
+        background-color: $blue-900;
+        color: $white;
+
+        > span.accent {
+          background-color: $blue-900;
+        }
+      }
+
+      > span {
+        &.accent {
+          display: block;
+          position: absolute;
+          height: 5px;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+        }
+
+        &.icon-lt {
+          display: block;
+          font-size: $h2-font-size;
+          text-align: center;
+        }
+      }
+    }
+
+    > span.badge {
+      background: $magenta-500;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      position: absolute;
+      right: -6px;
+      top: -6px;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    // TODO - Figure out why ScrollSpy is cannibalizing the navigation examples, e.g.: removeClass('active');
+
+    // `.active-example` not for implementation,
+    // just a patch to fix the above-mentioned
+    // cannibalization in the docs...
+    &.active,
+    &.active-example {
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $white;
+          background-color: $magenta-500;
+          cursor: default;
+        }
+
+        > span.accent {
+          background-color: $magenta-500;
+        }
+      }
+    }
+
+    // Open state
+    &.open {
+      border-bottom: 1px solid $magenta-500;
+      //z-index: 1001;
+
+      > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $white;
+          background-color: $magenta-500;
+        }
+
+        > span.accent {
+          background-color: $magenta-500;
+        }
+      }
+    }
+
+    // Disabled state
+    &.disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        background: $gray-50;
+      }
+    }
+
+    > ul.dropdown-menu {
+      background-color: $magenta-500;
+      border: 0px transparent;
+      border-bottom: 5px solid $magenta-500;
+      border-radius: 0px;
+      margin: 1px 0 0;
+      min-width: 400%;
+      padding: 10px;
+      left: -300%;
+
+      > li {
+        padding: 0 0 10px;
+        > a {
+          background-color: $es-nav-l2-color;
+          border: 1px solid $es-nav-l2-border-color;
+          color: $es-nav-l2-text-color;
+          padding: 10px;
+          position: relative;
+
+          &:hover {
+            background-color: $es-nav-l2-hover-color;
+            color: $es-nav-l2-hover-text-color;
+          }
+
+          > span.icon {
+            position: absolute;
+            right: 10px;
+            top: 13px;
+          }
+
+          &.primary {
+            background-color: $blue-900;
+            border: 1px solid $blue-900;
+            color: #fff;
+
+            &:hover {
+              background-color: #fff;
+              color: $es-nav-l2-hover-color;
+            }
+          }
+
+          &.secondary {
+            background-color: $gray-700;
+            border: 1px solid $gray-700;
+            color: #fff;
+
+            &:hover {
+              background-color: #fff;
+              border: 1px solid $es-nav-l2-hover-color;
+              color: $es-nav-l2-hover-color;
+            }
+          }
+        }
+
+        &:last-child {
+          padding: 0;
+        }
+
+        &.family-member {
+          clear: right;
+          padding: 15px 0 15px 10px;
+
+          > a {
+            display: inline-block;
+            float: right;
+            margin-top: -8px;
+            padding: 7px 30px 7px 10px;
+
+            > span.icon {
+              right: 7px;
+              top: 10px;
+            }
+          }
+
+          &.last {
+            border-bottom: 1px solid $es-nav-l2-border-color;
+            margin-bottom: 15px;
+            padding-bottom: 25px;
+          }
+
+          > span.shopped {
+            background-color: $blue-900;
+            border-radius: 5px;
+            color: #fff;
+            cursor: default;
+            display: inline-block;
+            float: right;
+            font-weight: normal;
+            line-height: $line-height-base;
+            margin-top: -8px;
+            padding: 7px;
+            white-space: nowrap; // prevent from randomly breaking onto new lines
+          }
+        }
+      }
+    }
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      border: 1px solid transparent;
+      border-bottom: 1px solid $blue-900;
+      float: left;
+      margin: 0 0 -1px -1px; // Make the list-items overlay previous sibling, bottom borders
+      min-width: 85px;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      width: 100%;
+
+      > a {
+        text-align: left;
+        padding-left: 15px;
+
+        > span.accent {
+          height: 100%;
+          width: 5px;
+        }
+
+        > span.icon-lt {
+          display: inline-block;
+          margin-right: 10px;
+          vertical-align: -27%;
+        }
+      }
+
+      > ul.dropdown-menu {
+        position: static;
+        float: none;
+        min-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        background-color: $magenta-500;
+        border: 0;
+        border-left: 5px solid $blue-900;
+        box-shadow: none;
+      }
+
+      > span.badge {
+        border: none;
+        right: 15px;
+        top: 17px;
+      }
+
+      + li {
+        border-top: 1px solid $gray-300;
+      }
+    }
+  }
+
+  // pulling this in mainly for less shorthand
+  &.nav-justified {
+    @extend .nav-justified;
+  }
+
+  &.sub-nav {
+    float: none;
+    box-shadow: 2px 2px 5px #999;
+
+    > li {
+      border: 0px none transparent;
+      margin: 0px;
+
+      > a {
+        &:hover {
+          background-color: $gray-50;
+        }
+      }
+
+      // `.active-example` not for implementation
+      &.active,
+      &.active-example {
+        > a {
+          background-color: $gray-50;
+          color: $white;
+
+          &:hover > span.icon {
+            color: inherit;
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      > li {
+        float: none;
+        margin: 0px;
+
+        > a {
+          color: $gray-900;
+          text-align: left;
+
+          > span[class*="chevron-"] {
+            color: #fff;
+            position: absolute;
+            right: 7px;
+            top: 33%;
+          }
+
+          &:hover > span[class*="chevron-"] {
+            color: $blue-900;
+          }
+        }
+
+        // `.active-example` not for implementation
+        &.active,
+        &.active-example {
+          > a {
+            color: $white;
+
+            &:hover > span.icon {
+              color: inherit;
+            }
+          }
+        }
+
+        // Disabled state
+        &.disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            background: $gray-50;
+            color: $gray-700;
+
+            > span.icon {
+              color: $gray-50;
+            }
+          }
+        }
+      }
+
+      &.light {
+        > li {
+          > a {
+            border-left: 4px solid transparent;
+            color: $gray-900;
+            padding-left: 6px;
+
+            &:hover,
+            &:focus {
+              border-color: $brand-primary;
+              color: $blue-900;
+
+              > span.icon {
+                color: $blue-900;
+              }
+            }
+          }
+
+          // `.active-example` not for implementation
+          &.active,
+          &.active-example {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-50;
+                border-color: $magenta;
+                color: $black;
+
+                > span.icon {
+                  color: $magenta;
+                }
+              }
+            }
+          }
+
+          &.disabled {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-50;
+                border-color: transparent;
+                color: $gray-700;
+
+                > span.icon {
+                  color: $gray-700;
+                }
+              }
+            }
+          }
+        }
+
+        > .panel {
+          > .panel-collapse {
+            > .panel-body {
+              > ul {
+                > li {
+                  > a {
+                    border-left: 4px solid transparent;
+                    padding-left: 32px;
+
+                    &.active,
+                    &:hover,
+                    &:focus {
+                      background: $gray-50;
+                      border-color: $magenta;
+                      color: $black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.horizontal {
+      margin-bottom: 15px;
+      display: flex;
+
+      > li {
+        flex: 1;
+
+        > a {
+          color: $gray-900;
+
+          &:hover,
+          &:focus {
+            color: $blue-900;
+          }
+        }
+
+        // `.active-example` not for implementation
+        &.active,
+        &.active-example {
+          > a {
+            color: $white;
+          }
+        }
+
+        // Disabled state
+        &.disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            background: $gray-50;
+            color: $gray-700;
+          }
+        }
+      }
+
+      &.light {
+        > li {
+          border-bottom: 2px solid $gray-500;
+
+          > a {
+            border-bottom: inherit;
+            display: block;
+            margin-bottom: -2px;
+            padding: 10px 20px 12px;
+
+            &:hover,
+            &:focus {
+              border-bottom: 4px solid $blue-900;
+              padding-bottom: 10px;
+              color: $blue-900;
+            }
+          }
+
+          // `.active-example` not for implementation
+          &.active,
+          &.active-example {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-50;
+                border-bottom: 4px solid $magenta;
+                color: $black;
+                padding-bottom: 10px;
+              }
+            }
+          }
+
+          &.disabled {
+            > a {
+              &,
+              &:hover,
+              &:focus {
+                background: $gray-50;
+                border-bottom: 2px solid $gray-500;
+                color: $gray-700;
+                padding-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Responsive (for mobile) styles
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      > li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $gray-300;
+
+        > a {
+          text-align: left;
+
+          > .icon {
+            display: none;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0px none transparent;
+        }
+      }
+    }
+
+    &.no-shadow {
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    background-color: #fff;
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  &.navbar-collapse {
+    padding: 0;
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      box-shadow: 2px 2px 5px #999;
+    }
+  }
+}
+
+// TODO: Delete the following section prior to public-facing implementation
+// For pocumentation/display pusposes only.
+img.placeholder {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  width: 20%;
+  max-width: 160px;
+}
