@@ -1,0 +1,273 @@
+//
+// Sliders
+// --------------------------------------------------
+// Component containers
+// -------------------------
+
+.ui-widget {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+
+  > .ui-widget {
+    font-size: 1em;
+  }
+
+  > button,
+  > select,
+  > textarea,
+  > input {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+  }
+}
+
+.ui-widget-content {
+  background: map-get($grays, '300');
+  color: map-get($grays, '900');
+
+  a {
+    color: map-get($grays, '900');
+  }
+}
+
+.ui-widget-header {
+  background: map-get($grays, '700');
+  color: map-get($grays, '50');
+  font-family: $font-family-bold;
+
+  a {
+    color: map-get($grays, '50');
+  }
+}
+
+.ui-state-default {
+  background: map-get($colors, 'primary');
+  font-weight: normal;
+  color: map-get($colors, 'primary');
+
+  a {
+    &,
+    &:link,
+    &:visited {
+      color: map-get($colors, 'primary');
+      text-decoration: none;
+    }
+  }
+}
+
+.ui-state-focus,
+.ui-state-hover {
+  background: desaturate(lighten(map-get($colors, 'primary'), 25%), 35%);
+  font-weight: normal;
+  color: map-get($grays, '50');
+
+  a {
+    &,
+    &:hover,
+    &:link,
+    &:visited {
+      color: map-get($grays, '50');
+      text-decoration: none;
+    }
+  }
+}
+
+.ui-state-active {
+  background: $magenta;
+  font-weight: normal;
+  color: map-get($grays, '50');
+
+  a {
+    &,
+    &:link,
+    &:visited {
+      color: map-get($grays, '50');
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Interaction Cues
+// -------------------------
+
+.ui-state-highlight {
+  border: 1px solid #dad55e;
+  background: map-get($grays, '50')a90;
+  color: #777620;
+
+  a {
+    color: #777620;
+  }
+}
+
+.ui-state-error {
+  border: 1px solid #f1a899;
+  background: #fddfdf;
+  color: #5f3f3f;
+
+  a {
+    color: #5f3f3f;
+  }
+}
+
+.ui-state-error-text {
+  color: #5f3f3f;
+}
+
+.ui-priority-primary {
+  font-family: $font-family-bold;
+}
+
+.ui-priority-secondary {
+  opacity: 0.7;
+  font-weight: normal;
+}
+
+.ui-state-disabled {
+  opacity: 0.35;
+  background-image: none;
+
+  .ui-icon {
+    //filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+  }
+}
+
+.oe-slider-wrap {
+  display: block;
+  position: relative;
+  min-height: 3em;
+
+  > .disp-val-max,
+  > .disp-val-min,
+  > .disp-val {
+    @extend .form-control;
+    position: absolute;
+    bottom: 0;
+    height: 1.5em;
+    max-width: 4em;
+    min-width: 2.5em;
+    text-align: center;
+  }
+
+  > .disp-val {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  > .disp-val-min {
+    left: 0;
+  }
+
+  > .disp-val-max {
+    right: 0;
+  }
+}
+
+.oe-slider-wrap-vert,
+.oe-slider-wrap-vert-range {
+  display: block;
+  position: relative;
+  padding: 2.5em 15px;
+
+  > .disp-val-max,
+  > .disp-val-min,
+  > .disp-val {
+    @extend .form-control;
+    padding-right: 6px;
+    position: absolute;
+    left: 50%;
+    height: 1.5em;
+    max-width: 4em;
+    min-width: 2.5em;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  > .disp-val {
+    bottom: 0;
+  }
+
+  > .disp-val-min {
+    bottom: 0;
+  }
+
+  > .disp-val-max {
+    top: 0;
+  }
+}
+
+.ui-slider {
+  display: block;
+  position: relative;
+  text-align: left;
+
+  > .ui-slider-handle {
+    border-radius: 50%;
+    cursor: default;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+    z-index: 2;
+  }
+
+  > .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: 0.7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+  }
+}
+
+.ui-slider-horizontal {
+  border-radius: 2px;
+  height: 8px;
+
+  > .ui-slider-handle {
+    top: -8px;
+    margin-left: -11px;
+  }
+
+  > .ui-slider-range {
+    top: 0;
+    height: 8px;
+  }
+
+  > .ui-slider-range-min {
+    left: 0;
+  }
+
+  > .ui-slider-range-max {
+    right: 0;
+  }
+}
+
+.ui-slider-vertical {
+  border-radius: 2px;
+  height: 200px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 8px;
+
+  > .ui-slider-handle {
+    left: -8px;
+    margin-left: 0;
+    margin-bottom: -11px;
+  }
+
+  > .ui-slider-range {
+    left: 0;
+    width: 100%;
+  }
+
+  > .ui-slider-range-min {
+    bottom: 0;
+  }
+
+  > .ui-slider-range-max {
+    top: 0;
+  }
+}
