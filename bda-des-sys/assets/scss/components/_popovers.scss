@@ -57,14 +57,16 @@
 
     &:hover {
       color: $link-hover-color;
-      cursor: url("/assets/img/cursors/pointer-help.png") 10 0, pointer;
+      cursor: url("/bda-des-sys/assets/img/cursors/pointer-help.png") 10 0,
+        pointer;
     }
   }
 
   &:hover {
     border-bottom: 1px solid $link-hover-color;
     color: $link-hover-color;
-    cursor: url("/assets/img/cursors/pointer-help.png") 10 0, pointer;
+    cursor: url("/bda-des-sys/assets/img/cursors/pointer-help.png") 10 0,
+      pointer;
   }
 
   .alert & {
