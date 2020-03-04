@@ -27,7 +27,7 @@ form.appt-calendar-wrapper {
         text-align: center;
 
         &:hover {
-          background: $wtwBlue;
+          background: $blue-500;
           color: #fff;
         }
       }
@@ -40,7 +40,7 @@ form.appt-calendar-wrapper {
         padding: 5px 0 0;
         text-align: center;
 
-        @include font-weight--bold();
+        font-family: $font-family-bold;
       }
     }
 
@@ -66,7 +66,7 @@ form.appt-calendar-wrapper {
         }
 
         > .day {
-          background: lighten($wtwBlue, 35%);
+          background: lighten($blue-500, 35%);
           height: 100%;
           left: 0;
           padding: 6px;
@@ -76,7 +76,7 @@ form.appt-calendar-wrapper {
           width: 100%;
 
           &:hover {
-            background: $wtwBlue;
+            background: $blue-500;
             color: #fff;
           }
         }
@@ -87,15 +87,15 @@ form.appt-calendar-wrapper {
           pointer-events: none;
 
           &:focus ~ .day {
-            @include tab-focus();
+            box-shadow: 0 0 3px 3px #83bffc;
           }
 
           &:checked ~ .day {
-            background: $wtwMagenta;
+            background: $magenta-500;
             color: #fff;
 
             &:hover {
-              background: $wtwMagenta;
+              background: $magenta-500;
               color: #fff;
             }
           }
@@ -120,13 +120,13 @@ form.appt-calendar-wrapper {
         &.off,
         &.sat,
         &.sun {
-          background: $gray-light;
-          color: $gray-dark;
+          background: $gray-300;
+          color: $gray-600;
         }
 
         &.out {
-          background: $gray-lighter;
-          color: $gray-darker;
+          background: $gray-100;
+          color: $gray-900;
         }
       }
 
@@ -164,18 +164,18 @@ form.appt-calendar-wrapper {
           padding: 3px;
 
           &:hover {
-            background: $wtwBlue;
+            background: $blue-500;
             color: #fff;
           }
 
           &:checked {
-            background-color: $wtwMagenta;
-            background-image: linear-gradient($wtwMagenta, $wtwMagenta);
+            background-color: $magenta-500;
+            background-image: linear-gradient($magenta-500, $magenta-500);
             color: #fff;
 
             &:hover {
-              background-color: $wtwMagenta;
-              background-image: linear-gradient($wtwMagenta, $wtwMagenta);
+              background-color: $magenta-500;
+              background-image: linear-gradient($magenta-500, $magenta-500);
               color: #fff;
             }
           }

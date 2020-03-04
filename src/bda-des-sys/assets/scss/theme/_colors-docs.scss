@@ -1,0 +1,147 @@
+//
+// Colors
+// --------------------------------------------------
+// Via Benefits Primary Colors - with Tints / Shades
+// --------------------------------------------------
+.blue-50 {
+  background-color: $blue-50;
+}
+.blue-100 {
+  background-color: $blue-100;
+}
+.blue-300 {
+  background-color: $blue-300;
+}
+.blue-500 {
+  background-color: $blue-500;
+}
+.blue-700 {
+  background-color: $blue-700;
+}
+.blue-900 {
+  background-color: $blue-900;
+}
+.green-50 {
+  background-color: $green-50;
+}
+.green-100 {
+  background-color: $green-100;
+}
+.green-300 {
+  background-color: $green-300;
+}
+.green-500 {
+  background-color: $green-500;
+}
+.green-700 {
+  background-color: $green-700;
+}
+.green-900 {
+  background-color: $green-900;
+}
+.magenta-50 {
+  background-color: $magenta-50;
+}
+.magenta-100 {
+  background-color: $magenta-100;
+}
+.magenta-300 {
+  background-color: $magenta-300;
+}
+.magenta-500 {
+  background-color: $magenta-500;
+}
+.magenta-700 {
+  background-color: $magenta-700;
+}
+.magenta-900 {
+  background-color: $magenta-900;
+}
+
+// --------------------------------------------------
+// VB Secondary Colors
+// --------------------------------------------------
+.wht {
+  background-color: $white;
+  border: 1px solid $black;
+}
+
+.gray-50 {
+  background-color: $gray-50;
+  border: 1px solid $gray-900;
+}
+
+.gray-100 {
+  background-color: $gray-100;
+  border: 1px solid $gray-700;
+}
+
+.gray-300 {
+  background-color: $gray-300;
+  border: 1px solid $gray-500;
+}
+
+.gray-500 {
+  background-color: $gray-500;
+  border: 1px solid $gray-300;
+}
+
+.gray-700 {
+  background-color: $gray-700;
+  border: 1px solid $gray-100;
+}
+
+.gray-900 {
+  background-color: $gray-900;
+  border: 1px solid $gray-50;
+}
+
+.blck {
+  background-color: $black;
+  border: 1px solid $white;
+}
+
+.violet-50 {
+  background-color: $violet-50;
+}
+.violet-100 {
+  background-color: $violet-100;
+}
+.violet-300 {
+  background-color: $violet-300;
+}
+.violet-500 {
+  background-color: $violet-500;
+}
+.violet-700 {
+  background-color: $violet-700;
+}
+.violet-900 {
+  background-color: $violet-900;
+}
+
+// --------------------------------------------------
+// Semantic
+// --------------------------------------------------
+.brand-success {
+  background-color: $success-500;
+}
+
+.brand-info {
+  background-color: $info-500;
+}
+
+.brand-warning {
+  background-color: $warning-500;
+}
+
+.brand-danger {
+  background-color: $danger-500;
+}
+
+// --------------------------------------------------
+// Other (Functional, etc.)
+// --------------------------------------------------
+.bg-software-blue {
+  background-color: $blue-900;
+}

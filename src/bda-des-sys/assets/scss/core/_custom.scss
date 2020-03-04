@@ -3,8 +3,6 @@
  * Special styles for presenting Bootstrap's documentation and code examples.
  */
 
-@import './wtw/bda/colors-docs';
-
 /*
  * Scaffolding
  *
@@ -29,18 +27,26 @@ h5 em {
 }
 
 /* Smaller headings need some love in the docs */
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   margin: 25px 0 12.5px;
 }
 
 /* Inline code within headings retain the heading's background-color */
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   code {
     background-color: inherit;
   }
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   position: relative;
 }
 
@@ -69,8 +75,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
-
 /* Inverted outline button (white on dark) */
 .btn-outline-inverse {
   color: #fff;
@@ -86,8 +90,6 @@ h2, h3, h4, h5, h6 {
     border-color: #fff;
   }
 }
-
-
 
 /* "ES" icon */
 .bs-docs-booticon {
@@ -121,11 +123,10 @@ h2, h3, h4, h5, h6 {
   &-outline {
     background-color: transparent;
     border: 3px solid #eee;
-    -webkit-box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, .6);
-    box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, .6);
+    -webkit-box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, 0.6);
+    box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, 0.6);
   }
 }
-
 
 /* Site-Map Navigation */
 .map-nav {
@@ -154,7 +155,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
 /*
  * Fancy skip link
  *
@@ -170,7 +170,7 @@ h2, h3, h4, h5, h6 {
   outline: 0;
 
   .skiplink-text {
-    padding: .5em;
+    padding: 0.5em;
     outline: 1px dotted;
   }
 }
@@ -178,7 +178,6 @@ h2, h3, h4, h5, h6 {
 #content:focus {
   outline: none;
 }
-
 
 /*
  * Main navigation
@@ -228,7 +227,6 @@ h2, h3, h4, h5, h6 {
   display: none;
 }
 
-
 /*
  * Footer
  *
@@ -271,7 +269,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
 /*
  * Homepage
  *
@@ -284,7 +281,7 @@ h2, h3, h4, h5, h6 {
   position: relative;
   padding: 30px 0;
   color: #eee;
-  text-shadow: 1px 3px 0 rgba(75, 75, 75, .6);
+  text-shadow: 1px 3px 0 rgba(75, 75, 75, 0.6);
   background-color: #ddd;
   background-image: url("../img/banner-bg--elp.jpg");
   background-repeat: no-repeat;
@@ -411,7 +408,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
 /*
  * Examples
  *
@@ -443,7 +439,6 @@ h2, h3, h4, h5, h6 {
     padding-left: 10px;
   }
 }
-
 
 /*
  * Side navigation
@@ -593,7 +588,8 @@ h2, h3, h4, h5, h6 {
 
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
-  .bs-docs-sidebar .nav > .active > ul, .bs-docs-sidebar .nav > .active > ul > .active > ul {
+  .bs-docs-sidebar .nav > .active > ul,
+  .bs-docs-sidebar .nav > .active > ul > .active > ul {
     display: block;
   }
 
@@ -635,7 +631,6 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-
 /*
  * Docs sections
  *
@@ -655,7 +650,6 @@ h1[id] {
   padding-top: 20px;
   margin-top: 0;
 }
-
 
 /*
  * Callouts
@@ -742,7 +736,6 @@ h1[id] {
   }
 }
 
-
 /*
  * Color swatches
  *
@@ -795,7 +788,6 @@ table.color-variables {
   }
 }
 
-
 /*
  * Grid examples
  *
@@ -810,12 +802,11 @@ table.color-variables {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #eee;
-    background-color: rgba(86, 61, 124, .15);
+    background-color: rgba(86, 61, 124, 0.15);
     border: 1px solid #ddd;
-    border: 1px solid rgba(86, 61, 124, .2);
+    border: 1px solid rgba(86, 61, 124, 0.2);
   }
 }
-
 
 /*
  * Examples
@@ -832,8 +823,8 @@ table.color-variables {
   border-color: #e5e5e5 #eee #eee;
   border-style: solid;
   border-width: 1px 0;
-  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, .05);
+  -webkit-box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
 
   &::after {
     position: absolute;
@@ -888,7 +879,6 @@ table.color-variables {
 .bs-examples-padded-bottom {
   padding-bottom: 24px;
 }
-
 
 /* Make the examples and snippets not full-width */
 @media (min-width: 768px) {
@@ -1028,7 +1018,12 @@ table.color-variables {
       border-top: 0;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 0;
     }
   }
@@ -1191,7 +1186,6 @@ table.color-variables {
   width: 50px;
 }
 
-
 /*
  * Responsive tests
  *
@@ -1273,7 +1267,6 @@ table.color-variables {
   border: 1px solid #d6e9c6;
 }
 
-
 /*
  * Glyphicons
  *
@@ -1296,7 +1289,9 @@ table.color-variables {
     border: 1px solid #fff;
   }
 
-  .glyphicon, .icon-reg, .icon-lt {
+  .glyphicon,
+  .icon-reg,
+  .icon-lt {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 24px;
@@ -1344,7 +1339,6 @@ table.color-variables {
     }
   }
 }
-
 
 /*
  * Customizer
@@ -1417,8 +1411,8 @@ table.color-variables {
   color: #fff;
   background-color: #d9534f;
   border-bottom: 1px solid #b94441;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .bs-customizer-alert .close {
@@ -1439,8 +1433,10 @@ table.color-variables {
   color: #fff;
   background-color: #a83c3a;
   border-color: #973634;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05),
+    0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .bs-dropzone {
@@ -1470,7 +1466,8 @@ table.color-variables {
   font-weight: normal;
   color: #333;
 }
-/* .bs-dropzone */ #import-manual-trigger {
+/* .bs-dropzone */
+#import-manual-trigger {
   cursor: pointer;
 }
 
@@ -1556,7 +1553,6 @@ table.color-variables {
   }
 }
 
-
 /*
  * ZeroClipboard styles
  */
@@ -1589,7 +1585,7 @@ table.color-variables {
 
 @media (min-width: 768px) {
   .zero-clipboard {
-    display: none;/* display: block; */
+    display: none; /* display: block; */
   }
 
   .bs-example + .zero-clipboard .btn-clipboard {
@@ -1622,10 +1618,10 @@ table.color-variables {
 }
 
 *:hover > .anchorjs-link {
-  opacity: .75;
-  -webkit-transition: color .16s linear;
-  -o-transition: color .16s linear;
-  transition: color .16s linear;
+  opacity: 0.75;
+  -webkit-transition: color 0.16s linear;
+  -o-transition: color 0.16s linear;
+  transition: color 0.16s linear;
 }
 
 *:hover > .anchorjs-link:hover,
@@ -1649,7 +1645,9 @@ table.color-variables {
     text-align: center;
   }
 
-  .conditional, .fail, .pass {
+  .conditional,
+  .fail,
+  .pass {
     position: relative;
     text-align: center;
 
@@ -1677,15 +1675,19 @@ table.color-variables {
 }
 
 .foo {
-  content: 'bar';
+  content: "bar";
 }
 
 /* Pseudo :focus state for showing how it looks in the docs */
 #focusedInput {
-  border-color: rgb(204, 204, 204); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback */
-  border-color: rgba(82, 168, 236, .8);
+  border-color: rgb(
+    204,
+    204,
+    204
+  ); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback */
+  border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
-  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
-  box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }

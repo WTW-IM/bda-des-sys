@@ -4,8 +4,6 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 // Brand colors - primary
 
-@import "./wtw/bda/colors";
-
 $blue: $blue-500;
 $green: $green-500;
 $magenta: $magenta-500;
@@ -1167,16 +1165,3 @@ $kbd-color: $gray-50 !default;
 $kbd-bg: $gray-900 !default;
 
 $pre-color: null !default;
-
-@import "./node_modules/bootstrap/scss/bootstrap";
-
-// Customize Bootstrap classes with extands below
-@import "./custom";
-@import "./wtw/bda/functions";
-@import "./wtw/bda/icons";
-@import "./wtw/bda/buttons";
-@import "./wtw/bda/alerts";
-@import "./wtw/bda/binaries";
-@import "./wtw/bda/forms";
-@import "./wtw/bda/modals";
-@import "./wtw/bda/popovers";

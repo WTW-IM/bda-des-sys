@@ -69,62 +69,61 @@ $agent-300: #fdcc8a;
 $agent-500: #fc8d59;
 $agent-700: #ff6310;
 
-
 $bds-theme-semantic: (
-  'success': $success-500,
-  'warning': $warning-500,
-  'danger': $danger-500,
-  'info': $info-500
+  "success": $success-500,
+  "warning": $warning-500,
+  "danger": $danger-500,
+  "info": $info-500
 );
 
 $bds-theme-semantic-extended: map-merge(
   (
-    'success-light': $success-100,
-    'warning-light': $warning-100,
-    'danger-light': $danger-100,
-    'info-light': $info-100
+    "success-light": $success-100,
+    "warning-light": $warning-100,
+    "danger-light": $danger-100,
+    "info-light": $info-100
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-btns: map-merge(
   (
-    'default': $gray-100,
-    'default-dark': $gray-700,
-    'primary': $blue-900
+    "default": $gray-100,
+    "default-dark": $gray-700,
+    "primary": $blue-900
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-btns-outline: map-merge(
   (
-    'default': $gray-500,
-    'primary': $blue-900,
-    'magenta': $magenta-500,
-    'violet': $violet-500
+    "default": $gray-500,
+    "primary": $blue-900,
+    "magenta": $magenta-500,
+    "violet": $violet-500
   ),
   $bds-theme-semantic
 );
 
 $bds-theme-alerts: (
-  'agent': (
-    'opaque': $agent-700,
-    'light': $agent-500
+  "agent": (
+    "opaque": $agent-700,
+    "light": $agent-500
   ),
-  'danger': (
-    'opaque': $danger-500,
-    'light': $danger-50
+  "danger": (
+    "opaque": $danger-500,
+    "light": $danger-50
   ),
-  'info': (
-    'opaque': $info-500,
-    'light': $info-50
+  "info": (
+    "opaque": $info-500,
+    "light": $info-50
   ),
-  'success': (
-    'opaque': $success-500,
-    'light': $success-50
+  "success": (
+    "opaque": $success-500,
+    "light": $success-50
   ),
-  'warning': (
-    'opaque': $warning-500,
-    'light': $warning-50
+  "warning": (
+    "opaque": $warning-500,
+    "light": $warning-50
   )
 );

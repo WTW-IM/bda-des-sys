@@ -1,7 +1,11 @@
-// BDS Forms
-//
-//
+// Import form styles
 
+@import "sliders";
+@import "buttons";
+@import "date-picker";
+@import "binaries";
+
+// BDS Forms
 label {
   font-family: $font-family-bold;
 }
@@ -11,7 +15,7 @@ label {
     background-color: transparent;
     border: 0 none;
     box-shadow: none;
-    color: map-get($grays, '900');
+    color: map-get($grays, "900");
     opacity: 1;
     padding-left: 0;
     padding-right: 0;
@@ -65,6 +69,3 @@ label {
     display: block;
   }
 }
-
-// Import additional form components
-@import 'forms/sliders';

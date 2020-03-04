@@ -4,16 +4,16 @@
 
 @each $state, $key in $bds-theme-alerts {
   .alert-#{$state} {
-    @include alert-variant(deep-map-get($key, 'opaque'), transparent, $gray-50);
+    @include alert-variant(deep-map-get($key, "opaque"), transparent, $gray-50);
   }
 
   .alert-#{$state}--light,
   .alert-#{$state}--cta {
-    @include alert-variant(deep-map-get($key, 'light'), transparent, $gray-900);
+    @include alert-variant(deep-map-get($key, "light"), transparent, $gray-900);
   }
 
   .alert-#{$state}--msg {
-    color: deep-map-get($key, 'opaque');
+    color: deep-map-get($key, "opaque");
     font-family: $alert-msg-font-family;
   }
 }
@@ -33,7 +33,7 @@
     float: right;
 
     + .btn {
-      margin-right: .75rem;
+      margin-right: 0.75rem;
     }
   }
 
