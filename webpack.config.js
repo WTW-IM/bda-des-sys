@@ -16,8 +16,7 @@ const config = {
   entry: "./src/bda-des-sys/assets/js/index.js",
   output: {
     filename: "js/[name].js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: IS_DEV ? "" : "/bda-des-sys/"
+    path: path.resolve(__dirname, "dist")
   },
   module: {
     rules: [
