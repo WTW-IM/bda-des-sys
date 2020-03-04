@@ -846,18 +846,18 @@ table.color-variables {
     border-radius: 0;
   }
 
-  .ex-column {
-    float: left;
-    min-width: 48.5%;
-    max-width: 48.5%;
-
-    & + .ex-column {
-      margin-left: 15px;
-    }
-  }
-
   .ex-row {
+    display: flex;
+    justify-content: space-between;
     max-height: 300px;
+
+    &-tall {
+      max-height: 450px;
+    }
+
+    .ex-col {
+      width: 48%;
+    }
   }
 
   /* Undo width of container */

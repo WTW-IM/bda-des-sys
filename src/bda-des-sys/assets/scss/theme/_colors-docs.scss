@@ -1,7 +1,7 @@
 //
 // Colors
 // --------------------------------------------------
-// Via Benefits Primary Colors - with Tints / Shades
+// Via Benefits Brand Palette - with Tints / Shades
 // --------------------------------------------------
 .blue-50 {
   background-color: $blue-50;
@@ -57,50 +57,6 @@
 .magenta-900 {
   background-color: $magenta-900;
 }
-
-// --------------------------------------------------
-// VB Secondary Colors
-// --------------------------------------------------
-.wht {
-  background-color: $white;
-  border: 1px solid $black;
-}
-
-.gray-50 {
-  background-color: $gray-50;
-  border: 1px solid $gray-900;
-}
-
-.gray-100 {
-  background-color: $gray-100;
-  border: 1px solid $gray-700;
-}
-
-.gray-300 {
-  background-color: $gray-300;
-  border: 1px solid $gray-500;
-}
-
-.gray-500 {
-  background-color: $gray-500;
-  border: 1px solid $gray-300;
-}
-
-.gray-700 {
-  background-color: $gray-700;
-  border: 1px solid $gray-100;
-}
-
-.gray-900 {
-  background-color: $gray-900;
-  border: 1px solid $gray-50;
-}
-
-.blck {
-  background-color: $black;
-  border: 1px solid $white;
-}
-
 .violet-50 {
   background-color: $violet-50;
 }
@@ -119,26 +75,128 @@
 .violet-900 {
   background-color: $violet-900;
 }
-
 // --------------------------------------------------
 // Semantic
 // --------------------------------------------------
 .brand-success {
   background-color: $success-500;
 }
-
 .brand-info {
   background-color: $info-500;
 }
-
 .brand-warning {
   background-color: $warning-500;
 }
-
 .brand-danger {
   background-color: $danger-500;
 }
-
+.info-50 {
+  background-color: $info-50;
+}
+.info-100 {
+  background-color: $info-100;
+}
+.info-300 {
+  background-color: $info-300;
+}
+.info-500 {
+  background-color: $info-500;
+}
+.info-700 {
+  background-color: $info-700;
+}
+.info-900 {
+  background-color: $info-900;
+}
+.success-50 {
+  background-color: $success-50;
+}
+.success-100 {
+  background-color: $success-100;
+}
+.success-300 {
+  background-color: $success-300;
+}
+.success-500 {
+  background-color: $success-500;
+}
+.success-700 {
+  background-color: $success-700;
+}
+.success-900 {
+  background-color: $success-900;
+}
+.warning-50 {
+  background-color: $warning-50;
+}
+.warning-100 {
+  background-color: $warning-100;
+}
+.warning-300 {
+  background-color: $warning-300;
+}
+.warning-500 {
+  background-color: $warning-500;
+}
+.warning-700 {
+  background-color: $warning-700;
+}
+.warning-900 {
+  background-color: $warning-900;
+}
+.danger-50 {
+  background-color: $danger-50;
+}
+.danger-100 {
+  background-color: $danger-100;
+}
+.danger-300 {
+  background-color: $danger-300;
+}
+.danger-500 {
+  background-color: $danger-500;
+}
+.danger-700 {
+  background-color: $danger-700;
+}
+.danger-900 {
+  background-color: $danger-900;
+}
+// --------------------------------------------------
+// VB Gray Palette
+// --------------------------------------------------
+.wht {
+  background-color: $white;
+  border: 1px solid $black;
+}
+.gray-50 {
+  background-color: $gray-50;
+  border: 1px solid $gray-900;
+}
+.gray-100 {
+  background-color: $gray-100;
+  border: 1px solid $gray-700;
+}
+.gray-300 {
+  background-color: $gray-300;
+  border: 1px solid $gray-500;
+}
+.gray-500 {
+  background-color: $gray-500;
+  border: 1px solid $gray-300;
+}
+.gray-700 {
+  background-color: $gray-700;
+  border: 1px solid $gray-100;
+}
+.gray-900 {
+  background-color: $gray-900;
+  border: 1px solid $gray-50;
+}
+.blck {
+  background-color: $black;
+  border: 1px solid $white;
+}
 // --------------------------------------------------
 // Other (Functional, etc.)
 // --------------------------------------------------

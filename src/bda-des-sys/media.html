@@ -1205,30 +1205,32 @@
   <p>A bar chart is a way of showing data as bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.</p>
 
   <div class="bs-examples" data-example-id="data-viz-ex-bar">
-    <div class="ex-column">
-      <strong>Bar Chart</strong>
-      <canvas id="chart-ex-bar"></canvas>
+    <div class="ex-row">
+      <div class="ex-col">
+        <strong>Bar Chart</strong>
+        <canvas id="chart-ex-bar"></canvas>
+      </div>
+      <div class="ex-col">
+        <strong>Horizontal Bar Chart</strong>
+        <canvas id="chart-ex-bar-horiz"></canvas>
+      </div>
     </div>
-    <div class="ex-column">
-      <strong>Horizontal Bar Chart</strong>
-      <canvas id="chart-ex-bar-horiz"></canvas>
-    </div>
-
   </div>
 
   <h3>Line Charts</h3>
   <p>A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the comparison of two data sets.</p>
 
   <div class="bs-examples" data-example-id="data-viz-ex-line">
-    <div class="ex-column">
-      <strong>Line Chart</strong>
-      <canvas id="chart-ex-line"></canvas>
+    <div class="ex-row">
+      <div class="ex-col">
+        <strong>Line Chart</strong>
+        <canvas id="chart-ex-line"></canvas>
+      </div>
+      <div class="ex-col">
+        <strong>Line Chart - Multiple Datasets</strong>
+        <canvas id="chart-ex-line-multi"></canvas>
+      </div>
     </div>
-    <div class="ex-column">
-      <strong>Line Chart - Multiple Datasets</strong>
-      <canvas id="chart-ex-line-multi"></canvas>
-    </div>
-
   </div>
 
   <h3>Pie &amp; Doughnut Charts</h3>
@@ -1237,67 +1239,75 @@
   <p>Additionally, doughnut charts offer the benefit of space to include meta information pertaining to the data set, such as an aggregate total. Example: total monthly expenditure in the center, and a breakdown of proportions by type in the surrounding arcs.</p>
 
   <div class="bs-examples" data-example-id="data-viz-ex-pie">
-    <div class="ex-column">
-      <strong>Pie Chart</strong>
-      <canvas id="chart-ex-pie"></canvas>
+    <div class="ex-row">
+      <div class="ex-col">
+        <strong>Pie Chart</strong>
+        <canvas id="chart-ex-pie"></canvas>
+      </div>
+      <div class="ex-col">
+        <strong>Doughnut Chart</strong>
+        <canvas id="chart-ex-donut"></canvas>
+      </div>
     </div>
-    <div class="ex-column">
-      <strong>Doughnut Chart</strong>
-      <canvas id="chart-ex-donut"></canvas>
-    </div>
-
   </div>
 
-  <!--<h3>Radar Charts</h3>-->
-  <!--<p>A radar chart is a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.</p>-->
+  <h3>Radar Charts</h3>
+  <p>A radar chart is a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.</p>
 
-  <!--<div class="bs-example" data-example-id="data-viz-ex-radar">-->
-  <!--  <canvas id="chart-ex-radar" width="400" height="400"></canvas>-->
-  <!--</div>-->
-
-  <!--<h3>Polar Area Charts</h3>-->
-  <!--<p>Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.</p>-->
-  <!--<p>This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.</p>-->
-
-  <!--<div class="bs-example" data-example-id="data-viz-ex-polar">-->
-  <!--  <canvas id="chart-ex-polar" width="400" height="400"></canvas>-->
-  <!--</div>-->
-
-  <p><small>After much research and careful scrutiny, we have decided to use <a href="http://www.chartjs.org/" target="_blank">Chart.js</a> for demonstration purposes. It is fully featured, and comes with delightful animations right out of the box.</small></p>
-
-</div>
-<div class="bs-docs-section">
-  <h2 id="videos" class="page-header">Videos</h2>
-  <p>In our line of work, videos usually serve one of two purposes &mdash; instructional/informative or decorative. This isn't to say that they shouldn't be somewhat entertaining, if appropriate... but good luck getting a kitten to talk about benefits!</p>
-
-  <h3>Instructional/Informational Videos</h3>
-  <p>We're not going to tell you how you should produce or edit instructional videos. That's up to you, but here are our recommendations for how to lay out gallery pages:</p>
-
-  <h4>Rows</h4>
-  <p>A row-based layout puts more emphasis on text &mdash; unless you want the thumbnails to be larger, and have fewer "items" fit within a browser's viewport at a given time.</p>
-  <p>The example layout uses a small thumbnail (that launches the video), 5 lines of text (truncated with an ellipsis), and a "Play Video" button (just to cover the bases).</p>
-  <a href="/vid-rows.html" class="btn btn-default btn-large" target="_blank">See Rows Layout</a>
-
-  <hr class="rule">
-
-  <h4>Tiles</h4>
-  <p>A tile-based layout puts more emphasis on thumbnails, where they can be a bit larger. The text needs to be truncated a little smaller, unless you want to have fewer "items" fit within a browser's viewport at a given time.</p>
-  <a href="/vid-tiles.html" class="btn btn-default btn-large" target="_blank">See Tiles Layout</a>
-
-  <div class="bs-callout bs-callout-accessibility" id="callout-glyphicons-accessibility">
-    <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
-    <h4>Considerations for video content</h4>
-    <p>
-      ... TBD ...
-    </p>
+  <div class="bs-example" data-example-id="data-viz-ex-radar">
+   <div class="ex-row-tall">
+     <div class="ex-col">
+       <canvas id="chart-ex-radar"></canvas>
+     </div>
+   </div>
   </div>
 
-  <h3>Decorative Video</h3>
-  <p>We've all seen decorative videos on various sites &mdash; from PayPal, to Airbnb, to our very own!</p>
-  <p>Make sure decorative videos are hidden from screen readers, as they do not contribute to the information users are seeking. Be sure to balance quality with size to make sure videos both load quickly and look decent behind your content.</p>
+  <h3>Polar Area Charts</h3>
+  <p>Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.</p>
+  <p>This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.</p>
+
+  <div class="bs-example" data-example-id="data-viz-ex-polar">
+    <div class="ex-row-tall">
+      <div class="ex-col">
+        <canvas id="chart-ex-polar"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <p><small>After much research and careful scrutiny, we have decided to use <a href="http://www.chartjs.org/" target="_blank">Chart.js</a> for <strong>demonstration purposes</strong>. It is fully featured, and comes with delightful animations right out of the box. Check it out, but if it doesn't suit your needs, no worries&mdash;use what best suits your needs! Just remember to follow the visual representations depicted in these documents.</small></p>
 </div>
 
-        </div>
+  <div class="bs-docs-section">
+    <h2 id="videos" class="page-header">Videos</h2>
+    <p>In our line of work, videos usually serve one of two purposes &mdash; instructional/informative or decorative. This isn't to say that they shouldn't be somewhat entertaining, if appropriate... but good luck getting a kitten to talk about benefits!</p>
+
+    <h3>Instructional/Informational Videos</h3>
+    <p>We're not going to tell you how you should produce or edit instructional videos. That's up to you, but here are our recommendations for how to lay out gallery pages:</p>
+
+    <h4>Rows</h4>
+    <p>A row-based layout puts more emphasis on text &mdash; unless you want the thumbnails to be larger, and have fewer "items" fit within a browser's viewport at a given time.</p>
+    <p>The example layout uses a small thumbnail (that launches the video), 5 lines of text (truncated with an ellipsis), and a "Play Video" button (just to cover the bases).</p>
+    <a href="/vid-rows.html" class="btn btn-default btn-large" target="_blank">See Rows Layout</a>
+
+    <hr class="rule">
+
+    <h4>Tiles</h4>
+    <p>A tile-based layout puts more emphasis on thumbnails, where they can be a bit larger. The text needs to be truncated a little smaller, unless you want to have fewer "items" fit within a browser's viewport at a given time.</p>
+    <a href="/vid-tiles.html" class="btn btn-default btn-large" target="_blank">See Tiles Layout</a>
+
+    <div class="bs-callout bs-callout-accessibility" id="callout-glyphicons-accessibility">
+      <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
+      <h4>Considerations for video content</h4>
+      <p>
+        ... TBD ...
+      </p>
+    </div>
+
+    <h3>Decorative Video</h3>
+    <p>We've all seen decorative videos on various sites &mdash; from PayPal, to Airbnb, to our very own!</p>
+    <p>Make sure decorative videos are hidden from screen readers, as they do not contribute to the information users are seeking. Be sure to balance quality with size to make sure videos both load quickly and look decent behind your content.</p>
+  </div>
+</div>
 
         <div class="col-md-3" role="complementary">
           <nav id="es-ui-side-nav" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
@@ -1414,10 +1424,10 @@
   <script src="./bda-des-sys/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!--
-<script src="./assets/js/vendor/Chart.bundle.js"></script> -->
 
-<!-- <script>
+<script src="./assets/js/vendor/chart.bundle.js"></script>
+
+<script>
   // Chart Containers
   var ctxPie = document.getElementById("chart-ex-pie");
   var ctxDonut = document.getElementById("chart-ex-donut");
@@ -1661,7 +1671,7 @@
       }
     }
   });
-</script> -->
+</script>
 
   </body>
 </html>
