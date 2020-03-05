@@ -13,7 +13,7 @@ const IS_DEV = process.env.NODE_ENV === "dev";
 const config = {
   mode: IS_DEV ? "development" : "production",
   devtool: IS_DEV ? "eval-source-map" : "source-map",
-  entry: "./src/bda-des-sys/assets/js/index.js",
+  entry: "./src/assets/js/index.js",
   output: {
     filename: "js/[name].js",
     path: path.resolve(__dirname, "dist")
@@ -101,8 +101,8 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {
-        from: "./src/bda-des-sys/assets",
-        to: "./bda-des-sys/assets"
+        from: "./src/assets",
+        to: "./assets"
       }
     ]),
     new MiniCssExtractPlugin({
