@@ -329,7 +329,7 @@
   &.secondary {
     label {
       span {
-        @extend .btn-outline-primary;
+        @extend .btn-primary-alt;
 
         border: 2px solid;
         padding: $input-btn-padding-y $input-btn-padding-x;
@@ -343,7 +343,7 @@
     }
 
     input[type="radio"]:checked ~ span {
-      @extend .btn-outline-primary:active;
+      @extend .btn-primary-alt, :active;
       //@extend .hover; // <-- todo: solve for this
     }
   }

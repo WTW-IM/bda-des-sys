@@ -14,21 +14,19 @@
     position: relative;
 
     + li {
-      padding-left: floor(($font-size-base * 1.25));
+      padding-left: $font-size-base * 1.25;
 
-      &:before {
+      &::before {
         content: "";
         display: block;
-        border-color: $gray-500;
+        border-color: $gray-400;
         border-style: solid;
         border-width: 0 2px 2px 0;
-        height: floor(($font-size-base * 0.75));
-        left: 0px;
+        height: $font-size-base * 0.6;
+        left: $font-size-base * 0.2;
         position: absolute;
-        top: 20%;
-        width: floor(($font-size-base * 0.75));
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
+        top: $font-size-base * 0.5;
+        width: $font-size-base * 0.6;
         transform: rotate(-45deg);
       }
     }
