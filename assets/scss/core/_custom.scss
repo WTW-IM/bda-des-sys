@@ -60,73 +60,6 @@ h6 {
   font-weight: normal;
 }
 
-/* Outline button for use within the docs */
-.btn-outline {
-  color: #563d7c;
-  background-color: transparent;
-  border-color: #563d7c;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #fff;
-    background-color: #563d7c;
-    border-color: #563d7c;
-  }
-}
-
-/* Inverted outline button (white on dark) */
-.btn-outline-inverse {
-  color: #fff;
-  background-color: transparent;
-  border-color: #cdbfe3;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #563d7c;
-    text-shadow: none;
-    background-color: #fff;
-    border-color: #fff;
-  }
-}
-
-/* "ES" icon */
-.bs-docs-booticon {
-  display: block;
-  font-weight: 500;
-  color: #eee;
-  text-align: center;
-  cursor: default;
-  background-color: #d8d7df;
-  border-radius: 2%;
-
-  &-sm {
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  &-lg {
-    width: 154px;
-    height: 144px;
-    font-size: 108px;
-    line-height: 140px;
-  }
-
-  &-inverse {
-    color: #563d7c;
-    background-color: #fff;
-  }
-
-  &-outline {
-    background-color: transparent;
-    border: 3px solid #eee;
-    -webkit-box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, 0.6);
-    box-shadow: 1px 3px 3px 0 rgba(75, 75, 75, 0.6);
-  }
-}
 
 /* Site-Map Navigation */
 .map-nav {
@@ -186,46 +119,17 @@ h6 {
  */
 
 #main-nav {
-  font-size: 90%;
   background-color: #007fa7;
-}
+  font-size: 90%;
+  position: sticky;
+  top: 0;
+  z-index: 2500;
 
-.bs-docs-nav {
-  margin-bottom: 0;
-  background-color: #fff;
-  border-bottom: 0;
-
-  .navbar-brand,
-  .navbar-nav > li > a {
-    font-weight: 500;
-    color: #563d7c;
-  }
-
-  .navbar-nav > li > a:hover,
-  .navbar-nav > .active > a,
-  .navbar-nav > .active > a:hover {
-    color: #463265;
-    background-color: #f9f9f9;
-  }
-
-  .navbar-toggle .icon-bar {
-    background-color: #563d7c;
-  }
-
-  .navbar-header .navbar-toggle {
-    border-color: #fff;
-
-    &:hover,
-    &:focus {
-      background-color: #f9f9f9;
-      border-color: #f9f9f9;
-    }
+  .navbar {
+    padding: 0;
   }
 }
 
-.bs-home-nav .bs-nav-b {
-  display: none;
-}
 
 /*
  * Footer
@@ -293,6 +197,7 @@ h6 {
   min-height: 300px;
   text-align: center;
   background-position: center;
+  margin-bottom: 2rem;
 
   .bs-docs-booticon {
     margin: 0 auto 30px;
@@ -450,37 +355,48 @@ h6 {
 /* By default it's not affixed in mobile views, so undo that */
 .bs-docs-sidebar {
   &.affix {
-    position: static;
+    position: sticky;
+  }
+
+  h5 {
+    margin-top: 0;
   }
 
   .nav {
-    > li > a {
+    display: flex;
+    flex-direction: column;
+
+    > li {
       display: block;
-      padding: 4px 20px;
-      font-size: 13px;
-      font-weight: 500;
-      color: #767676;
 
-      &:hover,
-      &:focus {
-        padding-left: 19px;
-        color: #563d7c;
-        text-decoration: none;
-        background-color: transparent;
-        border-left: 1px solid #563d7c;
-      }
-    }
+      > a {
+        display: block;
+        padding: 4px 20px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #767676;
 
-    .active {
-      &,
-      &:hover,
-      &:focus {
-        > a {
-          padding-left: 18px;
-          font-weight: bold;
+        &:hover,
+        &:focus {
+          padding-left: 19px;
           color: #563d7c;
+          text-decoration: none;
           background-color: transparent;
-          border-left: 2px solid #563d7c;
+          border-left: 1px solid #563d7c;
+        }
+
+        .active {
+          &,
+          &:hover,
+          &:focus {
+            > a {
+              padding-left: 18px;
+              font-weight: bold;
+              color: #563d7c;
+              background-color: transparent;
+              border-left: 2px solid #563d7c;
+            }
+          }
         }
       }
     }
@@ -489,15 +405,13 @@ h6 {
 
 @media (min-width: 768px) {
   .bs-docs-sidebar {
-    padding-top: 50px;
     padding-left: 20px;
   }
 }
 
 /* First level of nav */
 .bs-docs-sidenav {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* .bs-docs-sidebar .nav > .active > ul > .active > a,
