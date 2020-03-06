@@ -87,6 +87,7 @@ $es-nav-l2-hover-text-color: $blue-900;
       }
 
       .nav--menu__button {
+        // TODO: What goes here? Maybe nothing, since we're re-thinking global nav in the Toolkit? -=gc=-
       }
     }
   }
@@ -94,6 +95,7 @@ $es-nav-l2-hover-text-color: $blue-900;
 
 .es-nav {
   background-color: $white;
+  display: flex;
   float: right;
 
   > li {
@@ -102,7 +104,7 @@ $es-nav-l2-hover-text-color: $blue-900;
 
     // Actual tabs (as links)
     > a {
-      border: 0px none transparent;
+      border: 0 none transparent;
       border-radius: 0;
       color: $blue-900;
       padding: 10px;
@@ -123,8 +125,8 @@ $es-nav-l2-hover-text-color: $blue-900;
           display: block;
           position: absolute;
           height: 5px;
-          left: 0px;
-          top: 0px;
+          left: 0;
+          top: 0;
           width: 100%;
         }
 
@@ -198,9 +200,9 @@ $es-nav-l2-hover-text-color: $blue-900;
 
     > ul.dropdown-menu {
       background-color: $magenta-500;
-      border: 0px transparent;
+      border: 0 transparent;
       border-bottom: 5px solid $magenta-500;
-      border-radius: 0px;
+      border-radius: 0;
       margin: 1px 0 0;
       min-width: 400%;
       padding: 10px;
@@ -208,6 +210,7 @@ $es-nav-l2-hover-text-color: $blue-900;
 
       > li {
         padding: 0 0 10px;
+
         > a {
           background-color: $es-nav-l2-color;
           border: 1px solid $es-nav-l2-border-color;
@@ -354,8 +357,8 @@ $es-nav-l2-hover-text-color: $blue-900;
     box-shadow: 2px 2px 5px #999;
 
     > li {
-      border: 0px none transparent;
-      margin: 0px;
+      border: 0 none transparent;
+      margin: 0;
 
       > a {
         &:hover {
@@ -367,7 +370,7 @@ $es-nav-l2-hover-text-color: $blue-900;
       &.active,
       &.active-example {
         > a {
-          background-color: $gray-50;
+          background-color: $blue-900;
           color: $white;
 
           &:hover > span.icon {
@@ -378,9 +381,11 @@ $es-nav-l2-hover-text-color: $blue-900;
     }
 
     &.vertical {
+      flex-direction: column;
+
       > li {
         float: none;
-        margin: 0px;
+        margin: 0;
 
         > a {
           color: $gray-900;
@@ -403,6 +408,7 @@ $es-nav-l2-hover-text-color: $blue-900;
         &.active-example {
           > a {
             color: $white;
+            background-color: $blue-900;
 
             &:hover > span.icon {
               color: inherit;
@@ -543,10 +549,8 @@ $es-nav-l2-hover-text-color: $blue-900;
           border-bottom: 2px solid $gray-500;
 
           > a {
-            border-bottom: inherit;
             display: block;
             margin-bottom: -2px;
-            padding: 10px 20px 12px;
 
             &:hover,
             &:focus {
@@ -603,7 +607,7 @@ $es-nav-l2-hover-text-color: $blue-900;
         }
 
         &:last-child {
-          border-bottom: 0px none transparent;
+          border-bottom: 0 none transparent;
         }
       }
     }

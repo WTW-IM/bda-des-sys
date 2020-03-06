@@ -4,20 +4,22 @@
   ul {
     list-style-type: none;
     margin-bottom: 0;
-    padding-left: 0px;
+    padding-left: 0;
     transition: max-height ease-in-out 0.5s;
 
     li {
+      display: block;
+
       &.folder {
         > a {
           > .icon {
-            @extend .icon.add;
+            @extend .icon, .add;
           }
         }
 
         > ul {
           padding-left: 24px;
-          max-height: 0px;
+          max-height: 0;
           overflow: hidden;
         }
 
@@ -27,7 +29,7 @@
             border-left: 3px solid $magenta;
 
             > .icon {
-              @extend .icon.minus;
+              @extend .icon, .minus;
             }
           }
 
@@ -44,20 +46,21 @@
       li {
         a {
           > .icon {
-            @extend .icon.file;
+            @extend .icon, .file;
           }
         }
+
         &.folder {
           > a {
             > .icon {
-              @extend .icon.folder-close;
+              @extend .icon, .folder-close;
             }
           }
 
           &.open {
             > a {
               > .icon {
-                @extend .icon.folder-open;
+                @extend .icon, .folder-open;
               }
             }
           }
