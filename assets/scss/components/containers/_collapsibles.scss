@@ -10,6 +10,11 @@
   margin: 0;
   padding: .5rem .75rem;
   text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    background: $gray-50;
+  }
 
   &:not(:disabled):not(.disabled):active {
     box-shadow: none;
