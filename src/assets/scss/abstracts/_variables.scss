@@ -316,7 +316,7 @@ $font-family-bold: "Source Sans Pro Bold" !default;
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
 $font-size-root: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-base: $font-size-root * 1.15 !default; // Assumes the browser default, typically `16px`
+$font-size-base: $font-size-root * 1.13 !default; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25 !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-xs: $font-size-sm * 0.88 !default;
@@ -338,7 +338,7 @@ $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
 $headings-margin-bottom: $spacer / 2 !default;
-$headings-font-family: null !default;
+$headings-font-family: "Source Sans Pro Light" !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
