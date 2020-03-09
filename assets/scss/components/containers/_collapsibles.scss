@@ -11,8 +11,16 @@
   padding: .5rem .75rem;
   text-align: left;
 
-  &:active {
+  &:not(:disabled):not(.disabled):active {
     box-shadow: none;
+  }
+
+  &::before {
+    @extend .icon, .minus;
+  }
+
+  &.collapsed::before {
+    @extend .icon, .add;
   }
 }
 
@@ -24,14 +32,19 @@
   &:last-of-type {
     border-bottom: 1px solid $card-border-color;
   }
-}
 
-.card-header {
-  border-bottom: 0;
-  padding: 0;
+  .card-header {
+    border-bottom: 0;
+    padding: 0;
 
-  button {
-    @include collapse-btn;
+    button {
+      @include collapse-btn;
+    }
+  }
+
+  .card-body {
+    border-bottom: 4px solid $card-border-color;
+    padding: .5rem .75rem 1.5rem;
   }
 }
 
@@ -45,4 +58,8 @@
   a {
     @include collapse-btn;
   }
+}
+
+.panel-body {
+  @extend .card-body;
 }
