@@ -1,4 +1,4 @@
-import "bootstrap";
+import 'bootstrap';
 
 import "../scss/index.scss";
 
@@ -29,3 +29,5 @@ if (navigator.userAgent.indexOf("Safari") > -1) {
     $(this).focus();
   });
 }
+
+$('body').scrollspy({target: '.bs-docs-sidebar'})
