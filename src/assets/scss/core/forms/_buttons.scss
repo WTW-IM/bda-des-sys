@@ -15,6 +15,7 @@
 }
 
 .btn-xs {
+  border-radius: $btn-border-radius-xs;
   font-size: $input-btn-font-size-xs;
   padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
   text-transform: uppercase;
