@@ -881,7 +881,7 @@ $pagination-disabled-color: $gray-700 !default;
 $pagination-disabled-bg: $gray-50 !default;
 $pagination-disabled-border-color: $gray-300 !default;
 
-// Cards
+// Cards & Wells
 
 $card-spacer-y: 0.75rem !default;
 $card-spacer-x: 1.25rem !default;
@@ -900,6 +900,15 @@ $card-img-overlay-padding: 1.25rem !default;
 
 $card-group-margin: $grid-gutter-width / 2 !default;
 $card-deck-margin: $card-group-margin !default;
+
+$well-bg-color: $gray-50;
+$well-border-color: $gray-300;
+$well-border-radius: 2px;
+$well-border-radius-lg: $well-border-radius * 1.5;
+$well-padding: 1.2rem;
+$well-padding-sm: 0.6rem;
+$well-padding-lg: 1.8rem;
+
 
 // Tooltips
 
