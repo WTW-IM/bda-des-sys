@@ -14,6 +14,27 @@
   }
 }
 
+.btn:not(:disabled):not(.disabled).btn-link {
+  text-decoration: underline;
+
+  &,
+  &:hover,
+  &:visited {
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+  }
+}
+
 .btn-xs {
   border-radius: $btn-border-radius-xs;
   font-size: $input-btn-font-size-xs;
