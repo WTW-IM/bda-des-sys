@@ -22,6 +22,9 @@
 
   &::before {
     @extend .icon, .minus;
+
+    display: inline-block;
+    margin-right: 0.5rem;
   }
 
   &.collapsed::before {
