@@ -296,8 +296,7 @@
           <div class="bs-callout bs-callout-accessibility" id="callout-glyphicons-accessibility">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Accessibility Considerations for Alerts</h4>
-            <p>Be sure to use the appropriate <code>role</code> on the alert parent container, as well as providing an alternative labeling mechanism for any "close" buttons. Be sure to make sure all calls-to-action are keyboard focusable and can be
-              triggered in such a manner as well.</p>
+            <p>Be sure to use the appropriate <code>role</code> on the alert parent container, as well as providing an alternative labeling mechanism for any "close" buttons. Be sure to make sure all calls-to-action are keyboard focusable and can be triggered in such a manner as well.</p>
           </div>
 
         </div>
@@ -314,11 +313,9 @@
             <div class="panel-group" id="drawer" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default" data-collapse-type="manual">
                 <div class="panel-heading" role="tab" id="drawerHeadingOne">
-                  <a role="button" data-toggle="collapse" href="#drawerOne" aria-expanded="true" aria-controls="drawerOne">
-                    <span class="icon"></span> Collapsible Group Item #1
-                  </a>
+                  <a role="button" data-toggle="collapse" href="#drawerOne" aria-expanded="true" aria-controls="drawerOne">Collapsible Group Item #1</a>
                 </div>
-                <div id="drawerOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div id="drawerOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                   </div>
@@ -326,9 +323,7 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="drawerHeadingTwo">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#drawerTwo" aria-expanded="false" aria-controls="drawerTwo">
-                    <span class="icon"></span> Collapsible Group Item #2
-                  </a>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#drawerTwo" aria-expanded="false" aria-controls="drawerTwo">Collapsible Group Item #2</a>
                 </div>
                 <div id="drawerTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
@@ -338,9 +333,7 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="drawerHeadingThree">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#drawerThree" aria-expanded="false" aria-controls="drawerThree">
-                    <span class="icon"></span> Collapsible Group Item #3
-                  </a>
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#drawerThree" aria-expanded="false" aria-controls="drawerThree">Collapsible Group Item #3</a>
                 </div>
                 <div id="drawerThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
@@ -351,7 +344,7 @@
             </div>
           </div><!-- /example -->
 
-          <h4 id="collapse-ex-list">Collapsible List-Groups</h4>
+          <!-- <h4 id="collapse-ex-list">Collapsible List-Groups</h4>
           <p>It's also possible to swap out paragraphs with lists...</p>
 
           <div class="bs-example" data-example-id="collapse-list-group">
@@ -372,9 +365,9 @@
                 </div>
               </div>
             </div>
-          </div> <!-- /example -->
+          </div> --> <!-- /example -->
 
-          <h4 id="collapse-ex-table">Collapsible Tables</h4>
+          <!-- <h4 id="collapse-ex-table">Collapsible Tables</h4>
           <p>... or tables.</p>
           <div class="bs-example" data-example-id="collapse-table">
             <div class="panel-group" role="tablist">
@@ -386,7 +379,7 @@
                 </div>
                 <div id="collapseTableGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTableHeading1">
                   <table class="table">
-                    <!--<caption>Optional table caption.</caption>-->
+                    <caption>Optional table caption.</caption>
                     <thead>
                       <tr>
                         <th>#</th>
@@ -419,13 +412,13 @@
                 </div>
               </div>
             </div>
-          </div> <!-- /example -->
+          </div> --> <!-- /example -->
 
 
           <h3 id="collapse-ex-accordion">Accordions</h3>
           <p>"Accordions" are a set of drawers where only one can be open at one time.</p>
 
-          <div class="bs-example" data-example-id="collapse-accordion">
+          <!-- <div class="bs-example" data-example-id="collapse-accordion">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
@@ -464,7 +457,49 @@
                 </div>
               </div>
             </div>
-          </div><!-- /example -->
+          </div> --> <!-- /example -->
+
+          <div class="bs-example">
+            <div class="accordion" id="accordionExampleNew">
+              <div class="card">
+                <div class="card-header" id="headingOneNew">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseOneNew" aria-expanded="true" aria-controls="collapseOneNew">Collapsible Group Item #1</button>
+                  </h2>
+                </div>
+
+                <div id="collapseOneNew" class="collapse show" aria-labelledby="headingOneNew" data-parent="#accordionExampleNew">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwoNew">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoNew" aria-expanded="false" aria-controls="collapseTwoNew">Collapsible Group Item #2</button>
+                  </h2>
+                </div>
+                <div id="collapseTwoNew" class="collapse" aria-labelledby="headingTwoNew" data-parent="#accordionExampleNew">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThreeNew">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeNew" aria-expanded="false" aria-controls="collapseThreeNew">Collapsible Group Item #3</button>
+                  </h2>
+                </div>
+                <div id="collapseThreeNew" class="collapse" aria-labelledby="headingThreeNew" data-parent="#accordionExampleNew">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!--<h3 id="collapse-ex-list">Collapsible List-Groups</h3>-->
           <!--<p>It's also possible to swap out paragraphs with lists.</p>-->
