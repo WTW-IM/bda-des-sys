@@ -1,0 +1,35 @@
+// BDS Wells
+//
+// Resurrecting the deprecated BS component, due
+// to current usage.
+// -----------------------------------------------------
+
+.well {
+  min-height: 20px;
+  padding: $well-padding;
+  margin-bottom: 20px;
+  background-color: $well-bg-color;
+  border: 1px solid $well-border-color;
+  border-radius: $well-border-radius;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  &.well-sm,
+  &.sm {
+    padding: $well-padding-sm;
+    border-radius: $well-border-radius;
+  }
+
+  &.well-lg,
+  &.lg {
+    padding: $well-padding-lg;
+    border-radius: $well-border-radius-lg;
+  }
+
+  &.deep {
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &.shallow {
+    box-shadow: none;
+  }
+}
