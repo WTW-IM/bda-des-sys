@@ -9,28 +9,6 @@ $green: $green-500;
 $magenta: $magenta-500;
 $violet: $violet-500;
 
-// - Tints & Shades -----------
-$blue-lightest: $blue-50;
-$blue-lighter: $blue-100;
-$blue-light: $blue-300;
-$blue-dark: $blue-700;
-$blue-darker: $blue-900;
-$green-lightest: $green-50;
-$green-lighter: $green-100;
-$green-light: $green-300;
-$green-dark: $green-700;
-$green-darker: $green-900;
-$magenta-lightest: $magenta-50;
-$magenta-lighter: $magenta-100;
-$magenta-light: $magenta-300;
-$magenta-dark: $magenta-700;
-$magenta-darker: $magenta-900;
-$violet-lightest: $violet-50;
-$violet-lighter: $violet-100;
-$violet-light: $violet-300;
-$violet-dark: $violet-700;
-$violet-darker: $violet-900;
-
 // - Semantic colors ----------
 $software-info: map-get($bds-theme-semantic, "info");
 $software-success: map-get($bds-theme-semantic, "success");
