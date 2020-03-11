@@ -1,1 +1,25 @@
-// Add mixins here
+@mixin map-font($name, $path, $file-name) {
+  @font-face {
+    font-family: $name;
+    font-style: normal;
+    font-weight: normal;
+    src: url("#{$path}#{$file-name}.eot");
+    src: url("#{$path}#{$file-name}.eot") format("embedded-opentype"),
+      url("#{$path}#{$file-name}.otf.woff") format("woff"),
+      url("#{$path}#{$file-name}.ttf") format("truetype"),
+      url("#{$path}#{$file-name}.svg") format("svg");
+  }
+}
+
+@mixin map-icon-font($name, $path, $file-name) {
+  @font-face {
+    font-family: $name;
+    font-style: normal;
+    font-weight: normal;
+    src: url("#{$path}#{$file-name}.eot");
+    src: url("#{$path}#{$file-name}.eot") format("embedded-opentype"),
+      url("#{$path}#{$file-name}.woff") format("woff"),
+      url("#{$path}#{$file-name}.ttf") format("truetype"),
+      url("#{$path}#{$file-name}.svg") format("svg");
+  }
+}

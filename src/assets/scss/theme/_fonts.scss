@@ -1,1 +1,20 @@
-// Add font styles here
+@import "abstracts/mixins";
+
+$font-path: "/bda-des-sys/assets/fonts/" !default;
+$source-sans-pro: "SourceSansPro";
+
+@include map-font(
+  "Source Sans Pro Light",
+  $font-path,
+  "#{$source-sans-pro}-Light"
+);
+@include map-font(
+  "Source Sans Pro Regular",
+  $font-path,
+  "#{$source-sans-pro}-Regular"
+);
+@include map-font(
+  "Source Sans Pro Bold",
+  $font-path,
+  "#{$source-sans-pro}-Bold"
+);
