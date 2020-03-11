@@ -1,0 +1,9 @@
+// BDS Tooltips
+//
+// -----------------------------------------------------
+
+.tooltip {
+  &.bottom {
+    @extend .tooltip, .bs-tooltip-bottom;
+  }
+}

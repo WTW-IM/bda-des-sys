@@ -28,6 +28,8 @@ if (navigator.userAgent.indexOf("Safari") > -1) {
   $('[data-trigger="focus"]').click(function() {
     $(this).focus();
   });
-}
+};
 
-$('body').scrollspy({target: '.bs-docs-sidebar'})
+$('body').scrollspy({target: '.bs-docs-sidebar'});
+
+$('[data-toggle="tooltip"]').tooltip();
