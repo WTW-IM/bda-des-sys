@@ -613,14 +613,6 @@
       <li class="active">Data</li>
     </ol>
   </div>
-
-<!--<figure class="highlight"><pre><code class="language-html" data-lang="html">--&gt;
-<span class="c">&lt;!--&lt;ol class="breadcrumb"&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;li class="active"&gt;Data&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--&lt;/ol&gt;--&gt;</span>
-<span class="c">&lt;!--</span></code></pre></figure>-->
 </div>
 
 <div class="bs-docs-section">
@@ -731,13 +723,7 @@
     </nav>
   </div>
 
-  <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-lg"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
-  <span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
-  <span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
-  </code></pre></figure>
-
-
-  <h3 id="pagination-pager">Pager</h3>
+  <!-- <h3 id="pagination-pager">Pager</h3>
   <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
 
   <h4>Default example</h4>
@@ -751,14 +737,6 @@
     </nav>
   </div>
 
-  <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;nav&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/nav&gt;</span>
-  </code></pre></figure>
-
   <h4>Aligned links</h4>
   <p>Alternatively, you can align each link to the sides:</p>
   <div class="bs-example" data-example-id="aligned-pager-links">
@@ -770,14 +748,6 @@
     </nav>
   </div>
 
-  <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;nav&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;larr;</span><span class="nt">&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;rarr;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/nav&gt;</span>
-  </code></pre></figure>
-
   <h4>Optional disabled state</h4>
   <p>Don't forget the disabled state, where appropriate..</p>
   <div class="bs-example" data-example-id="disabled-pager">
@@ -787,15 +757,7 @@
         <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       </ul>
     </nav>
-  </div>
-
-  <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;nav&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;larr;</span><span class="nt">&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;rarr;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/nav&gt;</span>
-  </code></pre></figure>
+  </div> -->
 </div>
 
 
@@ -803,78 +765,47 @@
 
         <div class="col-md-3" role="complementary">
           <nav id="es-ui-side-nav" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
-
-              <h5>Navigation</h5>
-
+            <h5>Navigation</h5>
             <ul class="nav bs-docs-sidenav">
-
-
-  <li>
-    <a href="#global-navigation">Global Navigation</a>
-
-  </li>
-
-  <li>
-    <a href="#sub-navigation">Sub-Navigation</a>
-
-      <ul class="nav">
-
-        <li>
-          <a href="#sub-nav-vertical">Vertical</a>
-
-          <ul class="nav">
-
-            <li><a href="#sub-nav-vert-icons">With icons</a></li>
-
-            <li><a href="#sub-nav-multi-tier">Multi-tiered</a></li>
-
-            <li><a href="#sub-nav-file-tree">File Tree</a></li>
-
-          </ul>
-
-        </li>
-
-        <li>
-          <a href="#sub-nav-horizontal">Horizontal</a>
-
-        </li>
-
-      </ul>
-
-  </li>
-
-  <li>
-    <a href="#breadcrumbs">Breadcrumbs</a>
-
-  </li>
-
-  <li>
-    <a href="#pagination">Pagination</a>
-
-      <ul class="nav">
-
-        <li>
-          <a href="#pagination-default">Default pagination</a>
-
-        </li>
-
-        <li>
-          <a href="#pagination-pager">Pager</a>
-
-        </li>
-
-      </ul>
-
-  </li>
-
-
+              <li>
+                <a href="#global-navigation">Global Navigation</a>
+              </li>
+              <li>
+                <a href="#sub-navigation">Sub-Navigation</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#sub-nav-vertical">Vertical</a>
+                      <ul class="nav">
+                        <li><a href="#sub-nav-vert-icons">With icons</a></li>
+                        <li><a href="#sub-nav-multi-tier">Multi-tiered</a></li>
+                        <li><a href="#sub-nav-file-tree">File Tree</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#sub-nav-horizontal">Horizontal</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#breadcrumbs">Breadcrumbs</a>
+              </li>
+              <li>
+                <a href="#pagination">Pagination</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#pagination-default">Default pagination</a>
+                    </li>
+                    <!-- <li>
+                      <a href="#pagination-pager">Pager</a>
+                    </li> -->
+                  </ul>
+              </li>
             </ul>
             <a class="back-to-top" href="#top">
               Back to top
             </a>
           </nav>
         </div>
-
       </div>
     </div>
 
