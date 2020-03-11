@@ -2,11 +2,7 @@ import 'bootstrap';
 
 import "../scss/index.scss";
 
-$("#alert").click(() => {
-  alert("jQuery works!");
-});
-
-// Your jQuery code
+// BDS jQuery code
 
 $(".multi-tier ul a").click(function() {
   var _this = $(this);
