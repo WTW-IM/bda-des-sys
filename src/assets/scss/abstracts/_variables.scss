@@ -942,7 +942,7 @@ $popover-bg: $white !default;
 $popover-max-width: 276px !default;
 $popover-border-width: $border-width !default;
 $popover-border-color: rgba($gray-900, 0.2) !default;
-$popover-border-radius: $border-radius-lg !default;
+$popover-border-radius: 0 !default;
 $popover-inner-border-radius: calc(
   #{$popover-border-radius} - #{$popover-border-width}
 ) !default;
