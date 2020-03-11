@@ -286,6 +286,18 @@
         border-radius: 0;
       }
     }
+
+    &:first-child {
+      span {
+        border-radius: $btn-border-radius 0 0 $btn-border-radius;
+      }
+    }
+
+    &:last-child {
+      span {
+        border-radius: 0 $btn-border-radius $btn-border-radius 0;
+      }
+    }
   }
 
   &.primary {
