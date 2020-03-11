@@ -32,4 +32,6 @@ if (navigator.userAgent.indexOf("Safari") > -1) {
 
 $('body').scrollspy({target: '.bs-docs-sidebar'});
 
+$('[data-toggle="popover"]').popover();
+
 $('[data-toggle="tooltip"]').tooltip();
