@@ -861,26 +861,26 @@ $pagination-padding-y-lg: 0.75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 
 $pagination-color: $link-color !default;
-$pagination-bg: $gray-50 !default;
+$pagination-bg: $white !default;
 $pagination-border-width: $border-width !default;
 $pagination-border-radius: $border-radius !default;
 $pagination-margin-left: -$pagination-border-width !default;
-$pagination-border-color: $gray-300 !default;
+$pagination-border-color: $primary !default;
 
 $pagination-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: $link-hover-color !default;
-$pagination-hover-bg: $gray-300 !default;
-$pagination-hover-border-color: $gray-300 !default;
+$pagination-hover-color: $white !default;
+$pagination-hover-bg: $primary !default;
+$pagination-hover-border-color: $primary !default;
 
-$pagination-active-color: $component-active-color !default;
-$pagination-active-bg: $component-active-bg !default;
+$pagination-active-color: $white !default;
+$pagination-active-bg: $magenta-500 !default;
 $pagination-active-border-color: $pagination-active-bg !default;
 
 $pagination-disabled-color: $gray-700 !default;
 $pagination-disabled-bg: $gray-50 !default;
-$pagination-disabled-border-color: $gray-300 !default;
+$pagination-disabled-border-color: $gray-100 !default;
 
 // Cards & Wells
 

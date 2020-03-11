@@ -633,18 +633,18 @@
   <div class="bs-example" data-example-id="simple-pagination">
     <nav>
       <ul class="pagination">
-        <li>
-          <a href="#" aria-label="Previous">
+        <li class="page-item">
+          <a href="#" aria-label="Previous" class="page-link">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Next" class="page-link">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
@@ -652,104 +652,81 @@
     </nav>
   </div>
 
-<!--<figure class="highlight"><pre><code class="language-html" data-lang="html">--&gt;
-<span class="c">&lt;!--&lt;nav&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;ul class="pagination"&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;a href="#" aria-label="Previous"&gt;--&gt;</span>
-<span class="c">&lt;!--        &lt;span aria-hidden="true"&gt;&amp;laquo;&lt;/span&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;/a&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;a href="#" aria-label="Next"&gt;--&gt;</span>
-<span class="c">&lt;!--        &lt;span aria-hidden="true"&gt;&amp;raquo;&lt;/span&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;/a&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;/ul&gt;--&gt;</span>
-<span class="c">&lt;!--&lt;/nav&gt;--&gt;</span>
-<span class="c">&lt;!--</span></code></pre></figure>-->
-
   <h4>Disabled and active states</h4>
   <p>Links are customizable for different circumstances. Apply disabled treatments for unclickable links and an active treatment to indicate the current page.</p>
   <div class="bs-example" data-example-id="disabled-active-pagination">
     <nav>
       <ul class="pagination">
-        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        <li class="page-item disabled"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
+        <li class="page-item active"><a href="#" class="page-link">1 <span class="sr-only">(current)</span></a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
      </ul>
    </nav>
   </div>
-
-<!--<figure class="highlight"><pre><code class="language-html" data-lang="html">--&gt;
-<span class="c">&lt;!--&lt;nav&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;ul class="pagination"&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li class="disabled"&gt;&lt;a href="#" aria-label="Previous"&gt;&lt;span aria-hidden="true"&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li class="active"&gt;&lt;a href="#"&gt;1 &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    ...--&gt;</span>
-<span class="c">&lt;!--  &lt;/ul&gt;--&gt;</span>
-<span class="c">&lt;!--&lt;/nav&gt;--&gt;</span>
-<span class="c">&lt;!--</span></code></pre></figure>-->
-<!--  <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>-->
-<!--<figure class="highlight"><pre><code class="language-html" data-lang="html">--&gt;
-<span class="c">&lt;!--&lt;nav&gt;--&gt;</span>
-<span class="c">&lt;!--  &lt;ul class="pagination"&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li class="disabled"&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;span&gt;--&gt;</span>
-<span class="c">&lt;!--        &lt;span aria-hidden="true"&gt;&amp;laquo;&lt;/span&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;/span&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;li class="active"&gt;--&gt;</span>
-<span class="c">&lt;!--      &lt;span&gt;1 &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/span&gt;--&gt;</span>
-<span class="c">&lt;!--    &lt;/li&gt;--&gt;</span>
-<span class="c">&lt;!--    ...--&gt;</span>
-<span class="c">&lt;!--  &lt;/ul&gt;--&gt;</span>
-<span class="c">&lt;!--&lt;/nav&gt;--&gt;</span>
-<span class="c">&lt;!--</span></code></pre></figure>-->
 
   <h4>Sizing</h4>
   <p>Fancy larger or smaller pagination? Additional sizes are available.</p>
   <div class="bs-example" data-example-id="pagination-sizing">
     <nav>
       <ul class="pagination pagination-lg">
-        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Previous" class="page-link">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Next" class="page-link">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <nav>
       <ul class="pagination">
-        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Previous" class="page-link">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Next" class="page-link">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <nav>
       <ul class="pagination pagination-sm">
-        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Previous" class="page-link">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item">
+          <a href="#" aria-label="Next" class="page-link">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
