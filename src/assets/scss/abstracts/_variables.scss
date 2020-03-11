@@ -220,9 +220,9 @@ $border-color: $gray-300 !default;
 $modal-border-width: 2px !default;
 $modal-border-color: $magenta !default;
 
-$border-radius: 0.25rem !default;
-$border-radius-lg: 0.3rem !default;
-$border-radius-sm: 0.2rem !default;
+$border-radius: 0.12rem !default;
+$border-radius-lg: 0.2rem !default;
+$border-radius-sm: 0.08rem !default;
 
 $rounded-pill: 50rem !default;
 
@@ -607,7 +607,7 @@ $form-check-input-margin-x: 0.25rem !default;
 $form-grid-gutter-width: 10px !default;
 
 $input-group-addon-color: $input-color !default;
-$input-group-addon-bg: $gray-300 !default;
+$input-group-addon-bg: $gray-100 !default;
 $input-group-addon-border-color: $input-border-color !default;
 
 $form-select-padding-y: $input-padding-y !default;
