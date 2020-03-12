@@ -1,0 +1,203 @@
+//
+// Buckets
+// --------------------------------------------------
+
+$bucket-bg:                 $white;
+$bucket-body-padding:       0.6rem;
+$bucket-heading-padding:    0.6rem;
+$bucket-footer-padding:     $bucket-heading-padding;
+$bucket-border-radius:      0;
+
+//** Border color for elements within buckets
+$bucket-inner-border:       $gray-100;
+$bucket-footer-bg:          $gray-50;
+
+$bucket-default-border:     $gray-100;
+$bucket-default-heading-bg: $gray-50;
+
+$bucket-primary-text:       $white;
+$bucket-primary-border:     $brand-primary;
+$bucket-primary-heading-bg: $brand-primary;
+
+// Base class
+.bucket {
+  margin-bottom: $line-height-base;
+  background-color: $bucket-bg;
+  //border: 1px solid transparent;
+  //.box-shadow(0 1px 1px rgba(0,0,0,.05));
+  
+  // bucket heading
+  > .bucket-heading {
+    padding: $bucket-heading-padding;
+    border-bottom: 2px solid $blue-500;
+  
+    > .dropdown .dropdown-toggle {
+      color: inherit;
+    }
+    
+    // Within heading, strip any `h*` tag of its default margins for spacing.
+    > .bucket-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $font-size-base * 1.125;
+      color: inherit;
+    
+      > a,
+      > small,
+      > .small,
+      > small > a,
+      > .small > a {
+        color: inherit;
+      }
+      
+      // Allow overriding base bucket title font-size with header classes
+      &.h2 { font-size: $h2-font-size; }
+      &.h3 { font-size: $h3-font-size; }
+      &.h4 { font-size: $h4-font-size; }
+      &.h5 { font-size: $h5-font-size; }
+    }
+  }
+  
+  // bucket contents
+  > .bucket-body {
+    padding: $bucket-body-padding;
+    @extend .clearfix;
+  }
+}
+
+
+// Tables in buckets
+//
+// Place a non-bordered `.table` within a bucket (not within a `.bucket-body`) and
+// watch it go full width.
+
+.bucket {
+  > .table,
+  > .table-responsive > .table,
+  > .bucket-collapse > .table {
+    margin-bottom: 0;
+
+    caption {
+      padding-left: $bucket-body-padding;
+      padding-right: $bucket-body-padding;
+    }
+  }
+
+  > .bucket-body + .table,
+  > .bucket-body + .table-responsive,
+  > .table + .bucket-body,
+  > .table-responsive + .bucket-body {
+    border-top: 1px solid $table-border-color;
+  }
+  > .table > tbody:first-child > tr:first-child th,
+  > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+  }
+  > .table-bordered,
+  > .table-responsive > .table-bordered {
+    border: 0;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th:first-child,
+        > td:first-child {
+          border-left: 0;
+        }
+        > th:last-child,
+        > td:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    > thead,
+    > tbody {
+      > tr:first-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+    > tbody,
+    > tfoot {
+      > tr:last-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  > .table-responsive {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+// Collapsable buckets (aka, accordion)
+//
+// Wrap a series of buckets in `.bucket-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.bucket-group {
+  margin-bottom: $line-height-base;
+
+  .bucket {
+    margin-bottom: 0;
+    border-width: 1px 0 1px 0;
+
+    + .bucket {
+      margin-top: -1px;
+    }
+  }
+
+  .bucket-default > .bucket-heading {
+    background-color: transparent;
+    border-width: 1px 0 0 0;
+    padding: 0;
+    
+    a {
+      display: block;
+      padding: 10px 15px;
+      color: $blue-900;
+        
+      &:hover,
+      &:active {
+        background-color: $gray-100;
+        color: $blue-500;
+        text-decoration: none;
+      }
+      
+      &:focus {
+        text-decoration: none;
+      }
+      
+      > span.icon {
+        @extend .minus;
+        font-size: 89%;
+      }
+      
+      &.collapsed > span.icon {
+        @extend .add;
+      }
+    }
+
+    + .bucket-collapse > .bucket-body {
+      border-top: 0;
+      border-bottom: 4px solid $bucket-inner-border;
+    }
+    
+    + .bucket-collapse > .list-group {
+      border-top: 1px solid $bucket-inner-border;
+    }
+  }
+
+  .bucket-footer {
+    border-top: 0;
+    + .bucket-collapse .bucket-body {
+      border-bottom: 1px solid $bucket-inner-border;
+    }
+  }
+}
