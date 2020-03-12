@@ -418,12 +418,20 @@ h6 {
         display: none; /* Hide by default, but at >768px, show it */
         padding-bottom: 5px;
 
-        li > a {
+        a {
           padding-top: 1px;
           padding-bottom: 1px;
           padding-left: 28px;
           font-size: 12px;
           font-weight: normal;
+
+          &:hover {
+            padding-left: 27px;
+          }
+
+          &.active {
+            padding-left: 26px;
+          }
         }
       }
     }
@@ -434,34 +442,6 @@ h6 {
   .bs-docs-sidebar {
     padding-left: 20px;
   }
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a {
-  padding-left: 40px;
-}
-
-.bs-docs-sidebar .nav .nav > li > a:hover,
-.bs-docs-sidebar .nav .nav > li > a:focus {
-  padding-left: 29px;
-}
-
-.bs-docs-sidebar .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav > .active:focus > a {
-  padding-left: 28px;
-  font-weight: 500;
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a:hover,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a:focus {
-  padding-left: 39px;
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active > a,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active:hover > a,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active:focus > a {
-  padding-left: 38px;
-  font-weight: 500;
 }
 
 /* Back to top (hidden on mobile) */
