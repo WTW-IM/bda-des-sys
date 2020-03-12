@@ -86,7 +86,7 @@
                   <a class="dropdown-item" href="media.html#icons">Icons</a>
                   <a class="dropdown-item" href="media.html#images">Images</a>
                   <a class="dropdown-item" href="media.html#data-viz">Data Visualization</a>
-                  <a class="dropdown-item" href="media.html#videos">Videos</a>
+                  <!-- <a class="dropdown-item" href="media.html#videos">Videos</a> -->
                 </div>
               </li>
               <!-- <li class="nav-item">
@@ -102,7 +102,7 @@
     <div class="bs-docs-header" id="top" tabindex="-1">
       <div class="container">
         <h1>Media</h1>
-        <p>Includes Icons, Artwork, Images, Data Visualization, and Video</p>
+        <p>Includes Icons, Artwork, Images, and Data Visualization</p>
       </div>
     </div>
 
@@ -1120,11 +1120,11 @@
         <button type="button" class="btn btn-default" aria-label="Justify"><span class="icon align-justify" aria-hidden="true"></span></button>
       </div>
     </div>
-    <div class="btn-toolbar" role="toolbar">
-      <button type="button" class="btn btn-default btn-lg"><span class="icon star-empty" aria-hidden="true"></span> Star</button>
-      <button type="button" class="btn btn-default"><span class="icon star-empty" aria-hidden="true"></span>Star</button>
-      <button type="button" class="btn btn-default btn-sm"><span class="icon star-empty" aria-hidden="true"></span> Star</button>
-      <button type="button" class="btn btn-default btn-xs"><span class="icon star-empty" aria-hidden="true"></span> Star</button>
+    <div class="clearfix" style="margin-top: 1.5rem;">
+      <span class="btn-example"><button type="button" class="btn btn-default btn-lg"><span class="icon star-empty" aria-hidden="true"></span> Star</button></span>
+      <span class="btn-example"><button type="button" class="btn btn-default"><span class="icon star-empty" aria-hidden="true"></span>Star</button></span>
+      <span class="btn-example"><button type="button" class="btn btn-default btn-sm"><span class="icon star-empty" aria-hidden="true"></span> Star</button></span>
+      <span class="btn-example"><button type="button" class="btn btn-default btn-xs"><span class="icon star-empty" aria-hidden="true"></span> Star</button></span>
     </div>
   </div>
 
@@ -1155,14 +1155,14 @@
 
 <div class="bs-docs-section">
   <h1 id="images" class="page-header">Images</h1>
-  <h2 id="images-brand">Brand-Aligned</h2>
+  <!-- <h2 id="images-brand">Brand-Aligned</h2>
   <p>From the Via Benefits style guide:</p>
   <blockquote class="block-large">
     <p>Most of the photographic images used in participant-facing materials will fall into two camps: pathways (shot at eye level) and people. A library of licensed images for both styles is available.</p>
     <p>In most cases, a pathway image should be the first thing that participants see in our materials&mdash;on a brochure’s cover, for instance. These pathways are shot at eye level to remind readers of their own personal journeys. Because they are conceptual images, a little goes a long way. Use them sparingly; for instance, as section dividers in a PowerPoint deck. (Note: These eye-level pathways are reserved exclusively for participant-facing materials, and are intentionally different from the aerial pathway images used in employer-facing materials.)</p>
     <p>People images bring warmth and humanity to our participant materials. Our photo library includes portraits of employees and retirees. When designing materials, take care to choose images that reflect the diversity of our participants.</p>
   </blockquote>
-  <p>The images below are a representative sample. Refer to the WTW photo library to see the full selection.</p>
+  <p>The images below are a representative sample. Refer to the WTW photo library to see the full selection.</p> -->
 
   <h2 id="images-retina">Retina images</h2>
   <p>Now that Exchange Solutions has dropped support for all browsers can't handle the <code>background-size</code> CSS property, it is recommendded that all raster images be retina-compatible. This essentially means raster images should be output at <em>at least</em> twice their client-rendered dimensions, and then contstrained using the <code>height</code> and/or <code>width</code> CSS properties &mdash; or <code>background-size</code> property for background-images.</p>
@@ -1276,7 +1276,7 @@
   <p><small>After much research and careful scrutiny, we have decided to use <a href="http://www.chartjs.org/" target="_blank">Chart.js</a> for <strong>demonstration purposes</strong>. It is fully featured, and comes with delightful animations right out of the box. Check it out, but if it doesn't suit your needs, no worries&mdash;use what best suits your needs! Just remember to follow the visual representations depicted in these documents.</small></p>
 </div>
 
-  <div class="bs-docs-section">
+  <!-- <div class="bs-docs-section">
     <h2 id="videos" class="page-header">Videos</h2>
     <p>In our line of work, videos usually serve one of two purposes &mdash; instructional/informative or decorative. This isn't to say that they shouldn't be somewhat entertaining, if appropriate... but good luck getting a kitten to talk about benefits!</p>
 
@@ -1305,83 +1305,53 @@
     <h3>Decorative Video</h3>
     <p>We've all seen decorative videos on various sites &mdash; from PayPal, to Airbnb, to our very own!</p>
     <p>Make sure decorative videos are hidden from screen readers, as they do not contribute to the information users are seeking. Be sure to balance quality with size to make sure videos both load quickly and look decent behind your content.</p>
-  </div>
+  </div> -->
 </div>
 
         <div class="col-md-3" role="complementary">
           <nav id="es-ui-side-nav" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
-
-              <h5>Media</h5>
-
+            <h5>Media</h5>
             <ul class="nav bs-docs-sidenav">
-
-
-  <li>
-    <a href="#icons">Icons</a>
-
-      <ul class="nav">
-
-        <li>
-          <a href="#icons-functional">Functional icons</a>
-
-        </li>
-
-        <li>
-          <a href="#icons-examples">Examples</a>
-
-        </li>
-
-      </ul>
-
-  </li>
-
-  <li>
-    <a href="#images">Images</a>
-
-      <ul class="nav">
-
-        <li>
-          <a href="#images-brand">Brand-Aligned</a>
-
-        </li>
-
-        <li>
-          <a href="#images-retina">Retina images</a>
-
-        </li>
-
-        <li>
-          <a href="#images-responsive">Responsive images</a>
-
-        </li>
-
-        <li>
-          <a href="#images-shapes">Image shapes</a>
-
-        </li>
-
-      </ul>
-
-  </li>
-
-  <li>
-    <a href="#data-viz">Data Visualization</a>
-
-  </li>
-
-  <li>
-    <a href="#videos">Videos</a>
-
-  </li>
-
-
+              <li class="nav-item">
+                <a href="#icons" class="nav-link">Icons</a>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#icons-functional" class="nav-link">Functional icons</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#icons-examples" class="nav-link">Examples</a>
+                    </li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#images" class="nav-link">Images</a>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#images-brand" class="nav-link">Brand-Aligned</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#images-retina" class="nav-link">Retina images</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#images-responsive" class="nav-link">Responsive images</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#images-shapes" class="nav-link">Image shapes</a>
+                    </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#data-viz" class="nav-link">Data Visualization</a>
+              </li>
+              <!-- <li>
+                <a href="#videos">Videos</a>
+              </li> -->
             </ul>
             <a class="back-to-top" href="#top">
               Back to top
             </a>
           </nav>
         </div>
-
       </div>
     </div>
 
@@ -1415,8 +1385,6 @@
   require('bootstrap');
   </script>
   <script src="assets/js/vendor/anchor.js"></script>
-  <script src="assets/js/src/application.js"></script>
-  <!-- Fix ES UI Scrollspy-offset and scrolling, owing to use of .navbar-fixed-top -->
   <script src="assets/js/index.js"></script>
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

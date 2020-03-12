@@ -69,3 +69,7 @@ label {
     display: block;
   }
 }
+
+.dropdown-toggle {
+  padding: $btn-padding-y $btn-padding-x;
+}

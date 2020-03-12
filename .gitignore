@@ -33,6 +33,7 @@
 .project
 .settings
 .tmproj
+.vscode
 *.esproj
 *.sublime-project
 *.sublime-workspace
