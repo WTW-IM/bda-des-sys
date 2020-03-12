@@ -127,7 +127,7 @@ h6 {
   font-size: 90%;
   position: sticky;
   top: 0;
-  z-index: 2500;
+  z-index: $zindex-sticky;
 
   .navbar {
     padding: 0;
