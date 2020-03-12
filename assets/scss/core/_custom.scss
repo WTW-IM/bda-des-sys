@@ -354,8 +354,12 @@ h6 {
 
 /* By default it's not affixed in mobile views, so undo that */
 .bs-docs-sidebar {
-  &.affix {
-    position: sticky;
+  position: sticky;
+  top: 6rem;
+
+  /* First level of nav */
+  .bs-docs-sidenav {
+    margin: 20px 0;
   }
 
   h5 {
@@ -366,10 +370,10 @@ h6 {
     display: flex;
     flex-direction: column;
 
-    > li {
+    li {
       display: block;
 
-      > a {
+      a {
         display: block;
         padding: 4px 20px;
         font-size: 13px;
@@ -385,18 +389,37 @@ h6 {
           border-left: 1px solid #563d7c;
         }
 
-        .active {
+        &.active {
           &,
           &:hover,
           &:focus {
-            > a {
-              padding-left: 18px;
-              font-weight: bold;
-              color: #563d7c;
-              background-color: transparent;
-              border-left: 2px solid #563d7c;
-            }
+            padding-left: 18px;
+            font-weight: bold;
+            background-color: transparent;
+            border-left: 2px solid $magenta-500;
           }
+
+          & + .nav {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .nav {
+      display: none; /* Hide by default, but at >768px, show it */
+      padding-bottom: 10px;
+
+      .nav {
+        display: none; /* Hide by default, but at >768px, show it */
+        padding-bottom: 5px;
+
+        li > a {
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 28px;
+          font-size: 12px;
+          font-weight: normal;
         }
       }
     }
@@ -407,40 +430,6 @@ h6 {
   .bs-docs-sidebar {
     padding-left: 20px;
   }
-}
-
-/* First level of nav */
-.bs-docs-sidenav {
-  margin: 20px 0;
-}
-
-/* .bs-docs-sidebar .nav > .active > ul > .active > a,
-
-.bs-docs-sidebar .nav > .active:hover > a,
-
-.bs-docs-sidebar .nav > .active:focus > a {
-
-  padding-left: 28px;
-
-} */
-
-/* Nav: second level (shown on .active) */
-.bs-docs-sidebar .nav .nav {
-  display: none; /* Hide by default, but at >768px, show it */
-  padding-bottom: 10px;
-}
-
-.bs-docs-sidebar .nav .nav .nav {
-  display: none; /* Hide by default, but at >768px, show it */
-  padding-bottom: 5px;
-}
-
-.bs-docs-sidebar .nav .nav > li > a {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 30px;
-  font-size: 12px;
-  font-weight: normal;
 }
 
 .bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a {

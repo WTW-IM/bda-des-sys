@@ -1,0 +1,29 @@
+// BDS Tooltips
+//
+// -----------------------------------------------------
+
+$arrow-coarse-pos: 50% !default;
+$arrow-horiz-fine-pos: translateX(-50%) !default;
+$arrow-vert-fine-pos: translateY(-50%) !default;
+
+.tooltip {
+  &.bottom,
+  &.bs-tooltip-bottom,
+  &.top,
+  &.bs-tooltip-top {
+    .arrow {
+      left: $arrow-coarse-pos;
+      transform: $arrow-horiz-fine-pos;
+    }
+  }
+
+  &.left,
+  &.bs-tooltip-left,
+  &.right,
+  &.bs-tooltip-right {
+    .arrow {
+      top: $arrow-coarse-pos;
+      transform: $arrow-vert-fine-pos;
+    }
+  }
+}

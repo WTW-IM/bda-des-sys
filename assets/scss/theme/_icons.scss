@@ -8,14 +8,6 @@
 //
 // <a href="#"><span class="icon star-empty"></span> Empty Star</a>
 
-@import "abstracts/mixins";
-
-$icon-font-face: "BDS Functional Icons";
-$font-path: "/bda-des-sys/assets/fonts/" !default;
-
-// BDA Functional Icon Typeface
-@include map-font($icon-font-face, $font-path, "indv-mkt-icons");
-
 // Catchall baseclass
 .icon {
   // stylelint-disable font-family-no-missing-generic-family-keyword
@@ -28,7 +20,7 @@ $font-path: "/bda-des-sys/assets/fonts/" !default;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  vertical-align: -0.1rem;
+  vertical-align: -0.15rem;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
