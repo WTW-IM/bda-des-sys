@@ -1272,7 +1272,7 @@
                   </div> <!-- /.modal-header -->
                   <div class="modal-body">
                     <p>Select a time that works best for you! We'll have a licensed benefit advisor ready to assist you with anything you need.</p>
-                    <form class="dumb-date-picker">
+                    <form class="simple-date-picker">
                       <div class="date-select">
                         <button class="btn btn-default up" aria-hidden="true">
                           <svg width="35" height="10">
@@ -1281,7 +1281,7 @@
                             </g>
                           </svg>
                         </button>
-                        <select class="dumb-date" name="dumb-date" multiple>
+                        <select class="simple-date" name="simple-date" multiple>
                           <option value="20160524" selected>Tue, May 24</option>
                           <option value="20160525">Wed, May 25</option>
                           <option value="20160526">Thu, May 26</option>
@@ -1308,7 +1308,7 @@
                             </g>
                           </svg>
                         </button>
-                        <select class="dumb-time" name="dumb-time" multiple>
+                        <select class="simple-time" name="simple-time" multiple>
                           <option value="1300" selected>1:00 PM</option>
                           <option value="1315">1:15 PM</option>
                           <option value="1330">1:30 PM</option>
@@ -1338,7 +1338,7 @@
 
             <!-- Code for new Multibox Plugin -->
             <form class="multibox">
-              <select class="dumb-date" name="dumb-date" multiple>
+              <select class="simple-date" name="sinple-date" multiple>
                 <option value="20160524" selected>Tue, May 24</option>
                 <option value="20160525">Wed, May 25</option>
                 <option value="20160526">Thu, May 26</option>
@@ -1349,7 +1349,7 @@
                 <option value="20160523">Fri, Jun 03</option>
                 <option value="20160523">Mon, Jun 06</option>
               </select>
-              <select class="dumb-time" name="dumb-time" multiple>
+              <select class="simple-time" name="simple-time" multiple>
                 <option value="1300" selected>1:00 PM</option>
                 <option value="1315">1:15 PM</option>
                 <option value="1330">1:30 PM</option>
@@ -1866,28 +1866,12 @@
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
-  <!-- Fix ES UI Scrollspy-offset and scrolling, owing to use of .navbar-fixed-top -->
-  <script>
-    var scrollOffset = 50;
-
-    $('body').scrollspy({
-      offset: scrollOffset + 5
-    });
-
-    $('#es-ui-side-nav a').click(function(event) {
-      event.preventDefault();
-      $($(this).attr('href'))[0].scrollIntoView();
-      window.location.hash = $(this).attr('href');
-      scrollBy(0, -scrollOffset);
-    });
-  </script>
-
   <script src="assets/js/vendor/bootstrap-datepicker.min.js"></script>
   <script src="assets/js/vendor/drum.min.js"></script>
   <script src="assets/js/vendor/hammer.min.js"></script>
   <script src="assets/js/vendor/hammer.fakemultitouch.js"></script>
   <script src="assets/js/vendor/appt-picker-es.js"></script>
-  <script src="assets/js/vendor/dumb-date-picker-es.js"></script>
+  <script src="assets/js/vendor/simple-date-picker-es.js"></script>
   <script src="assets/js/vendor/jquery.scrollTo.min.js"></script>
   <script src="assets/js/vendor/jquery.multibox.js"></script>
   <script src="assets/js/vendor/btn-bar-toggler.js"></script>

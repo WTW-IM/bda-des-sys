@@ -4,7 +4,7 @@
 //================================================
 
 form.appt-calendar-wrapper {
-  @include clearfix;
+  @extend .clearfix;
 
   margin: 0 auto;
   width: 450px;
@@ -45,7 +45,7 @@ form.appt-calendar-wrapper {
     }
 
     > .week {
-      @include clearfix;
+      @extend .clearfix;
 
       display: flex;
       margin: 0 0 5px;
@@ -87,7 +87,7 @@ form.appt-calendar-wrapper {
           pointer-events: none;
 
           &:focus ~ .day {
-            box-shadow: 0 0 3px 3px #83bffc;
+            @include tab-focus();
           }
 
           &:checked ~ .day {

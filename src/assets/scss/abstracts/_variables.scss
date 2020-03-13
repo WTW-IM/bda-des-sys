@@ -136,7 +136,6 @@ $spacers: map-merge(
   $spacers
 );
 
-$negative-spacers: negativify-map($spacers) !default;
 
 // Body
 //
