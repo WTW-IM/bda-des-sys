@@ -246,40 +246,6 @@ $embed-responsive-aspect-ratios: () !default;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-path: "/bda-des-sys/assets/fonts/";
-
-@font-face {
-  font-family: "Source Sans Pro Light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$font-path}SourceSansPro-Light.eot");
-  src: url("#{$font-path}SourceSansPro-Light.eot") format("embedded-opentype"),
-    url("#{$font-path}SourceSansPro-Light.otf.woff") format("woff"),
-    url("#{$font-path}SourceSansPro-Light.ttf") format("truetype"),
-    url("#{$font-path}SourceSansPro-Light.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Source Sans Pro Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$font-path}SourceSansPro-Regular.eot");
-  src: url("#{$font-path}SourceSansPro-Regular.eot") format("embedded-opentype"),
-    url("#{$font-path}SourceSansPro-Regular.otf.woff") format("woff"),
-    url("#{$font-path}SourceSansPro-Regular.ttf") format("truetype"),
-    url("#{$font-path}SourceSansPro-Regular.svg") format("svg");
-}
-
-@font-face {
-  font-family: "Source Sans Pro Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$font-path}SourceSansPro-Bold.eot");
-  src: url("#{$font-path}SourceSansPro-Bold.eot") format("embedded-opentype"),
-    url("#{$font-path}SourceSansPro-Bold.otf.woff") format("woff"),
-    url("#{$font-path}SourceSansPro-Bold.ttf") format("truetype"),
-    url("#{$font-path}SourceSansPro-Bold.svg") format("svg");
-}
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: "Source Sans Pro Regular", "Segoe UI", "Segoe",
@@ -358,23 +324,6 @@ $nested-kbd-font-weight: $font-weight-bold !default;
 $list-inline-padding: 0.5rem !default;
 $mark-bg: #fcf8e3 !default;
 $hr-margin-y: $spacer !default;
-
-// Icons
-//
-// BDA Functional Icon Typeface
-
-@font-face {
-  font-family: "BDS Functional Icons";
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$font-path}indv-mkt-icons.eot");
-  src: url("#{$font-path}indv-mkt-icons.eot") format("embedded-opentype"),
-    url("#{$font-path}indv-mkt-icons.woff") format("woff"),
-    url("#{$font-path}indv-mkt-icons.ttf") format("truetype"),
-    url("#{$font-path}indv-mkt-icons.svg") format("svg");
-}
-
-$icon-font-face: "BDS Functional Icons";
 
 // Tables
 //
@@ -885,7 +834,6 @@ $well-border-radius-lg: $well-border-radius * 1.5;
 $well-padding: 1.2rem;
 $well-padding-sm: 0.6rem;
 $well-padding-lg: 1.8rem;
-
 
 // Tooltips
 
