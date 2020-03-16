@@ -220,9 +220,9 @@ $border-color: $gray-300 !default;
 $modal-border-width: 2px !default;
 $modal-border-color: $magenta !default;
 
-$border-radius: 0.25rem !default;
-$border-radius-lg: 0.3rem !default;
-$border-radius-sm: 0.2rem !default;
+$border-radius: 0.12rem !default;
+$border-radius-lg: 0.2rem !default;
+$border-radius-sm: 0.08rem !default;
 
 $rounded-pill: 50rem !default;
 
@@ -427,9 +427,10 @@ $btn-link-disabled-color: $gray-700 !default;
 $btn-block-spacing-y: 0.5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: $border-radius !default;
-$btn-border-radius-lg: $border-radius-lg !default;
-$btn-border-radius-sm: $border-radius-sm !default;
+$btn-border-radius: $border-radius * 2 !default;
+$btn-border-radius-lg: $border-radius-lg * 1.25 !default;
+$btn-border-radius-sm: $border-radius-sm * 2 !default;
+$btn-border-radius-xs: $btn-border-radius-sm !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
@@ -555,7 +556,7 @@ $form-check-input-margin-x: 0.25rem !default;
 $form-grid-gutter-width: 10px !default;
 
 $input-group-addon-color: $input-color !default;
-$input-group-addon-bg: $gray-300 !default;
+$input-group-addon-bg: $gray-100 !default;
 $input-group-addon-border-color: $input-border-color !default;
 
 $form-select-padding-y: $input-padding-y !default;
@@ -579,8 +580,7 @@ $form-select-background: no-repeat right $form-select-padding-x center /
   $form-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 
 $form-select-feedback-icon-padding-right: calc(
-  (1em + #{2 * $form-select-padding-y}) * 3 / 4 + #{$form-select-padding-x +
-    $form-select-indicator-padding}
+  (1em + #{2 * $form-select-padding-y}) * 3 / 4 + #{$form-select-padding-x + $form-select-indicator-padding}
 ) !default;
 $form-select-feedback-icon-position: center right
   ($form-select-padding-x + $form-select-indicator-padding) !default;
@@ -697,7 +697,7 @@ $nav-link-disabled-color: $gray-700 !default;
 $nav-tabs-border-color: $gray-300 !default;
 $nav-tabs-border-width: $border-width !default;
 $nav-tabs-border-radius: $border-radius !default;
-$nav-tabs-link-hover-border-color: $gray-300 $gray-300 $nav-tabs-border-color !default;
+$nav-tabs-link-hover-border-color: transparent transparent $nav-tabs-border-color !default;
 $nav-tabs-link-active-color: $gray-700 !default;
 $nav-tabs-link-active-bg: $body-bg !default;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
@@ -787,26 +787,26 @@ $pagination-padding-y-lg: 0.75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 
 $pagination-color: $link-color !default;
-$pagination-bg: $gray-50 !default;
+$pagination-bg: $white !default;
 $pagination-border-width: $border-width !default;
 $pagination-border-radius: $border-radius !default;
 $pagination-margin-left: -$pagination-border-width !default;
-$pagination-border-color: $gray-300 !default;
+$pagination-border-color: $primary !default;
 
 $pagination-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: $link-hover-color !default;
-$pagination-hover-bg: $gray-300 !default;
-$pagination-hover-border-color: $gray-300 !default;
+$pagination-hover-color: $white !default;
+$pagination-hover-bg: $primary !default;
+$pagination-hover-border-color: $primary !default;
 
-$pagination-active-color: $component-active-color !default;
-$pagination-active-bg: $component-active-bg !default;
+$pagination-active-color: $white !default;
+$pagination-active-bg: $magenta-500 !default;
 $pagination-active-border-color: $pagination-active-bg !default;
 
 $pagination-disabled-color: $gray-700 !default;
 $pagination-disabled-bg: $gray-50 !default;
-$pagination-disabled-border-color: $gray-300 !default;
+$pagination-disabled-border-color: $gray-100 !default;
 
 // Cards & Wells
 
@@ -867,7 +867,7 @@ $popover-bg: $white !default;
 $popover-max-width: 276px !default;
 $popover-border-width: $border-width !default;
 $popover-border-color: rgba($gray-900, 0.2) !default;
-$popover-border-radius: $border-radius-lg !default;
+$popover-border-radius: 0 !default;
 $popover-inner-border-radius: calc(
   #{$popover-border-radius} - #{$popover-border-width}
 ) !default;
@@ -969,7 +969,7 @@ $modal-transition: transform 0.3s ease-out !default;
 $alert-padding-y: 0.75rem !default;
 $alert-padding-x: 1.25rem !default;
 $alert-margin-bottom: 1rem !default;
-$alert-border-radius: $border-radius !default;
+$alert-border-radius: 2px !default;
 $alert-link-font-weight: $font-weight-bold !default;
 $alert-border-width: $border-width !default;
 

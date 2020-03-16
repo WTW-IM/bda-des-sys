@@ -1,0 +1,10 @@
+// BDS Tables
+//
+// -----------------------------------------------------
+
+@each $state, $key in $bds-theme-alerts {
+  .table-#{$state} {
+    background-color: deep-map-get($key, "light");
+    color: $black;
+  }
+}

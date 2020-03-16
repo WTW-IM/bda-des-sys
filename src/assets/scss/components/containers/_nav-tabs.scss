@@ -1,0 +1,15 @@
+// BDS Tabs
+//
+// -----------------------------------------------------
+
+.nav-tabs {
+  .nav-link {
+    &.dropdown-toggle {
+      padding: $nav-link-padding-y $nav-link-padding-x;
+    }
+    
+    &:hover {
+      background-color: $gray-50;
+    }
+  }
+}

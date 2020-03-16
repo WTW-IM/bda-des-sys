@@ -36,6 +36,12 @@ label {
     clear: left;
     display: block;
   }
+
+  .input-group-text {
+    background-color: $success-500;
+    border-color: $success-500;
+    color: $white;
+  }
 }
 
 .is-invalid {
@@ -50,6 +56,12 @@ label {
   .invalid-feedback {
     clear: left;
     display: block;
+  }
+
+  .input-group-text {
+    background-color: $danger-500;
+    border-color: $danger-500;
+    color: $white;
   }
 }
 
@@ -68,4 +80,14 @@ label {
     color: $software-warning;
     display: block;
   }
+
+  .input-group-text {
+    background-color: $warning-500;
+    border-color: $warning-500;
+    color: $white;
+  }
+}
+
+.dropdown-toggle {
+  padding: $btn-padding-y $btn-padding-x;
 }

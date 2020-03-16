@@ -2,11 +2,7 @@ import 'bootstrap';
 
 import "../scss/index.scss";
 
-$("#alert").click(() => {
-  alert("jQuery works!");
-});
-
-// Your jQuery code
+// BDS jQuery code
 
 $(".multi-tier ul a").click(function() {
   var _this = $(this);
@@ -28,6 +24,10 @@ if (navigator.userAgent.indexOf("Safari") > -1) {
   $('[data-trigger="focus"]').click(function() {
     $(this).focus();
   });
-}
+};
 
-$('body').scrollspy({target: '.bs-docs-sidebar'})
+$('body').scrollspy({target: '.bs-docs-sidebar'});
+
+$('[data-toggle="popover"]').popover();
+
+$('[data-toggle="tooltip"]').tooltip();

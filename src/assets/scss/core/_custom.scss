@@ -26,6 +26,10 @@ h5 em {
   font-weight: bold;
 }
 
+strong {
+  font-family: $font-family-bold;
+}
+
 /* Smaller headings need some love in the docs */
 h4,
 h5,
@@ -123,7 +127,7 @@ h6 {
   font-size: 90%;
   position: sticky;
   top: 0;
-  z-index: 2500;
+  z-index: $zindex-sticky;
 
   .navbar {
     padding: 0;
@@ -354,8 +358,12 @@ h6 {
 
 /* By default it's not affixed in mobile views, so undo that */
 .bs-docs-sidebar {
-  &.affix {
-    position: sticky;
+  position: sticky;
+  top: 6rem;
+
+  /* First level of nav */
+  .bs-docs-sidenav {
+    margin: 20px 0;
   }
 
   h5 {
@@ -366,10 +374,10 @@ h6 {
     display: flex;
     flex-direction: column;
 
-    > li {
+    li {
       display: block;
 
-      > a {
+      a {
         display: block;
         padding: 4px 20px;
         font-size: 13px;
@@ -385,17 +393,44 @@ h6 {
           border-left: 1px solid #563d7c;
         }
 
-        .active {
+        &.active {
           &,
           &:hover,
           &:focus {
-            > a {
-              padding-left: 18px;
-              font-weight: bold;
-              color: #563d7c;
-              background-color: transparent;
-              border-left: 2px solid #563d7c;
-            }
+            padding-left: 18px;
+            font-weight: bold;
+            background-color: transparent;
+            border-left: 2px solid $magenta-500;
+          }
+
+          & + .nav {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .nav {
+      display: none; /* Hide by default, but at >768px, show it */
+      padding-bottom: 10px;
+
+      .nav {
+        display: none; /* Hide by default, but at >768px, show it */
+        padding-bottom: 5px;
+
+        a {
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 28px;
+          font-size: 12px;
+          font-weight: normal;
+
+          &:hover {
+            padding-left: 27px;
+          }
+
+          &.active {
+            padding-left: 26px;
           }
         }
       }
@@ -407,68 +442,6 @@ h6 {
   .bs-docs-sidebar {
     padding-left: 20px;
   }
-}
-
-/* First level of nav */
-.bs-docs-sidenav {
-  margin: 20px 0;
-}
-
-/* .bs-docs-sidebar .nav > .active > ul > .active > a,
-
-.bs-docs-sidebar .nav > .active:hover > a,
-
-.bs-docs-sidebar .nav > .active:focus > a {
-
-  padding-left: 28px;
-
-} */
-
-/* Nav: second level (shown on .active) */
-.bs-docs-sidebar .nav .nav {
-  display: none; /* Hide by default, but at >768px, show it */
-  padding-bottom: 10px;
-}
-
-.bs-docs-sidebar .nav .nav .nav {
-  display: none; /* Hide by default, but at >768px, show it */
-  padding-bottom: 5px;
-}
-
-.bs-docs-sidebar .nav .nav > li > a {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 30px;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a {
-  padding-left: 40px;
-}
-
-.bs-docs-sidebar .nav .nav > li > a:hover,
-.bs-docs-sidebar .nav .nav > li > a:focus {
-  padding-left: 29px;
-}
-
-.bs-docs-sidebar .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav > .active:focus > a {
-  padding-left: 28px;
-  font-weight: 500;
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a:hover,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > li > a:focus {
-  padding-left: 39px;
-}
-
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active > a,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active:hover > a,
-.bs-docs-sidebar .nav > .active > .nav > .active > .nav > .active:focus > a {
-  padding-left: 38px;
-  font-weight: 500;
 }
 
 /* Back to top (hidden on mobile) */
@@ -715,9 +688,7 @@ table.color-variables {
   [class^="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #eee;
     background-color: rgba(86, 61, 124, 0.15);
-    border: 1px solid #ddd;
     border: 1px solid rgba(86, 61, 124, 0.2);
   }
 }
@@ -1595,14 +1566,7 @@ table.color-variables {
 
 /* Pseudo :focus state for showing how it looks in the docs */
 #focusedInput {
-  border-color: rgb(
-    204,
-    204,
-    204
-  ); /* Restate unfocused value to make CSSLint happy that there's a pre-CSS3 fallback */
   border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
-  outline: thin dotted \9; /* IE6-9 */
-  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
