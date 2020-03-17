@@ -1,0 +1,447 @@
+//
+// Datepicker for Bootstrap v1.5.1
+// (https://github.com/eternicode/bootstrap-datepicker)
+//
+// Copyright 2012 Stefan Petre
+// Improvements by Andrew Rowls
+// Licensed under the Apache License v2.0
+// (http://www.apache.org/licenses/LICENSE-2.0)
+//
+// =======================================================
+ 
+.datepicker {
+  padding: 4px;
+  border-radius: 4px;
+  direction: ltr;
+  
+  > div {
+    display: none;
+  }
+  
+  table {
+    margin: 0;
+    user-select: none;
+    
+    td,
+    th {
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: none;
+    }
+    
+    tr {
+      td.day {
+        
+        &:hover,
+        &.focused {
+          background: $gray-50;
+          cursor: pointer;
+        }
+        
+        &.old,
+        &.new {
+          color: $gray-500;
+        }
+        
+        &.disabled {
+          &,
+          &:hover {
+            background: none;
+            color: $gray-500;
+            cursor: default;
+          }
+        }
+        
+        &.highlighted {
+          background: $magenta-500;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  
+  &.datepicker-rtl {
+    direction: rtl;
+    
+    table tr td span {
+      float: right;
+    }
+  }
+  
+  table tr td {
+    
+    &.active {
+      &,
+      &:hover,
+      &.disabled,
+      &.disabled:hover {
+        background-color: $blue-900;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba($black, 0.25);
+      }
+      
+      &:hover,
+      &:hover:hover,
+      &.disabled:hover,
+      &.disabled:hover:hover,
+      &:active,
+      &:hover:active,
+      &.disabled:active,
+      &.disabled:hover:active,
+      &.active,
+      &:hover.active,
+      &.disabled.active,
+      &.disabled:hover.active,
+      &.disabled,
+      &:hover.disabled,
+      &.disabled.disabled,
+      &.disabled:hover.disabled,
+      &[disabled],
+      &:hover[disabled],
+      &.disabled[disabled],
+      &.disabled:hover[disabled] {
+        background-color: $blue-900;
+      }
+    }
+    
+    &.range {
+      &,
+      &:hover,
+      &.disabled,
+      &.disabled:hover {
+        background: $gray-100;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      
+      &.today {
+        &,
+        &:hover,
+        &.disabled,
+        &.disabled:hover {
+          background-color: $green-300;
+          border-radius: 0;
+        }
+        
+        &:hover,
+        &:hover:hover,
+        &.disabled:hover,
+        &.disabled:hover:hover,
+        &:active,
+        &:hover:active,
+        &.disabled:active,
+        &.disabled:hover:active,
+        &.active,
+        &:hover.active,
+        &.disabled.active,
+        &.disabled:hover.active,
+        &.disabled,
+        &:hover.disabled,
+        &.disabled.disabled,
+        &.disabled:hover.disabled,
+        &[disabled],
+        &:hover[disabled],
+        &.disabled[disabled],
+        &.disabled:hover[disabled] {
+          background-color: $green-100;
+        }
+      }
+    }
+  
+    &.selected {
+      &,
+      &:hover,
+      &.disabled,
+      &.disabled:hover {
+        background-color: $gray-100;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba($black, 0.25);
+      }
+  
+      &:hover,
+      &:hover:hover,
+      &.disabled:hover,
+      &.disabled:hover:hover,
+      &:active,
+      &:hover:active,
+      &.disabled:active,
+      &.disabled:hover:active,
+      &.active,
+      &:hover.active,
+      &.disabled.active,
+      &.disabled:hover.active,
+      &.disabled,
+      &:hover.disabled,
+      &.disabled.disabled,
+      &.disabled:hover.disabled,
+      &[disabled],
+      &:hover[disabled],
+      &.disabled[disabled],
+      &.disabled:hover[disabled] {
+        background-color: $gray-300;
+      }
+    }
+    
+    &.today {
+      &,
+      &:hover,
+      &.disabled,
+      &.disabled:hover {
+        background-color: $green-300;
+        color: $black;
+      }
+      
+      &:hover,
+      &:hover:hover,
+      &.disabled:hover,
+      &.disabled:hover:hover,
+      &:active,
+      &:hover:active,
+      &.disabled:active,
+      &.disabled:hover:active,
+      &.active,
+      &:hover.active,
+      &.disabled.active,
+      &.disabled:hover.active,
+      &.disabled,
+      &:hover.disabled,
+      &.disabled.disabled,
+      &.disabled:hover.disabled,
+      &[disabled],
+      &:hover[disabled],
+      &.disabled[disabled],
+      &.disabled:hover[disabled] {
+        background-color: $green-100;
+      }
+      
+      &:hover:hover {
+        color: $black;
+      }
+      
+      &.active:hover {
+        color: $white;
+      }
+    }
+    
+    span {
+      cursor: pointer;
+      display: block;
+      float: left;
+      margin: 1%;
+      padding: 5px 7px;
+      border-radius: 4px;
+      // width: 23%;
+      // height: 54px;
+      // line-height: 54px;
+      
+      &:hover{
+        background: $gray-50;
+      }
+      
+      &.disabled,
+      &.disabled:hover {
+        background: none;
+        color: $gray-300;
+        cursor: default;
+      }
+    
+      &.active {
+        &,
+        &:hover,
+        &.disabled,
+        &.disabled:hover {
+          background-color: $blue-900;
+          color: $white;
+          text-shadow: 0 -1px 0 rgba($black, 0.25);
+        }
+        
+        &:hover,
+        &:hover:hover,
+        &.disabled:hover,
+        &.disabled:hover:hover,
+        &:active,
+        &:hover:active,
+        &.disabled:active,
+        &.disabled:hover:active,
+        &.active,
+        &:hover.active,
+        &.disabled.active,
+        &.disabled:hover.active,
+        &.disabled,
+        &:hover.disabled,
+        &.disabled.disabled,
+        &.disabled:hover.disabled,
+        &[disabled],
+        &:hover[disabled],
+        &.disabled[disabled],
+        &.disabled:hover[disabled] {
+          background-color: $blue-900;
+        }
+      }
+      
+      &.month {
+        padding: 5px 7px;
+        text-align: center;
+        width: 31%;
+      }
+      
+      &.old,
+      &.new {
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+.datepicker-inline {
+  width: 220px;
+}
+
+.datepicker-dropdown {
+  top: 0;
+  left: 0;
+  
+  &:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid $gray-500;
+    border-top: 0;
+    border-bottom-color: rgba($black, 0.2);
+    position: absolute;
+  }
+  
+  &:after {
+    content: '';
+    display: inline-block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $white;
+    border-top: 0;
+    position: absolute;
+  }
+  
+  &.datepicker-orient-left {
+    
+    &:before {
+      left: 6px;
+    }
+    
+    &:after {
+      left: 7px;
+    }
+  }
+  
+  &.datepicker-orient-right {
+    
+    &:before {
+      left: 6px;
+    }
+    
+    &:after {
+      right: 7px;
+    }
+  }
+  
+  &.datepicker-orient-bottom {
+    
+    &:before {
+      top: -7px;
+    }
+    
+    &:after {
+      top: -6px;
+    }
+  }
+  
+  &.datepicker-orient-top {
+    
+    &:before {
+      bottom: -7px;
+      border-bottom: 0;
+      border-top: 7px solid $gray-500;
+    }
+    
+    &:after {
+      bottom: -6px;
+      border-bottom: 0;
+      border-top: 6px solid $white;
+    }
+  }
+}
+
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+  background-color: transparent;
+}
+
+.datepicker .datepicker-switch {
+  width: 145px;
+}
+
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
+.datepicker tfoot tr th {
+  cursor: pointer;
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+  background: $gray-50;
+}
+
+.datepicker .cw {
+  font-size: 10px;
+  width: 12px;
+  padding: 0 2px 0 5px;
+  vertical-align: middle;
+}
+
+.input-append.date .add-on,
+.input-prepend.date .add-on {
+  cursor: pointer;
+}
+
+.input-append.date .add-on i,
+.input-prepend.date .add-on i {
+  margin-top: 3px;
+}
+
+.input-daterange {
+  
+  input {
+    text-align: center;
+    
+    &:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+    
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+
+  .add-on {
+    display: inline-block;
+    width: auto;
+    min-width: 16px;
+    height: 18px;
+    padding: 4px 5px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 $white;
+    vertical-align: middle;
+    background-color: $gray-50;
+    border: 1px solid $gray-100;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
