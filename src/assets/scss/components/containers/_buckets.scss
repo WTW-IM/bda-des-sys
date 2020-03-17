@@ -21,7 +21,7 @@ $bucket-primary-heading-bg: $brand-primary;
 
 // Base class
 .bucket {
-  margin-bottom: $line-height-base;
+  margin-bottom: $line-height-base * 1rem;
   background-color: $bucket-bg;
   //border: 1px solid transparent;
   //.box-shadow(0 1px 1px rgba(0,0,0,.05));
