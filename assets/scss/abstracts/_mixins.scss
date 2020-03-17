@@ -1,1 +1,14 @@
 // Add mixins here
+
+@mixin map-font($name, $path, $file-name-partial) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$path}#{$file-name-partial}.woff2") format("woff2"),
+      url("#{$path}#{$file-name-partial}.woff") format("woff"),
+      url("#{$path}#{$file-name-partial}.otf") format("opentype");
+  }
+}
+
+@mixin tab-focus() {
+  box-shadow: 0 0 3px 3px #83bffc;
+}
