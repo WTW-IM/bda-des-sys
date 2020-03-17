@@ -1,9 +1,9 @@
 $(function(){
-  var _scope = $('.dumb-date-picker');
+  var _scope = $('.simple-date-picker');
   var btnUp = _scope.find('button.up');
   var btnDn = _scope.find('button.down');
-  var datePicker = $('select.dumb-date');
-  var timePicker = $('select.dumb-time');
+  var datePicker = $('select.simple-date');
+  var timePicker = $('select.simple-time');
   var times = {
     'times-20160524':
       '<option value="1300">1:00 PM</option>' +

@@ -1,0 +1,225 @@
+//
+// Drum/Tumbler Skin for <select> Elements
+//
+//================================================
+
+div.drum-wrapper {
+  height: 240px;
+	position: relative;
+  user-select: none;
+  width: 30px;
+  -webkit-touch-callout: none;
+  
+  > .inner {
+  	height: 100%;
+		overflow: hidden;
+  	position: relative;
+		
+		> .container {
+			border-top: 1px solid $gray-700;
+			border-bottom: 1px solid $gray-500;
+			height: 25px;
+			left: 0px;
+			line-height: 25px;
+			perspective: 1000px;
+			position: absolute;
+			top: 106px;
+			width: 100%;
+			
+			// And here's the actual drum...
+			> .drum {
+        height: 100%;
+				left: 0px;
+				position: absolute;
+				top: 0px;
+				transform-style: preserve-3d;
+				width: 100%;
+				
+				> figure {
+					backface-visibility: hidden;
+					box-sizing: border-box;  
+					color: black;
+					display: block;
+					height: 25px;
+					left: 0px;
+					line-height: 25px;
+					margin: 0px;
+					overflow: hidden;
+					padding: 0px 3px;
+					position: absolute;
+					text-align: center;
+					text-overflow: ellipsis;
+					top: 0px;
+					white-space: nowrap;
+					width: 100%;
+				}
+			}
+		}
+  }
+  
+  // Dial styles for mouse controls
+	> .dial {
+		cursor: pointer;
+		height: 86px;
+		left: 0px;
+		position: absolute;
+		width: 100%;
+		
+		&.up {
+	    border-left: 1px solid $gray-500;
+	    border-right: 1px solid $gray-700;
+	    border-top: 1px solid $gray-300;
+			top: 20px;
+			
+			> div {
+				top: -28px;
+				
+				> svg {
+				  transform: translate(-50%, -60%);
+				}
+			}
+		}
+		
+		&.down {
+	    border-bottom: 1px solid $gray-900;
+	    border-left: 1px solid $gray-500;
+			border-right: 1px solid $gray-700;
+			bottom: 20px;
+			height: 89px;
+			
+			> div {
+				bottom: -24px;
+				
+				> svg {
+				  transform: translate(-50%, -35%);
+				}
+			}
+		}
+		
+		> div {
+			@extend .btn-default;
+			cursor: pointer;
+			height: 18px;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			
+			> svg {
+				left: 50%;
+				position: absolute;
+				top: 50%;
+			  
+			  > g {
+			  	> path {
+						stroke: $body-color;
+			  	}
+			  }
+			}
+		}
+	}
+}
+
+.outside {
+	> .drum-wrapper {
+		height: 140px;
+		
+		> .inner {
+			top: 12px;
+		
+			> .container {
+				top: 46px;
+			}	
+		}
+		
+		> .dial {
+			height: 58px;
+		}
+	}
+}
+
+// Center the drum's form within its parent container
+form.appt-wrapper {
+	@extend .clearfix;
+	margin: 0 auto;
+	width: 230px;
+}
+
+// Implementation-specific styles
+#drum_apptDate {
+	float: left;
+	width: 130px;
+	
+	.container {
+		border-left: 1px solid $gray-700;
+	}
+}
+
+#drum_apptTime {
+	float: left;
+	width: 100px;
+	
+	.container {
+		border-right: 1px solid $gray-500;
+	}
+}
+
+//
+// Date Picker Using Basic HTML Elements
+//
+//================================================
+
+.simple-date-picker {
+	@extend .clearfix;
+	min-width: 310px;
+	width: 300px;
+	margin: 0 auto;
+	
+	> div {
+		float: left;
+		min-width: 150px;
+		padding: 40px 0 34px;
+		position: relative;
+		
+		& + div {
+			margin-left: 10px;
+		}
+		
+		.btn-default {
+			height: 30px;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			
+			> svg {
+				left: 50%;
+				position: absolute;
+				top: 50%;
+			}
+			
+			&.up {
+				top: 0px;
+				
+				> svg {
+					transform: translate(-50%, -60%);
+				}
+			}
+			
+			&.down {
+				bottom: 0px;
+				
+				> svg {
+					transform: translate(-50%, -35%);
+				}
+			}
+		}
+		
+		> select {
+			height: 200px;
+			width: 100%;
+			
+			> option {
+				padding: 7px 20px 7px 10px;
+			}
+		}
+	}
+}
