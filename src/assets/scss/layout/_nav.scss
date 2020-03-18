@@ -175,7 +175,6 @@ $es-nav-l2-hover-text-color: $blue-900;
 
           > a {
             display: inline-block;
-            float: right;
             margin-top: -8px;
             padding: 7px 30px 7px 10px;
 
@@ -197,7 +196,6 @@ $es-nav-l2-hover-text-color: $blue-900;
             color: #fff;
             cursor: default;
             display: inline-block;
-            float: right;
             font-weight: normal;
             line-height: $line-height-base;
             margin-top: -8px;
@@ -549,7 +547,6 @@ $es-nav-l2-hover-text-color: $blue-900;
 // For pocumentation/display pusposes only.
 img.placeholder {
   display: inline-block;
-  float: left;
   margin-right: 15px;
   width: 20%;
   max-width: 160px;
