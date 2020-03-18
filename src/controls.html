@@ -206,11 +206,9 @@
           <div class="bs-callout bs-callout-accessibility" id="callout-btn-group-accessibility">
             <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
             <h4>Ensure correct <code>role</code> and provide a label</h4>
-            <p>In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>,
-              while toolbars should have a <code>role="toolbar"</code>.</p>
+            <p>In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>, while toolbars should have a <code>role="toolbar"</code>.</p>
             <p>One exception are groups which only contain a single control (for instance the <a href="#btn-groups-justified">justified button groups</a> with <code>&lt;button&gt;</code> elements) or a dropdown.</p>
-            <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role</code> attribute. In the examples provided here, we use
-              <code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
+            <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role</code> attribute. In the examples provided here, we use<code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
           </div>
 
           <h2 id="btn-groups-single">Basic example</h2>
@@ -591,9 +589,7 @@
           <div class="bs-callout bs-callout-accessibility" id="callout-inline-form-labels">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Always add labels</h4>
-            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing a
-              label for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute,
-              if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
+            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing alabel for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute, if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
           </div>
 
           <h3 id="forms-example">Basic example</h3>
@@ -729,8 +725,7 @@
 
           <h4 id="forms-checkboxes-radios">Checkboxes and radios</h4>
           <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
-          <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>,
-            <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+          <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>,<code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
 
           <h5 id="forms-checkboxes-radios-default">Default (stacked)</h5>
           <div class="bs-example" data-example-id="block-checkboxes-radios">
@@ -1053,7 +1048,7 @@
           <p>Datepickers can be a useful tool for letting users indicate a date in the past, such as a birthdate.</p>
 
           <h5>Dates in the Past</h5>
-          <p>For selecting dates in the past&mdash;such as birthdates, life-change events, etc.&mdash;a decade-forst (or year-first) approach can help less-keyboard-savvy and mobile users to quickly select a date.</p>
+          <p>For selecting dates in the past&mdash;such as birthdates, life-change events, etc.&mdash;a decade-first (or year-first) approach can help less-keyboard-savvy and mobile users to quickly select a date.</p>
           <div class="bs-example">
             <form>
               <div class="form-group">
@@ -1069,8 +1064,7 @@
           <div class="bs-callout bs-callout-accessibility" id="callout-help-text-accessibility">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Accessibility for datepickers</h4>
-            <p>The example above is is missing some functionality that would be present in the final implementation, such as not relying on the users' input to format the date. Each part of the date (month, day, and year) should be announced by AT so
-              that users of those technologies quickly know what to input. The example is provided, as-is, to demonstrate most&mdash;but not all&mdash;of the necessary functionality.</p>
+            <p>The example above is is missing some functionality that would be present in the final implementation, such as not relying on the users' input to format the date. Each part of the date (month, day, and year) should be announced by AT sothat users of those technologies quickly know what to input. The example is provided, as-is, to demonstrate most&mdash;but not all&mdash;of the necessary functionality.</p>
           </div>
 
           <h5>Dates in the Future</h5>
@@ -1183,8 +1177,7 @@
           </div>
 
           <h5>Dates <em>and Times</em> in the Future</h5>
-          <p>For selecting from limited dates and times in the future&mdash;example: scheduling an appointment&mdash;users will need to select from a pre-defined set of dates and times. A tumbler/drum approach is an interaction model that should be
-            familiar to many users, and works on both desktop and touch devices.</p>
+          <p>For selecting from limited dates and times in the future&mdash;example: scheduling an appointment&mdash;users will need to select from a pre-defined set of dates and times. A tumbler/drum approach is an interaction model that should be familiar to many users, and works on both desktop and touch devices.</p>
           <div class="bs-example">
             <form>
               <div class="form-group">
@@ -1450,8 +1443,7 @@
           <div class="bs-callout bs-callout-accessibility" id="callout-help-text-accessibility">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Associating help text with form controls</h4>
-            <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when
-              the user focuses or enters the control.</p>
+            <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
           </div>
           <div class="bs-example" data-example-id="simple-help-text">
             <form>
