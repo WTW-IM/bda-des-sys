@@ -1,13 +1,11 @@
 ---
 name: Feature request
 about: Suggest an idea for an improvement, or new feature for the documentation.
-
 ---
 
 Before opening:
 
 - [Search for duplicate or closed issues](https://github.com/WTW-IM/bda-des-sys/issues)
-<!-- - Read the [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/.github/CONTRIBUTING.md) -->
 
 Feature requests must include:
 
