@@ -1159,4 +1159,14 @@ $font-path: "/bda-des-sys/assets/fonts/" !default;
       content: "\e6e0";
     }
   }
+  &.clear-filters {
+    &::before {
+      content: "\e6e1";
+    }
+  }
+  &.glasses {
+    &::before {
+      content: "\e6e2";
+    }
+  }
 }
