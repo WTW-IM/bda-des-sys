@@ -14,7 +14,7 @@ $icon-font-face: "BDS Functional Icons";
 $font-path: "/bda-des-sys/assets/fonts/" !default;
 
 // BDA Functional Icon Typeface
-@include map-font($icon-font-face, $font-path, "indv-mkt-icons");
+@include map-font($icon-font-face, $font-path, "bds-func-icons");
 
 // Catchall baseclass
 .icon {
