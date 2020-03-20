@@ -1169,4 +1169,14 @@ $font-path: "/bda-des-sys/assets/fonts/" !default;
       content: "\e6e2";
     }
   }
+  &.purchase-order {
+    &::before {
+      content: "\e6e3";
+    }
+  }
+  &.urgent-message {
+    &::before {
+      content: "\e6e4";
+    }
+  }
 }
