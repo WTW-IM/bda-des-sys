@@ -6,7 +6,7 @@
   margin: 0 auto 10px;
 
   > label {
-    display: inline-block;
+    display: block;
     margin-left: -10px;
     position: relative;
     padding: 10px 0 10px 42px;
@@ -15,9 +15,8 @@
     > .check {
       width: 25px;
       height: 25px;
-      cursor: pointer;
       position: absolute;
-      border: 3px solid map-get($grays, '700');
+      border: 3px solid $gray-700;
       top: 0.55em;
       left: 10px;
       background: #fff;
@@ -41,7 +40,7 @@
     }
 
     &:hover .check::after {
-      border-color: map-get($grays, '500');
+      border-color: $gray-500;
     }
 
     input[type="checkbox"] {
@@ -67,9 +66,11 @@
 
   &.disabled {
     > label {
+      color: $gray-500;
+      cursor: not-allowed;
+
       > .check {
-        border-color: map-get($grays, '700');
-        cursor: not-allowed;
+        border-color: $gray-300;
 
         &::after {
           border-color: #fff;
@@ -79,8 +80,8 @@
 
     input[type="checkbox"] {
       &:checked ~ .check {
-        background-color: map-get($grays, '700');
-        border-color: map-get($grays, '700');
+        background-color: $gray-300;
+        border-color: $gray-300;
 
         &::after {
           border-color: #fff;
@@ -105,7 +106,7 @@
 
   > .popover-link {
     border: none;
-    color: map-get($grays, '900');
+    color: $gray-900;
 
     &:hover {
       border: none;
@@ -144,7 +145,7 @@
     > .check {
       display: block;
       position: absolute;
-      border: 3px solid map-get($grays, '700');
+      border: 3px solid $gray-700;
       border-radius: 100%;
       height: 25px;
       left: 10px;
@@ -168,7 +169,7 @@
     }
 
     &:hover .check::before {
-      background-color: map-get($grays, '500');
+      background-color: $gray-500;
     }
 
     input[type="radio"] {
@@ -193,16 +194,23 @@
 
   &.disabled {
     > label {
+      color: $gray-500;
+      cursor: not-allowed;
+
       > .check {
-        border-color: map-get($grays, '500');
+        border-color: $gray-300;
 
         &::before {
           background-color: #fff;
         }
       }
 
-      input[type="radio"]:checked ~ .check::before {
-        background-color: map-get($grays, '500');
+      input[type="radio"]:checked ~ .check {
+        border-color: $gray-300;
+        
+        &::before {
+          background-color: $gray-300;
+        }
       }
     }
   }
@@ -310,7 +318,7 @@
 
       & + label {
         > span {
-          border-left: 1px solid map-get($grays, '700');
+          border-left: 1px solid $gray-700;
         }
       }
     }
@@ -362,13 +370,13 @@
   // &.disabled {
   //   > label {
   //     > .check {
-  //       border-color: map-get($grays, '500');
+  //       border-color: $gray-500;
   //       &::before {
   //         background-color: #fff;
   //       }
   //     }
   //     input[type="radio"]:checked ~ .check:before {
-  //       background-color: map-get($grays, '500');
+  //       background-color: $gray-500;
   //     }
   //   }
   // }
@@ -398,7 +406,7 @@
     > .check {
       display: block;
       position: absolute;
-      border: 3px solid map-get($grays, '700');
+      border: 3px solid $gray-700;
       border-radius: 13px;
       height: 27px;
       left: 0;
@@ -409,7 +417,7 @@
       transition: border 0.25s linear, box-shadow 0.05s linear;
 
       &::before {
-        background: map-get($grays, '700');
+        background: $gray-700;
         display: block;
         position: absolute;
         content: '';
@@ -422,7 +430,7 @@
       }
 
       &::after {
-        color: map-get($grays, '700');
+        color: $gray-700;
         display: block;
         font-size: $font-size-sm;
         position: absolute;
@@ -471,28 +479,28 @@
       cursor: not-allowed;
 
       > .check {
-        border-color: map-get($grays, '500');
+        border-color: $gray-500;
         cursor: not-allowed;
 
         &::before {
-          background-color: map-get($grays, '500');
+          background-color: $gray-500;
         }
 
         &::after {
-          color: map-get($grays, '500');
+          color: $gray-500;
         }
       }
 
       input[type="checkbox"]:checked ~ .check {
-        border-color: map-get($grays, '500');
+        border-color: $gray-500;
         cursor: not-allowed;
 
         &::before {
-          background-color: map-get($grays, '500');
+          background-color: $gray-500;
         }
 
         &::after {
-          color: map-get($grays, '500');
+          color: $gray-500;
         }
       }
     }
