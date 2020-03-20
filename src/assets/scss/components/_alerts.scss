@@ -3,12 +3,13 @@
 // --------------------------------------------------
 
 @each $state, $key in $bds-theme-alerts {
-  .alert-#{$state} {
+  .alert-#{$state},
+  .alert-#{$state}__cta {
     @include alert-variant(deep-map-get($key, "opaque"), transparent, $gray-50);
   }
 
   .alert-#{$state}--light,
-  .alert-#{$state}--cta {
+  .alert-#{$state}--light__cta {
     @include alert-variant(deep-map-get($key, "light"), transparent, $gray-900);
   }
 
@@ -20,6 +21,10 @@
 
 .alert {
   @extend .clearfix;
+
+  .icon:not(.remove) {
+    font-size: 150%;
+  }
 
   strong {
     font-family: $font-family-bold;
@@ -39,5 +44,11 @@
 
   &.alert-agent {
     color: $gray-900;
+  }
+
+  &.indented {
+    p {
+      padding-left: 1.6rem;
+    }
   }
 }
