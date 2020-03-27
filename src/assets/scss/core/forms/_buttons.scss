@@ -45,14 +45,14 @@
 .btn-group {
   > .btn {
     & + .btn {
-      border-left: 1px solid $gray-500;
+      border-left: 1px solid $gray-700;
     }
 
-    &.btn-danger + .btn-danger { border-left-color: $danger-900; }
+    &.btn-danger + .btn-danger { border-left-color: darken($danger-900, 20%); }
     &.btn-info + .btn-info { border-left-color: $info-900; }
-    &.btn-primary + .btn-primary { border-left-color: darken($blue-900, 20%); }
-    &.btn-success + .btn-success { border-left-color: $success-900; }
-    &.btn-warning + .btn-warning { border-left-color: $warning-900; }
+    &.btn-primary + .btn-primary { border-left-color: darken($blue-900, 30%); }
+    &.btn-success + .btn-success { border-left-color: darken($success-900, 10%); }
+    &.btn-warning + .btn-warning { border-left-color: darken($warning-900, 10%); }
 
     & + .dropdown-toggle {
       padding-left: $input-btn-padding-y;
