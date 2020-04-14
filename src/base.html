@@ -155,47 +155,13 @@
           <h3 id="type-headings">Headings</h3>
           <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want to
             maintain a proper header heirarchy in your markup.</p>
-          <div class="bs-example bs-example-type" data-example-id="simple-headings">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>
-                    <h1>h1. Heading</h1>
-                  </td>
-                  <td class="type-info">Light 44.78976px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2>h2. Heading</h2>
-                  </td>
-                  <td class="type-info">Light 37.3248px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <h3>h3. Heading</h3>
-                  </td>
-                  <td class="type-info">Light 31.104px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <h4>h4. Heading</h4>
-                  </td>
-                  <td class="type-info">Light 25.92px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <h5>h5. Heading</h5>
-                  </td>
-                  <td class="type-info">Light 21.6px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <h6>h6. Heading</h6>
-                  </td>
-                  <td class="type-info">Light 18px</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="bs-example bs-example-type" data-example-id="simple-headings" id="exp-hdgs">
+            <h1>h1. Heading <small></small></h1>
+            <h2>h2. Heading <small></small></h2>
+            <h3>h3. Heading <small></small></h3>
+            <h4>h4. Heading <small></small></h4>
+            <h5>h5. Heading <small></small></h5>
+            <h6>h6. Heading <small></small></h6>
           </div>
 
           <h4>Secondary text within headings</h4>
@@ -1484,6 +1450,32 @@
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <script>
+    $(function() {
+      var resizeTimer;
+      var xmpls = $('#exp-hdgs');
+      var hs = xmpls.find(':header');
+
+      var displayFontSize = function(){
+        hs.each(function(){
+          var _this = $(this);
+          var sml = _this.children('small');
+          var sz = _this.css('font-size');
+          sml.html(sz);
+        });
+      };
+
+      $(window).on('resize', function(e) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          displayFontSize();
+        }, 250);
+      });
+
+      displayFontSize();
+    });
+  </script>
 </body>
 
 </html>
