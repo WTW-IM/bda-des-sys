@@ -116,7 +116,7 @@
           <h3 id="buttons-tags">Button tags</h3>
           <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
           <form class="bs-example" data-example-id="btn-tags">
-            <a class="btn btn-default" href="#" role="button">Link</a>
+            <a class="btn btn-default" href="javascript:;" role="button">Link</a>
             <button class="btn btn-default" type="submit">Button</button>
             <input class="btn btn-default" type="button" value="Input">
             <input class="btn btn-default" type="submit" value="Submit">
@@ -201,13 +201,13 @@
         <div class="bs-docs-section">
           <h1 id="btn-groups" class="page-header">Button groups</h1>
 
-          <p class="lead">Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="../javascript/#buttons">our buttons plugin</a>.</p>
+          <p class="lead">Group a series of buttons together on a single line with the button group. The buttons can be extended with radio and checkbox behavior via JavaScript.</p>
 
           <div class="bs-callout bs-callout-accessibility" id="callout-btn-group-accessibility">
             <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
             <h4>Ensure correct <code>role</code> and provide a label</h4>
             <p>In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate <code>role</code> attribute needs to be provided. For button groups, this would be <code>role="group"</code>, while toolbars should have a <code>role="toolbar"</code>.</p>
-            <p>One exception are groups which only contain a single control (for instance the <a href="#btn-groups-justified">justified button groups</a> with <code>&lt;button&gt;</code> elements) or a dropdown.</p>
+            <p>One exception are groups which only contain a single control (for instance, <a href="#btn-groups">button groups</a> with <code>&lt;button&gt;</code> elements) or a dropdown.</p>
             <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role</code> attribute. In the examples provided here, we use<code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> can also be used.</p>
           </div>
 
@@ -300,8 +300,8 @@
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                      <li class="nav-item"><a href="#" class="nav-link">Dropdown link</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Dropdown link</a></li>
+                      <li class="nav-item"><a href="javascript:;" class="nav-link">Dropdown link</a></li>
+                      <li class="nav-item"><a href="javascript:;" class="nav-link">Dropdown link</a></li>
                     </ul>
                   </div>
                 </div>
@@ -900,7 +900,7 @@
             </form>
           </div><!-- /.bs-example -->
 
-          <h6 id="forms-button-bar">Configurable</h6>
+          <h6 id="forms-button-bar-configure">Configurable</h6>
           <p>Answer Groups can be configured to inherit different properties for thier <code>:checked</code> state.</p>
           <p>Use the drop-down, below, to toggle different configurations.</p>
           <div class="bs-example" data-example-id="answer-groups">
@@ -964,44 +964,44 @@
           <p>When you need custom styling for a <code>select</code> element, try using a Dropdown.</p>
           <div class="bs-example" data-example-ids="dropdown-form-control">
             <ul class="nav nav-pills" role="tablist">
-              <li role="presentation" class="active"><a href="#">Regular link</a></li>
+              <li role="presentation" class="active"><a href="javascript:;">Regular link</a></li>
               <li role="presentation" class="dropdown">
-                <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a id="drop4" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                   <span class="caret"></span>
                 </a>
                 <ul id="menu1" class="dropdown-menu" aria-labelledby="drop4">
-                  <li><a href="#" class="dropdown-item">Action</a></li>
-                  <li><a href="#" class="dropdown-item">Another action</a></li>
-                  <li><a href="#" class="dropdown-item">Something else here</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Another action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Something else here</a></li>
                   <li role="separator" class="dropdown-divider"></li>
-                  <li><a href="#" class="dropdown-item">Separated link</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Separated link</a></li>
                 </ul>
               </li>
               <li role="presentation" class="dropdown">
-                <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a id="drop5" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                   <span class="caret"></span>
                 </a>
                 <ul id="menu2" class="dropdown-menu" aria-labelledby="drop5">
-                  <li><a href="#" class="dropdown-item">Action</a></li>
-                  <li><a href="#" class="dropdown-item">Another action</a></li>
-                  <li><a href="#" class="dropdown-item">Something else here</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Another action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Something else here</a></li>
                   <li role="separator" class="dropdown-divider"></li>
-                  <li><a href="#" class="dropdown-item">Separated link</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Separated link</a></li>
                 </ul>
               </li>
               <li role="presentation" class="dropdown">
-                <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a id="drop6" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                   <span class="caret"></span>
                 </a>
                 <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
-                  <li><a href="#" class="dropdown-item">Action</a></li>
-                  <li><a href="#" class="dropdown-item">Another action</a></li>
-                  <li><a href="#" class="dropdown-item">Something else here</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Another action</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Something else here</a></li>
                   <li role="separator" class="dropdown-divider"></li>
-                  <li><a href="#" class="dropdown-item">Separated link</a></li>
+                  <li><a href="javascript:;" class="dropdown-item">Separated link</a></li>
                 </ul>
               </li>
             </ul> <!-- /pills -->
@@ -1061,7 +1061,7 @@
             </form>
           </div>
 
-          <div class="bs-callout bs-callout-accessibility" id="callout-help-text-accessibility">
+          <div class="bs-callout bs-callout-accessibility" id="callout-accessibility-datepickers">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Accessibility for datepickers</h4>
             <p>The example above is is missing some functionality that would be present in the final implementation, such as not relying on the users' input to format the date. Each part of the date (month, day, and year) should be announced by AT sothat users of those technologies quickly know what to input. The example is provided, as-is, to demonstrate most&mdash;but not all&mdash;of the necessary functionality.</p>
@@ -1075,12 +1075,12 @@
                 <button class="btn btn-default" data-toggle="modal" data-target="#scheduleApptDesktop">Launch Calendar Modal</button>
               </div>
             </form>
-            <div id="scheduleApptDesktop" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="scheduleApptDesktop" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-date-time">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Select Your Dedicated Date &amp; Time</h4>
+                    <h4 class="modal-title" id="modal-date-time">Select Your Dedicated Date &amp; Time</h4>
                   </div> <!-- /.modal-header -->
                   <div class="modal-body">
                     <p>Select a time that works best for you! We'll have a licensed benefit advisor ready to assist you with anything you need.</p>
@@ -1185,12 +1185,12 @@
                 <button class="btn btn-default" data-toggle="modal" data-target="#scheduleApptBasic">Launch Basic Scheduler Modal</button>
               </div>
             </form>
-            <div id="scheduleAppt" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="scheduleAppt" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-date-time-future">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Select Your Dedicated Date &amp; Time</h4>
+                    <h4 class="modal-title" id="modal-date-time-future">Select Your Dedicated Date &amp; Time</h4>
                   </div> <!-- /.modal-header -->
                   <div class="modal-body">
                     <p>Select a time that works best for you! We'll have a licensed benefit advisor ready to assist you with anything you need.</p>
@@ -1256,12 +1256,12 @@
               </div> <!-- /.modal-dialog -->
             </div> <!-- /.modal -->
 
-            <div id="scheduleApptBasic" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div id="scheduleApptBasic" class="modal es-modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-appointment">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Select Your Dedicated Date &amp; Time</h4>
+                    <h4 class="modal-title" id="modal-appointment">Select Your Dedicated Date &amp; Time</h4>
                   </div> <!-- /.modal-header -->
                   <div class="modal-body">
                     <p>Select a time that works best for you! We'll have a licensed benefit advisor ready to assist you with anything you need.</p>
@@ -1354,7 +1354,7 @@
             </form>
           </div>
 
-          <div class="bs-callout bs-callout-accessibility" id="callout-help-text-accessibility">
+          <div class="bs-callout bs-callout-accessibility" id="callout-accessibility-help-text">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Accessibility for drum/tumbler datepickers</h4>
             <p>While the example above is not keyboard navigable, the proper implementation would be. The example is provided, as-is, to demonstrate most&mdash;but not all&mdash;of the necessary functionality.</p>
@@ -1461,7 +1461,7 @@
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Conveying validation state to assistive technologies and colorblind users</h4>
             <p>Using these validation styles to denote the state of a form control only provides a visual, color-based indication, which will not be conveyed to users of assistive technologies - such as screen readers - or to colorblind users.</p>
-            <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include an <a href="/media/#icons">icon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="/media/#glyphicons-examples">icon use examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
+            <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include an <a href="media.html#icons">icon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="/media.html#icons-examples">icon use examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
           </div>
 
           <div class="bs-example" data-example-id="form-validation-states">
@@ -1494,7 +1494,7 @@
                 <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    <span class="input-group-text">@</span>
                   </div>
                   <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccessStatus">
                 </div>
@@ -1555,7 +1555,7 @@
                 <div class="col-sm-9">
                   <div class="input-group">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                      <span class="input-group-text">@</span>
                     </div>
                     <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                   </div>
@@ -1587,7 +1587,7 @@
                 <label class="control-label col-md-4" for="inputGroupSuccess3">Input group with success</label>
                 <div class="input-group col-md-8">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    <span class="input-group-text" id="validationSuccessTooltipUsernamePrepend">@</span>
                   </div>
                   <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
                   <div class="valid-feedback">
@@ -1599,7 +1599,7 @@
             </form>
           </div>
 
-          <h5>Optional icons with hidden <code>.sr-only</code> labels</h5>
+          <!-- <h5>Optional icons with hidden <code>.sr-only</code> labels</h5>
           <p>If you use the <code>.sr-only</code> class to hide a form control's <code>&lt;label&gt;</code> (rather than using other labelling options, such as the <code>aria-label</code> attribute), Bootstrap will automatically adjust the position
             of the icon once it's been added.</p>
           <div class="bs-example" data-example-id="form-validation-state-with-icon-without-label">
@@ -1624,14 +1624,11 @@
                 <span id="inputGroupSuccess4Status">Dope.</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <h3 id="forms-control-validation-pattern">Validation Pattern</h3>
-          <p>Having a standard around form validation and feedback is key to participant success in a self-service context. While still a work in progress, this standard should <strong>at least</strong> include indicating fields/controls that are in
-            error&mdash;through the use of contextual colors, icons (colorblind affordance), and a message guiding the participant toward resolution&mdash;as well as (for longer forms, at the <strong>very</strong> least) a notification, contextual to
-            the call(s) to action that complete the activity of filling out the form, that informs the participant that one or more of their entries requires attention.</p>
-          <p>Extensions of this pattern could include naming which fields in a given form have a validation error within the notification, and even linking the participant to one (e.g.: the first in a series, if multiple) or more specific controls to
-            take further action.</p>
+          <p>Having a standard around form validation and feedback is key to participant success in a self-service context. While still a work in progress, this standard should <strong>at least</strong> include indicating fields/controls that are in error&mdash;through the use of contextual colors, icons (colorblind affordance), and a message guiding the participant toward resolution&mdash;as well as (for longer forms, at the <strong>very</strong> least) a notification, contextual to the call(s) to action that complete the activity of filling out the form, that informs the participant that one or more of their entries requires attention.</p>
+          <p>Extensions of this pattern could include naming which fields in a given form have a validation error within the notification, and even linking the participant to one (e.g.: the first in a series, if multiple) or more specific controls to take further action.</p>
           <div class="bs-example" data-example-id="form-validation-states">
             <form>
               <div class="form-group">
@@ -1736,9 +1733,6 @@
                   <a href="#buttons-sizes" class="nav-link">Sizes</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#buttons-active" class="nav-link">Active state</a>
-                </li>
-                <li class="nav-item">
                   <a href="#buttons-disabled" class="nav-link">Disabled state</a>
                 </li>
               </ul>
@@ -1789,6 +1783,7 @@
                     <li class="nav-item"><a href="#forms-textarea" class="nav-link">Textarea</a></li>
                     <li class="nav-item"><a href="#forms-checkboxes-radios" class="nav-link">Checkboxes/Radios</a></li>
                     <li class="nav-item"><a href="#forms-switches" class="nav-link">Switches</a></li>
+                    <li class="nav-item"><a href="#forms-button-bar" class="nav-link">Answer Groups</a></li>
                     <li class="nav-item"><a href="#forms-selects" class="nav-link">Selects</a></li>
                     <li class="nav-item"><a href="#forms-dropdowns" class="nav-link">Dropdowns</a></li>
                     <li class="nav-item"><a href="#forms-sliders" class="nav-link">Sliders</a></li>

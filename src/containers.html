@@ -20,7 +20,7 @@
   <header class="navbar navbar-fixed-top" id="main-nav" role="banner">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/bda-des-sys/">BDA UI TOOLKIT</a>
+        <a class="navbar-brand" href="bda-des-sys/">BDA UI TOOLKIT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -501,27 +501,6 @@
             </div>
           </div>
 
-          <!--<h3 id="collapse-ex-list">Collapsible List-Groups</h3>-->
-          <!--<p>It's also possible to swap out paragraphs with lists.</p>-->
-
-          <!--<div class="panel-group" role="tablist">-->
-          <!--  <div class="panel panel-default">-->
-          <!--    <div class="panel-heading" role="tab" id="collapseListGroupHeading1">-->
-          <!--      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">-->
-          <!--        <span class="icon"></span> Collapsible list group-->
-          <!--      </a>-->
-          <!--    </div>-->
-          <!--    <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">-->
-          <!--      <ul class="list-group">-->
-          <!--        <li class="list-group-item">Bootply</li>-->
-          <!--        <li class="list-group-item">One itmus ac facilin</li>-->
-          <!--        <li class="list-group-item">Second eros</li>-->
-          <!--      </ul>-->
-          <!--      <div class="panel-footer">Footer</div>-->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!--</div>-->
-
           <div class="bs-callout bs-callout-accessibility" id="callout-collapse-accessibility">
             <span class="accessibility-tag"><span class="icon oe-icon-accessibility"></span> Accessibility Callout</span>
             <h4>Accessibility considerations for Collapsibles</h4>
@@ -777,7 +756,7 @@
                     on click.</p>
 
                   <h4>Tooltips in a modal</h4>
-                  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
+                  <p><a href="javascript:;" class="tooltip-test" title="Tooltip">This link</a> and <a href="javascript:;" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
 
                   <hr>
 
@@ -864,7 +843,7 @@
 
           <h4 id="modals-varying-content">Varying modal content based on trigger button</h4>
           <p>
-            Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>.
+            Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="https://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>.
           </p>
           <div class="bs-example">
             <div class="clearfix"><span class="btn-example">
@@ -909,11 +888,11 @@
             </div><!-- /.modal -->
           </div><!-- /.bs-example -->
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal fade" id="exampleMsgModal" tabindex="-1" role="dialog" aria-labelledby="exampleMsgModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <h5 class="modal-title" id="exampleMsgModalLabel">New message</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon remove"></span></button>
                 </div>
                 <div class="modal-body">
@@ -1105,7 +1084,7 @@
                 <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
               </li>
               <li class="nav-item dropdown">
-                <a href="#" id="myTabDrop1" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+                <a href="javascript:;" id="myTabDrop1" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
                   <li class="dropdown-item"><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
                   <li class="dropdown-item"><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
@@ -1136,19 +1115,19 @@
           <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs-fade">
             <ul class="nav nav-tabs" id="myTabsFade" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                <a class="nav-link active" id="home-tab-fade" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile-fade" role="tab" aria-controls="profile-fade" aria-selected="false">Profile</a>
+                <a class="nav-link" id="profile-tab-fade" data-toggle="tab" href="#profile-fade" role="tab" aria-controls="profile-fade" aria-selected="false">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact-fade" role="tab" aria-controls="contact-fade" aria-selected="false">Contact</a>
+                <a class="nav-link" id="contact-tab-fade" data-toggle="tab" href="#contact-fade" role="tab" aria-controls="contact-fade" aria-selected="false">Contact</a>
               </li>
               <li class="nav-item dropdown">
-                <a href="#" id="myTabDrop1" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+                <a href="javascript:;" id="myTabDrop1-fade" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
-                  <li class="dropdown-item"><a href="#dropdown1-fade" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1-fade">@fat</a></li>
-                  <li class="dropdown-item"><a href="#dropdown2-fade" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2-fade">@mdo</a></li>
+                  <li class="dropdown-item"><a href="#dropdown1-fade" role="tab" id="dropdown1-tab-fade" data-toggle="tab" aria-controls="dropdown1-fade">@fat</a></li>
+                  <li class="dropdown-item"><a href="#dropdown2-fade" role="tab" id="dropdown2-tab-fade" data-toggle="tab" aria-controls="dropdown2-fade">@mdo</a></li>
                 </ul>
               </li>
             </ul>
@@ -1637,9 +1616,9 @@
           <h3 id="tooltips-examples">Live Examples</h3>
           <p>Hover over the links below to see tooltips:</p>
           <div class="bs-example tooltip-demo">
-            <p>Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's
-              fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg
-              marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip"
+            <p>Tight pants next level keffiyeh <a href="javascript:;" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's
+              fixie sustainable quinoa 8-bit american apparel <a href="javascript:;" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg
+              marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="javascript:;" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="javascript:;" data-toggle="tooltip"
                 title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.</p>
           </div><!-- /example -->
 

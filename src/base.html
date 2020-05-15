@@ -139,13 +139,13 @@
           </div>
 
           <!-- Body copy .lead -->
-          <h4>Lead body copy</h4>
+          <h4 id="lead-body-copy">Lead body copy</h4>
           <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
-          <div class="bs-example" data-example-id="lead-copy">
+          <div class="bs-example" data-example-id="lead-body-copy">
             <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
           </div>
 
-          <h4>Small text</h4>
+          <h4 id="small-text">Small text</h4>
           <p>For de-emphasizing inline or blocks of text, set text at 85% the size of the parent.</p>
           <div class="bs-example" data-example-id="simple-small">
             <p><small>This line of text is meant to be treated as fine print.</small></p>
@@ -198,7 +198,7 @@
             </table>
           </div>
 
-          <h4>Secondary text within headings</h4>
+          <h4 id="type-headings-secondary">Secondary text within headings</h4>
           <p>Secondary text in any heading should have a lighter and smaller appearance.</p>
           <div class="bs-example bs-example-type" data-example-id="small-headings">
             <table class="table">
@@ -237,7 +237,7 @@
             </table>
           </div>
 
-          <h4>Icons within headings</h4>
+          <h4 id="headings-icons">Icons within headings</h4>
           <p>Place <a href="/media/#icons">icons</a> within the heading tags, and they will inherit the appropriate type size.</p>
           <div class="bs-example bs-example-type" data-example-id="small-headings">
             <table class="table">
@@ -288,7 +288,7 @@
             </address>
             <address>
               <strong>Full Name</strong><br>
-              <a href="mailto:#">first.last@example.com</a>
+              <a href="javascript:;">first.last@example.com</a>
             </address>
           </div>
 
@@ -559,7 +559,7 @@
           </div>
 
           <h3 id="colors-functional">Functional Colors</h3>
-          <p>The <code>$primary</code> color is used for <a href="#type-links">links</a> and primary <a href="/controls/#buttons">calls to action</a>and maps to the <code>$blue-900</code> variant of the BDA Brand Blue.</p>
+          <p>The <code>$primary</code> color is used for <a href="#type-links">links</a> and primary <a href="controls.html#buttons">calls to action</a>and maps to the <code>$blue-900</code> variant of the BDA Brand Blue.</p>
           <div class="bs-example">
             <div class="color-swatches">
               <div class="color-swatch bg-software-blue"></div>
@@ -579,8 +579,8 @@
           </div>
 
           <h3 id="colors-semantic">Semantic Colors</h3>
-          <p>Semantic colors are assigned to meaningful contextual values that are saturated enough to meet contrast requirements when using white type. These values cascade to <a href="/controls/#buttons">buttons</a>, <a
-              href="/containers/#alerts">alerts</a>, <a href="#labels">labels</a>, and more.</p>
+          <p>Semantic colors are assigned to meaningful contextual values that are saturated enough to meet contrast requirements when using white type. These values cascade to <a href="controls.html#buttons">buttons</a>, <a
+              href="containers.html">alerts</a>, and more.</p>
           <div class="bs-example">
             <div class="color-swatches">
               <div class="color-swatch brand-success"></div>
@@ -945,12 +945,12 @@
           </div>
 
           <h3 id="colors-contrast">Color Contrast</h3>
-          <div class="bs-callout bs-callout-accessibility" id="callout-inline-form-labels">
+          <div class="bs-callout bs-callout-accessibility" id="callout-colors-contrast">
             <span class="accessibility-tag"><span class="icon accessibility"></span> Accessibility Callout</span>
             <h4>Always check contrast</h4>
             <p>When choosing colors for content on our sites, it is important to keep contrast in mind. Our accessitiblity standards dictate that we need to maintain a contrast ratio of <strong>4.5:1</strong> for "normal" text, and <strong>3:1</strong> for "large" text (18px or higher; 14px or higher, if bolded). Some of the brand colors don't meet this criterion&mdash;for example: magenta is the only color that passes the contrast check on a white background.</p>
           </div>
-          <p>Some analysis has been done on the brand palette, and the grayscale palette, using <a href="http://webaim.org/">WebAIM</a>'s <a href="http://webaim.org/resources/contrastchecker/">Color Contrast Checker</a> tool. The results are presented here for quick reference.</p>
+          <p>Some analysis has been done on the brand palette, and the grayscale palette, using <a href="https://webaim.org/">WebAIM</a>'s <a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a> tool. The results are presented here for quick reference.</p>
 
           <div class="alert alert-info">
             <p><strong>Pardon Our Dust!</strong>
@@ -1215,7 +1215,7 @@
           <p class="lead">Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
 
           <div class="bs-example" data-example-id="simple-badges">
-            <a href="#">Inbox <span class="badge">42</span></a>
+            <a href="javascript:;">Inbox <span class="badge">42</span></a>
             <br><br>
             <button class="btn btn-primary" type="button">
               Messages <span class="badge">4</span>
@@ -1377,8 +1377,8 @@
                 <li class="nav-item">
                   <a href="#type-headings" class="nav-link">Headings</a>
                   <ul class="nav">
-                    <li class="nav-item"><a href="#secondary-text-within-headings" class="nav-link">Secondary text</a></li>
-                    <li class="nav-item"><a href="#icons-within-headings" class="nav-link">With icons</a></li>
+                    <li class="nav-item"><a href="#type-headings-secondary" class="nav-link">Secondary text</a></li>
+                    <li class="nav-item"><a href="#headings-icons" class="nav-link">With icons</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -1389,17 +1389,6 @@
                 </li>
                 <li class="nav-item">
                   <a href="#type-lists" class="nav-link">Lists</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#voice-tone" class="nav-link">Voice &amp; Tone</a>
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="#voice-tone-voice" class="nav-link">Voice</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#voice-tone-tone" class="nav-link">Tone</a>
                 </li>
               </ul>
             </li>

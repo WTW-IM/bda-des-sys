@@ -33,7 +33,6 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="baseDropdown">
                   <a class="dropdown-item" href="base.html#type">Typography</a>
-                  <a class="dropdown-item" href="base.html#voice-tone">Voice &amp; Tone</a>
                   <a class="dropdown-item" href="base.html#colors">Color Palettes</a>
                   <a class="dropdown-item" href="base.html#badges">Badges</a>
                   <a class="dropdown-item" href="base.html#loaders">Loaders</a>
@@ -111,703 +110,699 @@
       <div class="row">
         <div class="col-md-9" role="main">
           <div class="bs-docs-section">
-  <p class="lead">Navigation sets available in the Benefits Delivery &amp; Administration UI Toolkit have shared styling and states, with the global navigation deviating more significantly from the sub-navigation.</p>
+            <p class="lead">Navigation sets available in the Benefits Delivery &amp; Administration UI Toolkit have shared styling and states, with the global navigation deviating more significantly from the sub-navigation.</p>
 
-  <div class="bs-callout bs-callout-accessibility" id="callout-navs-accessibility">
-    <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
-    <h4>Make navs used as navigation accessible</h4>
-    <p>If you are using navs to provide a navigation bar, be sure to add a <code>role="navigation"</code> to the most logical parent container of the <code>&lt;ul&gt;</code>, or wrap a <code>&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;</code> itself, as this would prevent it from being announced as an actual list by assistive technologies.</p>
-  </div>
+            <div class="bs-callout bs-callout-accessibility" id="callout-navs-accessibility">
+              <span class="accessibility-tag"><span class="icon-reg oe-icon-accessibility"></span> Accessibility Callout</span>
+              <h4>Make navs used as navigation accessible</h4>
+              <p>If you are using navs to provide a navigation bar, be sure to add a <code>role="navigation"</code> to the most logical parent container of the <code>&lt;ul&gt;</code>, or wrap a <code>&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;</code> itself, as this would prevent it from being announced as an actual list by assistive technologies.</p>
+            </div>
 
-  <h2 id="global-navigation" class="page-header">Global Navigation</h2>
-  <div class="alert alert-info"><p>This section is still being thought out, and concepts are being tested. Check back soon for more!</p></div>
-  <!--<p>The basic global navigation element consists of rectangular hot-zones, illustrated with a Light Icon (see <a href="/media/#icons-light">Media &gt; Icons</a> for more on those) and a brief text label. Drop-down elements are indicated with a small, solid caret.</p>-->
+            <h2 id="global-navigation" class="page-header">Global Navigation</h2>
+            <div class="alert alert-info"><p>This section is still being thought out, and concepts are being tested. Check back soon for more!</p></div>
+            <!--<p>The basic global navigation element consists of rectangular hot-zones, illustrated with a Light Icon (see <a href="/media/#icons-light">Media &gt; Icons</a> for more on those) and a brief text label. Drop-down elements are indicated with a small, solid caret.</p>-->
 
-  <!-- <div class="bs-example" data-example-id="simple-global-navigation">
-    <p>Coming soon!</p>
-    <header class="nav--head" style="position: static;">
-      <div class="wrapper">
-        <div class="logo--wrapper">
-          <a class="logo--link__home" href="/" aria-label="Via Benefits homepage"></a>
+            <!-- <div class="bs-example" data-example-id="simple-global-navigation">
+              <p>Coming soon!</p>
+              <header class="nav--head" style="position: static;">
+                <div class="wrapper">
+                  <div class="logo--wrapper">
+                    <a class="logo--link__home" href="/" aria-label="Via Benefits homepage"></a>
+                  </div>
+                  <div class="menu--wrapper">
+                    <button class="btn btn-default nav--menu__button" aria-haspopup="true" aria-expanded="false">
+                      <div class="sr-only">Toggle Website Navigation Menu</div>
+                      <span class="sc-kAzzGY hOadzv" aria-hidden="true">
+                        <span class="icon menu-btn" aria-hidden="true" font-family="indv-mkt-icons" content="64d" font-size="20px"></span>Menu
+                      </span>
+                    </button>
+                    <div class="rah-static rah-static--height-zero sc-gZMcBi jZzjWh" aria-hidden="true" style="height: 0px; overflow: hidden;">
+                      <div style="display: none;">
+                        <nav class="sc-gqjmRU eSyWzK" role="navigation">
+                          <h2 class="sc-VigVT bXpdom"><span class="sc-fjdhpX hqFgKx">Welcome, Test User</span><button class="sc-jTzLTM vsICM"><i class="sc-bdVaJa fMXmCb" aria-hidden="true" font-family="indv-mkt-icons" content="65c" font-size="inherit"></i> Logout</button></h2>
+                          <ul class="sc-jzJRlG diqmwp">
+                            <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/"><i class="sc-gzVnrw cpYTUo sc-bdVaJa ffvlsq" aria-hidden="true" font-family="indv-mkt-icons" content="63f" font-size="14px"></i><span>Home</span></a>
+                              <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
+                                <li class="desktop-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/"><span>Return to Home</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan"><i class="sc-gzVnrw cpYTUo sc-bdVaJa iFWKAw" aria-hidden="true" font-family="indv-mkt-icons" content="644" font-size="14px"></i><span>My Info</span></a>
+                              <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
+                                <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/coverage"><span>Coverage Options</span></a></li>
+                                <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/household"><span>Household Members</span></a></li>
+                                <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/applications"><span>Applications &amp; Policies</span></a></li>
+                                <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/funds"><span>Funds &amp; Reimbursements</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/shop"><i class="sc-gzVnrw cpYTUo sc-bdVaJa fZHNUX" aria-hidden="true" font-family="indv-mkt-icons" content="670" font-size="14px"></i><span>Shop</span></a>
+                              <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
+                                <li class="desktop-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/shop"><span>Shop for Plans</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help"><i class="sc-gzVnrw cpYTUo sc-bdVaJa eMVRAQ" aria-hidden="true" font-family="indv-mkt-icons" content="65e" font-size="14px"></i><span>Help</span></a>
+                            <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/search"><span>Search</span></a></li>
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/popular"><span>Popular Questions/Answers</span></a></li>
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/ask"><span>Ask a Question</span></a></li>
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/contact"><span>Contact Us</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account"><i class="sc-gzVnrw cpYTUo sc-bdVaJa jkOZOX" aria-hidden="true" font-family="indv-mkt-icons" content="620" font-size="14px"></i><span>Account Settings</span></a>
+                            <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account/settings"><span>Security Settings</span></a></li>
+                              <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account/contact"><span>Contact Information</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="mobile-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/logout"><i class="sc-gzVnrw cpYTUo sc-bdVaJa bWmIrI" aria-hidden="true" font-family="indv-mkt-icons" content="65c" font-size="14px"></i><span>Logout</span></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div> -->
         </div>
-        <div class="menu--wrapper">
-          <button class="btn btn-default nav--menu__button" aria-haspopup="true" aria-expanded="false">
-            <div class="sr-only">Toggle Website Navigation Menu</div>
-            <span class="sc-kAzzGY hOadzv" aria-hidden="true">
-              <span class="icon menu-btn" aria-hidden="true" font-family="indv-mkt-icons" content="64d" font-size="20px"></span>Menu
-            </span>
-          </button>
-          <div class="rah-static rah-static--height-zero sc-gZMcBi jZzjWh" aria-hidden="true" style="height: 0px; overflow: hidden;">
-            <div style="display: none;">
-              <nav class="sc-gqjmRU eSyWzK" role="navigation">
-                <h2 class="sc-VigVT bXpdom"><span class="sc-fjdhpX hqFgKx">Welcome, Test User</span><button class="sc-jTzLTM vsICM"><i class="sc-bdVaJa fMXmCb" aria-hidden="true" font-family="indv-mkt-icons" content="65c" font-size="inherit"></i> Logout</button></h2>
-                <ul class="sc-jzJRlG diqmwp">
-                  <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/"><i class="sc-gzVnrw cpYTUo sc-bdVaJa ffvlsq" aria-hidden="true" font-family="indv-mkt-icons" content="63f" font-size="14px"></i><span>Home</span></a>
-                    <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
-                      <li class="desktop-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/"><span>Return to Home</span></a></li>
+        <div class="bs-docs-section">
+          <h2 id="sub-navigation" class="page-header">Sub Navigation</h2>
+          <p class="lead">Use sub-navigaiton (or side-/sidebar-navigation, if you will) to help keep users oriented on long and/or complex pages.</p>
+
+          <h3 id="sub-nav-vertical">Vertical</h3>
+          <p>Vertical sub-navs should be a portion of the page width, and appear next to the content in which they navigate. If an item is disabled or unavailable, but must still be displayed, be sure to provide a visual cue that the element is not clickable, as well as contextually-appropriate hover effects.</p>
+
+          <div class="bs-example" data-example-id="sub-nav-vert">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <ul class="nav es-nav sub-nav vertical">
+                    <li role="presentation" class="nav-item active-example">
+                      <a href="javascript:;" class="nav-link">Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link">Applications &amp; Policies <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link">Funds &amp; Reimbursements <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item disabled">
+                      <a href="javascript:;" class="nav-link">Account Settings <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <ul class="nav es-nav sub-nav vertical light">
+                    <li role="presentation" class="nav-item active-example">
+                      <a href="javascript:;" class="nav-link">Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link">Applications &amp; Policies <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link">Funds &amp; Reimbursements <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item disabled">
+                      <a href="javascript:;" class="nav-link">Account Settings <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <h4 id="sub-nav-vert-icons">With icons</h4>
+          <p>Thanks to a font-based icon set, adding icons is as easy as including them before link text.</p>
+
+          <div class="bs-example" data-example-id="sub-nav-vert-icons">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <ul class="nav es-nav sub-nav vertical">
+                    <li role="presentation" class="nav-item active-example">
+                      <a href="javascript:;" class="nav-link"><span class="icon users"></span> Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link"><span class="icon cog"></span> Preferences <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link"><span class="icon rx"></span> Prescriptions <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item disabled">
+                      <a href="javascript:;" class="nav-link"><span class="icon medical"></span> Doctors <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <ul class="nav es-nav sub-nav vertical light">
+                    <li role="presentation" class="nav-item active-example">
+                      <a href="javascript:;" class="nav-link"><span class="icon users"></span> Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link"><span class="icon cog"></span> Preferences <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                      <a href="javascript:;" class="nav-link"><span class="icon rx"></span> Prescriptions <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                    <li role="presentation" class="nav-item disabled">
+                      <a href="javascript:;" class="nav-link"><span class="icon medical"></span> Doctors <span class="icon chevron-right" aria-hidden="true"></span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <h4 id="sub-nav-multi-tier">Multi-tiered</h4>
+          <p>Multi-tiered sub-navs allow for menu-like interactions, where a link can toggle the visibility of sets of links that are nested under it.</p>
+          <p>The below examples are configured to he "accordion" style (only one section open at a time). This can be changed to allow for multiple sections to be open simultaneously.</p>
+
+          <div class="bs-example" data-example-id="sub-nav-vert-multi-tier">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <div class="nav es-nav sub-nav vertical multi-tier dark" id="multiTierOne" role="tablist" aria-multiselectable="true">
+                    <ul role="tabpanel">
+                      <li class="folder" role="tab">
+                        <a id="headingOneMultiOne" role="button" href="#collapseOneMultiOne" aria-expanded="false" aria-controls="collapseOneMultiOne">
+                          <span class="handle icon"></span> First Level Link 1
+                        </a>
+                        <ul id="collapseOneMultiOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
+                          <li class="folder" role="tab">
+                            <a id="headingTwoMultiOne" role="button" href="#collapseTwoMultiOne" aria-expanded="false" aria-controls="collapseTwoMultiOne">
+                              <span class="handle icon"></span> Second Level Link 1
+                            </a>
+                            <ul id="collapseTwoMultiOne" role="tabpanel" aria-labelledby="headingTwoMultiOne" aria-expended="false">
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.1</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.2</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.3</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.4</a></li>
+                            </ul>
+                          </li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingThreeMultiOne" role="button" href="#collapseThreeMultiOne" aria-expanded="false" aria-controls="collapseThreeMultiOne">
+                          <span class="handle icon"></span> First Level Link 2
+                        </a>
+                        <ul id="collapseThreeMultiOne" role="tabpanel" aria-labelledby="headingThreeMultiOne" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingFourMultiOne" role="button" href="#collapseFourMultiOne" aria-expanded="false" aria-controls="collapseFourMultiOne">
+                          <span class="handle icon"></span> First Level Link 3
+                        </a>
+                        <ul id="collapseFourMultiOne" role="tabpanel" aria-labelledby="headingFourMultiOne" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingFiveMultiOne" role="button" href="#collapseFiveMultiOne" aria-expanded="false" aria-controls="collapseFiveMultiOne">
+                          <span class="handle icon"></span> First Level Link 4
+                        </a>
+                        <ul id="collapseFiveMultiOne" role="tabpanel" aria-labelledby="headingFiveMultiOne" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.4</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </li>
-                  <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan"><i class="sc-gzVnrw cpYTUo sc-bdVaJa iFWKAw" aria-hidden="true" font-family="indv-mkt-icons" content="644" font-size="14px"></i><span>My Info</span></a>
-                    <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/coverage"><span>Coverage Options</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/household"><span>Household Members</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/applications"><span>Applications &amp; Policies</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/plan/funds"><span>Funds &amp; Reimbursements</span></a></li>
+                  </div>
+                </nav>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                  <div class="nav es-nav sub-nav vertical multi-tier" id="multiTierTwo" role="tablist" aria-multiselectable="true">
+                    <ul role="tabpanel">
+                      <li class="folder" role="tab">
+                        <a id="headingOneMultiTwo" role="button" href="#collapseOneMultiTwo" aria-expanded="false" aria-controls="collapseOneMultiTwo">
+                          <span class="handle icon"></span> First Level Link 1
+                        </a>
+                        <ul id="collapseOneMultiTwo" role="tabpanel" aria-labelledby="headingOneMultiTwo" aria-expended="false">
+                          <li class="folder" role="tab">
+                            <a id="headingTwoMultiTwo" role="button" href="#collapseTwoMultiTwo" aria-expanded="false" aria-controls="collapseTwoMultiTwo">
+                              <span class="handle icon"></span> Second Level Link 1
+                            </a>
+                            <ul id="collapseTwoMultiTwo" role="tabpanel" aria-labelledby="headingTwoMultiTwo" aria-expended="false">
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.1</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.2</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.3</a></li>
+                              <li role="presentation"><a href="javascript:;">Third Level Link 1.4</a></li>
+                            </ul>
+                          </li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 1.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingThreeMultiTwo" role="button" href="#collapseThreeMultiTwo" aria-expanded="false" aria-controls="collapseThreeMultiTwo">
+                          <span class="handle icon"></span> First Level Link 2
+                        </a>
+                        <ul id="collapseThreeMultiTwo" role="tabpanel" aria-labelledby="headingThreeMultiTwo" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 2.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingFourMultiTwo" role="button" href="#collapseFourMultiTwo" aria-expanded="false" aria-controls="collapseFourMultiTwo">
+                          <span class="handle icon"></span> First Level Link 3
+                        </a>
+                        <ul id="collapseFourMultiTwo" role="tabpanel" aria-labelledby="headingFourMultiTwo" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 3.4</a></li>
+                        </ul>
+                      </li>
+                      <li class="folder" role="tab">
+                        <a id="headingFiveMultiTwo" role="button" href="#collapseFiveMultiTwo" aria-expanded="false" aria-controls="collapseFiveMultiTwo">
+                          <span class="handle icon"></span> First Level Link 4
+                        </a>
+                        <ul id="collapseFiveMultiTwo" role="tabpanel" aria-labelledby="headingFiveMultiTwo" aria-expended="false">
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.1</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.2</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.3</a></li>
+                          <li role="presentation"><a href="javascript:;">Second Level Link 4.4</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </li>
-                  <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/shop"><i class="sc-gzVnrw cpYTUo sc-bdVaJa fZHNUX" aria-hidden="true" font-family="indv-mkt-icons" content="670" font-size="14px"></i><span>Shop</span></a>
-                    <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
-                      <li class="desktop-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/shop"><span>Shop for Plans</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help"><i class="sc-gzVnrw cpYTUo sc-bdVaJa eMVRAQ" aria-hidden="true" font-family="indv-mkt-icons" content="65e" font-size="14px"></i><span>Help</span></a>
-                    <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/search"><span>Search</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/popular"><span>Popular Questions/Answers</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/ask"><span>Ask a Question</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/help/contact"><span>Contact Us</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account"><i class="sc-gzVnrw cpYTUo sc-bdVaJa jkOZOX" aria-hidden="true" font-family="indv-mkt-icons" content="620" font-size="14px"></i><span>Account Settings</span></a>
-                    <ul class="sc-iwsKbI lkYivq" aria-label="submenu">
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account/settings"><span>Security Settings</span></a></li>
-                      <li class="sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/account/contact"><span>Contact Information</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="mobile-only sc-EHOje bcZcJg"><a class="sc-htoDjs cSwnHn" href="/logout"><i class="sc-gzVnrw cpYTUo sc-bdVaJa bWmIrI" aria-hidden="true" font-family="indv-mkt-icons" content="65c" font-size="14px"></i><span>Logout</span></a></li>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <h4 id="sub-nav-file-tree">File Trees</h4>
+          <p>Breaking it down to its basic parts and functionality, a file tree is really just another form of multi-tiered sub-navigation, with some additional iconography added for context.</p>
+
+          <div class="bs-example" id="file-tree-example" data-example-id="sub-nav-vert-file-tree">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="nav es-nav sub-nav vertical multi-tier file-tree dark" id="fileTreeOne" role="tablist" aria-multiselectable="true">
+                  <ul role="tabpanel">
+                    <li class="folder" role="tab">
+                      <a id="headingOneFile" role="button" href="#collapseOneFile" aria-expanded="false" aria-controls="collapseOneFile">
+                        <span class="handle icon"></span> Folder 1
+                      </a>
+                      <ul id="collapseOneFile" role="tabpanel" aria-labelledby="headingOneFile" aria-expended="false">
+                        <li class="folder" role="tab">
+                          <a id="headingFive" role="button" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span class="handle icon"></span> Folder 5
+                          </a>
+                          <ul id="collapseFive" role="tabpanel" aria-labelledby="headingFive" aria-expended="false">
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.1.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.2.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.3.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.4.ext</a></li>
+                          </ul>
+                        </li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="handle icon"></span> Folder 2
+                      </a>
+                      <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="handle icon"></span> Folder 3
+                      </a>
+                      <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="handle icon"></span> Folder 4
+                      </a>
+                      <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.4.ext</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="nav es-nav sub-nav vertical multi-tier file-tree" id="fileTreeOne" role="tablist" aria-multiselectable="true">
+                  <ul role="tabpanel">
+                    <li class="folder" role="tab">
+                      <a id="headingOne" role="button" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class="handle icon"></span> Folder 1
+                      </a>
+                      <ul id="collapseOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
+                        <li class="folder" role="tab">
+                          <a id="headingFive" role="button" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span class="handle icon"></span> Folder 5
+                          </a>
+                          <ul id="collapseFive" role="tabpanel" aria-labelledby="headingFive" aria-expended="false">
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.1.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.2.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.3.ext</a></li>
+                            <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.4.ext</a></li>
+                          </ul>
+                        </li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="handle icon"></span> Folder 2
+                      </a>
+                      <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="handle icon"></span> Folder 3
+                      </a>
+                      <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.4.ext</a></li>
+                      </ul>
+                    </li>
+                    <li class="folder" role="tab">
+                      <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="handle icon"></span> Folder 4
+                      </a>
+                      <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.1.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.2.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.3.ext</a></li>
+                        <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.4.ext</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="sub-nav-horizontal">Horizontal</h3>
+          <p>Horizontal sub-navs should appear above the content in which they navigate and be the width of that content's container, if possible. Don't forget the disabled links!</p>
+          <div class="bs-example" data-example-id="horizontal-sub-navigation">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <nav>
+                <ul class="nav es-nav sub-nav horizontal no-shadow">
+                  <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
+                  <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <nav>
+                <ul class="nav es-nav sub-nav horizontal light no-shadow">
+                  <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
+                  <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+
+          <h4 id="sub-nav-horizontal">Horizontal</h4>
+          <p>If you're going to make your sub-navs sticky, consider a state change while the element is fixed in the browser viewport &mdash; such as a <code>box-shadow</code>.</p>
+          <div class="bs-example" data-example-id="horizontal-sub-navigation">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <nav>
+                <ul class="nav es-nav sub-nav horizontal">
+                  <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
+                  <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <nav>
+                <ul class="nav es-nav sub-nav horizontal light">
+                  <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
+                  <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
+                  <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
+
+        <div class="bs-docs-section">
+          <h2 id="breadcrumbs" class="page-header">Breadcrumbs</h2>
+          <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
+
+          <div class="bs-example" data-example-id="simple-breadcrumbs">
+            <ol class="breadcrumb">
+              <li class="active">Home</li>
+            </ol>
+            <ol class="breadcrumb">
+              <li><a href="javascript:;">Home</a></li>
+              <li class="active">Library</li>
+            </ol>
+            <ol class="breadcrumb">
+              <li><a href="javascript:;">Home</a></li>
+              <li><a href="javascript:;">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="bs-docs-section">
+          <h2 id="pagination" class="page-header">Pagination</h2>
+
+          <p class="lead">Provide pagination links for your site or app with the multi-page pagination component<!--, or the simpler <a href="#pagination-pager">pager alternative</a>-->.</p>
+
+          <h3 id="pagination-default">Default pagination</h3>
+          <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+          <div class="bs-example" data-example-id="simple-pagination">
+            <nav>
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Previous" class="page-link">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">5</a></li>
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Next" class="page-link">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <h4>Disabled and active states</h4>
+          <p>Links are customizable for different circumstances. Apply disabled treatments for unclickable links and an active treatment to indicate the current page.</p>
+          <div class="bs-example" data-example-id="disabled-active-pagination">
+            <nav>
+              <ul class="pagination">
+                <li class="page-item disabled"><a href="javascript:;" aria-label="Previous" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="page-item active"><a href="javascript:;" class="page-link">1 <span class="sr-only">(current)</span></a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">5</a></li>
+                <li class="page-item"><a href="javascript:;" aria-label="Next" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <h4>Sizing</h4>
+          <p>Fancy larger or smaller pagination? Additional sizes are available.</p>
+          <div class="bs-example" data-example-id="pagination-sizing">
+            <nav>
+              <ul class="pagination pagination-lg">
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Previous" class="page-link">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">5</a></li>
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Next" class="page-link">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Previous" class="page-link">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">5</a></li>
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Next" class="page-link">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <ul class="pagination pagination-sm">
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Previous" class="page-link">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+                <li class="page-item"><a href="javascript:;" class="page-link">5</a></li>
+                <li class="page-item">
+                  <a href="javascript:;" aria-label="Next" class="page-link">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- <h3 id="pagination-pager">Pager</h3>
+          <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+
+          <h4>Default example</h4>
+          <p>By default, the pager centers links.</p>
+          <div class="bs-example" data-example-id="simple-pager">
+            <nav>
+              <ul class="pager">
+                <li><a href="javascript:;">Previous</a></li>
+                <li><a href="javascript:;">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <h4>Aligned links</h4>
+          <p>Alternatively, you can align each link to the sides:</p>
+          <div class="bs-example" data-example-id="aligned-pager-links">
+            <nav>
+              <ul class="pager">
+                <li class="previous"><a href="javascript:;"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="javascript:;">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <h4>Optional disabled state</h4>
+          <p>Don't forget the disabled state, where appropriate..</p>
+          <div class="bs-example" data-example-id="disabled-pager">
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href="javascript:;"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="javascript:;">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+          </div> -->
+        </div>
       </div>
-    </header>
-  </div> -->
-</div>
-<div class="bs-docs-section">
-  <h2 id="sub-navigation" class="page-header">Sub Navigation</h2>
-  <p class="lead">Use sub-navigaiton (or side-/sidebar-navigation, if you will) to help keep users oriented on long and/or complex pages.</p>
 
-  <h3 id="sub-nav-vertical">Vertical</h3>
-  <p>Vertical sub-navs should be a portion of the page width, and appear next to the content in which they navigate. If an item is disabled or unavailable, but must still be displayed, be sure to provide a visual cue that the element is not clickable, as well as contextually-appropriate hover effects.</p>
-
-  <div class="bs-example" data-example-id="sub-nav-vert">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <ul class="nav es-nav sub-nav vertical">
-            <li role="presentation" class="nav-item active-example">
-              <a href="javascript:;" class="nav-link">Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
+      <div class="col-md-3" role="complementary">
+        <nav id="es-ui-side-nav" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
+          <h5>Navigation</h5>
+          <ul class="nav bs-docs-sidenav">
+            <li class="nav-item">
+              <a href="#global-navigation" class="nav-link">Global Navigation</a>
             </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link">Applications &amp; Policies <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link">Funds &amp; Reimbursements <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item disabled">
-              <a href="javascript:;" class="nav-link">Account Settings <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <ul class="nav es-nav sub-nav vertical light">
-            <li role="presentation" class="nav-item active-example">
-              <a href="javascript:;" class="nav-link">Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link">Applications &amp; Policies <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link">Funds &amp; Reimbursements <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item disabled">
-              <a href="javascript:;" class="nav-link">Account Settings <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="sub-nav-vert-icons">With icons</h4>
-  <p>Thanks to a font-based icon set, adding icons is as easy as including them before link text.</p>
-
-  <div class="bs-example" data-example-id="sub-nav-vert-icons">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <ul class="nav es-nav sub-nav vertical">
-            <li role="presentation" class="nav-item active-example">
-              <a href="javascript:;" class="nav-link"><span class="icon users"></span> Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link"><span class="icon cog"></span> Preferences <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link"><span class="icon rx"></span> Prescriptions <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item disabled">
-              <a href="javascript:;" class="nav-link"><span class="icon medical"></span> Doctors <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <ul class="nav es-nav sub-nav vertical light">
-            <li role="presentation" class="nav-item active-example">
-              <a href="javascript:;" class="nav-link"><span class="icon users"></span> Family Members <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link"><span class="icon cog"></span> Preferences <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item">
-              <a href="javascript:;" class="nav-link"><span class="icon rx"></span> Prescriptions <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-            <li role="presentation" class="nav-item disabled">
-              <a href="javascript:;" class="nav-link"><span class="icon medical"></span> Doctors <span class="icon chevron-right" aria-hidden="true"></span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="sub-nav-multi-tier">Multi-tiered</h4>
-  <p>Multi-tiered sub-navs allow for menu-like interactions, where a link can toggle the visibility of sets of links that are nested under it.</p>
-  <p>The below examples are configured to he "accordion" style (only one section open at a time). This can be changed to allow for multiple sections to be open simultaneously.</p>
-
-  <div class="bs-example" data-example-id="sub-nav-vert-multi-tier">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <div class="nav es-nav sub-nav vertical multi-tier dark" id="multiTierOne" role="tablist" aria-multiselectable="true">
-            <ul role="tabpanel">
-              <li class="folder" role="tab">
-                <a id="headingOne" role="button" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <span class="handle icon"></span> First Level Link 1
-                </a>
-                <ul id="collapseOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
-                  <li class="folder" role="tab">
-                    <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <span class="handle icon"></span> Second Level Link 1
-                    </a>
-                    <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.1</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.2</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.3</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.4</a></li>
+            <li class="nav-item">
+              <a href="#sub-navigation" class="nav-link">Sub-Navigation</a>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#sub-nav-vertical" class="nav-link">Vertical</a>
+                    <ul class="nav">
+                      <li class="nav-item"><a href="#sub-nav-vert-icons" class="nav-link">With icons</a></li>
+                      <li class="nav-item"><a href="#sub-nav-multi-tier" class="nav-link">Multi-tiered</a></li>
+                      <li class="nav-item"><a href="#sub-nav-file-tree" class="nav-link">File Tree</a></li>
                     </ul>
                   </li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.4</a></li>
-                </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="handle icon"></span> First Level Link 2
-                </a>
-                <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.4</a></li>
-                </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="handle icon"></span> First Level Link 3
-                </a>
-                <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.4</a></li>
-                </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <span class="handle icon"></span> First Level Link 4
-                </a>
-                <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.4</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <nav>
-          <div class="nav es-nav sub-nav vertical multi-tier" id="multiTierTwo" role="tablist" aria-multiselectable="true">
-            <ul role="tabpanel">
-              <li class="folder" role="tab">
-                <a id="headingOne" role="button" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <span class="handle icon"></span> First Level Link 1
-                </a>
-                <ul id="collapseOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
-                  <li class="folder" role="tab">
-                    <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <span class="handle icon"></span> Second Level Link 1
-                    </a>
-                    <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.1</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.2</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.3</a></li>
-                      <li role="presentation"><a href="javascript:;">Third Level Link 1.4</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a href="#sub-nav-horizontal" class="nav-link">Horizontal</a>
                   </li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 1.4</a></li>
                 </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="handle icon"></span> First Level Link 2
-                </a>
-                <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 2.4</a></li>
+            </li>
+            <li class="nav-item">
+              <a href="#breadcrumbs" class="nav-link">Breadcrumbs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pagination" class="nav-link">Pagination</a>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#pagination-default" class="nav-link">Default pagination</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#pagination-pager">Pager</a>
+                  </li> -->
                 </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="handle icon"></span> First Level Link 3
-                </a>
-                <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 3.4</a></li>
-                </ul>
-              </li>
-              <li class="folder" role="tab">
-                <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <span class="handle icon"></span> First Level Link 4
-                </a>
-                <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.1</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.2</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.3</a></li>
-                  <li role="presentation"><a href="javascript:;">Second Level Link 4.4</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            </li>
+          </ul>
+          <a class="back-to-top" href="#top">
+            Back to top
+          </a>
         </nav>
       </div>
     </div>
   </div>
-
-  <h4 id="sub-nav-file-tree">File Trees</h4>
-  <p>Breaking it down to its basic parts and functionality, a file tree is really just another form of multi-tiered sub-navigation, with some additional iconography added for context.</p>
-
-  <div class="bs-example" id="file-tree-example" data-example-id="sub-nav-vert-file-tree">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="nav es-nav sub-nav vertical multi-tier file-tree dark" id="fileTreeOne" role="tablist" aria-multiselectable="true">
-          <ul role="tabpanel">
-            <li class="folder" role="tab">
-              <a id="headingOne" role="button" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <span class="handle icon"></span> Folder 1
-              </a>
-              <ul id="collapseOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
-                <li class="folder" role="tab">
-                  <a id="headingFive" role="button" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <span class="handle icon"></span> Folder 5
-                  </a>
-                  <ul id="collapseFive" role="tabpanel" aria-labelledby="headingFive" aria-expended="false">
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.1.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.2.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.3.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.4.ext</a></li>
-                  </ul>
-                </li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span class="handle icon"></span> Folder 2
-              </a>
-              <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <span class="handle icon"></span> Folder 3
-              </a>
-              <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <span class="handle icon"></span> Folder 4
-              </a>
-              <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.4.ext</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="nav es-nav sub-nav vertical multi-tier file-tree" id="fileTreeOne" role="tablist" aria-multiselectable="true">
-          <ul role="tabpanel">
-            <li class="folder" role="tab">
-              <a id="headingOne" role="button" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <span class="handle icon"></span> Folder 1
-              </a>
-              <ul id="collapseOne" role="tabpanel" aria-labelledby="headingOne" aria-expended="false">
-                <li class="folder" role="tab">
-                  <a id="headingFive" role="button" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <span class="handle icon"></span> Folder 5
-                  </a>
-                  <ul id="collapseFive" role="tabpanel" aria-labelledby="headingFive" aria-expended="false">
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.1.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.2.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.3.ext</a></li>
-                    <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_5.4.ext</a></li>
-                  </ul>
-                </li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_1.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingTwo" role="button" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span class="handle icon"></span> Folder 2
-              </a>
-              <ul id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_2.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingThree" role="button" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <span class="handle icon"></span> Folder 3
-              </a>
-              <ul id="collapseThree" role="tabpanel" aria-labelledby="headingThree" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_3.4.ext</a></li>
-              </ul>
-            </li>
-            <li class="folder" role="tab">
-              <a id="headingFour" role="button" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <span class="handle icon"></span> Folder 4
-              </a>
-              <ul id="collapseFour" role="tabpanel" aria-labelledby="headingFour" aria-expended="false">
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.1.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.2.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.3.ext</a></li>
-                <li role="presentation"><a href="javascript:;"><span class="icon"></span> file_4.4.ext</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <h3 id="sub-nav-horizontal">Horizontal</h3>
-  <p>Horizontal sub-navs should appear above the content in which they navigate and be the width of that content's container, if possible. Don't forget the disabled links!</p>
-  <div class="bs-example" data-example-id="horizontal-sub-navigation">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <nav>
-        <ul class="nav es-nav sub-nav horizontal no-shadow">
-          <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
-          <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <nav>
-        <ul class="nav es-nav sub-nav horizontal light no-shadow">
-          <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
-          <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-
-  <h4 id="sub-nav-horizontal">Horizontal</h4>
-  <p>If you're going to make your sub-navs sticky, consider a state change while the element is fixed in the browser viewport &mdash; such as a <code>box-shadow</code>.</p>
-  <div class="bs-example" data-example-id="horizontal-sub-navigation">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <nav>
-        <ul class="nav es-nav sub-nav horizontal">
-          <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
-          <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <nav>
-        <ul class="nav es-nav sub-nav horizontal light">
-          <li role="presentation" class="nav-item active-example"><a href="javascript:;" class="nav-link">Plan Snapshot</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Your Annual Cost&#8480;</a></li>
-          <li role="presentation" class="nav-item"><a href="javascript:;" class="nav-link">Coverage Details</a></li>
-          <li role="presentation" class="nav-item disabled"><a href="javascript:;" class="nav-link">Additional Benefits</a></li>
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-
-</div>
-<div class="bs-docs-section">
-  <h2 id="breadcrumbs" class="page-header">Breadcrumbs</h2>
-  <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
-  <!--<p>Separators are automatically added via CSS with <code>:before</code> and <code>content</code>.</p>-->
-
-  <div class="bs-example" data-example-id="simple-breadcrumbs">
-    <ol class="breadcrumb">
-      <li class="active">Home</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li class="active">Library</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
-    </ol>
-  </div>
-</div>
-
-<div class="bs-docs-section">
-  <h2 id="pagination" class="page-header">Pagination</h2>
-
-  <p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.</p>
-
-  <h3 id="pagination-default">Default pagination</h3>
-  <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
-  <div class="bs-example" data-example-id="simple-pagination">
-    <nav>
-      <ul class="pagination">
-        <li class="page-item">
-          <a href="#" aria-label="Previous" class="page-link">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a href="#" class="page-link">1</a></li>
-        <li class="page-item"><a href="#" class="page-link">2</a></li>
-        <li class="page-item"><a href="#" class="page-link">3</a></li>
-        <li class="page-item"><a href="#" class="page-link">4</a></li>
-        <li class="page-item"><a href="#" class="page-link">5</a></li>
-        <li class="page-item">
-          <a href="#" aria-label="Next" class="page-link">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <h4>Disabled and active states</h4>
-  <p>Links are customizable for different circumstances. Apply disabled treatments for unclickable links and an active treatment to indicate the current page.</p>
-  <div class="bs-example" data-example-id="disabled-active-pagination">
-    <nav>
-      <ul class="pagination">
-        <li class="page-item disabled"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="page-item active"><a href="#" class="page-link">1 <span class="sr-only">(current)</span></a></li>
-        <li class="page-item"><a href="#" class="page-link">1</a></li>
-        <li class="page-item"><a href="#" class="page-link">2</a></li>
-        <li class="page-item"><a href="#" class="page-link">3</a></li>
-        <li class="page-item"><a href="#" class="page-link">4</a></li>
-        <li class="page-item"><a href="#" class="page-link">5</a></li>
-        <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
-     </ul>
-   </nav>
-  </div>
-
-  <h4>Sizing</h4>
-  <p>Fancy larger or smaller pagination? Additional sizes are available.</p>
-  <div class="bs-example" data-example-id="pagination-sizing">
-    <nav>
-      <ul class="pagination pagination-lg">
-        <li class="page-item">
-          <a href="#" aria-label="Previous" class="page-link">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a href="#" class="page-link">1</a></li>
-        <li class="page-item"><a href="#" class="page-link">2</a></li>
-        <li class="page-item"><a href="#" class="page-link">3</a></li>
-        <li class="page-item"><a href="#" class="page-link">4</a></li>
-        <li class="page-item"><a href="#" class="page-link">5</a></li>
-        <li class="page-item">
-          <a href="#" aria-label="Next" class="page-link">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="pagination">
-        <li class="page-item">
-          <a href="#" aria-label="Previous" class="page-link">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a href="#" class="page-link">1</a></li>
-        <li class="page-item"><a href="#" class="page-link">2</a></li>
-        <li class="page-item"><a href="#" class="page-link">3</a></li>
-        <li class="page-item"><a href="#" class="page-link">4</a></li>
-        <li class="page-item"><a href="#" class="page-link">5</a></li>
-        <li class="page-item">
-          <a href="#" aria-label="Next" class="page-link">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="pagination pagination-sm">
-        <li class="page-item">
-          <a href="#" aria-label="Previous" class="page-link">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a href="#" class="page-link">1</a></li>
-        <li class="page-item"><a href="#" class="page-link">2</a></li>
-        <li class="page-item"><a href="#" class="page-link">3</a></li>
-        <li class="page-item"><a href="#" class="page-link">4</a></li>
-        <li class="page-item"><a href="#" class="page-link">5</a></li>
-        <li class="page-item">
-          <a href="#" aria-label="Next" class="page-link">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- <h3 id="pagination-pager">Pager</h3>
-  <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
-
-  <h4>Default example</h4>
-  <p>By default, the pager centers links.</p>
-  <div class="bs-example" data-example-id="simple-pager">
-    <nav>
-      <ul class="pager">
-        <li><a href="#">Previous</a></li>
-        <li><a href="#">Next</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <h4>Aligned links</h4>
-  <p>Alternatively, you can align each link to the sides:</p>
-  <div class="bs-example" data-example-id="aligned-pager-links">
-    <nav>
-      <ul class="pager">
-        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <h4>Optional disabled state</h4>
-  <p>Don't forget the disabled state, where appropriate..</p>
-  <div class="bs-example" data-example-id="disabled-pager">
-    <nav>
-      <ul class="pager">
-        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-      </ul>
-    </nav>
-  </div> -->
-</div>
-
-
-        </div>
-
-        <div class="col-md-3" role="complementary">
-          <nav id="es-ui-side-nav" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
-            <h5>Navigation</h5>
-            <ul class="nav bs-docs-sidenav">
-              <li class="nav-item">
-                <a href="#global-navigation" class="nav-link">Global Navigation</a>
-              </li>
-              <li class="nav-item">
-                <a href="#sub-navigation" class="nav-link">Sub-Navigation</a>
-                  <ul class="nav">
-                    <li class="nav-item">
-                      <a href="#sub-nav-vertical" class="nav-link">Vertical</a>
-                      <ul class="nav">
-                        <li class="nav-item"><a href="#sub-nav-vert-icons" class="nav-link">With icons</a></li>
-                        <li class="nav-item"><a href="#sub-nav-multi-tier" class="nav-link">Multi-tiered</a></li>
-                        <li class="nav-item"><a href="#sub-nav-file-tree" class="nav-link">File Tree</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#sub-nav-horizontal" class="nav-link">Horizontal</a>
-                    </li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#breadcrumbs" class="nav-link">Breadcrumbs</a>
-              </li>
-              <li class="nav-item">
-                <a href="#pagination" class="nav-link">Pagination</a>
-                  <ul class="nav">
-                    <li class="nav-item">
-                      <a href="#pagination-default" class="nav-link">Default pagination</a>
-                    </li>
-                    <!-- <li>
-                      <a href="#pagination-pager">Pager</a>
-                    </li> -->
-                  </ul>
-              </li>
-            </ul>
-            <a class="back-to-top" href="#top">
-              Back to top
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer
 ================================================== -->
