@@ -47,6 +47,15 @@
 
     button {
       @include collapse-btn;
+
+      &:not(:disabled):not(.disabled).btn-link {
+        font-family: $font-family-base;
+        text-decoration: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
     }
   }
 
