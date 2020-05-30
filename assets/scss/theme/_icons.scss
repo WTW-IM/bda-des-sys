@@ -1179,4 +1179,24 @@ $font-path: "/bda-des-sys/assets/fonts/" !default;
       content: "\e6e4";
     }
   }
+  &.desktop {
+    &::before {
+      content: "\e6e5";
+    }
+  }
+  &.confusion {
+    &::before {
+      content: "\e6e6";
+    }
+  }
+  &.idea {
+    &::before {
+      content: "\e6e7";
+    }
+  }
+  &.spouse {
+    &::before {
+      content: "\e6e8";
+    }
+  }
 }
