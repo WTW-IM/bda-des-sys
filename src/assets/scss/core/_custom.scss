@@ -741,8 +741,24 @@ table.color-variables {
       max-height: 450px;
     }
 
-    .ex-col {
+    &.img {
+      max-height: 125px;
+    }
+
+    .ex-col-2 {
       width: 48%;
+    }
+
+    .ex-col-4 {
+      width: 24%;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    & + .ex-row {
+      margin-top: 1.5rem;
     }
   }
 

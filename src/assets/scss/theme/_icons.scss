@@ -1199,4 +1199,19 @@ $font-path: "/bda-des-sys/assets/fonts/" !default;
       content: "\e6e8";
     }
   }
+  &.play {
+    &::before {
+      content: "\e6e9";
+    }
+  }
+  &.pause {
+    &::before {
+      content: "\e6ea";
+    }
+  }
+  &.skip-to-start {
+    &::before {
+      content: "\e6eb";
+    }
+  }
 }
