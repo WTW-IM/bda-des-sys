@@ -23,20 +23,6 @@ label {
   }
 }
 
-.is-valid,
-.is-invalid,
-.has-warning {
-  [class$="-feedback"]:not(.form-control-feedback) {
-    clear: left;
-    display: block;
-    font-size: $font-size-base;
-  }
-
-  .input-group-text {
-    color: $white;
-  }
-}
-
 .is-valid {
   label {
     color: $software-success;
@@ -46,9 +32,15 @@ label {
     border-color: $software-success;
   }
 
+  .valid-feedback {
+    clear: left;
+    display: block;
+  }
+
   .input-group-text {
     background-color: $success-500;
     border-color: $success-500;
+    color: $white;
   }
 }
 
@@ -61,9 +53,15 @@ label {
     border-color: $software-error;
   }
 
+  .invalid-feedback {
+    clear: left;
+    display: block;
+  }
+
   .input-group-text {
     background-color: $danger-500;
     border-color: $danger-500;
+    color: $white;
   }
 }
 
@@ -78,12 +76,15 @@ label {
 
   .warning-feedback {
     @extend .valid-feedback;
+    clear: left;
     color: $software-warning;
+    display: block;
   }
 
   .input-group-text {
     background-color: $warning-500;
     border-color: $warning-500;
+    color: $white;
   }
 }
 
