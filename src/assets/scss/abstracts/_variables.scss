@@ -149,7 +149,7 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: $blue-900 !default;
 $link-decoration: none !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
