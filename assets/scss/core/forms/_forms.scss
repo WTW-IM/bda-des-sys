@@ -32,11 +32,6 @@ label {
     border-color: $software-success;
   }
 
-  .valid-feedback {
-    clear: left;
-    display: block;
-  }
-
   .input-group-text {
     background-color: $success-500;
     border-color: $success-500;
@@ -51,11 +46,6 @@ label {
 
   .form-control {
     border-color: $software-error;
-  }
-
-  .invalid-feedback {
-    clear: left;
-    display: block;
   }
 
   .input-group-text {
@@ -76,9 +66,7 @@ label {
 
   .warning-feedback {
     @extend .valid-feedback;
-    clear: left;
     color: $software-warning;
-    display: block;
   }
 
   .input-group-text {
@@ -86,6 +74,14 @@ label {
     border-color: $warning-500;
     color: $white;
   }
+}
+
+.is-valid .valid-feedback,
+.is-invalid .invalid-feedback,
+.has-warning .warning-feedback {
+  clear: left;
+  display: inline-block;
+  font-size: $font-size-base;
 }
 
 .dropdown-toggle {
