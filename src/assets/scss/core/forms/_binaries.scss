@@ -702,8 +702,12 @@
   &.swtch {
     .check {
       &::before {
-        background: $software-success;
+        background: lighten(desaturate($software-success, 40%), 25%);
       }
+    }
+
+    input[type="checkbox"]:checked ~ .check::before {
+      background: $software-success;
     }
   }
 }
@@ -724,14 +728,12 @@
   &.swtch {
     .check {
       &::before {
-        background: desaturate($software-warning, 10%);
+        background: lighten(desaturate($software-warning, 40%), 25%);
       }
     }
 
     input[type="checkbox"]:checked ~ .check::before {
-      &, &:hover {
-        background: $software-warning;
-      }
+      background: $software-warning;
     }
   }
 }
@@ -752,12 +754,12 @@
   &.swtch {
     .check {
       &::before {
-        background: $software-error;
+        background: lighten(desaturate($software-error, 40%), 25%);
       }
+    }
 
-      &::after {
-        color: $software-error;
-      }
+    input[type="checkbox"]:checked ~ .check::before {
+      background: $software-error;
     }
   }
 }
