@@ -386,249 +386,7 @@
 }
 
 .swtch {
-  margin: 0 auto 10px;
-
-  > label {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    padding: 5px 0 5px 70px;
-    transition: all 0.25s linear;
-
-    > .check {
-      display: block;
-      position: absolute;
-      border: 3px solid $gray-700;
-      border-radius: 13px;
-      height: 27px;
-      left: 0;
-      outline: none;
-      top: 3px;
-      width: 60px;
-      z-index: 5;
-      transition: border 0.25s linear, box-shadow 0.05s linear;
-
-      &::before {
-        background: $gray-700;
-        display: block;
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        height: 15px;
-        width: 15px;
-        top: 3px;
-        left: 3px;
-        transition: all 0.25s linear;
-      }
-
-      &::after {
-        color: $gray-700;
-        display: block;
-        font-size: $font-size-sm;
-        position: absolute;
-        right: 5px;
-        text-transform: uppercase;
-        top: -1.5px;
-        content: 'off';
-      }
-    }
-
-    input[type="checkbox"] {
-      &:focus ~ .check {
-        // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
-      }
-
-      &:checked ~ .check {
-        border-color: $brand-primary;
-
-        &::before {
-          background: $brand-primary;
-          left: 36px;
-        }
-
-        &::after {
-          color: $brand-primary;
-          display: block;
-          font-size: $font-size-sm;
-          position: absolute;
-          left: 5px;
-          text-transform: uppercase;
-          top: -1.5px;
-          content: 'on';
-        }
-      }
-    }
-
-    .help-block {
-      font-family: $font-family-sans-serif;
-      margin-left: -32px;
-    }
-  }
-
-  &.disabled {
-    > label {
-      cursor: not-allowed;
-
-      > .check {
-        border-color: $gray-500;
-        cursor: not-allowed;
-
-        &::before {
-          background-color: $gray-500;
-        }
-
-        &::after {
-          color: $gray-500;
-        }
-      }
-
-      input[type="checkbox"]:checked ~ .check {
-        border-color: $gray-500;
-        cursor: not-allowed;
-
-        &::before {
-          background-color: $gray-500;
-        }
-
-        &::after {
-          color: $gray-500;
-        }
-      }
-    }
-  }
-
-  & + .swtch {
-    margin: 10px auto;
-  }
-}
-
-.swtch-new {
-  margin: 0 auto 10px;
-
-  > label {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    padding: 5px 0 5px 70px;
-    transition: all 0.25s linear;
-
-    > .check {
-      display: block;
-      position: absolute;
-      background: $gray-100;
-      border-bottom: 1px solid $gray-400;
-      border-radius: 13px;
-      box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2);
-      height: 20px;
-      left: 3px;
-      outline: none;
-      top: 0.6rem;
-      width: 54px;
-      z-index: 5;
-      transition: background-color 0.25s linear, border 0.25s linear, box-shadow 0.05s linear;
-
-      &::before {
-        border: 2px solid $gray-700;
-        background: $gray-400;
-        //background: lighten($gray-600, 5%);
-        display: block;
-        position: absolute;
-        content: '';
-        border-radius: 100%;
-        height: 30px;
-        width: 30px;
-        top: -5px;
-        left: -4px;
-        transition: all 0.25s linear;
-      }
-    }
-
-    input[type="checkbox"] {
-      &:focus ~ .check::before {
-        // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
-      }
-
-      &:checked ~ .check {
-        background: $blue-100;
-        border-bottom-color: $blue-300;
-
-        &::before {
-          background: $link-color;
-          border-color: $link-color;
-          left: 28px;
-        }
-      }
-    }
-
-    &:hover {
-      .check {
-        background: $gray-300;
-
-        &::before {
-          background: darken($gray-700, 15%);
-          border-color: darken($gray-700, 15%);
-        }
-      }
-
-      input[type="checkbox"] {
-        &:focus ~ .check::before {
-          // .tab-focus();
-          background: darken($gray-700, 15%);
-        }
-  
-        &:checked ~ .check::before {
-          background: $link-hover-color;
-        }
-      }
-    }
-
-    .help-block {
-      font-family: $font-family-sans-serif;
-      margin-left: -32px;
-    }
-  }
-
-  &.disabled {
-    > label {
-      cursor: not-allowed;
-
-      > .check {
-        border-color: $gray-500;
-        cursor: not-allowed;
-
-        &::before {
-          background-color: $gray-500;
-        }
-
-        &::after {
-          color: $gray-500;
-        }
-      }
-
-      input[type="checkbox"]:checked ~ .check {
-        border-color: $gray-500;
-        cursor: not-allowed;
-
-        &::before {
-          background-color: $gray-500;
-        }
-
-        &::after {
-          color: $gray-500;
-        }
-      }
-    }
-  }
-
-  & + .swtch {
-    margin: 10px auto;
-  }
-}
-
-.swtch-new-2 {
-  margin: 0 auto 10px;
+  margin: 0 0 10px;
 
   > label {
     cursor: pointer;
@@ -805,7 +563,125 @@
     }
   }
 
-  & + .swtch-new-2 {
+  & + .swtch {
+    margin: 10px auto;
+  }
+}
+
+.swtch-old {
+  margin: 0 auto 10px;
+
+  > label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 5px 0 5px 70px;
+    transition: all 0.25s linear;
+
+    > .check {
+      display: block;
+      position: absolute;
+      border: 3px solid $gray-700;
+      border-radius: 13px;
+      height: 27px;
+      left: 0;
+      outline: none;
+      top: 3px;
+      width: 60px;
+      z-index: 5;
+      transition: border 0.25s linear, box-shadow 0.05s linear;
+
+      &::before {
+        background: $gray-700;
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 15px;
+        width: 15px;
+        top: 3px;
+        left: 3px;
+        transition: all 0.25s linear;
+      }
+
+      &::after {
+        color: $gray-700;
+        display: block;
+        font-size: $font-size-sm;
+        position: absolute;
+        right: 5px;
+        text-transform: uppercase;
+        top: -1.5px;
+        content: 'off';
+      }
+    }
+
+    input[type="checkbox"] {
+      &:focus ~ .check {
+        // .tab-focus();
+        box-shadow: 0 0 3px 3px #83bffc;
+      }
+
+      &:checked ~ .check {
+        border-color: $brand-primary;
+
+        &::before {
+          background: $brand-primary;
+          left: 36px;
+        }
+
+        &::after {
+          color: $brand-primary;
+          display: block;
+          font-size: $font-size-sm;
+          position: absolute;
+          left: 5px;
+          text-transform: uppercase;
+          top: -1.5px;
+          content: 'on';
+        }
+      }
+    }
+
+    .help-block {
+      font-family: $font-family-sans-serif;
+      margin-left: -32px;
+    }
+  }
+
+  &.disabled {
+    > label {
+      cursor: not-allowed;
+
+      > .check {
+        border-color: $gray-500;
+        cursor: not-allowed;
+
+        &::before {
+          background-color: $gray-500;
+        }
+
+        &::after {
+          color: $gray-500;
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .check {
+        border-color: $gray-500;
+        cursor: not-allowed;
+
+        &::before {
+          background-color: $gray-500;
+        }
+
+        &::after {
+          color: $gray-500;
+        }
+      }
+    }
+  }
+
+  & + .swtch {
     margin: 10px auto;
   }
 }
@@ -816,9 +692,7 @@
   .chckbx,
   &.chckbx,
   .rd-o,
-  &.rd-o,
-  .swtch,
-  &.swtch {
+  &.rd-o {
     .check {
       border-color: $software-success;
     }
@@ -830,10 +704,6 @@
       &::before {
         background: $software-success;
       }
-
-      &::after {
-        color: $software-success;
-      }
     }
   }
 }
@@ -844,9 +714,7 @@
   .chckbx,
   &.chckbx,
   .rd-o,
-  &.rd-o,
-  .swtch,
-  &.swtch {
+  &.rd-o {
     .check {
       border-color: $software-warning;
     }
@@ -856,11 +724,13 @@
   &.swtch {
     .check {
       &::before {
-        background: $software-warning;
+        background: desaturate($software-warning, 10%);
       }
+    }
 
-      &::after {
-        color: $software-warning;
+    input[type="checkbox"]:checked ~ .check::before {
+      &, &:hover {
+        background: $software-warning;
       }
     }
   }
@@ -872,9 +742,7 @@
   .chckbx,
   &.chckbx,
   .rd-o,
-  &.rd-o,
-  .swtch,
-  &.swtch {
+  &.rd-o {
     .check {
       border-color: $software-error;
     }
