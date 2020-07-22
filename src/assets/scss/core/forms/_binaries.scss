@@ -568,6 +568,7 @@
   }
 }
 
+// TODO: Remove .swtch-old, and all following references, once all dev teams have implemented the new version
 .swtch-old {
   margin: 0 auto 10px;
 
@@ -768,8 +769,7 @@
 .rd-o input[type="radio"],
 .answr-grp input[type="radio"],
 .swtch input[type="checkbox"],
-.swtch-new input[type="checkbox"],
-.swtch-new-2 input[type="checkbox"] {
+.swtch-old input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -779,8 +779,7 @@
 .chckbx > label,
 .rd-o > label,
 .swtch > label,
-.swtch-new > label,
-.swtch-new-2 > label {
+.swtch-old > label {
   font-size: 100%;
   text-transform: none;
   font-family: $font-family-sans-serif;
