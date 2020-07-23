@@ -820,7 +820,7 @@
           <p>To give interfaces a more high-tech touch, you could replace some checkboxes with the binary-state control of a Switch.</p>
 
           <h6>Generation 1 Switches</h6>
-          <p>Below is an example of the first version of Switch component to be adopted by this design system. It is included here <strong>for historical reference only</strong> until all products in the BDA product portfolio have moved to the new version. <strong>If your product team/s have already adopted the new version, please disregard this section. All new projects should incorporate the new version, below.</strong></p>
+          <p>Below is an example of the first version of Switch component to be adopted by this design system. It is included here <strong>for historical reference only</strong> until all products in the BDA product portfolio have moved to the new version. <strong>If your product team/s have already adopted the new version, please disregard this section. All new projects should incorporate the new version, in the next sub-section.</strong></p>
 
           <div class="bs-example deprecated">
             <form>
@@ -836,22 +836,21 @@
           <h6>Current </h6>
           <p>The current version of Switch component has been updated to be more closely aligned to the design system's visual language and the Via Beneift s brand. They have also been upgraded with more versatility in terms of layout.</p>
           <p>The visual treatment aims to strike a balance between Android's switches, which come form Material Design, and iOS' visual treatment of the control.</p>
-          <div class="bs-example switch-examples">
+          <div class="bs-example">
             <form>
               <div class="swtch">
                 <label>
                   <input type="checkbox" id="switchTwo1" value="option2.1">
-                  <span class="label-text">Option 2.2</span>
+                  <span class="label-text">Current Generation Switch Option</span>
                   <span class="check"></span>
                 </label>
               </div>
-              <div class="swtch block">
-                <label>
-                  <input type="checkbox" id="switchTwo2" value="option1">
-                  <span class="label-text">Option 2.2 - Block Display</span>
-                  <span class="check"></span>
-                </label>
-              </div>
+            </form>
+          </div>
+
+          <p>If your use-case/context requires, Switches can be configured to have their labels on either of the four cardinal sides&mdash;Right, Top, Bottom, or Left.</p>
+          <div class="bs-examples switch-examples">
+            <form>
               <div class="ex-row">
                 <div class="swtch">
                   <label>
@@ -882,6 +881,19 @@
                   </label>
                 </div>
               </div>
+            </form>
+          </div>
+
+          <p>Since <code>display: flex;</code> is used to present a number of UI configurations without modifying the markup, you might find yourself in need to make more space if your label text is longer. Use the <code>.block</code> variety&mdash;either on its own, or combine with <code>.label-left</code> to replicate a &ldquo;mobile settings&rdquo; feel to your control.</p>
+          <div class="bs-examples">
+            <form>
+              <div class="swtch block">
+                <label>
+                  <input type="checkbox" id="switchTwo2" value="option1">
+                  <span class="label-text">Option 2.2 - Block Display</span>
+                  <span class="check"></span>
+                </label>
+              </div>
               <div class="swtch block label-left">
                 <label>
                   <input type="checkbox" id="switchTwo6" value="option1">
@@ -889,23 +901,29 @@
                   <span class="check"></span>
                 </label>
               </div>
+            </form>
+          </div>
+
+          <p>As they are form controls, Switches must be able to convey semantic feedback (validation). <strong>Note:</strong> <code>.help-text</code> coming soon to the below examples.</p>
+          <div class="bs-examples">
+            <form>
               <div class="swtch is-valid">
                 <label>
-                  <input type="checkbox" id="switchTwo6" value="option1">
+                  <input type="checkbox" id="switchTwo7" value="option1">
                   <span class="label-text">Success</span>
                   <span class="check"></span>
                 </label>
               </div>
               <div class="swtch is-invalid">
                 <label>
-                  <input type="checkbox" id="switchTwo6" value="option1">
+                  <input type="checkbox" id="switchTwo8" value="option1">
                   <span class="label-text">Error</span>
                   <span class="check"></span>
                 </label>
               </div>
               <div class="swtch has-warning">
                 <label>
-                  <input type="checkbox" id="switchTwo6" value="option1">
+                  <input type="checkbox" id="switchTwo9" value="option1">
                   <span class="label-text">Warning</span>
                   <span class="check"></span>
                 </label>
