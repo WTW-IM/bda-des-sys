@@ -904,7 +904,21 @@
             </form>
           </div>
 
-          <p>As they are form controls, Switches must be able to convey semantic feedback (validation). <strong>Note:</strong> <code>.help-text</code> coming soon to the below examples.</p>
+          <!-- TODO: Work out the .help-block situation
+          <div class="bs-example">
+            <form>
+              <div class="swtch block">
+                <label>
+                  <input type="checkbox" id="switchTwo2" value="option1">
+                  <span class="label-text">Option 2.2 - Block Display</span>
+                  <span class="check"></span>
+                  <span class="help-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </label>
+              </div>
+            </form>
+          </div> -->
+
+          <p>As they are form controls, Switches must be able to convey semantic feedback (validation).
           <div class="bs-examples">
             <form>
               <div class="swtch is-valid">
@@ -913,6 +927,7 @@
                   <span class="label-text">Success</span>
                   <span class="check"></span>
                 </label>
+                <span class="valid-feedback"><span class="icon ok"></span> <span class="feedback-text">Nice job, hitting this switch!</span></span>
               </div>
               <div class="swtch is-invalid">
                 <label>
@@ -920,6 +935,7 @@
                   <span class="label-text">Error</span>
                   <span class="check"></span>
                 </label>
+                <span class="invalid-feedback"><span class="icon exclamation-sign"></span> Heads up! You need to hit this switch before you continue.</span>
               </div>
               <div class="swtch has-warning">
                 <label>
@@ -927,6 +943,7 @@
                   <span class="label-text">Warning</span>
                   <span class="check"></span>
                 </label>
+                <span class="warning-feedback"><span class="icon exclamation-circle"></span> Think carefully before hitting this switch!</span>
               </div>
             </form>
           </div>

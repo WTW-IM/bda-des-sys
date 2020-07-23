@@ -505,6 +505,12 @@
     }
   }
 
+  /* .valid-feedback,
+  .invalid-feedback,
+  .warning-feedback {
+    margin-left: 4.5rem; // TODO: Explore whether to indent validation messaging for controls such as this.
+  } */
+
   &.block {
     .label-text {
       flex-grow: 1;

@@ -80,8 +80,16 @@ label {
 .is-invalid .invalid-feedback,
 .has-warning .warning-feedback {
   clear: left;
-  display: inline-block;
+  display: flex;
   font-size: $font-size-base;
+
+  .icon {
+    width: 1.5rem;
+  }
+
+  .feedback-text {
+    flex-grow: 1;
+  }
 }
 
 .dropdown-toggle {
