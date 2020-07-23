@@ -388,7 +388,7 @@
 .swtch {
   margin: 0 0 10px;
 
-  > label {
+  label {
     cursor: pointer;
     display: flex;
     position: relative;
@@ -474,10 +474,10 @@
   }
 
   &.disabled {
-    > label {
+    label {
       cursor: not-allowed;
 
-      > .check {
+      .check {
         border-color: $gray-500;
         cursor: not-allowed;
 
@@ -568,6 +568,7 @@
   }
 }
 
+// TODO: Remove .swtch-old, and all following references, once all dev teams have implemented the new version
 .swtch-old {
   margin: 0 auto 10px;
 
@@ -700,9 +701,25 @@
 
   .swtch,
   &.swtch {
-    .check {
-      &::before {
+    label {
+      .check {
+        &::before {
+          background: lighten(desaturate($software-success, 40%), 25%);
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .check::before {
         background: $software-success;
+      }
+
+      &:hover {
+        .check::before {
+          background-color: lighten(desaturate($software-success, 35%), 30%);
+        }
+
+        input[type="checkbox"]:checked ~ .check::before {
+          background-color: darken($software-success, 10%);
+        }
       }
     }
   }
@@ -722,15 +739,25 @@
 
   .swtch,
   &.swtch {
-    .check {
-      &::before {
-        background: desaturate($software-warning, 10%);
+    label {
+      .check {
+        &::before {
+          background: lighten(desaturate($software-warning, 40%), 25%);
+        }
       }
-    }
 
-    input[type="checkbox"]:checked ~ .check::before {
-      &, &:hover {
+      input[type="checkbox"]:checked ~ .check::before {
         background: $software-warning;
+      }
+
+      &:hover {
+        .check::before {
+          background-color: lighten(desaturate($software-warning, 35%), 30%);
+        }
+
+        input[type="checkbox"]:checked ~ .check::before {
+          background-color: darken($software-warning, 10%);
+        }
       }
     }
   }
@@ -750,13 +777,25 @@
 
   .swtch,
   &.swtch {
-    .check {
-      &::before {
+    label {
+      .check {
+        &::before {
+          background: lighten(desaturate($software-error, 40%), 25%);
+        }
+      }
+
+      input[type="checkbox"]:checked ~ .check::before {
         background: $software-error;
       }
 
-      &::after {
-        color: $software-error;
+      &:hover {
+        .check::before {
+          background-color: lighten(desaturate($software-error, 35%), 30%);
+        }
+
+        input[type="checkbox"]:checked ~ .check::before {
+          background-color: darken($software-error, 10%);
+        }
       }
     }
   }
@@ -766,8 +805,7 @@
 .rd-o input[type="radio"],
 .answr-grp input[type="radio"],
 .swtch input[type="checkbox"],
-.swtch-new input[type="checkbox"],
-.swtch-new-2 input[type="checkbox"] {
+.swtch-old input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -777,8 +815,7 @@
 .chckbx > label,
 .rd-o > label,
 .swtch > label,
-.swtch-new > label,
-.swtch-new-2 > label {
+.swtch-old > label {
   font-size: 100%;
   text-transform: none;
   font-family: $font-family-sans-serif;

@@ -783,8 +783,16 @@ table.color-variables {
 }
 
 /* Echo out a label for the example */
-.bs-example::after {
-  content: "Example";
+.bs-example {
+  &::after {
+    content: "Example";
+  }
+
+  &.deprecated {
+    &::after {
+      content: "DEPRECATED: For Historical Reference Only"
+    }
+  }
 }
 
 .bs-examples::after {
