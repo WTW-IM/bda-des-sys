@@ -409,7 +409,7 @@
         left: 3px;
         outline: none;
         position: absolute;
-        top: 0.2rem;
+        top: 0.1rem;
         width: 54px;
         z-index: 5;
         transition: background-color 0.25s linear, border 0.25s linear, box-shadow 0.25s linear;
@@ -424,7 +424,7 @@
         border-radius: 100%;
         height: 30px;
         width: 30px;
-        top: 0;
+        top: -0.1rem;
         left: 0;
         transition: all 0.18s linear;
         z-index: 7;
