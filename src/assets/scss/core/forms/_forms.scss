@@ -79,6 +79,7 @@ label {
 .is-valid .valid-feedback,
 .is-invalid .invalid-feedback,
 .has-warning .warning-feedback {
+  align-items: center;
   clear: left;
   display: flex;
   font-size: $font-size-base;
