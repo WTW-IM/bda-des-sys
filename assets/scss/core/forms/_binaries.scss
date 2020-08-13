@@ -569,6 +569,13 @@
     }
   }
 
+  &.dual-label {
+    .label-text-a {
+      margin-right: .5rem;
+      order: -1;
+    }
+  }
+
   & + .swtch {
     margin: 10px auto;
   }
