@@ -116,7 +116,7 @@
           <!-- Body copy -->
           <h3 id="type-body-copy">Body copy</h3>
           <p>The Benefits Delivery &amp; Administration UI Toolkit uses Source Sans Pro which was chosen because of its weights, character sets, legibility, and pleasantness. Our fallback font stack satisfies similar goals as well (Segoe UI, Segoe, Calibri, Tahoma, sans-serif). We use the "Regular" font for body text, the "Bold" font for bolded itens (e.g.: <code>&lt;strong&gt;</code>), and the "Light" font for headings.</p>
-          <p>Global default <code>font-size</code> is <strong>18px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all <code>&lt;p&gt;</code> tags (paragraphs). In addition, paragraphs receive a bottom margin of half their computed line-height (10px by default).</p>
+          <p>Global default <code>font-size</code> is <strong>18px</strong>, with a <code>line-height</code> of <strong>1.5</strong>. This is applied to the <code>&lt;body&gt;</code> and all <code>&lt;p&gt;</code> tags (paragraphs). In addition, paragraphs receive a bottom margin of twice their <code>font-size</code> (36px by default).</p>
 
           <div class="bs-example" data-example-id="body-copy">
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
@@ -351,6 +351,66 @@
             </ul>
           </div>
 
+          <h4 class="draft"> Brand-Aligned</h4>
+          <p>When a context requires, you can designate a color for top-level bullets.</p>
+          <div class="bs-examples" data-example-id="simple-ul-branded">
+            <div class="ex-row">
+              <ul class="violet">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+
+              <ul class="blue">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+            </div>
+
+            <div class="ex-row">
+              <ul class="green">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+
+              <ul class="magenta">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+            </div>
+          </div>
+
           <h3>Ordered</h3>
           <p>A list of items in which the order <em>does</em> explicitly matter.</p>
           <div class="bs-example" data-example-id="simple-ol">
@@ -391,9 +451,9 @@
           <p>Place all list items on a single line with some light padding.</p>
           <div class="bs-example" data-example-id="list-inline">
             <ul class="list-inline">
-              <li>Lorem ipsum</li>
-              <li>Phasellus iaculis</li>
-              <li>Nulla volutpat</li>
+              <li class="list-inline-item">Lorem ipsum</li>
+              <li class="list-inline-item">Phasellus iaculis</li>
+              <li class="list-inline-item">Nulla volutpat</li>
             </ul>
           </div>
 

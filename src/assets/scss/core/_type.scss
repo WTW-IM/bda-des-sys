@@ -1,0 +1,68 @@
+p {
+  margin-bottom: $font-size-base * 2;
+}
+
+ul {
+  list-style-type: none;
+
+  li {
+    position: relative;
+
+    &::before {
+      background-color: $black;
+      content: "";
+      height: $font-size-base / 2.5;
+      left: $font-size-base * -1.2;
+      position: absolute;
+      top: $font-size-base / 1.8;
+      width: $font-size-base / 2.5;
+    }
+  }
+
+  &.violet {
+    > li::before {
+      background-color: $violet-500;
+    }
+  }
+
+  &.blue {
+    > li::before {
+      background-color: $blue-500;
+    }
+  }
+
+  &.green {
+    > li::before {
+      background-color: $green-500;
+    }
+  }
+
+  &.magenta {
+    > li::before {
+      background-color: $magenta-500;
+    }
+  }
+
+  &,
+  &.violet,
+  &.blue,
+  &.green,
+  &.magenta {
+    > li {
+      ul {
+        li {
+          &::before {
+            background-color: $gray-700;
+          }
+        }
+      }
+    }
+  }
+
+  &.list-unstyled,
+  &.list-inline {
+    li::before {
+      display: none;
+    }
+  }
+}
