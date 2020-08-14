@@ -259,7 +259,7 @@ $font-family-bold: "Source Sans Pro Bold" !default;
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
 // $font-size-base effects the font size of the body text
 $font-size-root: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-base: $font-size-root * 1.13 !default; // Assumes the browser default, typically `16px`
+$font-size-base: $font-size-root * 1.125 !default; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25 !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-xs: $font-size-sm * 0.88 !default;
