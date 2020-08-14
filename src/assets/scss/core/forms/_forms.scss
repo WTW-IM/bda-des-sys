@@ -79,9 +79,18 @@ label {
 .is-valid .valid-feedback,
 .is-invalid .invalid-feedback,
 .has-warning .warning-feedback {
+  align-items: center;
   clear: left;
-  display: inline-block;
+  display: flex;
   font-size: $font-size-base;
+
+  .icon {
+    width: 1.5rem;
+  }
+
+  .feedback-text {
+    flex-grow: 1;
+  }
 }
 
 .dropdown-toggle {
