@@ -1263,11 +1263,17 @@ table.color-variables {
 .bs-glyphicons-list {
   padding-left: 0;
   list-style: none;
-}
 
-.bs-glyphicons li:hover {
-  color: #fff;
-  background-color: #563d7c;
+  li {
+    &:hover {
+      color: #fff;
+      background-color: #563d7c;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {

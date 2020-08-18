@@ -2,7 +2,7 @@ p {
   margin-bottom: $font-size-base * 2;
 }
 
-ul {
+ul:not(.nav):not(.pagination) {
   list-style-type: none;
 
   li {
