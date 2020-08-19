@@ -298,25 +298,46 @@
 
           <h4>Default blockquote</h4>
           <div class="bs-example" data-example-id="simple-blockquote">
-            <blockquote>
+            <blockquote class="blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             </blockquote>
           </div>
 
           <h4>Naming a source</h4>
-          <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
-          <div class="bs-example" data-example-id="blockquote-cite">
-            <blockquote>
+          <p>Add <code>&lt;footer class="blockquote-footer"&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+          <div class="bs-example">
+            <blockquote class="blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
             </blockquote>
           </div>
 
-          <h4>Right-aligned</h4>
-          <div class="bs-example" style="overflow: hidden;" data-example-id="blockquote-reverse">
-            <blockquote class="blockquote-reverse">
+          <h4>Text Alignment</h4>
+          <div class="bs-examples">
+            <blockquote class="blockquote text-center">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote text-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+
+          <h4>Brand Alignment</h4>
+          <p>Blockquotes can inherit border-color from any of the non-monochromatic brand colors.</p>
+          <div class="bs-examples">
+            <blockquote class="blockquote violet">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote green">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote magenta">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
             </blockquote>
           </div>
 
@@ -412,7 +433,10 @@
           </div>
 
           <h4 class="draft">Replace Bullets with Icons</h4>
-          <p></p>
+          <blockquote class="blockquote">
+            <p>We use icons for bullets sparingly &hellip; to emphasize and add interest to a short list. For icon-bullet treatment, we would use no more than four bullets and would use the [functional icons only].</p>
+            <footer class="blockquote-footer">Via Benefits Brand Treatment & Visual Style Guide (Summer 2020)</footer>
+          </blockquote>
           <div class="bs-examples" data-example-id="simple-ul-branded">
             <div class="ex-row">
               <ul class="violet">
@@ -425,7 +449,6 @@
                   </ul>
                 </li>
                 <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
-                <li class="has-icon"><span class="icon speak-to-expert"></span>Aenean sit amet erat nunc</li>
               </ul>
 
               <ul class="blue">
@@ -438,7 +461,6 @@
                   </ul>
                 </li>
                 <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
-                <li class="has-icon"><span class="icon speak-to-expert"></span>Aenean sit amet erat nunc</li>
               </ul>
             </div>
 
@@ -453,7 +475,6 @@
                   </ul>
                 </li>
                 <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
-                <li class="has-icon"><span class="icon speak-to-expert"></span>Aenean sit amet erat nunc</li>
               </ul>
 
               <ul class="magenta">
@@ -466,7 +487,6 @@
                   </ul>
                 </li>
                 <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
-                <li class="has-icon"><span class="icon speak-to-expert"></span>Aenean sit amet erat nunc</li>
               </ul>
             </div>
           </div>
