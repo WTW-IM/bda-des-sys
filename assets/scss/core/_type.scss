@@ -2,6 +2,52 @@ p {
   margin-bottom: $font-size-base * 2;
 }
 
+blockquote {
+  &,
+  &.blockquote {
+    border-left: 3px solid $blue-500;
+    font-family: $headings-font-family;
+    padding-left: 1.5rem;
+
+    &.text-center {
+      border-left: none;
+      border-top: 3px solid $blue-500;
+      margin-bottom: 2rem;
+      padding-left: 0;
+      padding-top: 0.5rem;
+    }
+
+    &.text-right {
+      border-left: none;
+      border-right: 3px solid $blue-500;
+      padding-left: 0;
+      padding-right: 1.5rem;
+    }
+
+    &.green {
+      border-color: $green-500;
+    }
+
+    &.magenta {
+      border-color: $magenta-500;
+    }
+
+    &.violet {
+      border-color: $violet-500;
+    }
+
+    footer {
+      &,
+      &.blockquote-footer {
+        cite {
+          font-style: normal;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 ul:not(.nav):not(.pagination) {
   list-style-type: none;
 
