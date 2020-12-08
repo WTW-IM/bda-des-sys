@@ -48,7 +48,7 @@ blockquote {
   }
 }
 
-ul:not(.nav):not(.pagination) {
+ul:not(.nav):not(.pagination):not(.map-nav):not([role="tabpanel"]){
   list-style-type: none;
 
   li {
