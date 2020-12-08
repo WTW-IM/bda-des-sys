@@ -116,7 +116,7 @@
           <!-- Body copy -->
           <h3 id="type-body-copy">Body copy</h3>
           <p>The Benefits Delivery &amp; Administration UI Toolkit uses Source Sans Pro which was chosen because of its weights, character sets, legibility, and pleasantness. Our fallback font stack satisfies similar goals as well (Segoe UI, Segoe, Calibri, Tahoma, sans-serif). We use the "Regular" font for body text, the "Bold" font for bolded itens (e.g.: <code>&lt;strong&gt;</code>), and the "Light" font for headings.</p>
-          <p>Global default <code>font-size</code> is <strong>18px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all <code>&lt;p&gt;</code> tags (paragraphs). In addition, paragraphs receive a bottom margin of half their computed line-height (10px by default).</p>
+          <p>Global default <code>font-size</code> is <strong>18px</strong>, with a <code>line-height</code> of <strong>1.5</strong>. This is applied to the <code>&lt;body&gt;</code> and all <code>&lt;p&gt;</code> tags (paragraphs). In addition, paragraphs receive a bottom margin of twice their <code>font-size</code> (36px by default).</p>
 
           <div class="bs-example" data-example-id="body-copy">
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
@@ -298,25 +298,46 @@
 
           <h4>Default blockquote</h4>
           <div class="bs-example" data-example-id="simple-blockquote">
-            <blockquote>
+            <blockquote class="blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             </blockquote>
           </div>
 
           <h4>Naming a source</h4>
-          <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
-          <div class="bs-example" data-example-id="blockquote-cite">
-            <blockquote>
+          <p>Add <code>&lt;footer class="blockquote-footer"&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+          <div class="bs-example">
+            <blockquote class="blockquote">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
             </blockquote>
           </div>
 
-          <h4>Right-aligned</h4>
-          <div class="bs-example" style="overflow: hidden;" data-example-id="blockquote-reverse">
-            <blockquote class="blockquote-reverse">
+          <h4>Text Alignment</h4>
+          <div class="bs-examples">
+            <blockquote class="blockquote text-center">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote text-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+
+          <h4>Brand Alignment</h4>
+          <p>Blockquotes can inherit border-color from any of the non-monochromatic brand colors.</p>
+          <div class="bs-examples">
+            <blockquote class="blockquote violet">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote green">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote magenta">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
             </blockquote>
           </div>
 
@@ -329,7 +350,7 @@
           <!-- Lists -->
           <h2 id="type-lists">Lists</h2>
 
-          <h3>Unordered</h3>
+          <h3 class="draft">Unordered</h3>
           <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
           <div class="bs-example" data-example-id="simple-ul">
             <ul>
@@ -349,6 +370,125 @@
               <li>Aenean sit amet erat nunc</li>
               <li>Eget porttitor lorem</li>
             </ul>
+          </div>
+
+          <h4 class="draft">Brand-Aligned</h4>
+          <p>When a context requires, you can designate a color for top-level bullets.</p>
+          <div class="bs-examples" data-example-id="simple-ul-branded">
+            <div class="ex-row">
+              <ul class="violet">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+
+              <ul class="blue">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+            </div>
+
+            <div class="ex-row">
+              <ul class="green">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+
+              <ul class="magenta">
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="draft">Replace Bullets with Icons</h4>
+          <blockquote class="blockquote">
+            <p>We use icons for bullets sparingly &hellip; to emphasize and add interest to a short list. For icon-bullet treatment, we would use no more than four bullets and would use the [functional icons only].</p>
+            <footer class="blockquote-footer">Via Benefits Brand Treatment & Visual Style Guide (Summer 2020)</footer>
+          </blockquote>
+          <div class="bs-examples" data-example-id="simple-ul-branded">
+            <div class="ex-row">
+              <ul class="violet">
+                <li class="has-icon"><span class="icon bullhorn"></span>Integer molestie lorem at massa</li>
+                <li class="has-icon"><span class="icon dashboard"></span>Facilisis in pretium nisl aliquet</li>
+                <li class="has-icon"><span class="icon form-agreement"></span>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
+              </ul>
+
+              <ul class="blue">
+                <li class="has-icon"><span class="icon bullhorn"></span>Integer molestie lorem at massa</li>
+                <li class="has-icon"><span class="icon dashboard"></span>Facilisis in pretium nisl aliquet</li>
+                <li class="has-icon"><span class="icon form-agreement"></span>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
+              </ul>
+            </div>
+
+            <div class="ex-row">
+              <ul class="green">
+                <li class="has-icon"><span class="icon bullhorn"></span>Integer molestie lorem at massa</li>
+                <li class="has-icon"><span class="icon dashboard"></span>Facilisis in pretium nisl aliquet</li>
+                <li class="has-icon"><span class="icon form-agreement"></span>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
+              </ul>
+
+              <ul class="magenta">
+                <li class="has-icon"><span class="icon bullhorn"></span>Integer molestie lorem at massa</li>
+                <li class="has-icon"><span class="icon dashboard"></span>Facilisis in pretium nisl aliquet</li>
+                <li class="has-icon"><span class="icon form-agreement"></span>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                  </ul>
+                </li>
+                <li class="has-icon"><span class="icon piggy-bank"></span>Faucibus porta lacus fringilla vel</li>
+              </ul>
+            </div>
           </div>
 
           <h3>Ordered</h3>
@@ -391,9 +531,9 @@
           <p>Place all list items on a single line with some light padding.</p>
           <div class="bs-example" data-example-id="list-inline">
             <ul class="list-inline">
-              <li>Lorem ipsum</li>
-              <li>Phasellus iaculis</li>
-              <li>Nulla volutpat</li>
+              <li class="list-inline-item">Lorem ipsum</li>
+              <li class="list-inline-item">Phasellus iaculis</li>
+              <li class="list-inline-item">Nulla volutpat</li>
             </ul>
           </div>
 

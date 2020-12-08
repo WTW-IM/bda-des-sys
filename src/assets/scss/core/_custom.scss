@@ -64,6 +64,17 @@ h6 {
   font-weight: normal;
 }
 
+.draft {
+  color: $warning-500;
+  &::before {
+    display: inline-block;
+    color: $warning-900;
+    content: "Draft: ";
+    font-family: $font-family-bold;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+  }
+}
 
 /* Site-Map Navigation */
 .map-nav {
@@ -119,11 +130,10 @@ h6 {
 /*
  * Main navigation
  *
- * Turn the `.navbar` at the top of the docs purple.
  */
 
 #main-nav {
-  background-color: #007fa7;
+  background-color: $blue-900;
   font-size: 90%;
   position: sticky;
   top: 0;
@@ -132,6 +142,10 @@ h6 {
   .navbar {
     padding: 0;
     width: 100%;
+
+    ul li::before {
+      display: none;
+    }
   }
 }
 
@@ -408,6 +422,10 @@ h6 {
             display: block;
           }
         }
+      }
+
+      &::before {
+        display: none;
       }
     }
 
@@ -1223,11 +1241,17 @@ table.color-variables {
 .bs-glyphicons-list {
   padding-left: 0;
   list-style: none;
-}
 
-.bs-glyphicons li:hover {
-  color: #fff;
-  background-color: #563d7c;
+  li {
+    &:hover {
+      color: #fff;
+      background-color: #563d7c;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {
