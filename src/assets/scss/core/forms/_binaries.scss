@@ -58,10 +58,16 @@
         }
       }
     }
+  }
 
-    .help-block {
-      font-family: $font-family-sans-serif;
-      margin-left: -32px;
+  &.has-help {
+    > label {
+      font-family: $font-family-bold;
+
+      .help-block {
+        display: block;
+        font-family: $font-family-sans-serif;
+      }
     }
   }
 
@@ -184,10 +190,16 @@
         }
       }
     }
+  }
 
-    .help-block {
-      font-family: $font-family-sans-serif;
-      margin-left: -32px;
+  &.has-help {
+    > label {
+      font-family: $font-family-bold;
+
+      .help-block {
+        display: block;
+        font-family: $font-family-sans-serif;
+      }
     }
   }
 
@@ -359,19 +371,7 @@
       //@extend .hover; // <-- todo: solve for this
     }
   }
-  // &.disabled {
-  //   > label {
-  //     > .check {
-  //       border-color: $gray-500;
-  //       &::before {
-  //         background-color: #fff;
-  //       }
-  //     }
-  //     input[type="radio"]:checked ~ .check:before {
-  //       background-color: $gray-500;
-  //     }
-  //   }
-  // }
+
   & + .answr-grp {
     margin: 10px auto;
   }
