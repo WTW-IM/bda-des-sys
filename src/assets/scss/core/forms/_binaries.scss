@@ -46,7 +46,7 @@
 
     input[type="checkbox"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 3px 3px $software-focus;
       }
 
       &:checked ~ .check {
@@ -173,7 +173,7 @@
 
     input[type="radio"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 3px 3px $software-focus;
       }
 
       &:checked ~ .check {
@@ -258,7 +258,7 @@
 
     input[type="radio"] {
       &:focus ~ span {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 3px 3px $software-focus;
       }
     }
 
@@ -438,7 +438,7 @@
     input[type="checkbox"] {
       &:focus ~ .check::after {
         // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 3px 3px $software-focus;
       }
 
       &:checked ~ .check {
@@ -633,7 +633,7 @@
     input[type="checkbox"] {
       &:focus ~ .check {
         // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 3px 3px $software-focus;
       }
 
       &:checked ~ .check {

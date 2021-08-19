@@ -17,7 +17,7 @@ $software-warning: map-get($bds-theme-semantic, "warning");
 
 // - Other UI-Related colors --
 $software-blue: map-get($bds-theme-btns, "primary");
-$software-focus: #83bffc;
+$software-focus: $software-blue;
 $light-gray: #d8dbd8;
 $light-violet: #d8d7df;
 $light-pink: #ddd0cf;
@@ -373,7 +373,7 @@ $input-btn-font-size: $font-size-base !default;
 $input-btn-line-height: $line-height-base !default;
 
 $input-btn-focus-width: 0.2rem !default;
-$input-btn-focus-color: rgba($component-active-bg, 0.25) !default;
+$input-btn-focus-color: rgba($software-focus, 0.25) !default;
 $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-lg: $input-btn-padding-y * 0.5; //.5rem !default;
@@ -467,7 +467,7 @@ $input-border-radius-lg: $border-radius-lg !default;
 $input-border-radius-sm: $border-radius-sm !default;
 
 $input-focus-bg: $input-bg !default;
-$input-focus-border-color: lighten($component-active-bg, 25%) !default;
+$input-focus-border-color: lighten($software-focus, 25%) !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -510,7 +510,7 @@ $form-check-input-bg: $body-bg !default;
 $form-check-input-border: 1px solid rgba(0, 0, 0, 0.25) !default;
 $form-check-input-border-radius: 0.25em !default;
 $form-check-radio-border-radius: 50% !default;
-$form-check-input-focus-border: $input-focus-border-color !default;
+$form-check-input-focus-border: $software-focus !default;
 $form-check-input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color: $component-active-color !default;
