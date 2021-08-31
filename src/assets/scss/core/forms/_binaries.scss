@@ -46,7 +46,8 @@
 
     input[type="checkbox"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px $software-focus;
+        box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {
@@ -173,7 +174,8 @@
 
     input[type="radio"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px $software-focus;
+        box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {

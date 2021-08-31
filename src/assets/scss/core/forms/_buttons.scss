@@ -31,7 +31,8 @@
 
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+    box-shadow: 0 0 0 2px $white,
+      0 0 2px 5px $software-focus;
   }
 }
 
@@ -62,5 +63,21 @@
 
   + .btn-group {
     margin-left: 0.75rem;
+  }
+}
+
+.btn {
+  &,
+  &.btn-danger,
+  &.btn-default,
+  &.btn-default-dark,
+  &.btn-info,
+  &.btn-success,
+  &.btn-warning {
+
+    &:focus {
+      box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
+    }
   }
 }
