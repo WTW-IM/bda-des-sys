@@ -339,6 +339,11 @@
         @extend .btn-danger;
       }
     }
+
+    input[type="radio"]:checked:focus ~ span {
+      box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
+    }
   }
 
   &.secondary {
