@@ -46,7 +46,8 @@
 
     input[type="checkbox"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {
@@ -58,16 +59,10 @@
         }
       }
     }
-  }
 
-  &.has-help {
-    > label {
-      font-family: $font-family-bold;
-
-      .help-block {
-        display: block;
-        font-family: $font-family-sans-serif;
-      }
+    .help-block {
+      font-family: $font-family-sans-serif;
+      margin-left: -32px;
     }
   }
 
@@ -179,7 +174,8 @@
 
     input[type="radio"] {
       &:focus ~ .check {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {
@@ -190,16 +186,10 @@
         }
       }
     }
-  }
 
-  &.has-help {
-    > label {
-      font-family: $font-family-bold;
-
-      .help-block {
-        display: block;
-        font-family: $font-family-sans-serif;
-      }
+    .help-block {
+      font-family: $font-family-sans-serif;
+      margin-left: -32px;
     }
   }
 
@@ -264,13 +254,14 @@
       height: 100%;
       justify-content: center;
       text-align: center;
-      transition: background-color linear 250ms;
+      transition: all 0.15s linear;
       width: 100%;
     }
 
     input[type="radio"] {
       &:focus ~ span {
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 0 2px $white,
+          0 0 2px 5px $software-focus;
       }
     }
 
@@ -348,6 +339,11 @@
         @extend .btn-danger;
       }
     }
+
+    input[type="radio"]:checked:focus ~ span {
+      box-shadow: 0 0 0 2px $white,
+        0 0 2px 5px $software-focus;
+    }
   }
 
   &.secondary {
@@ -371,7 +367,19 @@
       //@extend .hover; // <-- todo: solve for this
     }
   }
-
+  // &.disabled {
+  //   > label {
+  //     > .check {
+  //       border-color: $gray-500;
+  //       &::before {
+  //         background-color: #fff;
+  //       }
+  //     }
+  //     input[type="radio"]:checked ~ .check:before {
+  //       background-color: $gray-500;
+  //     }
+  //   }
+  // }
   & + .answr-grp {
     margin: 10px auto;
   }
@@ -412,7 +420,7 @@
         top: 0.1rem;
         width: 54px;
         z-index: 5;
-        transition: background-color 0.25s linear, border 0.25s linear, box-shadow 0.25s linear;
+        transition: background-color 0.25s linear, border 0.25s linear, box-shadow 0.15s linear;
       }
 
       &::after {
@@ -438,7 +446,8 @@
     input[type="checkbox"] {
       &:focus ~ .check::after {
         // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 0 2px $white,
+          0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {
@@ -633,7 +642,8 @@
     input[type="checkbox"] {
       &:focus ~ .check {
         // .tab-focus();
-        box-shadow: 0 0 3px 3px #83bffc;
+        box-shadow: 0 0 0 2px $white,
+          0 0 2px 5px $software-focus;
       }
 
       &:checked ~ .check {

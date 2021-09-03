@@ -55,7 +55,12 @@
   }
 }
 
-.ui-state-focus,
+.ui-state-focus {
+  box-shadow: 0 0 0 2px $white,
+    0 0 2px 5px $software-focus;
+  outline: none;
+}
+
 .ui-state-hover {
   background: desaturate(lighten(map-get($colors, 'primary'), 25%), 35%);
   font-weight: normal;
@@ -207,6 +212,7 @@
     cursor: default;
     height: 24px;
     position: absolute;
+    transition: box-shadow 0.15s linear;
     width: 24px;
     z-index: 2;
   }
