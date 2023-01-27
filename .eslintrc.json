@@ -1,11 +1,10 @@
 {
   "root": true,
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "extends": [
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:unicorn/recommended",
-    "xo/esnext",
     "xo/browser"
   ],
   "rules": {
@@ -53,5 +52,59 @@
     "unicorn/prefer-query-selector": "off",
     "unicorn/prefer-text-content": "off",
     "unicorn/prevent-abbreviations": "off"
-  }
+  },
+  "globals" : {
+    "$": "readonly",
+    "jQuery": "readonly"
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/assets/**/*.js"
+      ],
+      "extends": ["eslint-config-airbnb/legacy"],
+      "rules": {
+        "no-unused-expressions": "off",
+        "no-param-reassign": "off",
+        "no-return-assign": "off",
+        "no-underscore-dangle": "off",
+        "no-plusplus": "off",
+        "no-tabs": "off",
+        "no-nested-ternary": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-shadow": "off",
+        "no-console": "off",
+        "no-redeclare": "off",
+        "no-undef": "off",
+        "no-use-before-define": "off",
+        "no-mixed-operators": "off",
+        "no-useless-concat": "off",
+        "no-unused-vars": "off",
+        "no-bitwise": "off",
+        "no-multi-assign": "off",
+        "no-new-func": "off",
+        "no-alert": "off",
+        "no-restricted-globals": "off",
+        "no-restricted-syntax": "off",
+        "no-prototype-builtins": "off",
+        "vars-on-top": "off",
+        "semi-style": "off",
+        "max-len": "off",
+        "block-scoped-var": "off",
+        "eqeqeq": "off",
+        "consistent-return": "off",
+        "camelcase": "off",
+        "padded-blocks": "off",
+        "strict": "off",
+        "guard-for-in": "off",
+        "default-case": "off",
+        "unicorn/text-encoding-identifier-case": "off",
+        "unicorn/no-null": "off",
+        "unicorn/prefer-code-point": "off",
+        "unicorn/consistent-function-scoping": "off",
+        "unicorn/prefer-module": "off",
+        "unicorn/prefer-number-properties": "off"
+      }
+    }
+  ]
 }
