@@ -30,6 +30,5 @@ jobs:
           TOKEN: ${{ secrets.PIPIELINE_BOT_PAT }}
           REPO: ${{ github.repository }}
         run: |
-          git config --local user.email "$EMAIL"
-          git config --local user.name "im-pipeline-bot"
-          npm run deploy
+          git remote set-url origin https://git:${TOKEN}@github.com/${REPO}.git
+          npm run deploy -- -u "im-pipeline-bot <${EMAIL}>"
