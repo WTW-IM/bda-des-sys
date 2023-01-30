@@ -23,4 +23,7 @@ jobs:
         run: npm ci
 
       - name: Deploy Pages
-        run: npm run deploy
+        run: |
+          git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+          npm run deploy
