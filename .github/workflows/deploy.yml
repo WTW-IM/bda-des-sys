@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy Pages
         env:
-          TOKEN: ${{ secrets.PIPIELINE_BOT_PAT }}
+          TOKEN: ${{ secrets.PIPELINE_BOT_PAT }}
           REPO: ${{ github.repository }}
         run: |
           git remote set-url origin https://im-pipeline-bot:${TOKEN}@github.com/${REPO}.git
