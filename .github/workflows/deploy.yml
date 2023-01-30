@@ -26,9 +26,8 @@ jobs:
 
       - name: Deploy Pages
         env:
-          EMAIL: ${{ secrets.COMMITBOT_EMAIL }}
           TOKEN: ${{ secrets.PIPIELINE_BOT_PAT }}
           REPO: ${{ github.repository }}
         run: |
           git remote set-url origin https://git:${TOKEN}@github.com/${REPO}.git
-          npm run deploy -- -u "im-pipeline-bot <${EMAIL}>"
+          npm run deploy -- -u "im-pipeline-bot <73202619+im-pipeline-bot@users.noreply.github.com>"
