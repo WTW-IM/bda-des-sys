@@ -1,4 +1,4 @@
-$(function(){
+$(() => {
   var _what = $('.step.what');
   var _mc = $('.step.who > .medicare');
   var _ifp = $('.step.who > .ifp');
@@ -10,43 +10,42 @@ $(function(){
   var _cta = $('.cta');
   var fadeTime = 250;
   var now = new Date();
-  
+
   // == Check for selected HHMs for hide/show of date, ZIP, and CTA ============
-  var checkSelected = function(){
+  var checkSelected = function () {
     if ($('.step.who:visible .btn-icon').hasClass('selected')) {
-      _whenWhere.fadeIn(fadeTime, function(){
+      _whenWhere.fadeIn(fadeTime, () => {
         _cta.fadeIn(fadeTime);
       });
     } else {
-      _cta.fadeOut(fadeTime, function(){
+      _cta.fadeOut(fadeTime, () => {
         _whenWhere.fadeOut(fadeTime);
       });
     }
   };
-  
-  var enableUnflaggingIfp = function (){
-    _mc.find('.selected').click(function(){
+
+  var enableUnflaggingIfp = function () {
+    _mc.find('.selected').click(() => {
       _ifp.removeClass('incompatible');
     });
   };
-  
-  var enableUnflaggingMc = function(){
-    _ifp.find('.selected').click(function(){
+
+  var enableUnflaggingMc = function () {
+    _ifp.find('.selected').click(function () {
       var _this = $(this);
       var likeSibs = _this.parent().parent().find('.btn-icon').hasClass('selected');
-      
-      if(!likeSibs) {
+
+      if (!likeSibs) {
         _mc.removeClass('incompatible');
       }
     });
   };
-  
-  
+
   // == People selection =======================================================
-  $('.option-selector .btn-icon').not(':disabled, .disabled').click(function(){
+  $('.option-selector .btn-icon').not(':disabled, .disabled').click(function () {
     var _this = $(this);
     var multiSel = _this.parent().parent().hasClass('multi-select');
-    
+
     if (multiSel) {
       if (_this.hasClass('selected')) {
         _this.removeClass('selected');
@@ -62,129 +61,137 @@ $(function(){
         _this.addClass('selected');
       }
     }
-    
+
     checkSelected();
   });
-  
-  
+
   // == Make MC and IPF selectors mutually exclusive ===========================
-  var checkHhmSelections = function(){
+  var checkHhmSelections = function () {
     mcSelected = mcButtons.hasClass('selected');
     ifpSelected = ifpButtons.hasClass('selected');
   };
-  
-  var mutuallyExclusiveHhmBtns = function(){
-    ifpButtons.click(function(){
+
+  var mutuallyExclusiveHhmBtns = function () {
+    ifpButtons.click(() => {
       _ifp.removeClass('incompatible');
       _mc.find('.btn-icon').removeClass('selected');
       _mc.addClass('incompatible');
-      
+
       checkHhmSelections();
       if (!ifpSelected) {
         _mc.removeClass('incompatible');
       }
     });
-    
-    mcButtons.click(function(){
+
+    mcButtons.click(() => {
       _mc.removeClass('incompatible');
       _ifp.find('.btn-icon').removeClass('selected');
       _ifp.addClass('incompatible');
-      
+
       checkHhmSelections();
       if (!mcSelected) {
         _ifp.removeClass('incompatible');
       }
     });
   };
-  
+
   mutuallyExclusiveHhmBtns();
-  
-  
+
   // == ESRD messaging =========================================================
-  _mc.find('[type=checkbox]').change(function(){
+  _mc.find('[type=checkbox]').change(function () {
     var _this = $(this);
     var _checked = this.checked;
     var _button = _this.parents('.selection-row').find('button.btn-icon');
     var _otherBtns = _this.parents('.option-selector').find('button.btn-icon');
     var _alert = _this.parents('.selection-row').find('.alert');
-    
+
     if (_checked) {
-      _button.removeClass('selected', function(){
+      _button.removeClass('selected', () => {
         _button.prop('disabled', true);
       });
-      _alert.fadeIn(fadeTime, function() {
-        _cta.fadeOut(fadeTime, function(){
+      _alert.fadeIn(fadeTime, () => {
+        _cta.fadeOut(fadeTime, () => {
           _whenWhere.fadeOut(fadeTime);
         });
       });
     } else {
-      _button.prop('disabled', function(){
-        if(_otherBtns.hasClass('selected')) {
+      _button.prop('disabled', () => {
+        if (_otherBtns.hasClass('selected')) {
           _alert.fadeOut(fadeTime);
           return false;
-        } else {
-          _alert.fadeOut(fadeTime, function(){
-            _whenWhere.fadeIn(fadeTime, function(){
-              _cta.fadeIn(fadeTime);
-            });
-          });
-          _button.addClass('selected');
-          return false;
         }
+        _alert.fadeOut(fadeTime, () => {
+          _whenWhere.fadeIn(fadeTime, () => {
+            _cta.fadeIn(fadeTime);
+          });
+        });
+        _button.addClass('selected');
+        return false;
       });
     }
   });
-  
-  
+
   // == Display Eligibility Dates for dual-elegible HHM ========================
   var ifpEndDateObj = new Date(now.getFullYear(), now.getMonth() + 3, 0).toString().split(' ');
   var mcStartDateObj = new Date(now.getFullYear(), now.getMonth() + 3, 1).toString().split(' ');
-  
-  var convertMonth = function(obj){
-    switch(obj) {
-      case 'Jan':
+
+  var convertMonth = function (obj) {
+    switch (obj) {
+      case 'Jan': {
         return 'January';
-      case 'Feb':
+      }
+      case 'Feb': {
         return 'February';
-      case 'Mar':
+      }
+      case 'Mar': {
         return 'March';
-      case 'Apr':
+      }
+      case 'Apr': {
         return 'April';
-      case 'May':
+      }
+      case 'May': {
         return 'May';
-      case 'Jun':
+      }
+      case 'Jun': {
         return 'June';
-      case 'Jul':
+      }
+      case 'Jul': {
         return 'July';
-      case 'Aug':
+      }
+      case 'Aug': {
         return 'August';
-      case 'Sep':
+      }
+      case 'Sep': {
         return 'September';
-      case 'Oct':
+      }
+      case 'Oct': {
         return 'October';
-      case 'Nov':
+      }
+      case 'Nov': {
         return 'November';
-      case 'Dec':
+      }
+      case 'Dec': {
         return 'December';
-      default:
+      }
+      default: {
         return false;
+      }
     }
-  }
-  
-  var convertDay = function(obj){
+  };
+
+  var convertDay = function (obj) {
     return obj.replace(/^0+/, '');
-  }
-  
+  };
+
   var msStartDate = convertMonth(mcStartDateObj[1]) + ' ' + convertDay(mcStartDateObj[2]) + ', ' + mcStartDateObj[3];
   var ifpEndDate = convertMonth(ifpEndDateObj[1]) + ' ' + convertDay(ifpEndDateObj[2]) + ', ' + ifpEndDateObj[3];
-  
+
   $('#mcStartDate').text(msStartDate);
   $('#ifpEndDate').text(ifpEndDate);
-  
-  
+
   // == Display realistic effective date =======================================
-  var monthArray = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-  
+  var monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
   if (now.getMonth() == 11 && now.getDate() >= 15) {
     var current = new Date(now.getFullYear() + 1, 1, 1);
   } else if (now.getMonth() == 11) {
@@ -194,18 +201,17 @@ $(function(){
   } else {
     var current = new Date(now.getFullYear(), now.getMonth() + 1, 1);
   }
-  
+
   var monthToShow = monthArray[current.getMonth()];
-  
+
   $('#effectiveDate').text(monthToShow);
-  
-  
+
   // == Proceed to Plans Logic =================================================
-  $('#view-plans-btn').click(function(){
+  $('#view-plans-btn').click(() => {
     var _urlPrefix = '/qc-uat-q3-2016-quoting';
-    
+
     checkHhmSelections();
-    
+
     if (mcSelected) {
       window.location = _urlPrefix + '-medicare.v2.html';
     } else if (ifpSelected) {
@@ -214,23 +220,20 @@ $(function(){
       return false;
     }
   });
-  
-  
+
   // == Engage Popovers! =======================================================
-  $("[data-toggle=popover]").popover();
-  
-  
+  $('[data-toggle=popover]').popover();
+
   // == Force Popovers to work in FF, Safari, etc... o_O =======================
   // Firefox 1.0+
   var isFirefox = typeof InstallTrigger !== 'undefined';
-  
-  // Safari 3.0+ "[object HTMLElementConstructor]" 
-  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+  // Safari 3.0+ "[object HTMLElementConstructor]"
+  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; }(!window.safari || safari.pushNotification));
 
   if (isFirefox || isSafari) {
-    $('[data-toggle="popover"]').click(function(){
+    $('[data-toggle="popover"]').click(function () {
       $(this).focus();
     });
   }
-  
 });

@@ -8,16 +8,13 @@
 // http://getbootstrap.com/getting-started/#support-ie10-width
 
 (function () {
-  'use strict';
-
-  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-    var msViewportStyle = document.createElement('style')
-    msViewportStyle.appendChild(
+  if (/IEMobile\/10\.0/.test(navigator.userAgent)) {
+    var msViewportStyle = document.createElement('style');
+    msViewportStyle.append(
       document.createTextNode(
         '@-ms-viewport{width:auto!important}'
       )
-    )
-    document.querySelector('head').appendChild(msViewportStyle)
+    );
+    document.querySelector('head').append(msViewportStyle);
   }
-
-})();
+}());
