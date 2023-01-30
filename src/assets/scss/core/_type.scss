@@ -67,11 +67,11 @@ ul:not(.nav):not(.pagination):not(.map-nav):not([role="tabpanel"]){
     &::before {
       background-color: $black;
       content: "";
-      height: $font-size-base / 2.5;
+      height: calc($font-size-base / 2.5);
       left: $font-size-base * -1.2;
       position: absolute;
-      top: $font-size-base / 1.8;
-      width: $font-size-base / 2.5;
+      top: calc($font-size-base / 1.8);
+      width: calc($font-size-base / 2.5);
     }
 
     &.has-icon {
