@@ -29,5 +29,5 @@ jobs:
           TOKEN: ${{ secrets.PIPIELINE_BOT_PAT }}
           REPO: ${{ github.repository }}
         run: |
-          git remote set-url origin https://git:${TOKEN}@github.com/${REPO}.git
+          git remote set-url origin https://im-pipeline-bot:${TOKEN}@github.com/${REPO}.git
           npm run deploy -- -u "im-pipeline-bot <73202619+im-pipeline-bot@users.noreply.github.com>"
